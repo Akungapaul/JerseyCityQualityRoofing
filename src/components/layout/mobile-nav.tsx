@@ -132,13 +132,6 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
     };
   }, [isOpen, onClose]);
 
-  // Reset expanded section on close
-  useEffect(() => {
-    if (!isOpen) {
-      setExpandedSection(null);
-    }
-  }, [isOpen]);
-
   return (
     <AnimatePresence>
       {isOpen && (
