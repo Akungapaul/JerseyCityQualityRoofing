@@ -41,7 +41,7 @@ Plans:
 - [x] 01-01-PLAN.md -- Scaffold Next.js 16 project with types, utilities, fonts, and foundation files
 - [x] 01-02-PLAN.md -- Create all App Router stub pages with complete URL routing skeleton
 - [x] 01-03-PLAN.md -- Data registries for 12 municipalities, 8 services, testimonials, and service-city-content resolver
-- [ ] 01-04-PLAN.md -- SEO infrastructure: metadata generators, JSON-LD, sitemap, robots, data-driven routes, vitest setup, and validation
+- [x] 01-04-PLAN.md -- SEO infrastructure: metadata generators, JSON-LD, sitemap, robots, data-driven routes, vitest setup, and validation
 
 ### Phase 2: Design System & Layout Shell
 **Goal**: Every page on the site shares a consistent visual identity and layout with persistent conversion elements visible at all scroll positions
