@@ -9,8 +9,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Foundation (FNDN)
 
-- [ ] **FNDN-01**: Next.js 16 App Router project scaffolded with TypeScript strict mode, Tailwind CSS 4, pnpm
-- [ ] **FNDN-02**: Siloed URL architecture with nested dynamic segments for service-type and location branches
+- [x] **FNDN-01**: Next.js 16 App Router project scaffolded with TypeScript strict mode, Tailwind CSS 4, pnpm
+- [x] **FNDN-02**: Siloed URL architecture with nested dynamic segments for service-type and location branches
 - [ ] **FNDN-03**: TypeScript data registries for all 12 municipalities (landmarks, housing stock, building codes, weather patterns, architecture styles, population, common roof types)
 - [ ] **FNDN-04**: TypeScript data registries for all 8 services (residential: repair, replacement, inspection, emergency; commercial: flat roof, maintenance, repair, replacement)
 - [ ] **FNDN-05**: Reusable page layout shell with sticky header (phone number), footer, breadcrumbs, and navigation
@@ -156,8 +156,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FNDN-01 | Phase 1 | Pending |
-| FNDN-02 | Phase 1 | Pending |
+| FNDN-01 | Phase 1 | Complete (01-01) |
+| FNDN-02 | Phase 1 | Complete (01-01) |
 | FNDN-03 | Phase 1 | Pending |
 | FNDN-04 | Phase 1 | Pending |
 | FNDN-05 | Phase 2 | Pending |
