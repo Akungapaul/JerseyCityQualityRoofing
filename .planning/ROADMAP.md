@@ -53,13 +53,12 @@ Plans:
   3. Navigation mega-menu reflects the silo structure (Residential Services, Commercial Services, Locations) with proper links
   4. Breadcrumb navigation auto-generates from route hierarchy and renders BreadcrumbList JSON-LD schema
   5. All interactive elements are keyboard-accessible with visible focus rings, and color contrast meets WCAG AA
-**Plans**: TBD
-**UI hint**: yes
+**Plans**: 3 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
-- [ ] 02-03: TBD
+- [ ] 02-01-PLAN.md -- Install dependencies, generate 10 color palette variations for approval, apply approved palette + design tokens, build Button and Badge primitives
+- [ ] 02-02-PLAN.md -- Build layout components: sticky Header with shrink-on-scroll, MegaMenu, MobileNav overlay, Footer with CTA banner, Breadcrumbs with JSON-LD
+- [ ] 02-03-PLAN.md -- Build section utilities (SectionWrapper, CTABanner, ScrollReveal), wire marketing layout, visual verification
 
 ### Phase 3: Lead Capture System
 **Goal**: Visitors can submit quote requests from any page and the business receives email notification with all lead details
@@ -208,7 +207,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Project Scaffold & Data Architecture | 0/4 | Not started | - |
+| 1. Project Scaffold & Data Architecture | 4/4 | Complete | - |
 | 2. Design System & Layout Shell | 0/3 | Not started | - |
 | 3. Lead Capture System | 0/2 | Not started | - |
 | 4. Core Marketing Pages | 0/3 | Not started | - |
