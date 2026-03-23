@@ -54,17 +54,19 @@ Exceptions: none
 | Role | Size | Weight | Line Height | Font Family |
 |------|------|--------|-------------|-------------|
 | Body | 18px | 500 (medium) | 1.5 | Cormorant Garamond |
-| Label | 14px | 600 (semibold) | 1.4 | Cormorant Garamond |
+| Label | 14px | 500 (medium) | 1.4 | Cormorant Garamond |
 | Heading | 28px | 700 (bold) | 1.2 | Cormorant |
 | Display | 40px | 700 (bold) | 1.1 | Cormorant |
+
+**Weights used:** 2 -- medium (500) for body and label text, bold (700) for heading and display text. Labels are differentiated from body text by size (14px vs 18px) rather than weight, keeping the font weight budget to the allowed maximum of 2.
 
 **Source:** CLAUDE.md mandates Cormorant Garamond (medium weight) for body, Cormorant for headings, minimum 18px body. REQUIREMENTS.md UX-01 confirms.
 
 **Phase 1 application:** Root layout loads both font families via `next/font/google` and sets CSS variables `--font-heading` and `--font-body`. No typography scale is applied to stub pages -- stubs render with browser defaults plus the font-family variables. The exact sizes, weights, and line-heights declared above are the canonical reference for Phase 2 implementation.
 
 **Font loading contract (Phase 1 deliverable):**
-- `Cormorant` loaded with weights: 400, 500, 600, 700 -- variable `--font-heading`
-- `Cormorant_Garamond` loaded with weights: 400, 500, 600, 700 -- variable `--font-body`
+- `Cormorant` loaded with weights: 500, 700 -- variable `--font-heading`
+- `Cormorant_Garamond` loaded with weights: 500, 700 -- variable `--font-body`
 - Both use `display: 'swap'` and `subsets: ['latin']`
 - Root `<html>` element receives both CSS variable classes
 
