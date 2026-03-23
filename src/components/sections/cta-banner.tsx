@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Phone } from "lucide-react";
-import { buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button-variants";
 import { PHONE_NUMBER, PHONE_HREF } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 

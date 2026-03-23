@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Phone, Mail, MapPin } from "lucide-react";
-import { buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button-variants";
 import { Badge } from "@/components/ui/badge";
 import { BUSINESS_INFO } from "@/data/business-info";
 import { getServicesByCategory } from "@/data/services";
