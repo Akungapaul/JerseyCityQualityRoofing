@@ -35,12 +35,13 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Municipality data registry returns structured data (landmarks, housing stock, building codes, weather) for all 12 Hudson County cities
   4. Service data registry returns structured data (metadata, materials, FAQs) for all 8 services (4 residential, 4 commercial)
   5. Every route generates metadata with title, description, openGraph, and canonical URL via shared helpers
-**Plans**: 3 plans
+**Plans**: 4 plans
 
 Plans:
-- [ ] 01-01-PLAN.md -- Scaffold Next.js 16 project with types, utilities, fonts, and complete URL routing skeleton
-- [ ] 01-02-PLAN.md -- Data registries for 12 municipalities, 8 services, testimonials, and service-city-content resolver
-- [ ] 01-03-PLAN.md -- SEO infrastructure: metadata generators, JSON-LD, sitemap, robots, vitest setup, and validation
+- [ ] 01-01-PLAN.md -- Scaffold Next.js 16 project with types, utilities, fonts, and foundation files
+- [ ] 01-02-PLAN.md -- Create all App Router stub pages with complete URL routing skeleton
+- [ ] 01-03-PLAN.md -- Data registries for 12 municipalities, 8 services, testimonials, and service-city-content resolver
+- [ ] 01-04-PLAN.md -- SEO infrastructure: metadata generators, JSON-LD, sitemap, robots, data-driven routes, vitest setup, and validation
 
 ### Phase 2: Design System & Layout Shell
 **Goal**: Every page on the site shares a consistent visual identity and layout with persistent conversion elements visible at all scroll positions
@@ -207,7 +208,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Project Scaffold & Data Architecture | 0/3 | Not started | - |
+| 1. Project Scaffold & Data Architecture | 0/4 | Not started | - |
 | 2. Design System & Layout Shell | 0/3 | Not started | - |
 | 3. Lead Capture System | 0/2 | Not started | - |
 | 4. Core Marketing Pages | 0/3 | Not started | - |
