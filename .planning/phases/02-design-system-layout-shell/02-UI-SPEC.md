@@ -5,6 +5,7 @@ status: draft
 shadcn_initialized: false
 preset: none
 created: 2026-03-23
+revised: 2026-03-23
 ---
 
 # Phase 02 -- UI Design Contract
@@ -58,22 +59,27 @@ Exceptions:
 | Role | Size | Weight | Line Height | Font Family | Tailwind Class |
 |------|------|--------|-------------|-------------|----------------|
 | Body | 18px (1.125rem) | 500 (medium) | 1.7 | Cormorant Garamond | font-body text-lg |
-| Body small | 16px (1rem) | 500 (medium) | 1.6 | Cormorant Garamond | font-body text-base |
-| Label / Nav | 14px (0.875rem) | 700 (bold) | 1.4 | Cormorant Garamond | font-body text-sm font-bold |
-| H3 / Card title | 20px (1.25rem) | 700 (bold) | 1.3 | Cormorant | font-heading text-xl font-bold |
-| H2 / Section | 28px (1.75rem) | 700 (bold) | 1.2 | Cormorant | font-heading text-2xl font-bold |
-| H1 / Page title | 40px (2.5rem) | 700 (bold) | 1.15 | Cormorant | font-heading text-4xl font-bold |
-| Display / Hero | 56px (3.5rem) | 500 (medium) | 1.1 | Cormorant | font-heading text-5xl |
+| Section heading | 28px (1.75rem) | 700 (bold) | 1.2 | Cormorant | font-heading text-[1.75rem] font-bold |
+| Page title | 40px (2.5rem) | 700 (bold) | 1.15 | Cormorant | font-heading text-[2.5rem] font-bold |
+| Hero display | 56px (3.5rem) | 500 (medium) | 1.1 | Cormorant | font-heading text-[3.5rem] |
+
+**4-size scale rationale:** CLAUDE.md enforces an 18px minimum body font. The previous 7-size scale included 14px and 16px sizes that violated this floor, and declared more sizes than the 4-size maximum allows. This revised scale uses exactly 4 sizes with a clear hierarchy: body (18px), section (28px), page (40px), hero (56px).
+
+**Differentiation without additional sizes:**
+- **Navigation labels:** Use body size (18px) at weight 700 (bold) with `letter-spacing: 0.02em` and font-family Cormorant Garamond. The weight and tracking shift visually distinguish nav items from body text without introducing a sub-18px size.
+- **Card titles / H3:** Use section heading size (28px) at weight 700. When a smaller heading is needed within a card or sidebar context, use body size (18px) at weight 700 in Cormorant (heading font). The font-family switch from Cormorant Garamond to Cormorant provides visual distinction at the same size.
+- **Badges and metadata:** Use body size (18px) at weight 500 with text-secondary color. Color and weight differentiate supporting text from primary body copy.
+- **Breadcrumb text:** Use body size (18px) at weight 500 with text-secondary color and Cormorant Garamond. Visual hierarchy achieved through color, not size.
 
 **Constraints (from CLAUDE.md and UX-01):**
-- Minimum body font size: 18px -- enforced as the default. No text smaller than 14px anywhere.
+- Minimum body font size: 18px -- enforced as the floor. No text smaller than 18px anywhere on the site.
 - Heading font: Cormorant (not Cormorant Garamond)
 - Body font: Cormorant Garamond at medium (500) weight
 - Font CSS variables already configured in src/app/layout.tsx: `--font-heading`, `--font-body`
 
 **Responsive scaling:**
-- Mobile (< 640px): Display drops to 36px, H1 drops to 32px, H2 drops to 24px
-- Tablet (640-1023px): Display at 44px, H1 at 36px, H2 at 28px (base)
+- Mobile (< 640px): Hero display drops to 36px, Page title drops to 32px, Section heading stays at 28px (base)
+- Tablet (640-1023px): Hero display at 44px, Page title at 36px, Section heading at 28px (base)
 - Desktop (1024px+): Full sizes as declared above
 
 ---
@@ -122,7 +128,7 @@ Components to be built in this phase. Each uses cva for variants and cn() for cl
 | Button | `primary` (accent bg), `secondary` (outlined/ghost on dark), `phone` (tel: link styled as button) | default, hover, focus-visible, disabled | Primary = warm accent. All variants need 44px min touch target. Phone variant wraps tel: link. |
 | Badge | `certification`, `status` | default | Small inline elements for certification badges, license indicators |
 | Breadcrumb | n/a (single style) | current (non-linked), ancestor (linked) | Auto-generates from route hierarchy. Renders BreadcrumbList JSON-LD. Separator: "/" or chevron icon. |
-| Icon | Sized via Lucide props | n/a | Default: 20px (w-5 h-5). In nav: 16px. In hero: 24px. stroke-width: 1.5 (matches Cormorant's elegant weight). |
+| Icon | Sized via Lucide props | n/a | Default: 20px (w-5 h-5). In nav: 20px. In hero: 24px. stroke-width: 1.5 (matches Cormorant's elegant weight). |
 
 ### Layout Components (src/components/layout/)
 
@@ -131,7 +137,7 @@ Components to be built in this phase. Each uses cva for variants and cn() for cl
 | Header | Sticky header with logo, mega-menu nav, phone link, CTA button | Full height (80px) on load. Shrinks to 56px on scroll (D-09). z-50. Dark background. |
 | HeaderShrink | Scroll-aware wrapper applying shrink transition | Motion library useScroll + useTransform for smooth height transition. |
 | MegaMenu | Flyout navigation panels for service silos | Three panels: Residential Services, Commercial Services, Locations. Desktop: hover/focus trigger, wide dropdown. Keyboard: Enter/Space to open, Escape to close. |
-| MobileNav | Full-screen dark overlay navigation | Hamburger trigger. Full-screen overlay (D-10). Accordion sections per silo. Phone + CTA at top. Body scroll locked when open. |
+| MobileNav | Full-screen dark overlay navigation | Hamburger trigger (`aria-label="Open navigation menu"`). Full-screen overlay (D-10). Accordion sections per silo. Phone + CTA at top. Body scroll locked when open. Close button (`aria-label="Close navigation menu"`). |
 | Footer | Full sitemap footer with CTA banner | CTA banner strip above columns (D-13). Multi-column: Services, Locations, Company, Contact/NAP. Certification badges. Copyright. |
 | Breadcrumbs | Route-based breadcrumb trail | Consumes current pathname. Maps segments to human-readable labels via lookup. Injects BreadcrumbList JSON-LD. |
 | MarketingLayout | Wrapper in (marketing)/layout.tsx | Composes: Header + Breadcrumbs + {children} + Footer. Applied to all marketing pages. |
@@ -173,10 +179,10 @@ Components to be built in this phase. Each uses cva for variants and cn() for cl
 
 | Trigger | Behavior |
 |---------|----------|
-| Hamburger tap | Full-screen overlay slides in from right (300ms). Body scroll locks. |
+| Hamburger tap | Full-screen overlay slides in from right (300ms). Body scroll locks. Hamburger button uses `aria-label="Open navigation menu"`. |
 | Silo section tap | Accordion expands to show child links (200ms). Only one section open at a time. |
 | Phone/CTA at top | Always visible at top of overlay. Phone number + "Get Free Quote" button. |
-| Close | X button, Escape key, or swipe right. |
+| Close | X button (`aria-label="Close navigation menu"`), Escape key, or swipe right. |
 | Focus trap | Focus stays within overlay while open. First focusable: close button. |
 
 ### Scroll Reveal Animations (D-16, D-17, D-18)
@@ -233,6 +239,7 @@ Container: max-width 1280px, centered, with 16px horizontal padding (mobile), 24
 | Requirement | Implementation | Source |
 |-------------|---------------|--------|
 | Semantic HTML (UX-04) | `<header>`, `<nav>`, `<main>`, `<footer>`, `<section>` with descriptive aria-labels. Navigation uses `<nav aria-label="Main navigation">`. Breadcrumbs use `<nav aria-label="Breadcrumb">`. | REQUIREMENTS.md |
+| Icon-only button labels | Hamburger menu button: `aria-label="Open navigation menu"`. Close (X) button in mobile nav: `aria-label="Close navigation menu"`. All icon-only buttons MUST have an explicit `aria-label` attribute. | CLAUDE.md |
 | Keyboard navigation (UX-05) | All interactive elements reachable via Tab. Mega-menu: Enter/Space to open, Escape to close, arrow keys within. Mobile nav: focus trap. | REQUIREMENTS.md |
 | Focus-visible rings (UX-05) | 2px solid accent color, 2px offset. Applied via `focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-dominant`. Visible on dark backgrounds. | REQUIREMENTS.md |
 | WCAG AA contrast (UX-06) | All text/background combinations verified at 4.5:1 (normal text) or 3:1 (large text 18px+ bold or 24px+ regular). Accent on dark verified at 4.5:1. | REQUIREMENTS.md |
@@ -328,6 +335,9 @@ Every design decision traces to an upstream artifact:
 | Decision | Source |
 |----------|--------|
 | Cormorant fonts, 18px min body | CLAUDE.md, UX-01, D-06 |
+| 4-size typography scale (18, 28, 40, 56) | Checker revision -- collapsed 7 sizes to 4 per constraint |
+| Nav/label differentiation via weight + tracking | Checker revision -- replaced 14px/16px sub-floor sizes |
+| Icon-only button aria-labels | CLAUDE.md (aria-label on icon-only buttons), Checker revision |
 | Full dark site, deep-toned backgrounds | D-03, D-04 |
 | Warm accent colors (gold/amber/copper) | D-05 |
 | Flat backgrounds, depth via shadow | D-07 |
@@ -361,4 +371,4 @@ Every design decision traces to an upstream artifact:
 
 *Phase: 02-design-system-layout-shell*
 *Contract created: 2026-03-23*
-*UI-SPEC version: 1.0*
+*UI-SPEC version: 1.1 (revised: typography 4-size constraint, icon-only aria-labels)*
