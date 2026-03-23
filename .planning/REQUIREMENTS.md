@@ -14,7 +14,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **FNDN-03**: TypeScript data registries for all 12 municipalities (landmarks, housing stock, building codes, weather patterns, architecture styles, population, common roof types)
 - [x] **FNDN-04**: TypeScript data registries for all 8 services (residential: repair, replacement, inspection, emergency; commercial: flat roof, maintenance, repair, replacement)
 - [ ] **FNDN-05**: Reusable page layout shell with sticky header (phone number), footer, breadcrumbs, and navigation
-- [ ] **FNDN-06**: Design system with Cormorant Garamond typography (medium weight body, 18px min), color theme, component variants
+- [x] **FNDN-06**: Design system with Cormorant Garamond typography (medium weight body, 18px min), color theme, component variants
 - [ ] **FNDN-07**: Mobile-first responsive design across all viewports (mobile, tablet, desktop)
 
 ### Core Pages (CORE)
@@ -93,12 +93,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Design & UX (UX)
 
-- [ ] **UX-01**: Cormorant Garamond (medium weight) for body text, Cormorant for headings, minimum 18px body
-- [ ] **UX-02**: Dark/professional color theme appropriate for roofing industry (10 variations generated for approval before implementation)
+- [x] **UX-01**: Cormorant Garamond (medium weight) for body text, Cormorant for headings, minimum 18px body
+- [x] **UX-02**: Dark/professional color theme appropriate for roofing industry (10 variations generated for approval before implementation)
 - [ ] **UX-03**: Motion animations for scroll reveals, page transitions, and interactive elements (Motion library)
 - [ ] **UX-04**: Semantic HTML throughout (main, nav, section, article, aside)
-- [ ] **UX-05**: All interactive elements keyboard-accessible with focus-visible ring styles
-- [ ] **UX-06**: WCAG AA color contrast compliance
+- [x] **UX-05**: All interactive elements keyboard-accessible with focus-visible ring styles
+- [x] **UX-06**: WCAG AA color contrast compliance
 - [ ] **UX-07**: Collapsible accordion UI for FAQ sections
 - [ ] **UX-08**: Internal links use next/link, phone numbers use tel: links
 
@@ -161,7 +161,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FNDN-03 | Phase 1 | Complete |
 | FNDN-04 | Phase 1 | Complete |
 | FNDN-05 | Phase 2 | Pending |
-| FNDN-06 | Phase 2 | Pending |
+| FNDN-06 | Phase 2 | Complete |
 | FNDN-07 | Phase 2 | Pending |
 | CORE-01 | Phase 4 | Pending |
 | CORE-02 | Phase 4 | Pending |
@@ -216,12 +216,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SEO-14 | Phase 4 | Pending |
 | SEO-15 | Phase 4 | Pending |
 | SEO-16 | Phase 8 | Pending |
-| UX-01 | Phase 2 | Pending |
-| UX-02 | Phase 2 | Pending |
+| UX-01 | Phase 2 | Complete |
+| UX-02 | Phase 2 | Complete |
 | UX-03 | Phase 2 | Pending |
 | UX-04 | Phase 2 | Pending |
-| UX-05 | Phase 2 | Pending |
-| UX-06 | Phase 2 | Pending |
+| UX-05 | Phase 2 | Complete |
+| UX-06 | Phase 2 | Complete |
 | UX-07 | Phase 10 | Pending |
 | UX-08 | Phase 2 | Pending |
 
