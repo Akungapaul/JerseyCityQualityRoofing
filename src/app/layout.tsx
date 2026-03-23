@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant, Cormorant_Garamond } from "next/font/google";
+import { JsonLd, buildRoofingContractorJsonLd } from "@/lib/seo/json-ld";
 import "@/styles/globals.css";
 
 const cormorant = Cormorant({
@@ -36,7 +37,10 @@ export default function RootLayout({
       lang="en"
       className={`${cormorant.variable} ${cormorantGaramond.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <JsonLd data={buildRoofingContractorJsonLd() as unknown as Record<string, unknown>} />
+        {children}
+      </body>
     </html>
   );
 }
