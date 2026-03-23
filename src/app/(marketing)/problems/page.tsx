@@ -1,3 +1,13 @@
+import type { Metadata } from 'next';
+import { generatePageMetadata } from '@/lib/seo/metadata';
+
+export const metadata: Metadata = generatePageMetadata({
+  title: 'Common Roofing Problems',
+  description:
+    'Identify and solve common roofing problems. Expert guidance on leaks, storm damage, ice dams, and more from Hudson County roofing specialists.',
+  path: '/problems',
+});
+
 export default function ProblemsPage() {
   return (
     <main>

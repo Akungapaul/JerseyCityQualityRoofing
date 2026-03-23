@@ -1,20 +1,26 @@
+import type { Metadata } from 'next';
+import { generatePageMetadata } from '@/lib/seo/metadata';
+import { getMunicipality, getAllMunicipalitySlugs } from '@/data/municipalities';
+
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return [
-    { city: 'jersey-city' },
-    { city: 'hoboken' },
-    { city: 'bayonne' },
-    { city: 'north-bergen' },
-    { city: 'union-city' },
-    { city: 'west-new-york' },
-    { city: 'secaucus' },
-    { city: 'kearny' },
-    { city: 'harrison' },
-    { city: 'east-newark' },
-    { city: 'guttenberg' },
-    { city: 'weehawken' },
-  ];
+  return getAllMunicipalitySlugs().map((city) => ({ city }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ city: string }>;
+}): Promise<Metadata> {
+  const { city: citySlug } = await params;
+  const city = getMunicipality(citySlug);
+  if (!city) return {};
+  return generatePageMetadata({
+    title: `Roofing Services in ${city.name}`,
+    description: `Expert residential and commercial roofing services in ${city.name}, NJ. ${city.description}`,
+    path: `/service-areas/${city.slug}`,
+  });
 }
 
 export default async function CityHubPage({

@@ -1,22 +1,32 @@
+import type { Metadata } from 'next';
+import { generatePageMetadata } from '@/lib/seo/metadata';
+import { getService, getCommercialServiceSlugs } from '@/data/services';
+import { getMunicipality, getAllMunicipalitySlugs } from '@/data/municipalities';
+
 export const dynamicParams = false;
 
-const COMMERCIAL_SERVICES = [
-  'flat-roof-systems',
-  'roof-maintenance',
-  'commercial-repair',
-  'commercial-replacement',
-];
-
-const CITIES = [
-  'jersey-city', 'hoboken', 'bayonne', 'north-bergen',
-  'union-city', 'west-new-york', 'secaucus', 'kearny',
-  'harrison', 'east-newark', 'guttenberg', 'weehawken',
-];
-
 export function generateStaticParams() {
-  return COMMERCIAL_SERVICES.flatMap((service) =>
-    CITIES.map((city) => ({ service, city }))
+  const services = getCommercialServiceSlugs();
+  const cities = getAllMunicipalitySlugs();
+  return services.flatMap((service) =>
+    cities.map((city) => ({ service, city }))
   );
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ service: string; city: string }>;
+}): Promise<Metadata> {
+  const { service: serviceSlug, city: citySlug } = await params;
+  const service = getService(serviceSlug);
+  const city = getMunicipality(citySlug);
+  if (!service || !city) return {};
+  return generatePageMetadata({
+    title: `${service.name} in ${city.name}`,
+    description: `Professional ${service.name.toLowerCase()} services in ${city.name}, NJ. ${service.shortDescription}`,
+    path: `/services/commercial/${service.slug}/${city.slug}`,
+  });
 }
 
 export default async function CommercialServiceCityPage({

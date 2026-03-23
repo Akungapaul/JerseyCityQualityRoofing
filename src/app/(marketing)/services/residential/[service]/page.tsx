@@ -1,12 +1,27 @@
+import type { Metadata } from 'next';
+import { generatePageMetadata } from '@/lib/seo/metadata';
+import { getService } from '@/data/services';
+import { getResidentialServiceSlugs } from '@/data/services';
+
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return [
-    { service: 'roof-repair' },
-    { service: 'roof-replacement' },
-    { service: 'roof-inspection' },
-    { service: 'emergency-roofing' },
-  ];
+  return getResidentialServiceSlugs().map((service) => ({ service }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ service: string }>;
+}): Promise<Metadata> {
+  const { service: serviceSlug } = await params;
+  const service = getService(serviceSlug);
+  if (!service) return {};
+  return generatePageMetadata({
+    title: service.name,
+    description: service.shortDescription,
+    path: `/services/residential/${service.slug}`,
+  });
 }
 
 export default async function ResidentialServicePage({
