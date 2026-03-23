@@ -13,9 +13,9 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **FNDN-02**: Siloed URL architecture with nested dynamic segments for service-type and location branches
 - [x] **FNDN-03**: TypeScript data registries for all 12 municipalities (landmarks, housing stock, building codes, weather patterns, architecture styles, population, common roof types)
 - [x] **FNDN-04**: TypeScript data registries for all 8 services (residential: repair, replacement, inspection, emergency; commercial: flat roof, maintenance, repair, replacement)
-- [ ] **FNDN-05**: Reusable page layout shell with sticky header (phone number), footer, breadcrumbs, and navigation
+- [x] **FNDN-05**: Reusable page layout shell with sticky header (phone number), footer, breadcrumbs, and navigation
 - [x] **FNDN-06**: Design system with Cormorant Garamond typography (medium weight body, 18px min), color theme, component variants
-- [ ] **FNDN-07**: Mobile-first responsive design across all viewports (mobile, tablet, desktop)
+- [x] **FNDN-07**: Mobile-first responsive design across all viewports (mobile, tablet, desktop)
 
 ### Core Pages (CORE)
 
@@ -61,9 +61,9 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Conversion Optimization (CRO)
 
 - [ ] **CRO-01**: Quote request form embedded on every service page, location page, and service-in-city page (5-6 fields max)
-- [ ] **CRO-02**: Sticky header with click-to-call phone number visible at all scroll positions on all pages
+- [x] **CRO-02**: Sticky header with click-to-call phone number visible at all scroll positions on all pages
 - [ ] **CRO-03**: Floating quote request button (persistent CTA) on all pages
-- [ ] **CRO-04**: Above-the-fold CTA on every page (visible without scrolling)
+- [x] **CRO-04**: Above-the-fold CTA on every page (visible without scrolling)
 - [ ] **CRO-05**: Exit-intent popup with quote offer on service and location pages
 - [ ] **CRO-06**: Customer testimonials with star ratings displayed on homepage, service pages, and location pages
 - [ ] **CRO-07**: Certification and license badge strip on homepage and in footer across all pages
@@ -79,7 +79,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **SEO-03**: Review/AggregateRating schema on pages displaying testimonials
 - [ ] **SEO-04**: Knowledge graph JSON-LD mapping entity relationships: Service -> Location -> Materials -> Problems -> Solutions
 - [ ] **SEO-05**: Automated internal linking system: contextual links between related services, locations, and blog posts within and across silos
-- [ ] **SEO-06**: Breadcrumb navigation on every page (auto-generated from route hierarchy) with BreadcrumbList schema
+- [x] **SEO-06**: Breadcrumb navigation on every page (auto-generated from route hierarchy) with BreadcrumbList schema
 - [x] **SEO-07**: XML sitemap auto-generated covering all service, location, service-in-city, blog, and content pages
 - [x] **SEO-08**: robots.txt properly configured
 - [x] **SEO-09**: Canonical URLs set via alternates.canonical in metadata on every page
@@ -95,12 +95,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [x] **UX-01**: Cormorant Garamond (medium weight) for body text, Cormorant for headings, minimum 18px body
 - [x] **UX-02**: Dark/professional color theme appropriate for roofing industry (10 variations generated for approval before implementation)
-- [ ] **UX-03**: Motion animations for scroll reveals, page transitions, and interactive elements (Motion library)
-- [ ] **UX-04**: Semantic HTML throughout (main, nav, section, article, aside)
+- [x] **UX-03**: Motion animations for scroll reveals, page transitions, and interactive elements (Motion library)
+- [x] **UX-04**: Semantic HTML throughout (main, nav, section, article, aside)
 - [x] **UX-05**: All interactive elements keyboard-accessible with focus-visible ring styles
 - [x] **UX-06**: WCAG AA color contrast compliance
 - [ ] **UX-07**: Collapsible accordion UI for FAQ sections
-- [ ] **UX-08**: Internal links use next/link, phone numbers use tel: links
+- [x] **UX-08**: Internal links use next/link, phone numbers use tel: links
 
 ## v2 Requirements
 
@@ -160,9 +160,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FNDN-02 | Phase 1 | Complete |
 | FNDN-03 | Phase 1 | Complete |
 | FNDN-04 | Phase 1 | Complete |
-| FNDN-05 | Phase 2 | Pending |
+| FNDN-05 | Phase 2 | Complete |
 | FNDN-06 | Phase 2 | Complete |
-| FNDN-07 | Phase 2 | Pending |
+| FNDN-07 | Phase 2 | Complete |
 | CORE-01 | Phase 4 | Pending |
 | CORE-02 | Phase 4 | Pending |
 | CORE-03 | Phase 4 | Pending |
@@ -190,9 +190,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CONT-08 | Phase 5 | Pending |
 | CONT-09 | Phase 5 | Pending |
 | CRO-01 | Phase 3 | Pending |
-| CRO-02 | Phase 2 | Pending |
+| CRO-02 | Phase 2 | Complete |
 | CRO-03 | Phase 10 | Pending |
-| CRO-04 | Phase 2 | Pending |
+| CRO-04 | Phase 2 | Complete |
 | CRO-05 | Phase 10 | Pending |
 | CRO-06 | Phase 4 | Pending |
 | CRO-07 | Phase 4 | Pending |
@@ -205,7 +205,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SEO-03 | Phase 4 | Pending |
 | SEO-04 | Phase 7 | Pending |
 | SEO-05 | Phase 9 | Pending |
-| SEO-06 | Phase 2 | Pending |
+| SEO-06 | Phase 2 | Complete |
 | SEO-07 | Phase 1 | Complete |
 | SEO-08 | Phase 1 | Complete |
 | SEO-09 | Phase 1 | Complete |
@@ -218,12 +218,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SEO-16 | Phase 8 | Pending |
 | UX-01 | Phase 2 | Complete |
 | UX-02 | Phase 2 | Complete |
-| UX-03 | Phase 2 | Pending |
-| UX-04 | Phase 2 | Pending |
+| UX-03 | Phase 2 | Complete |
+| UX-04 | Phase 2 | Complete |
 | UX-05 | Phase 2 | Complete |
 | UX-06 | Phase 2 | Complete |
 | UX-07 | Phase 10 | Pending |
-| UX-08 | Phase 2 | Pending |
+| UX-08 | Phase 2 | Complete |
 
 **Coverage:**
 - v1 requirements: 68 total

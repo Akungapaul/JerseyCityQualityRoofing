@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Ready to execute
-stopped_at: Completed 02-01-PLAN.md
-last_updated: "2026-03-23T23:29:33.566Z"
+stopped_at: Completed 02-02-PLAN.md
+last_updated: "2026-03-23T23:37:53.498Z"
 progress:
   total_phases: 10
   completed_phases: 1
   total_plans: 7
-  completed_plans: 5
+  completed_plans: 6
 ---
 
 # Project State
@@ -24,7 +24,7 @@ See: .planning/PROJECT.md (updated 2026-03-22)
 ## Current Position
 
 Phase: 02 (design-system-layout-shell) — EXECUTING
-Plan: 2 of 3
+Plan: 3 of 3
 
 ## Performance Metrics
 
@@ -50,6 +50,7 @@ Plan: 2 of 3
 | Phase 01 P03 | 14min | 2 tasks | 4 files |
 | Phase 01 P04 | 8min | 3 tasks | 34 files |
 | Phase 02 P01 | 2min | 3 tasks | 5 files |
+| Phase 02 P02 | 5min | 2 tasks | 5 files |
 
 ## Accumulated Context
 
@@ -70,6 +71,9 @@ Recent decisions affecting current work:
 - [Phase 01]: SEO metadata centralized in src/lib/seo/ with generatePageMetadata pattern
 - [Phase 02]: User selected palette-10 (Deep Olive Sage) as approved color palette: olive dominant #2a2e22 with warm gold accent #c89640
 - [Phase 02]: Button/Badge use cva+cn() pattern with exported variants for composability; no shadcn, no asChild/Slot complexity
+- [Phase 02]: Footer is Server Component (no use client) since it has no interactivity, only static links and data
+- [Phase 02]: buttonVariants applied directly to Link className instead of wrapping Button around anchors
+- [Phase 02]: MobileNav accordion resets via React remount (AnimatePresence unmounts on close) to avoid setState-in-effect lint violation
 
 ### Pending Todos
 
@@ -83,6 +87,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-23T23:29:33.565Z
-Stopped at: Completed 02-01-PLAN.md
+Last session: 2026-03-23T23:37:53.496Z
+Stopped at: Completed 02-02-PLAN.md
 Resume file: None
