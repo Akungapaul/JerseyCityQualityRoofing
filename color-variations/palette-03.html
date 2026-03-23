@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Palette 03 — Deep Forest Green</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@500;700&family=Cormorant+Garamond:wght@500;700&display=swap');
+
+  /* === PALETTE 03: Deep Forest Green === */
+  :root {
+    --dominant:          #1a2e2a;
+    --dominant-lighter:  #213832;
+    --secondary:         #2a4240;
+    --secondary-lighter: #344e4c;
+    --accent:            #d4943c;
+    --accent-hover:      #e0a650;
+    --text-primary:      #eef0ed;
+    --text-secondary:    #9cb3ac;
+    --destructive:       #ef4444;
+    --success:           #34d399;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: var(--dominant); color: var(--text-primary);
+    font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 18px; line-height: 1.7;
+  }
+  h1, h2, h3, h4 { font-family: 'Cormorant', serif; font-weight: 700; line-height: 1.2; }
+  .container { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+
+  .swatch-bar { display: flex; width: 100%; height: 60px; margin-bottom: 24px; }
+  .swatch { flex: 1; display: flex; align-items: center; justify-content: center; font-size: 11px; font-family: monospace; color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,.6); }
+  .contrast-note { display: inline-block; background: rgba(0,0,0,0.3); padding: 2px 8px; border-radius: 4px; font-family: monospace; font-size: 12px; color: #ccc; margin-left: 8px; }
+
+  .header { background: var(--dominant); padding: 0 32px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--secondary); }
+  .header-full { height: 80px; }
+  .header-shrunk { height: 56px; }
+  .header .logo { font-family: 'Cormorant', serif; font-weight: 700; font-size: 24px; color: var(--text-primary); }
+  .header-shrunk .logo { font-size: 18px; }
+  .header nav { display: flex; gap: 24px; }
+  .header nav a { color: var(--text-primary); text-decoration: none; font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 18px; letter-spacing: 0.02em; }
+  .header nav a:hover { color: var(--accent); }
+  .header .phone { color: var(--accent); text-decoration: none; font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 500; }
+  .header .phone:hover { text-decoration: underline; }
+  .btn-cta { background: var(--accent); color: var(--dominant); font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 18px; border: none; padding: 12px 24px; border-radius: 6px; cursor: pointer; min-height: 44px; min-width: 44px; display: inline-flex; align-items: center; justify-content: center; }
+  .btn-cta:hover { background: var(--accent-hover); }
+
+  .hero { background: var(--dominant); padding: 120px 0; text-align: center; }
+  .hero h1 { font-size: 56px; margin-bottom: 16px; }
+  .hero p { font-size: 18px; color: var(--text-secondary); max-width: 640px; margin: 0 auto 32px; }
+  .hero-actions { display: flex; gap: 16px; justify-content: center; align-items: center; flex-wrap: wrap; }
+  .btn-secondary { background: transparent; color: var(--accent); border: 2px solid var(--accent); font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 18px; padding: 10px 24px; border-radius: 6px; cursor: pointer; min-height: 44px; }
+  .btn-secondary:hover { background: var(--accent); color: var(--dominant); }
+
+  .body-section { background: var(--dominant-lighter); padding: 80px 0; }
+  .body-section h2 { font-size: 40px; margin-bottom: 24px; }
+  .body-section p { font-size: 18px; line-height: 1.7; margin-bottom: 16px; max-width: 800px; }
+
+  .card-section { background: var(--dominant); padding: 80px 0; }
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+  .card { background: var(--secondary); border-radius: 8px; padding: 32px; box-shadow: 0 4px 12px rgba(0,0,0,0.25); }
+  .card h3 { font-size: 28px; margin-bottom: 12px; }
+  .card p { color: var(--text-secondary); font-size: 18px; }
+
+  .mega-menu-section { background: var(--dominant-lighter); padding: 64px 0; }
+  .mega-panel { background: var(--secondary); border-radius: 8px; padding: 32px; box-shadow: 0 8px 24px rgba(0,0,0,0.35); display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+  .mega-col h4 { font-size: 18px; font-family: 'Cormorant', serif; font-weight: 700; color: var(--accent); margin-bottom: 16px; letter-spacing: 0.02em; }
+  .mega-col a { display: block; color: var(--text-primary); text-decoration: none; font-size: 18px; padding: 6px 0; }
+  .mega-col a:hover { color: var(--accent); }
+
+  .cta-banner { background: var(--secondary); padding: 32px 0; text-align: center; border-top: 2px solid var(--accent); }
+  .cta-banner h2 { font-size: 28px; margin-bottom: 8px; }
+  .cta-banner p { color: var(--text-secondary); font-size: 18px; margin-bottom: 16px; }
+  .cta-banner-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+  .footer { background: var(--dominant); padding: 64px 0 32px; border-top: 1px solid var(--secondary); }
+  .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; margin-bottom: 32px; }
+  .footer-col h4 { font-family: 'Cormorant', serif; font-weight: 700; font-size: 18px; color: var(--accent); margin-bottom: 16px; }
+  .footer-col a { display: block; color: var(--text-secondary); text-decoration: none; font-size: 18px; padding: 4px 0; }
+  .footer-col a:hover { color: var(--text-primary); }
+  .footer-bottom { border-top: 1px solid var(--secondary); padding-top: 24px; text-align: center; color: var(--text-secondary); font-size: 18px; }
+
+  .breadcrumb { padding: 16px 0; font-size: 18px; }
+  .breadcrumb a { color: var(--text-secondary); text-decoration: none; }
+  .breadcrumb a:hover { color: var(--accent); }
+  .breadcrumb .sep { color: var(--text-secondary); margin: 0 8px; }
+  .breadcrumb .current { color: var(--text-primary); }
+
+  .badge-cert { display: inline-flex; align-items: center; gap: 4px; background: var(--secondary); color: var(--accent); font-size: 18px; padding: 4px 12px; border-radius: 999px; border: 1px solid var(--secondary-lighter); }
+  .badge-status { display: inline-flex; align-items: center; gap: 4px; background: var(--accent); color: var(--dominant); font-size: 18px; padding: 4px 12px; border-radius: 999px; font-weight: 700; }
+
+  .focus-demo:focus-visible { outline: none; box-shadow: 0 0 0 2px var(--dominant), 0 0 0 4px var(--accent); }
+  .headers-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 32px; }
+  .section-label { font-family: monospace; font-size: 12px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px; }
+  .badge-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px; }
+  .state-row { display: flex; gap: 12px; margin-top: 16px; align-items: center; }
+  .state-box { padding: 8px 16px; border-radius: 6px; font-size: 14px; font-family: monospace; }
+</style>
+</head>
+<body>
+
+<div class="swatch-bar">
+  <div class="swatch" style="background: var(--dominant);">Dominant #1a2e2a</div>
+  <div class="swatch" style="background: var(--secondary);">Secondary #2a4240</div>
+  <div class="swatch" style="background: var(--accent);">Accent #d4943c</div>
+  <div class="swatch" style="background: var(--text-primary); color: #333;">Text Primary #eef0ed</div>
+  <div class="swatch" style="background: var(--text-secondary); color: #333;">Text Secondary #9cb3ac</div>
+  <div class="swatch" style="background: var(--destructive);">Destructive #ef4444</div>
+  <div class="swatch" style="background: var(--success);">Success #34d399</div>
+</div>
+
+<div class="container">
+  <p class="section-label">Palette 03 — Deep Forest Green</p>
+  <p style="font-size:18px; margin-bottom: 24px;">
+    Text Primary on Dominant: <span class="contrast-note">11.0:1</span>
+    Text Secondary on Dominant: <span class="contrast-note">5.9:1</span>
+    Accent on Dominant: <span class="contrast-note">5.8:1</span>
+    Accent on Secondary: <span class="contrast-note">4.8:1</span>
+  </p>
+
+  <p class="section-label">Sticky Header (Full 80px + Shrunk 56px)</p>
+  <div class="headers-row">
+    <div><div class="header header-full" style="border-radius: 8px;"><span class="logo">JC Quality Roofing</span><nav><a href="#">Services</a><a href="#">Areas</a><a href="#">About</a></nav><a href="tel:+12015550123" class="phone">(201) 555-0123</a><button class="btn-cta">Get Free Quote</button></div></div>
+    <div><div class="header header-shrunk" style="border-radius: 8px;"><span class="logo">JC Quality Roofing</span><nav><a href="#">Services</a><a href="#">Areas</a><a href="#">About</a></nav><a href="tel:+12015550123" class="phone">(201) 555-0123</a><button class="btn-cta">Free Quote</button></div></div>
+  </div>
+</div>
+
+<section class="hero"><div class="container"><h1>Trusted Roofing Experts in Jersey City</h1><p>Professional roof repair, replacement, and inspection for homes and businesses across Hudson County.</p><div class="hero-actions"><button class="btn-cta">Get Free Quote</button><a href="tel:+12015550123" class="phone" style="font-size:18px;">(201) 555-0123</a><button class="btn-secondary">Our Services</button></div></div></section>
+
+<div style="background: var(--dominant-lighter);"><div class="container"><nav class="breadcrumb"><a href="#">Home</a><span class="sep">&gt;</span><a href="#">Services</a><span class="sep">&gt;</span><span class="current">Roof Repair</span></nav></div></div>
+
+<section class="body-section"><div class="container"><h2>Why Jersey City Trusts Us</h2><p>With over two decades of experience protecting homes across Hudson County, our team delivers dependable roofing solutions tailored to the unique demands of New Jersey weather. From the brownstones of Downtown to the residential neighborhoods of Bergen-Lafayette, we understand what your roof faces every season.</p><p style="color: var(--text-secondary);">Every project begins with a thorough inspection and honest assessment. We never recommend work you do not need, and we stand behind every job with our written warranty.</p><div class="badge-row"><span class="badge-cert">GAF Certified</span><span class="badge-cert">CertainTeed Select</span><span class="badge-status">Licensed</span><span class="badge-status">Insured</span></div></div></section>
+
+<section class="card-section"><div class="container"><p class="section-label">Cards on Secondary Surface</p><div class="card-grid"><div class="card"><h3>Roof Repair</h3><p>Fast, reliable repairs for leaks, storm damage, and worn shingles. Same-day emergency service available.</p></div><div class="card"><h3>Roof Replacement</h3><p>Complete tear-off and replacement using premium materials from trusted manufacturers.</p></div><div class="card"><h3>Roof Inspection</h3><p>Comprehensive inspections for real estate transactions, insurance claims, and preventive maintenance.</p></div></div></div></section>
+
+<section class="mega-menu-section"><div class="container"><p class="section-label">Mega-Menu Panel Simulation</p><div class="mega-panel"><div class="mega-col"><h4>Residential Services</h4><a href="#">Roof Repair</a><a href="#">Roof Replacement</a><a href="#">Roof Inspection</a><a href="#">Emergency Roofing</a></div><div class="mega-col"><h4>Commercial Services</h4><a href="#">Flat Roof Systems</a><a href="#">Roof Maintenance</a><a href="#">Commercial Repair</a><a href="#">Commercial Replacement</a></div><div class="mega-col"><h4>Service Areas</h4><a href="#">Jersey City</a><a href="#">Hoboken</a><a href="#">Bayonne</a><a href="#">North Bergen</a></div></div></div></section>
+
+<section class="cta-banner"><div class="container"><h2>Ready to Protect Your Roof?</h2><p>Call now for a free inspection or request your no-obligation quote.</p><div class="cta-banner-actions"><button class="btn-cta">Get Free Quote</button><a href="tel:+12015550123" class="phone" style="font-size:18px;">(201) 555-0123</a></div></div></section>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-col"><h4>Residential</h4><a href="#">Roof Repair</a><a href="#">Roof Replacement</a><a href="#">Roof Inspection</a><a href="#">Emergency Roofing</a></div><div class="footer-col"><h4>Commercial</h4><a href="#">Flat Roof Systems</a><a href="#">Roof Maintenance</a><a href="#">Commercial Repair</a><a href="#">Commercial Replacement</a></div><div class="footer-col"><h4>Service Areas</h4><a href="#">Jersey City</a><a href="#">Hoboken</a><a href="#">Bayonne</a><a href="#">North Bergen</a></div><div class="footer-col"><h4>Contact</h4><a href="tel:+12015550123">(201) 555-0123</a><a href="#">123 Roofing Way, Jersey City, NJ 07302</a><a href="#">info@jcqualityroofing.com</a></div></div><div class="footer-bottom">2003-2026 Jersey City Quality Roofing. All rights reserved.</div></div></footer>
+
+<div style="background: var(--dominant-lighter); padding: 32px 0;"><div class="container"><p class="section-label">Interactive States</p><div class="state-row"><button class="btn-cta focus-demo">Focus Me (Tab)</button><button class="btn-secondary focus-demo">Secondary Focus</button><span class="state-box" style="background: var(--destructive); color: #fff;">Error State</span><span class="state-box" style="background: var(--success); color: #fff;">Success State</span></div></div></div>
+
+</body>
+</html>
