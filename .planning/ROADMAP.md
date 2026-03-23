@@ -35,12 +35,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Municipality data registry returns structured data (landmarks, housing stock, building codes, weather) for all 12 Hudson County cities
   4. Service data registry returns structured data (metadata, materials, FAQs) for all 8 services (4 residential, 4 commercial)
   5. Every route generates metadata with title, description, openGraph, and canonical URL via shared helpers
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
-- [ ] 01-03: TBD
+- [ ] 01-01-PLAN.md -- Scaffold Next.js 16 project with types, utilities, fonts, and complete URL routing skeleton
+- [ ] 01-02-PLAN.md -- Data registries for 12 municipalities, 8 services, testimonials, and service-city-content resolver
+- [ ] 01-03-PLAN.md -- SEO infrastructure: metadata generators, JSON-LD, sitemap, robots, vitest setup, and validation
 
 ### Phase 2: Design System & Layout Shell
 **Goal**: Every page on the site shares a consistent visual identity and layout with persistent conversion elements visible at all scroll positions
