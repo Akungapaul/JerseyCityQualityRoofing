@@ -1,8 +1,102 @@
 @import "tailwindcss";
 
 @theme {
-  --font-heading: 'Cormorant', serif;
-  --font-body: 'Cormorant Garamond', serif;
-  --color-primary: #1a365d;
-  --color-secondary: #c05621;
+  /* Typography */
+  --font-heading: "Cormorant", serif;
+  --font-body: "Cormorant Garamond", serif;
+
+  /* Colors -- Palette 10: Deep Olive Sage (approved) */
+  --color-dominant: #2a2e22;
+  --color-dominant-lighter: #33382b;
+  --color-secondary: #3e4435;
+  --color-secondary-lighter: #4a5040;
+  --color-accent: #c89640;
+  --color-accent-hover: #d8aa56;
+  --color-text-primary: #f0ede6;
+  --color-text-secondary: #b0ae9e;
+  --color-destructive: #ef4444;
+  --color-success: #34d399;
+
+  /* Spacing scale (multiples of 4) */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+  --spacing-4xl: 80px;
+  --spacing-5xl: 120px;
+
+  /* Animation tokens */
+  --duration-fast: 150ms;
+  --duration-base: 300ms;
+  --duration-slow: 600ms;
+}
+
+/* Base styles */
+body {
+  background-color: var(--color-dominant);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 1.125rem; /* 18px minimum body */
+  line-height: 1.7;
+}
+
+/* Heading defaults */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Focus ring utility */
+.focus-ring {
+  outline: none;
+}
+
+.focus-ring:focus-visible {
+  box-shadow: 0 0 0 2px var(--color-dominant), 0 0 0 4px var(--color-accent);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Skip to content link */
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-to-content:focus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  padding: 16px 24px;
+  background-color: var(--color-accent);
+  color: var(--color-dominant);
+  font-weight: 700;
+  font-size: 1.125rem;
+  z-index: 9999;
 }
