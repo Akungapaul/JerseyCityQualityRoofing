@@ -11,8 +11,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [x] **FNDN-01**: Next.js 16 App Router project scaffolded with TypeScript strict mode, Tailwind CSS 4, pnpm
 - [x] **FNDN-02**: Siloed URL architecture with nested dynamic segments for service-type and location branches
-- [ ] **FNDN-03**: TypeScript data registries for all 12 municipalities (landmarks, housing stock, building codes, weather patterns, architecture styles, population, common roof types)
-- [ ] **FNDN-04**: TypeScript data registries for all 8 services (residential: repair, replacement, inspection, emergency; commercial: flat roof, maintenance, repair, replacement)
+- [x] **FNDN-03**: TypeScript data registries for all 12 municipalities (landmarks, housing stock, building codes, weather patterns, architecture styles, population, common roof types)
+- [x] **FNDN-04**: TypeScript data registries for all 8 services (residential: repair, replacement, inspection, emergency; commercial: flat roof, maintenance, repair, replacement)
 - [ ] **FNDN-05**: Reusable page layout shell with sticky header (phone number), footer, breadcrumbs, and navigation
 - [ ] **FNDN-06**: Design system with Cormorant Garamond typography (medium weight body, 18px min), color theme, component variants
 - [ ] **FNDN-07**: Mobile-first responsive design across all viewports (mobile, tablet, desktop)
@@ -80,11 +80,11 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **SEO-04**: Knowledge graph JSON-LD mapping entity relationships: Service -> Location -> Materials -> Problems -> Solutions
 - [ ] **SEO-05**: Automated internal linking system: contextual links between related services, locations, and blog posts within and across silos
 - [ ] **SEO-06**: Breadcrumb navigation on every page (auto-generated from route hierarchy) with BreadcrumbList schema
-- [ ] **SEO-07**: XML sitemap auto-generated covering all service, location, service-in-city, blog, and content pages
-- [ ] **SEO-08**: robots.txt properly configured
-- [ ] **SEO-09**: Canonical URLs set via alternates.canonical in metadata on every page
-- [ ] **SEO-10**: generateMetadata() on every page with title, description, openGraph, and alternates
-- [ ] **SEO-11**: One H1 per page with strict heading hierarchy (H1 > H2 > H3, no skipping)
+- [x] **SEO-07**: XML sitemap auto-generated covering all service, location, service-in-city, blog, and content pages
+- [x] **SEO-08**: robots.txt properly configured
+- [x] **SEO-09**: Canonical URLs set via alternates.canonical in metadata on every page
+- [x] **SEO-10**: generateMetadata() on every page with title, description, openGraph, and alternates
+- [x] **SEO-11**: One H1 per page with strict heading hierarchy (H1 > H2 > H3, no skipping)
 - [ ] **SEO-12**: All images use next/image with descriptive alt text (not filenames)
 - [ ] **SEO-13**: Core Web Vitals optimized: LCP < 2.5s, FID < 100ms, CLS < 0.1
 - [ ] **SEO-14**: NAP (Name, Address, Phone) consistency across all pages, aligned with Google Business Profile
@@ -156,10 +156,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FNDN-01 | Phase 1 | Complete (01-01) |
-| FNDN-02 | Phase 1 | Complete (01-01) |
-| FNDN-03 | Phase 1 | Pending |
-| FNDN-04 | Phase 1 | Pending |
+| FNDN-01 | Phase 1 | Complete |
+| FNDN-02 | Phase 1 | Complete |
+| FNDN-03 | Phase 1 | Complete |
+| FNDN-04 | Phase 1 | Complete |
 | FNDN-05 | Phase 2 | Pending |
 | FNDN-06 | Phase 2 | Pending |
 | FNDN-07 | Phase 2 | Pending |
@@ -206,11 +206,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SEO-04 | Phase 7 | Pending |
 | SEO-05 | Phase 9 | Pending |
 | SEO-06 | Phase 2 | Pending |
-| SEO-07 | Phase 1 | Pending |
-| SEO-08 | Phase 1 | Pending |
-| SEO-09 | Phase 1 | Pending |
-| SEO-10 | Phase 1 | Pending |
-| SEO-11 | Phase 1 | Pending |
+| SEO-07 | Phase 1 | Complete |
+| SEO-08 | Phase 1 | Complete |
+| SEO-09 | Phase 1 | Complete |
+| SEO-10 | Phase 1 | Complete |
+| SEO-11 | Phase 1 | Complete |
 | SEO-12 | Phase 10 | Pending |
 | SEO-13 | Phase 10 | Pending |
 | SEO-14 | Phase 4 | Pending |
