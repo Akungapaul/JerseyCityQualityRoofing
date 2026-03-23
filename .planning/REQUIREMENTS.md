@@ -156,80 +156,80 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FNDN-01 | TBD | Pending |
-| FNDN-02 | TBD | Pending |
-| FNDN-03 | TBD | Pending |
-| FNDN-04 | TBD | Pending |
-| FNDN-05 | TBD | Pending |
-| FNDN-06 | TBD | Pending |
-| FNDN-07 | TBD | Pending |
-| CORE-01 | TBD | Pending |
-| CORE-02 | TBD | Pending |
-| CORE-03 | TBD | Pending |
-| CORE-04 | TBD | Pending |
-| RESI-01 | TBD | Pending |
-| RESI-02 | TBD | Pending |
-| RESI-03 | TBD | Pending |
-| RESI-04 | TBD | Pending |
-| COMM-01 | TBD | Pending |
-| COMM-02 | TBD | Pending |
-| COMM-03 | TBD | Pending |
-| COMM-04 | TBD | Pending |
-| LOC-01 | TBD | Pending |
-| LOC-02 | TBD | Pending |
-| LOC-03 | TBD | Pending |
-| LOC-04 | TBD | Pending |
-| LOC-05 | TBD | Pending |
-| CONT-01 | TBD | Pending |
-| CONT-02 | TBD | Pending |
-| CONT-03 | TBD | Pending |
-| CONT-04 | TBD | Pending |
-| CONT-05 | TBD | Pending |
-| CONT-06 | TBD | Pending |
-| CONT-07 | TBD | Pending |
-| CONT-08 | TBD | Pending |
-| CONT-09 | TBD | Pending |
-| CRO-01 | TBD | Pending |
-| CRO-02 | TBD | Pending |
-| CRO-03 | TBD | Pending |
-| CRO-04 | TBD | Pending |
-| CRO-05 | TBD | Pending |
-| CRO-06 | TBD | Pending |
-| CRO-07 | TBD | Pending |
-| CRO-08 | TBD | Pending |
-| CRO-09 | TBD | Pending |
-| CRO-10 | TBD | Pending |
-| CRO-11 | TBD | Pending |
-| SEO-01 | TBD | Pending |
-| SEO-02 | TBD | Pending |
-| SEO-03 | TBD | Pending |
-| SEO-04 | TBD | Pending |
-| SEO-05 | TBD | Pending |
-| SEO-06 | TBD | Pending |
-| SEO-07 | TBD | Pending |
-| SEO-08 | TBD | Pending |
-| SEO-09 | TBD | Pending |
-| SEO-10 | TBD | Pending |
-| SEO-11 | TBD | Pending |
-| SEO-12 | TBD | Pending |
-| SEO-13 | TBD | Pending |
-| SEO-14 | TBD | Pending |
-| SEO-15 | TBD | Pending |
-| SEO-16 | TBD | Pending |
-| UX-01 | TBD | Pending |
-| UX-02 | TBD | Pending |
-| UX-03 | TBD | Pending |
-| UX-04 | TBD | Pending |
-| UX-05 | TBD | Pending |
-| UX-06 | TBD | Pending |
-| UX-07 | TBD | Pending |
-| UX-08 | TBD | Pending |
+| FNDN-01 | Phase 1 | Pending |
+| FNDN-02 | Phase 1 | Pending |
+| FNDN-03 | Phase 1 | Pending |
+| FNDN-04 | Phase 1 | Pending |
+| FNDN-05 | Phase 2 | Pending |
+| FNDN-06 | Phase 2 | Pending |
+| FNDN-07 | Phase 2 | Pending |
+| CORE-01 | Phase 4 | Pending |
+| CORE-02 | Phase 4 | Pending |
+| CORE-03 | Phase 4 | Pending |
+| CORE-04 | Phase 4 | Pending |
+| RESI-01 | Phase 5 | Pending |
+| RESI-02 | Phase 5 | Pending |
+| RESI-03 | Phase 5 | Pending |
+| RESI-04 | Phase 5 | Pending |
+| COMM-01 | Phase 6 | Pending |
+| COMM-02 | Phase 6 | Pending |
+| COMM-03 | Phase 6 | Pending |
+| COMM-04 | Phase 6 | Pending |
+| LOC-01 | Phase 7 | Pending |
+| LOC-02 | Phase 8 | Pending |
+| LOC-03 | Phase 8 | Pending |
+| LOC-04 | Phase 8 | Pending |
+| LOC-05 | Phase 7 | Pending |
+| CONT-01 | Phase 9 | Pending |
+| CONT-02 | Phase 9 | Pending |
+| CONT-03 | Phase 9 | Pending |
+| CONT-04 | Phase 9 | Pending |
+| CONT-05 | Phase 9 | Pending |
+| CONT-06 | Phase 9 | Pending |
+| CONT-07 | Phase 5 | Pending |
+| CONT-08 | Phase 5 | Pending |
+| CONT-09 | Phase 5 | Pending |
+| CRO-01 | Phase 3 | Pending |
+| CRO-02 | Phase 2 | Pending |
+| CRO-03 | Phase 10 | Pending |
+| CRO-04 | Phase 2 | Pending |
+| CRO-05 | Phase 10 | Pending |
+| CRO-06 | Phase 4 | Pending |
+| CRO-07 | Phase 4 | Pending |
+| CRO-08 | Phase 10 | Pending |
+| CRO-09 | Phase 10 | Pending |
+| CRO-10 | Phase 3 | Pending |
+| CRO-11 | Phase 3 | Pending |
+| SEO-01 | Phase 7 | Pending |
+| SEO-02 | Phase 5 | Pending |
+| SEO-03 | Phase 4 | Pending |
+| SEO-04 | Phase 7 | Pending |
+| SEO-05 | Phase 9 | Pending |
+| SEO-06 | Phase 2 | Pending |
+| SEO-07 | Phase 1 | Pending |
+| SEO-08 | Phase 1 | Pending |
+| SEO-09 | Phase 1 | Pending |
+| SEO-10 | Phase 1 | Pending |
+| SEO-11 | Phase 1 | Pending |
+| SEO-12 | Phase 10 | Pending |
+| SEO-13 | Phase 10 | Pending |
+| SEO-14 | Phase 4 | Pending |
+| SEO-15 | Phase 4 | Pending |
+| SEO-16 | Phase 8 | Pending |
+| UX-01 | Phase 2 | Pending |
+| UX-02 | Phase 2 | Pending |
+| UX-03 | Phase 2 | Pending |
+| UX-04 | Phase 2 | Pending |
+| UX-05 | Phase 2 | Pending |
+| UX-06 | Phase 2 | Pending |
+| UX-07 | Phase 10 | Pending |
+| UX-08 | Phase 2 | Pending |
 
 **Coverage:**
-- v1 requirements: 60 total
-- Mapped to phases: 0
-- Unmapped: 60 (pending roadmap creation)
+- v1 requirements: 68 total
+- Mapped to phases: 68
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-22*
-*Last updated: 2026-03-22 after initial definition*
+*Last updated: 2026-03-22 after roadmap creation*
