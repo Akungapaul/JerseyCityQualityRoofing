@@ -17,6 +17,10 @@
   --color-destructive: #ef4444;
   --color-success: #34d399;
 
+  /* Emergency page accent (Phase 5) */
+  --color-emergency-accent: #d4782f;
+  --color-emergency-accent-hover: #e08a3f;
+
   /* Animation tokens */
   --duration-fast: 150ms;
   --duration-base: 300ms;
