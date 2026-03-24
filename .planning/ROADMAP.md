@@ -13,7 +13,7 @@ This roadmap delivers a topical-authority lead generation website for a local ro
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [ ] **Phase 1: Project Scaffold & Data Architecture** - Next.js project, URL routing, data registries, SEO infrastructure stubs
-- [ ] **Phase 2: Design System & Layout Shell** - Typography, color theme, components, layout shell with header/footer/nav/breadcrumbs
+- [x] **Phase 2: Design System & Layout Shell** - Typography, color theme, components, layout shell with header/footer/nav/breadcrumbs (completed 2026-03-24)
 - [ ] **Phase 3: Lead Capture System** - Quote forms, Resend email delivery, Cloudflare Turnstile spam protection
 - [ ] **Phase 4: Core Marketing Pages** - Homepage, About, Contact, Service Areas hub with trust signals and schema
 - [ ] **Phase 5: Residential Service Pages** - Four 3000+ word residential service pillar pages with process explainers and FAQs
@@ -58,7 +58,7 @@ Plans:
 Plans:
 - [x] 02-01-PLAN.md -- Install dependencies, generate 10 color palette variations for approval, apply approved palette + design tokens, build Button and Badge primitives
 - [x] 02-02-PLAN.md -- Build layout components: sticky Header with shrink-on-scroll, MegaMenu, MobileNav overlay, Footer with CTA banner, Breadcrumbs with JSON-LD
-- [ ] 02-03-PLAN.md -- Build section utilities (SectionWrapper, CTABanner, ScrollReveal), wire marketing layout, visual verification
+- [x] 02-03-PLAN.md -- Build section utilities (SectionWrapper, CTABanner, ScrollReveal), wire marketing layout, visual verification
 
 ### Phase 3: Lead Capture System
 **Goal**: Visitors can submit quote requests from any page and the business receives email notification with all lead details
@@ -208,7 +208,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Project Scaffold & Data Architecture | 4/4 | Complete | - |
-| 2. Design System & Layout Shell | 0/3 | Not started | - |
+| 2. Design System & Layout Shell | 3/3 | Complete   | 2026-03-24 |
 | 3. Lead Capture System | 0/2 | Not started | - |
 | 4. Core Marketing Pages | 0/3 | Not started | - |
 | 5. Residential Service Pages | 0/3 | Not started | - |
