@@ -1,5 +1,14 @@
 import { describe, it, expect } from 'vitest';
-import { buildRoofingContractorJsonLd, buildBreadcrumbJsonLd } from '@/lib/seo/json-ld';
+import {
+  buildRoofingContractorJsonLd,
+  buildBreadcrumbJsonLd,
+  buildAggregateRatingJsonLd,
+  buildFaqPageJsonLd,
+  buildContactPageJsonLd,
+} from '@/lib/seo/json-ld';
+import { TESTIMONIALS } from '@/data/testimonials';
+import { BUSINESS_INFO } from '@/data/business-info';
+import { BASE_URL } from '@/lib/constants';
 
 describe('JSON-LD generators', () => {
   describe('buildRoofingContractorJsonLd', () => {
@@ -56,6 +65,143 @@ describe('JSON-LD generators', () => {
       expect(items[0].position).toBe(1);
       expect(items[1].position).toBe(2);
       expect(items[2].position).toBe(3);
+    });
+  });
+
+  describe('buildAggregateRatingJsonLd', () => {
+    it('returns schema with @context and @type RoofingContractor', () => {
+      const schema = buildAggregateRatingJsonLd(TESTIMONIALS) as unknown as Record<string, unknown>;
+      expect(schema['@context']).toBe('https://schema.org');
+      expect(schema['@type']).toBe('RoofingContractor');
+    });
+
+    it('includes aggregateRating with @type AggregateRating', () => {
+      const schema = buildAggregateRatingJsonLd(TESTIMONIALS) as unknown as Record<string, unknown>;
+      const aggregateRating = schema.aggregateRating as Record<string, unknown>;
+      expect(aggregateRating).toBeDefined();
+      expect(aggregateRating['@type']).toBe('AggregateRating');
+    });
+
+    it('computes ratingValue as average of all testimonial ratings', () => {
+      const schema = buildAggregateRatingJsonLd(TESTIMONIALS) as unknown as Record<string, unknown>;
+      const aggregateRating = schema.aggregateRating as Record<string, unknown>;
+      const expectedAvg = (
+        TESTIMONIALS.reduce((sum, t) => sum + t.rating, 0) / TESTIMONIALS.length
+      ).toFixed(1);
+      expect(aggregateRating.ratingValue).toBe(expectedAvg);
+    });
+
+    it('includes reviewCount equal to testimonials length as string', () => {
+      const schema = buildAggregateRatingJsonLd(TESTIMONIALS) as unknown as Record<string, unknown>;
+      const aggregateRating = schema.aggregateRating as Record<string, unknown>;
+      expect(aggregateRating.reviewCount).toBe(String(TESTIMONIALS.length));
+    });
+
+    it('includes bestRating "5" and worstRating "1"', () => {
+      const schema = buildAggregateRatingJsonLd(TESTIMONIALS) as unknown as Record<string, unknown>;
+      const aggregateRating = schema.aggregateRating as Record<string, unknown>;
+      expect(aggregateRating.bestRating).toBe('5');
+      expect(aggregateRating.worstRating).toBe('1');
+    });
+
+    it('includes name matching BUSINESS_INFO.name', () => {
+      const schema = buildAggregateRatingJsonLd(TESTIMONIALS) as unknown as Record<string, unknown>;
+      expect(schema.name).toBe(BUSINESS_INFO.name);
+    });
+  });
+
+  describe('buildFaqPageJsonLd', () => {
+    const testFaqs = [
+      { question: 'Q1', answer: 'A1' },
+      { question: 'Q2', answer: 'A2' },
+    ];
+
+    it('returns FAQPage schema with @context', () => {
+      const schema = buildFaqPageJsonLd(testFaqs) as unknown as Record<string, unknown>;
+      expect(schema['@context']).toBe('https://schema.org');
+      expect(schema['@type']).toBe('FAQPage');
+    });
+
+    it('has mainEntity array with correct number of Question objects', () => {
+      const schema = buildFaqPageJsonLd(testFaqs) as unknown as Record<string, unknown>;
+      const mainEntity = schema.mainEntity as Array<Record<string, unknown>>;
+      expect(Array.isArray(mainEntity)).toBe(true);
+      expect(mainEntity).toHaveLength(2);
+    });
+
+    it('each Question has name matching question and acceptedAnswer.text matching answer', () => {
+      const schema = buildFaqPageJsonLd(testFaqs) as unknown as Record<string, unknown>;
+      const mainEntity = schema.mainEntity as Array<Record<string, unknown>>;
+
+      mainEntity.forEach((q, i) => {
+        expect(q['@type']).toBe('Question');
+        expect(q.name).toBe(testFaqs[i].question);
+        const answer = q.acceptedAnswer as Record<string, unknown>;
+        expect(answer['@type']).toBe('Answer');
+        expect(answer.text).toBe(testFaqs[i].answer);
+      });
+    });
+  });
+
+  describe('buildContactPageJsonLd', () => {
+    it('returns RoofingContractor schema', () => {
+      const schema = buildContactPageJsonLd() as unknown as Record<string, unknown>;
+      expect(schema['@context']).toBe('https://schema.org');
+      expect(schema['@type']).toBe('RoofingContractor');
+    });
+
+    it('includes telephone, email, and url', () => {
+      const schema = buildContactPageJsonLd() as unknown as Record<string, unknown>;
+      expect(schema.telephone).toBe(BUSINESS_INFO.phone);
+      expect(schema.email).toBe(BUSINESS_INFO.email);
+      expect(schema.url).toBe(BASE_URL);
+    });
+
+    it('includes PostalAddress with all fields', () => {
+      const schema = buildContactPageJsonLd() as unknown as Record<string, unknown>;
+      const address = schema.address as Record<string, unknown>;
+      expect(address['@type']).toBe('PostalAddress');
+      expect(address.streetAddress).toBe(BUSINESS_INFO.address.street);
+      expect(address.addressLocality).toBe(BUSINESS_INFO.address.city);
+      expect(address.addressRegion).toBe(BUSINESS_INFO.address.state);
+      expect(address.postalCode).toBe(BUSINESS_INFO.address.zip);
+      expect(address.addressCountry).toBe('US');
+    });
+
+    it('includes openingHoursSpecification as array with 2 entries (weekday and Saturday)', () => {
+      const schema = buildContactPageJsonLd() as unknown as Record<string, unknown>;
+      const hours = schema.openingHoursSpecification as Array<Record<string, unknown>>;
+      expect(Array.isArray(hours)).toBe(true);
+      expect(hours).toHaveLength(2);
+
+      // Weekday entry
+      expect(hours[0]['@type']).toBe('OpeningHoursSpecification');
+      expect(hours[0].dayOfWeek).toEqual(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']);
+      expect(hours[0].opens).toBe('07:00');
+      expect(hours[0].closes).toBe('18:00');
+
+      // Saturday entry
+      expect(hours[1]['@type']).toBe('OpeningHoursSpecification');
+      expect(hours[1].dayOfWeek).toEqual(['Saturday']);
+      expect(hours[1].opens).toBe('08:00');
+      expect(hours[1].closes).toBe('14:00');
+    });
+
+    it('includes areaServed array with 12 cities', () => {
+      const schema = buildContactPageJsonLd() as unknown as Record<string, unknown>;
+      const areaServed = schema.areaServed as Array<Record<string, unknown>>;
+      expect(Array.isArray(areaServed)).toBe(true);
+      expect(areaServed).toHaveLength(12);
+      areaServed.forEach((area) => {
+        expect(area['@type']).toBe('City');
+        expect(typeof area.name).toBe('string');
+      });
+    });
+
+    it('includes paymentAccepted field', () => {
+      const schema = buildContactPageJsonLd() as unknown as Record<string, unknown>;
+      expect(schema.paymentAccepted).toBeDefined();
+      expect(typeof schema.paymentAccepted).toBe('string');
     });
   });
 });
