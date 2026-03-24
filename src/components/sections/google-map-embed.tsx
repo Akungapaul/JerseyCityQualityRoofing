@@ -39,8 +39,8 @@ export function GoogleMapEmbed({
       />
       <noscript>
         <p className="text-text-secondary text-lg p-4">
-          Map could not be loaded. Visit us at 123 Summit Avenue, Jersey City,
-          NJ 07304.
+          Map could not be loaded. Search for &quot;{query}&quot; on Google
+          Maps.
         </p>
       </noscript>
     </div>

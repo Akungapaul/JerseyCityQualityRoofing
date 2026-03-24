@@ -8,11 +8,11 @@ import { GoogleMapEmbed } from "@/components/sections/google-map-embed";
 import { CTABanner } from "@/components/sections/cta-banner";
 import { JsonLd, buildContactPageJsonLd } from "@/lib/seo/json-ld";
 import { BUSINESS_INFO } from "@/data/business-info";
+import { PHONE_NUMBER } from "@/lib/constants";
 
 export const metadata: Metadata = generatePageMetadata({
   title: "Contact Us | Jersey City Quality Roofing",
-  description:
-    "Get a free roofing estimate in Jersey City and Hudson County. Call (201) 555-0123 or fill out our quote request form for fast, professional service.",
+  description: `Get a free roofing estimate in Jersey City and Hudson County. Call ${PHONE_NUMBER} or fill out our quote request form for fast, professional service.`,
   path: "/contact",
 });
 
