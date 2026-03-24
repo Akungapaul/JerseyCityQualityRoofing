@@ -86,13 +86,13 @@ Plans:
   3. Contact page has working multi-field quote form, embedded Google Map, and consistent NAP data matching all other pages
   4. Service area hub page lists all 12 Hudson County municipalities with links to individual city hub pages
   5. NAP (Name, Address, Phone) data is identical across header, footer, contact page, and schema markup on every page
-**Plans**: TBD
+**Plans**: 3 plans
 **UI hint**: yes
 
 Plans:
-- [ ] 04-01: TBD
-- [ ] 04-02: TBD
-- [ ] 04-03: TBD
+- [ ] 04-01-PLAN.md -- JSON-LD schema builders (AggregateRating, FAQPage, RoofingContractor), content data files (homepage FAQ, about content), Wave 0 test scaffolds (NAP consistency, testimonial completeness)
+- [ ] 04-02-PLAN.md -- Build all 16 section components: HeroSection, BadgeStrip, ServicesGrid, WhyChooseUs, TestimonialCarousel, StarRating, FaqAccordion, GoogleMapEmbed, CityCard, CityCardGrid, ContactInfoColumn, BusinessHoursTable, About sections
+- [ ] 04-03-PLAN.md -- Assemble 4 complete pages: Homepage (10 sections + 2 JSON-LD schemas), About, Contact (two-column + map + schema), Service Areas hub (map + tiered grid)
 
 ### Phase 5: Residential Service Pages
 **Goal**: Homeowners searching for residential roofing services find comprehensive, authoritative pages that answer all their questions and convert them into leads
