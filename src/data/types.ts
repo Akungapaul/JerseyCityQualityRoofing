@@ -147,3 +147,46 @@ export interface BusinessInfo {
   operatingHours: string;
   emergencyAvailable: boolean;
 }
+
+// Phase 5: Service content data types
+export interface WarningSign {
+  icon: string; // Lucide icon name (e.g., 'Droplets', 'AlertTriangle')
+  title: string;
+  description: string; // 2-3 sentence real-world scenario
+}
+
+export interface ServiceContent {
+  slug: string;
+  heroHeadline: string;
+  heroSubtitle: string;
+  introNarrative: string; // ~500 words, first-person expert voice
+  processNarrative: string; // ~600 words, expanded per-step storytelling
+  materialsIntro: string; // ~100 words intro before material cards
+  costFactorsIntro: string; // ~50 words intro
+  warningSignsIntro: string; // ~50 words intro
+  warningSigns: WarningSign[]; // 5-6 per service
+  extendedFaqs: FAQ[]; // 3-5 additional FAQs beyond services.ts
+}
+
+export interface EmergencyStep {
+  title: string;
+  description: string;
+}
+
+export interface StormDamageType {
+  icon: string; // Lucide icon name
+  name: string;
+  description: string;
+}
+
+export interface InsuranceClaimsContent {
+  intro: string;
+  whatWeHandle: string[];
+  whatToDocument: string[];
+}
+
+export interface EmergencyContent extends ServiceContent {
+  whatToDoSteps: EmergencyStep[];
+  stormDamageTypes: StormDamageType[];
+  insuranceClaims: InsuranceClaimsContent;
+}
