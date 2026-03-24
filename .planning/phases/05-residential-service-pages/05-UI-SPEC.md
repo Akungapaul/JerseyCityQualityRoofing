@@ -62,7 +62,7 @@ Exceptions:
 Additional typographic rules:
 - Duration badges on timeline steps: 14px, weight 500, uppercase, letter-spacing 0.05em
 - Material lifespan/price badges: 14px, weight 700
-- Emergency hero phone number: 40px mobile / 56px desktop, weight 700, Cormorant
+- Emergency hero phone number: 40px mobile / 48px desktop, weight 700, Cormorant (uses Page Title / Hero tier)
 - All prose paragraphs: 18px at 1.7 line-height (matches body default)
 
 **Source:** CLAUDE.md hard requirements (Cormorant Garamond medium, 18px min), globals.css (established values), existing component patterns (HeroSection, CTABanner, FaqAccordion).
@@ -125,13 +125,13 @@ Emergency accent (#d4782f) reserved for (Emergency Roofing page only):
 | Component | Location | Props | Description |
 |-----------|----------|-------|-------------|
 | ServiceHero | sections/service-hero.tsx | `headline: string`, `subtitle: string`, `serviceName: string` | Content hero with headline + subtext + dual CTA (phone + scroll-to-form) + inline CompactQuoteForm. No image. Full-width dominant background. |
-| EmergencyHero | sections/emergency-hero.tsx | `phoneNumber: string`, `phoneHref: string` | Crisis-mode hero with oversized phone number as dominant element. "24/7 EMERGENCY ROOF REPAIR" headline. "CALL NOW" button 2x standard size. Emergency accent color (#d4782f). No compact form. |
+| EmergencyHero | sections/emergency-hero.tsx | `phoneNumber: string`, `phoneHref: string` | Crisis-mode hero with oversized phone number as dominant element. "24/7 EMERGENCY ROOF REPAIR" headline. "CALL NOW" button 2x standard size. Emergency accent color (#d4782f). No compact form. Phone number: 40px mobile / 48px desktop (Page Title / Hero tier). |
 | ProcessTimeline | sections/process-timeline.tsx | `steps: readonly ProcessStep[]`, `accentColor?: string` | Vertical timeline with numbered step markers, connector lines, step title, duration badge, expanded description paragraph. 7 steps for standard, 4-5 for emergency. |
 | MaterialCards | sections/material-cards.tsx | `materials: readonly Material[]` | 2-column desktop / 1-column mobile grid. Each card: material name (heading), description, lifespan badge, price range badge, expandable pros/cons toggle list. |
 | CostFactorsSection | sections/cost-factors-section.tsx | `factors: readonly CostFactor[]` | List of cost factors with factor name, description, and impact badge (low/moderate/high with color coding). |
 | WarningSignsSection | sections/warning-signs-section.tsx | `signs: readonly WarningSign[]`, `serviceName: string` | "Warning Signs You Need [Service]" section with 5-6 real-world scenario cards. Icon + title + description per sign. |
 | MidPageCTA | sections/mid-page-cta.tsx | `heading?: string`, `phoneNumber: string`, `phoneHref: string` | Compact dark-toned strip (bg-secondary) with phone number + "Get Your Free Estimate" button. Catches mid-scroll readers. |
-| RelatedServicesRow | sections/related-services-row.tsx | `servicesSlugs: readonly string[]` | 2-3 card links to related residential services. Card: service icon (Lucide) + name + short description + arrow link. |
+| RelatedServicesRow | sections/related-services-row.tsx | `servicesSlugs: readonly string[]` | 2-3 card links to related residential services. Card: service icon (Lucide) + name + short description + "View [Service Name]" link with arrow. |
 | WhatToDoSection | sections/what-to-do-section.tsx | `steps: readonly EmergencyStep[]` | Emergency page only. "What To Do Right Now" numbered checklist with immediate homeowner actions. Urgent visual treatment. |
 | InsuranceClaimsSection | sections/insurance-claims-section.tsx | `content: InsuranceClaimsContent` | Emergency page only. Insurance claims help with step-by-step process, documentation tips, what to expect. |
 | StormDamageTypes | sections/storm-damage-types.tsx | `damageTypes: readonly StormDamageType[]` | Emergency page only. Grid of storm damage categories with icon + title + description + severity indicator. |
@@ -213,7 +213,7 @@ Total target: ~3200 words of content.
     [Badge: "24/7 EMERGENCY SERVICE" -- bg-emergency-accent, text-dominant, px-4 py-2, rounded-full, uppercase, 14px bold]
     h1: "24/7 Emergency Roof Repair" (48px mobile / 64px desktop, text-primary)
     p:  "Storm damage? Roof leak? We respond immediately." (18px, text-secondary)
-    [Phone number display: "(201) 555-0123" -- 40px mobile / 56px desktop, font-heading, text-emergency-accent, font-bold]
+    [Phone number display: "(201) 555-0123" -- 40px mobile / 48px desktop, font-heading, text-emergency-accent, font-bold]
     [CALL NOW button: 2x standard button size (min-h-[56px] px-10 text-xl), bg-emergency-accent, text-dominant]
     p:  "Or scroll down to request emergency service online" (14px, text-secondary)
 ```
@@ -221,6 +221,7 @@ Total target: ~3200 words of content.
 - Vertical padding: py-20 sm:py-24 lg:py-28
 - Emergency accent: #d4782f for phone number, badge, and CTA button
 - No compact form in hero (phone call is primary conversion)
+- Phone number capped at 48px desktop to stay within the Page Title / Hero typography tier
 
 ### ProcessTimeline
 
@@ -332,12 +333,13 @@ Total target: ~3200 words of content.
         h3: Service name (18px, font-heading, font-bold, text-primary)
         p:  Short description (18px, text-secondary, mt-1, line-clamp-2)
         [Arrow row: mt-16px, flex items-center gap-1, text-accent, text-sm]
-          "Learn More" + ArrowRight icon (size=16)
+          "View {serviceName}" + ArrowRight icon (size=16)
           [group-hover:translate-x-1 transition-transform]
 ```
 
 - Cards link to `/services/residential/[service-slug]` via next/link
 - Hover: background shifts to secondary-lighter, arrow translates right 4px
+- CTA text interpolates the service name: "View Roof Inspection", "View Roof Replacement", etc.
 
 ### WhatToDoSection (Emergency only)
 
@@ -410,7 +412,7 @@ Total target: ~3200 words of content.
 | Cost factors heading | "What Affects Your [Service Name] Cost" |
 | Warning signs heading | "Warning Signs You Need [Service Name]" |
 | Related services heading | "Related Services" |
-| Related services CTA | "Learn More" (with arrow) |
+| Related services CTA | "View [Service Name]" (with arrow, interpolated per card -- e.g. "View Roof Inspection") |
 | Material pros/cons toggle | "Show Pros & Cons" / "Hide Pros & Cons" |
 | Emergency "What To Do" heading | "What To Do Right Now" |
 | Emergency "What To Do" intro | "If you have an active roof emergency, follow these steps:" |
@@ -449,10 +451,12 @@ Destructive actions: None in this phase. All forms submit lead inquiries (non-de
 - Loop enabled, stops on mouse enter
 - 1 slide visible on mobile, 3 on desktop (lg breakpoint)
 - Previous/Next buttons with 44px touch targets
+- Previous button: `aria-label="Previous testimonial"`
+- Next button: `aria-label="Next testimonial"`
 
 ### Emergency Hero Phone Number
 - Phone number is a `tel:` link (clickable on mobile)
-- Visual weight: largest element in hero (40px mobile / 56px desktop)
+- Visual weight: largest element in hero (40px mobile / 48px desktop, Page Title / Hero tier)
 - Emergency accent color (#d4782f) draws immediate attention
 
 ### Compact Form Auto-Selection
@@ -463,6 +467,7 @@ Destructive actions: None in this phase. All forms submit lead inquiries (non-de
 - Hover: background darkens (secondary to secondary-lighter), arrow translates right 4px
 - Entire card is a clickable link (next/link)
 - Transition: 150ms (--duration-fast)
+- CTA reads "View [Service Name]" with the linked service name interpolated
 
 ---
 
@@ -472,7 +477,7 @@ Destructive actions: None in this phase. All forms submit lead inquiries (non-de
 |------------|----------------|
 | Mobile (< 640px) | Single column layout. Hero stacks vertically (headline, CTAs, then compact form below). Material cards single column. Timeline full width. Related services single column. Emergency phone number 40px. |
 | Tablet (640-1023px) | Material cards 2-column. Warning signs 2-column. Related services 2-column. Hero still stacked. Process timeline full width with connector lines. |
-| Desktop (1024px+) | Hero side-by-side (60/40 split). Material cards 2-column. Warning signs 2-column. Related services 3-column (or 2 if only 2 related). Storm damage types 3-column. Emergency phone number 56px. |
+| Desktop (1024px+) | Hero side-by-side (60/40 split). Material cards 2-column. Warning signs 2-column. Related services 3-column (or 2 if only 2 related). Storm damage types 3-column. Emergency phone number 48px. |
 
 Max content width: 1280px (established in SectionWrapper).
 
@@ -486,7 +491,7 @@ Max content width: 1280px (established in SectionWrapper).
 | Keyboard navigation | All interactive elements (accordion triggers, carousel controls, form inputs, CTA buttons, expand/collapse toggles) keyboard accessible |
 | Focus visible | 2px accent ring with 2px dominant offset (established focus-ring pattern) |
 | ARIA accordion | FAQ: role="region", aria-label, aria-expanded, aria-controls (existing pattern) |
-| ARIA carousel | role="region", aria-roledescription="carousel", aria-label, slide groups with aria-roledescription="slide" (existing pattern) |
+| ARIA carousel | role="region", aria-roledescription="carousel", aria-label, slide groups with aria-roledescription="slide" (existing pattern). Previous button: `aria-label="Previous testimonial"`. Next button: `aria-label="Next testimonial"`. |
 | Motion | prefers-reduced-motion respected globally (existing globals.css media query) |
 | Touch targets | 44px minimum on all interactive elements |
 | Color contrast | All text/background combinations meet WCAG AA. Text-primary (#f0ede6) on dominant (#2a2e22) = 11.2:1. Text-secondary (#b0ae9e) on dominant = 5.4:1. Accent (#c89640) on dominant = 5.1:1. Emergency accent (#d4782f) on dominant = 5.3:1. |
