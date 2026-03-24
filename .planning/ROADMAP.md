@@ -108,10 +108,10 @@ Plans:
 **UI hint**: yes
 
 Plans:
-- [ ] 05-01-PLAN.md -- Content types, Wave 0 test scaffold, and 4 residential service content data files (2200+ words each)
-- [ ] 05-02-PLAN.md -- Standard template section components: ServiceHero, ProcessTimeline, MaterialCards, CostFactorsSection, WarningSignsSection, ServiceContentSection
-- [ ] 05-03-PLAN.md -- Emergency + shared components: EmergencyHero, WhatToDoSection, InsuranceClaimsSection, StormDamageTypes, MidPageCTA, RelatedServicesRow
-- [ ] 05-04-PLAN.md -- JSON-LD Service schema builder, dynamic OG image route, emergency accent CSS variable
+- [x] 05-01-PLAN.md -- Content types, Wave 0 test scaffold, and 4 residential service content data files (2200+ words each)
+- [x] 05-02-PLAN.md -- Standard template section components: ServiceHero, ProcessTimeline, MaterialCards, CostFactorsSection, WarningSignsSection, ServiceContentSection
+- [x] 05-03-PLAN.md -- Emergency + shared components: EmergencyHero, WhatToDoSection, InsuranceClaimsSection, StormDamageTypes, MidPageCTA, RelatedServicesRow
+- [x] 05-04-PLAN.md -- JSON-LD Service schema builder, dynamic OG image route, emergency accent CSS variable
 - [ ] 05-05-PLAN.md -- Page assembly: wire standard and emergency templates into [service]/page.tsx with full build verification
 
 ### Phase 6: Commercial Service Pages
