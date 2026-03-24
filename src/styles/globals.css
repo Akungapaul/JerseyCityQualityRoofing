@@ -17,17 +17,6 @@
   --color-destructive: #ef4444;
   --color-success: #34d399;
 
-  /* Spacing scale (multiples of 4) */
-  --spacing-xs: 4px;
-  --spacing-sm: 8px;
-  --spacing-md: 16px;
-  --spacing-lg: 24px;
-  --spacing-xl: 32px;
-  --spacing-2xl: 48px;
-  --spacing-3xl: 64px;
-  --spacing-4xl: 80px;
-  --spacing-5xl: 120px;
-
   /* Animation tokens */
   --duration-fast: 150ms;
   --duration-base: 300ms;
