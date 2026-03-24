@@ -60,6 +60,30 @@ export interface FAQ {
   answer: string;
 }
 
+// Emergency page types (per D-12, D-13)
+export interface EmergencyStep {
+  title: string;
+  description: string;
+}
+
+export interface StormDamageType {
+  icon: string; // Lucide icon name
+  name: string;
+  description: string;
+}
+
+export interface InsuranceClaimsContent {
+  intro: string;
+  whatWeHandle: string[];
+  whatToDocument: string[];
+}
+
+export interface WarningSign {
+  icon: string; // Lucide icon name
+  title: string;
+  description: string;
+}
+
 // Main entity interfaces (per D-11, D-12)
 export interface Municipality {
   name: string;
