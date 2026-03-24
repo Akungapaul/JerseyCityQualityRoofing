@@ -12,7 +12,8 @@ Every visitor within Hudson County searching for roofing services finds this sit
 
 ### Validated
 
-(None yet — ship to validate)
+- [x] Dual lead capture: phone (click-to-call) and quote request forms, equally weighted — Validated in Phase 3: Lead Capture System
+- [x] Sticky/persistent CTAs: phone number header, floating quote button, exit-intent forms — Partially validated in Phase 3 (header CTA scroll-to-form; floating button and exit-intent deferred to Phase 10)
 
 ### Active
 
@@ -24,7 +25,7 @@ Every visitor within Hudson County searching for roofing services finds this sit
 - [ ] 3000+ words per page with unique, humanized content
 - [ ] Content uniqueness per location: local context, landmarks, city-specific stats, unique FAQs
 - [ ] Humanized content voice: storytelling tone, conversational, real-world scenarios, expert authority
-- [ ] Dual lead capture: phone (click-to-call) and quote request forms, equally weighted
+- [x] Dual lead capture: phone (click-to-call) and quote request forms, equally weighted
 - [ ] Homepage optimized for Jersey City anchor city
 - [ ] About page (company story, team, certifications, insurance)
 - [ ] Contact page with form and map
@@ -104,4 +105,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-22 after initialization*
+*Last updated: 2026-03-24 after Phase 3 completion*
