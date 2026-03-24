@@ -104,13 +104,15 @@ Plans:
   3. Emergency Roofing page prominently features 24/7 availability with phone CTA as the hero element (crisis mode template)
   4. Service schema and FAQ schema JSON-LD renders correctly on each service page for rich snippet eligibility
   5. Content reads as conversational and expert -- first-person storytelling, real-world scenarios, no generic filler
-**Plans**: TBD
+**Plans**: 5 plans
 **UI hint**: yes
 
 Plans:
-- [ ] 05-01: TBD
-- [ ] 05-02: TBD
-- [ ] 05-03: TBD
+- [ ] 05-01-PLAN.md -- Content types, Wave 0 test scaffold, and 4 residential service content data files (2200+ words each)
+- [ ] 05-02-PLAN.md -- Standard template section components: ServiceHero, ProcessTimeline, MaterialCards, CostFactorsSection, WarningSignsSection, ServiceContentSection
+- [ ] 05-03-PLAN.md -- Emergency + shared components: EmergencyHero, WhatToDoSection, InsuranceClaimsSection, StormDamageTypes, MidPageCTA, RelatedServicesRow
+- [ ] 05-04-PLAN.md -- JSON-LD Service schema builder, dynamic OG image route, emergency accent CSS variable
+- [ ] 05-05-PLAN.md -- Page assembly: wire standard and emergency templates into [service]/page.tsx with full build verification
 
 ### Phase 6: Commercial Service Pages
 **Goal**: Property managers and commercial building owners searching for commercial roofing services find comprehensive pages that establish expertise in commercial systems
@@ -211,7 +213,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 2. Design System & Layout Shell | 3/3 | Complete   | 2026-03-24 |
 | 3. Lead Capture System | 0/2 | Not started | - |
 | 4. Core Marketing Pages | 0/3 | Planned    |  |
-| 5. Residential Service Pages | 0/3 | Not started | - |
+| 5. Residential Service Pages | 0/5 | Planned | - |
 | 6. Commercial Service Pages | 0/2 | Not started | - |
 | 7. Location Hub Pages | 0/3 | Not started | - |
 | 8. Service-in-City Pages | 0/3 | Not started | - |
