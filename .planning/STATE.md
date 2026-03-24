@@ -4,7 +4,7 @@ milestone: v1.0
 milestone_name: milestone
 status: ready_for_verification
 stopped_at: Completed 03-02-PLAN.md
-last_updated: "2026-03-24T02:18:00Z"
+last_updated: "2026-03-24T02:19:22.708Z"
 progress:
   total_phases: 10
   completed_phases: 2
@@ -79,6 +79,9 @@ Recent decisions affecting current work:
 - [Phase 02]: MobileNav accordion resets via React remount (AnimatePresence unmounts on close) to avoid setState-in-effect lint violation
 - [Phase 02]: Extracted buttonVariants to shared button-variants.ts file for server component import compatibility (use client prevents server imports)
 - [Phase 02]: Removed custom --spacing-2xl through --spacing-5xl from @theme to stop hijacking Tailwind v4 max-w-* utilities
+- [Phase 03]: Zod schemas share field validators between compact and full forms via const variables for DRY consistency
+- [Phase 03]: React Email template uses inline styles and pixel values (not Tailwind rem) for Outlook compatibility
+- [Phase 03]: Resend from address uses onboarding@resend.dev until domain verification; NOTIFICATION_EMAIL env var controls recipient
 - [Phase 03]: React Hook Form useForm() without generic parameter for Zod v4 compatibility -- types inferred from zodResolver
 - [Phase 03]: Header CTA changed from Link to button for scroll-to-form with /contact fallback via useRouter
 - [Phase 03]: TurnstileWidget uses useImperativeHandle for parent-controlled reset after each submission (single-use tokens)
@@ -95,6 +98,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-24T02:18:00Z
+Last session: 2026-03-24T02:19:22.706Z
 Stopped at: Completed 03-02-PLAN.md
 Resume file: .planning/phases/03-lead-capture-system/03-02-SUMMARY.md

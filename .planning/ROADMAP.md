@@ -73,7 +73,7 @@ Plans:
 **UI hint**: yes
 
 Plans:
-- [ ] 03-01-PLAN.md -- Install dependencies, create Zod validation schemas, form types, Turnstile server verification, Resend email sender, React Email notification template
+- [x] 03-01-PLAN.md -- Install dependencies, create Zod validation schemas, form types, Turnstile server verification, Resend email sender, React Email notification template
 - [ ] 03-02-PLAN.md -- Build form input primitives, CompactQuoteForm, QuoteForm, TurnstileWidget, Server Action, wire header CTA scroll-to-form
 
 ### Phase 4: Core Marketing Pages

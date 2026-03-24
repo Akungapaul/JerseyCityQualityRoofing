@@ -60,7 +60,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Conversion Optimization (CRO)
 
-- [ ] **CRO-01**: Quote request form embedded on every service page, location page, and service-in-city page (5-6 fields max)
+- [x] **CRO-01**: Quote request form embedded on every service page, location page, and service-in-city page (5-6 fields max)
 - [x] **CRO-02**: Sticky header with click-to-call phone number visible at all scroll positions on all pages
 - [ ] **CRO-03**: Floating quote request button (persistent CTA) on all pages
 - [x] **CRO-04**: Above-the-fold CTA on every page (visible without scrolling)
@@ -69,8 +69,8 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **CRO-07**: Certification and license badge strip on homepage and in footer across all pages
 - [ ] **CRO-08**: Before/after project gallery with comparison sliders, filterable by service type and city
 - [ ] **CRO-09**: Emergency/urgency banner for storm season and emergency service pages
-- [ ] **CRO-10**: Form submission sends notification email via Resend and returns confirmation to user
-- [ ] **CRO-11**: Cloudflare Turnstile invisible captcha on all forms for spam protection
+- [x] **CRO-10**: Form submission sends notification email via Resend and returns confirmation to user
+- [x] **CRO-11**: Cloudflare Turnstile invisible captcha on all forms for spam protection
 
 ### SEO Infrastructure (SEO)
 
@@ -189,7 +189,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CONT-07 | Phase 5 | Pending |
 | CONT-08 | Phase 5 | Pending |
 | CONT-09 | Phase 5 | Pending |
-| CRO-01 | Phase 3 | Pending |
+| CRO-01 | Phase 3 | Complete |
 | CRO-02 | Phase 2 | Complete |
 | CRO-03 | Phase 10 | Pending |
 | CRO-04 | Phase 2 | Complete |
@@ -198,8 +198,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CRO-07 | Phase 4 | Pending |
 | CRO-08 | Phase 10 | Pending |
 | CRO-09 | Phase 10 | Pending |
-| CRO-10 | Phase 3 | Pending |
-| CRO-11 | Phase 3 | Pending |
+| CRO-10 | Phase 3 | Complete |
+| CRO-11 | Phase 3 | Complete |
 | SEO-01 | Phase 7 | Pending |
 | SEO-02 | Phase 5 | Pending |
 | SEO-03 | Phase 4 | Pending |
