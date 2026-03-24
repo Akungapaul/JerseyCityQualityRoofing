@@ -1,7 +1,7 @@
-import type { RoofingContractor, WithContext, BreadcrumbList, FAQPage } from 'schema-dts';
+import type { RoofingContractor, WithContext, BreadcrumbList, FAQPage, Service as ServiceSchema } from 'schema-dts';
 import { BUSINESS_INFO } from '@/data/business-info';
 import { BASE_URL } from '@/lib/constants';
-import type { Testimonial } from '@/data/types';
+import type { Testimonial, Service as ServiceData } from '@/data/types';
 
 export function buildRoofingContractorJsonLd(): WithContext<RoofingContractor> {
   return {
@@ -123,6 +123,49 @@ export function buildContactPageJsonLd(): WithContext<RoofingContractor> {
       '@type': 'City' as const,
       name: area,
     })),
+  };
+}
+
+export function buildServicePageJsonLd(
+  service: ServiceData,
+  canonicalUrl: string
+): WithContext<ServiceSchema> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: service.name,
+    description: service.fullDescription,
+    serviceType: service.name,
+    url: canonicalUrl,
+    provider: {
+      '@type': 'RoofingContractor',
+      name: BUSINESS_INFO.name,
+      telephone: BUSINESS_INFO.phone,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: BUSINESS_INFO.address.street,
+        addressLocality: BUSINESS_INFO.address.city,
+        addressRegion: BUSINESS_INFO.address.state,
+        postalCode: BUSINESS_INFO.address.zip,
+        addressCountry: 'US',
+      },
+    },
+    areaServed: BUSINESS_INFO.serviceAreas.map((area) => ({
+      '@type': 'City' as const,
+      name: area,
+    })),
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: `${service.name} Services`,
+      itemListElement: [{
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: service.name,
+          description: service.shortDescription,
+        },
+      }],
+    },
   };
 }
 

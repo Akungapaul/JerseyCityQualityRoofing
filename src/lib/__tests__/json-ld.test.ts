@@ -5,10 +5,12 @@ import {
   buildAggregateRatingJsonLd,
   buildFaqPageJsonLd,
   buildContactPageJsonLd,
+  buildServicePageJsonLd,
 } from '@/lib/seo/json-ld';
 import { TESTIMONIALS } from '@/data/testimonials';
 import { BUSINESS_INFO } from '@/data/business-info';
 import { BASE_URL } from '@/lib/constants';
+import { getService } from '@/data/services';
 
 describe('JSON-LD generators', () => {
   describe('buildRoofingContractorJsonLd', () => {
@@ -202,6 +204,73 @@ describe('JSON-LD generators', () => {
       const schema = buildContactPageJsonLd() as unknown as Record<string, unknown>;
       expect(schema.paymentAccepted).toBeDefined();
       expect(typeof schema.paymentAccepted).toBe('string');
+    });
+  });
+
+  describe('buildServicePageJsonLd', () => {
+    const service = getService('roof-repair')!;
+    const canonicalUrl = 'https://www.jerseycityqualityroofing.com/services/residential/roof-repair';
+
+    it('returns Service schema with @context and @type', () => {
+      const schema = buildServicePageJsonLd(service, canonicalUrl) as unknown as Record<string, unknown>;
+      expect(schema['@context']).toBe('https://schema.org');
+      expect(schema['@type']).toBe('Service');
+    });
+
+    it('includes service name and description', () => {
+      const schema = buildServicePageJsonLd(service, canonicalUrl) as unknown as Record<string, unknown>;
+      expect(schema.name).toBe('Roof Repair');
+      expect(schema.description).toBe(service.fullDescription);
+    });
+
+    it('includes serviceType matching service name', () => {
+      const schema = buildServicePageJsonLd(service, canonicalUrl) as unknown as Record<string, unknown>;
+      expect(schema.serviceType).toBe('Roof Repair');
+    });
+
+    it('includes canonical URL', () => {
+      const schema = buildServicePageJsonLd(service, canonicalUrl) as unknown as Record<string, unknown>;
+      expect(schema.url).toBe(canonicalUrl);
+    });
+
+    it('includes provider with @type RoofingContractor', () => {
+      const schema = buildServicePageJsonLd(service, canonicalUrl) as unknown as Record<string, unknown>;
+      const provider = schema.provider as Record<string, unknown>;
+      expect(provider['@type']).toBe('RoofingContractor');
+      expect(provider.name).toBe(BUSINESS_INFO.name);
+      expect(provider.telephone).toBe(BUSINESS_INFO.phone);
+    });
+
+    it('includes provider PostalAddress', () => {
+      const schema = buildServicePageJsonLd(service, canonicalUrl) as unknown as Record<string, unknown>;
+      const provider = schema.provider as Record<string, unknown>;
+      const address = provider.address as Record<string, unknown>;
+      expect(address['@type']).toBe('PostalAddress');
+      expect(address.streetAddress).toBe(BUSINESS_INFO.address.street);
+    });
+
+    it('includes areaServed with 12 cities', () => {
+      const schema = buildServicePageJsonLd(service, canonicalUrl) as unknown as Record<string, unknown>;
+      expect(Array.isArray(schema.areaServed)).toBe(true);
+      expect((schema.areaServed as unknown[]).length).toBe(12);
+    });
+
+    it('includes hasOfferCatalog with OfferCatalog type', () => {
+      const schema = buildServicePageJsonLd(service, canonicalUrl) as unknown as Record<string, unknown>;
+      const catalog = schema.hasOfferCatalog as Record<string, unknown>;
+      expect(catalog['@type']).toBe('OfferCatalog');
+      expect(catalog.name).toBe('Roof Repair Services');
+    });
+
+    it('OfferCatalog has itemListElement with Offer', () => {
+      const schema = buildServicePageJsonLd(service, canonicalUrl) as unknown as Record<string, unknown>;
+      const catalog = schema.hasOfferCatalog as Record<string, unknown>;
+      const items = catalog.itemListElement as Array<Record<string, unknown>>;
+      expect(items).toHaveLength(1);
+      expect(items[0]['@type']).toBe('Offer');
+      const offered = items[0].itemOffered as Record<string, unknown>;
+      expect(offered['@type']).toBe('Service');
+      expect(offered.name).toBe('Roof Repair');
     });
   });
 });
