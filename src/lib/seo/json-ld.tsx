@@ -1,6 +1,7 @@
-import type { RoofingContractor, WithContext, BreadcrumbList } from 'schema-dts';
+import type { RoofingContractor, WithContext, BreadcrumbList, FAQPage } from 'schema-dts';
 import { BUSINESS_INFO } from '@/data/business-info';
 import { BASE_URL } from '@/lib/constants';
+import type { Testimonial } from '@/data/types';
 
 export function buildRoofingContractorJsonLd(): WithContext<RoofingContractor> {
   return {
@@ -42,6 +43,85 @@ export function buildBreadcrumbJsonLd(
       position: index + 1,
       name: item.name,
       item: item.url,
+    })),
+  };
+}
+
+// Note: Google does not display review stars for self-hosted LocalBusiness reviews.
+// Schema still valuable for Bing, AI search, and semantic web.
+export function buildAggregateRatingJsonLd(
+  testimonials: readonly Testimonial[]
+): WithContext<RoofingContractor> {
+  const ratingSum = testimonials.reduce((sum, t) => sum + t.rating, 0);
+  const ratingValue = (ratingSum / testimonials.length).toFixed(1);
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'RoofingContractor',
+    name: BUSINESS_INFO.name,
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue,
+      reviewCount: String(testimonials.length),
+      bestRating: '5',
+      worstRating: '1',
+    },
+  };
+}
+
+export function buildFaqPageJsonLd(
+  faqs: Array<{ question: string; answer: string }>
+): WithContext<FAQPage> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question' as const,
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer' as const,
+        text: faq.answer,
+      },
+    })),
+  };
+}
+
+export function buildContactPageJsonLd(): WithContext<RoofingContractor> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'RoofingContractor',
+    name: BUSINESS_INFO.name,
+    telephone: BUSINESS_INFO.phone,
+    email: BUSINESS_INFO.email,
+    url: BASE_URL,
+    image: `${BASE_URL}/og-image.png`,
+    priceRange: '$$',
+    paymentAccepted: 'Cash, Check, Credit Card',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: BUSINESS_INFO.address.street,
+      addressLocality: BUSINESS_INFO.address.city,
+      addressRegion: BUSINESS_INFO.address.state,
+      postalCode: BUSINESS_INFO.address.zip,
+      addressCountry: 'US',
+    },
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '07:00',
+        closes: '18:00',
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Saturday'],
+        opens: '08:00',
+        closes: '14:00',
+      },
+    ],
+    areaServed: BUSINESS_INFO.serviceAreas.map((area) => ({
+      '@type': 'City' as const,
+      name: area,
     })),
   };
 }
