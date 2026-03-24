@@ -62,7 +62,7 @@ export function buildAggregateRatingJsonLd(
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue,
-      reviewCount: String(testimonials.length),
+      reviewCount: String(testimonials.length) as unknown as number,
       bestRating: '5',
       worstRating: '1',
     },
