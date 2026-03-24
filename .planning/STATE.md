@@ -2,9 +2,9 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Phase complete — ready for verification
-stopped_at: Completed 03-02-PLAN.md
-last_updated: "2026-03-24T02:19:22.708Z"
+status: Executing
+stopped_at: Completed 05-01-PLAN.md
+last_updated: "2026-03-24T13:44:42Z"
 progress:
   total_phases: 10
   completed_phases: 2
@@ -19,12 +19,12 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-22)
 
 **Core value:** Every visitor within Hudson County searching for roofing services finds this site, trusts it as the local authority, and converts into a lead.
-**Current focus:** Phase 03 — lead-capture-system
+**Current focus:** Phase 05 — residential-service-pages
 
 ## Current Position
 
-Phase: 03 (lead-capture-system) — EXECUTING
-Plan: 2 of 2
+Phase: 05 (residential-service-pages) — EXECUTING
+Plan: 1 of 5 complete
 
 ## Performance Metrics
 
@@ -54,6 +54,7 @@ Plan: 2 of 2
 | Phase 02 P03 | 8min | 2 tasks | 9 files |
 | Phase 03 P01 | 3min | 2 tasks | 8 files |
 | Phase 03 P02 | 4min | 2 tasks | 9 files |
+| Phase 05 P01 | 13min | 2 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -85,6 +86,8 @@ Recent decisions affecting current work:
 - [Phase 03]: React Hook Form useForm() without generic parameter for Zod v4 compatibility -- types inferred from zodResolver
 - [Phase 03]: Header CTA changed from Link to button for scroll-to-form with /contact fallback via useRouter
 - [Phase 03]: TurnstileWidget uses useImperativeHandle for parent-controlled reset after each submission (single-use tokens)
+- [Phase 05]: Content data files in src/data/content/ complement services.ts structured data; pages pull from BOTH sources
+- [Phase 05]: EmergencyContent extends ServiceContent with whatToDoSteps, stormDamageTypes, insuranceClaims crisis fields
 
 ### Pending Todos
 
@@ -98,6 +101,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-24T02:19:22.706Z
-Stopped at: Completed 03-02-PLAN.md
-Resume file: None
+Last session: 2026-03-24T13:44:42Z
+Stopped at: Completed 05-01-PLAN.md
+Resume file: .planning/phases/05-residential-service-pages/05-01-SUMMARY.md
