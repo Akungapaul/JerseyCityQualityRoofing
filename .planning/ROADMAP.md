@@ -90,8 +90,8 @@ Plans:
 **UI hint**: yes
 
 Plans:
-- [ ] 04-01-PLAN.md -- JSON-LD schema builders (AggregateRating, FAQPage, RoofingContractor), content data files (homepage FAQ, about content), Wave 0 test scaffolds (NAP consistency, testimonial completeness)
-- [ ] 04-02-PLAN.md -- Build all 16 section components: HeroSection, BadgeStrip, ServicesGrid, WhyChooseUs, TestimonialCarousel, StarRating, FaqAccordion, GoogleMapEmbed, CityCard, CityCardGrid, ContactInfoColumn, BusinessHoursTable, About sections
+- [x] 04-01-PLAN.md -- JSON-LD schema builders (AggregateRating, FAQPage, RoofingContractor), content data files (homepage FAQ, about content), Wave 0 test scaffolds (NAP consistency, testimonial completeness)
+- [x] 04-02-PLAN.md -- Build all 16 section components: HeroSection, BadgeStrip, ServicesGrid, WhyChooseUs, TestimonialCarousel, StarRating, FaqAccordion, GoogleMapEmbed, CityCard, CityCardGrid, ContactInfoColumn, BusinessHoursTable, About sections
 - [ ] 04-03-PLAN.md -- Assemble 4 complete pages: Homepage (10 sections + 2 JSON-LD schemas), About, Contact (two-column + map + schema), Service Areas hub (map + tiered grid)
 
 ### Phase 5: Residential Service Pages
@@ -210,7 +210,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 1. Project Scaffold & Data Architecture | 4/4 | Complete | - |
 | 2. Design System & Layout Shell | 3/3 | Complete   | 2026-03-24 |
 | 3. Lead Capture System | 0/2 | Not started | - |
-| 4. Core Marketing Pages | 0/3 | Not started | - |
+| 4. Core Marketing Pages | 0/3 | Planned    |  |
 | 5. Residential Service Pages | 0/3 | Not started | - |
 | 6. Commercial Service Pages | 0/2 | Not started | - |
 | 7. Location Hub Pages | 0/3 | Not started | - |

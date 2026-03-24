@@ -19,10 +19,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Core Pages (CORE)
 
-- [ ] **CORE-01**: Homepage with hero section, proof strip (certifications/badges), services grid, testimonials, service areas overview, FAQ, and dual CTAs (phone + form)
-- [ ] **CORE-02**: About page with company story, team section, certifications, insurance info, license numbers, and years-in-business callout
-- [ ] **CORE-03**: Contact page with multi-field quote form (name, phone, email, service type, address, message), embedded Google Map, and full NAP data
-- [ ] **CORE-04**: Service area overview hub page listing all 12 Hudson County municipalities with map visualization and links to city pages
+- [x] **CORE-01**: Homepage with hero section, proof strip (certifications/badges), services grid, testimonials, service areas overview, FAQ, and dual CTAs (phone + form)
+- [x] **CORE-02**: About page with company story, team section, certifications, insurance info, license numbers, and years-in-business callout
+- [x] **CORE-03**: Contact page with multi-field quote form (name, phone, email, service type, address, message), embedded Google Map, and full NAP data
+- [x] **CORE-04**: Service area overview hub page listing all 12 Hudson County municipalities with map visualization and links to city pages
 
 ### Residential Services (RESI)
 
@@ -65,8 +65,8 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **CRO-03**: Floating quote request button (persistent CTA) on all pages
 - [x] **CRO-04**: Above-the-fold CTA on every page (visible without scrolling)
 - [ ] **CRO-05**: Exit-intent popup with quote offer on service and location pages
-- [ ] **CRO-06**: Customer testimonials with star ratings displayed on homepage, service pages, and location pages
-- [ ] **CRO-07**: Certification and license badge strip on homepage and in footer across all pages
+- [x] **CRO-06**: Customer testimonials with star ratings displayed on homepage, service pages, and location pages
+- [x] **CRO-07**: Certification and license badge strip on homepage and in footer across all pages
 - [ ] **CRO-08**: Before/after project gallery with comparison sliders, filterable by service type and city
 - [ ] **CRO-09**: Emergency/urgency banner for storm season and emergency service pages
 - [x] **CRO-10**: Form submission sends notification email via Resend and returns confirmation to user
@@ -76,7 +76,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [ ] **SEO-01**: JSON-LD structured data on every page: RoofingContractor (LocalBusiness subtype), BreadcrumbList
 - [ ] **SEO-02**: Service schema on all service pages with FAQ schema for rich snippets
-- [ ] **SEO-03**: Review/AggregateRating schema on pages displaying testimonials
+- [x] **SEO-03**: Review/AggregateRating schema on pages displaying testimonials
 - [ ] **SEO-04**: Knowledge graph JSON-LD mapping entity relationships: Service -> Location -> Materials -> Problems -> Solutions
 - [ ] **SEO-05**: Automated internal linking system: contextual links between related services, locations, and blog posts within and across silos
 - [x] **SEO-06**: Breadcrumb navigation on every page (auto-generated from route hierarchy) with BreadcrumbList schema
@@ -87,8 +87,8 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **SEO-11**: One H1 per page with strict heading hierarchy (H1 > H2 > H3, no skipping)
 - [ ] **SEO-12**: All images use next/image with descriptive alt text (not filenames)
 - [ ] **SEO-13**: Core Web Vitals optimized: LCP < 2.5s, FID < 100ms, CLS < 0.1
-- [ ] **SEO-14**: NAP (Name, Address, Phone) consistency across all pages, aligned with Google Business Profile
-- [ ] **SEO-15**: Google Map embed on contact page and city hub pages
+- [x] **SEO-14**: NAP (Name, Address, Phone) consistency across all pages, aligned with Google Business Profile
+- [x] **SEO-15**: Google Map embed on contact page and city hub pages
 - [ ] **SEO-16**: Semantic SEO: entity mapping, NLP-optimized copy with co-occurring terms, comprehensive topic coverage per silo
 
 ### Design & UX (UX)
@@ -163,10 +163,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FNDN-05 | Phase 2 | Complete |
 | FNDN-06 | Phase 2 | Complete |
 | FNDN-07 | Phase 2 | Complete |
-| CORE-01 | Phase 4 | Pending |
-| CORE-02 | Phase 4 | Pending |
-| CORE-03 | Phase 4 | Pending |
-| CORE-04 | Phase 4 | Pending |
+| CORE-01 | Phase 4 | Complete |
+| CORE-02 | Phase 4 | Complete |
+| CORE-03 | Phase 4 | Complete |
+| CORE-04 | Phase 4 | Complete |
 | RESI-01 | Phase 5 | Pending |
 | RESI-02 | Phase 5 | Pending |
 | RESI-03 | Phase 5 | Pending |
@@ -194,15 +194,15 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CRO-03 | Phase 10 | Pending |
 | CRO-04 | Phase 2 | Complete |
 | CRO-05 | Phase 10 | Pending |
-| CRO-06 | Phase 4 | Pending |
-| CRO-07 | Phase 4 | Pending |
+| CRO-06 | Phase 4 | Complete |
+| CRO-07 | Phase 4 | Complete |
 | CRO-08 | Phase 10 | Pending |
 | CRO-09 | Phase 10 | Pending |
 | CRO-10 | Phase 3 | Complete |
 | CRO-11 | Phase 3 | Complete |
 | SEO-01 | Phase 7 | Pending |
 | SEO-02 | Phase 5 | Pending |
-| SEO-03 | Phase 4 | Pending |
+| SEO-03 | Phase 4 | Complete |
 | SEO-04 | Phase 7 | Pending |
 | SEO-05 | Phase 9 | Pending |
 | SEO-06 | Phase 2 | Complete |
@@ -213,8 +213,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SEO-11 | Phase 1 | Complete |
 | SEO-12 | Phase 10 | Pending |
 | SEO-13 | Phase 10 | Pending |
-| SEO-14 | Phase 4 | Pending |
-| SEO-15 | Phase 4 | Pending |
+| SEO-14 | Phase 4 | Complete |
+| SEO-15 | Phase 4 | Complete |
 | SEO-16 | Phase 8 | Pending |
 | UX-01 | Phase 2 | Complete |
 | UX-02 | Phase 2 | Complete |
