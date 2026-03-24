@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { motion, useScroll, useMotionValueEvent } from "motion/react";
 import { Phone, Menu } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
@@ -14,6 +15,19 @@ export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const { scrollY } = useScroll();
+  const router = useRouter();
+
+  const handleQuoteCTA = useCallback(() => {
+    const formEl = document.getElementById("quote-form");
+    if (formEl) {
+      const headerHeight = isScrolled ? 56 : 80;
+      const top =
+        formEl.getBoundingClientRect().top + window.scrollY - headerHeight;
+      window.scrollTo({ top, behavior: "smooth" });
+    } else {
+      router.push("/contact");
+    }
+  }, [isScrolled, router]);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     setIsScrolled(latest > 100);
@@ -73,15 +87,16 @@ export function Header() {
               </span>
             </a>
 
-            {/* CTA button */}
-            <Link
-              href="/contact"
+            {/* CTA button -- scrolls to #quote-form or navigates to /contact */}
+            <button
+              type="button"
+              onClick={handleQuoteCTA}
               className={cn(
                 buttonVariants({ variant: "primary", size: "compact" }),
               )}
             >
               {isScrolled ? "Free Quote" : "Get Free Quote"}
-            </Link>
+            </button>
 
             {/* Hamburger menu (mobile only) */}
             <button
