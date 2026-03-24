@@ -60,6 +60,12 @@ export interface FAQ {
   answer: string;
 }
 
+export interface WarningSign {
+  icon: string;
+  title: string;
+  description: string;
+}
+
 // Main entity interfaces (per D-11, D-12)
 export interface Municipality {
   name: string;
