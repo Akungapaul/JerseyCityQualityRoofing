@@ -69,12 +69,12 @@ Plans:
   2. Form submission triggers email notification to business via Resend with all submitted fields
   3. Cloudflare Turnstile invisible captcha blocks automated bot submissions while remaining invisible to real users
   4. User receives on-page confirmation after successful form submission
-**Plans**: TBD
+**Plans**: 2 plans
 **UI hint**: yes
 
 Plans:
-- [ ] 03-01: TBD
-- [ ] 03-02: TBD
+- [ ] 03-01-PLAN.md -- Install dependencies, create Zod validation schemas, form types, Turnstile server verification, Resend email sender, React Email notification template
+- [ ] 03-02-PLAN.md -- Build form input primitives, CompactQuoteForm, QuoteForm, TurnstileWidget, Server Action, wire header CTA scroll-to-form
 
 ### Phase 4: Core Marketing Pages
 **Goal**: Visitors landing on the site can understand what the business offers, see proof of credibility, contact the company, and browse all service areas
