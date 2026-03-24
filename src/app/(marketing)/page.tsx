@@ -1,7 +1,23 @@
 import type { Metadata } from "next";
-import { SectionWrapper } from "@/components/sections/section-wrapper";
+import { HeroSection } from "@/components/sections/hero-section";
+import { CompactQuoteForm } from "@/components/forms/compact-quote-form";
+import { BadgeStrip } from "@/components/sections/badge-strip";
+import { ServicesGrid } from "@/components/sections/services-grid";
+import { WhyChooseUs } from "@/components/sections/why-choose-us";
+import { TestimonialCarousel } from "@/components/sections/testimonial-carousel";
+import { ServiceAreasOverview } from "@/components/sections/service-areas-overview";
+import { FaqAccordion } from "@/components/sections/faq-accordion";
+import { QuoteForm } from "@/components/forms/quote-form";
 import { CTABanner } from "@/components/sections/cta-banner";
+import { SectionWrapper } from "@/components/sections/section-wrapper";
 import { ScrollReveal } from "@/components/sections/scroll-reveal";
+import {
+  JsonLd,
+  buildAggregateRatingJsonLd,
+  buildFaqPageJsonLd,
+} from "@/lib/seo/json-ld";
+import { TESTIMONIALS } from "@/data/testimonials";
+import { HOMEPAGE_FAQS } from "@/data/homepage-faq";
 import { BASE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -23,57 +39,59 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
-      <SectionWrapper tone="dominant" className="lg:py-[120px]">
-        <ScrollReveal>
-          <h1 className="font-heading font-medium text-[2.25rem] sm:text-[2.75rem] lg:text-[3.5rem] leading-[1.1] text-text-primary max-w-3xl">
-            Hudson County&rsquo;s Trusted Roofing Experts
-          </h1>
-          <p className="text-text-secondary text-lg mt-6 max-w-2xl">
-            Professional residential and commercial roofing services across all
-            12 Hudson County municipalities. Licensed, insured, and locally
-            trusted since 2003.
-          </p>
-        </ScrollReveal>
-      </SectionWrapper>
+      <JsonLd
+        data={
+          buildAggregateRatingJsonLd(TESTIMONIALS) as unknown as Record<
+            string,
+            unknown
+          >
+        }
+      />
+      <JsonLd
+        data={
+          buildFaqPageJsonLd([...HOMEPAGE_FAQS]) as unknown as Record<
+            string,
+            unknown
+          >
+        }
+      />
 
+      {/* 1. Hero */}
+      <HeroSection />
+
+      {/* 2. Compact Quote Form (wraps itself in SectionWrapper) */}
+      <CompactQuoteForm />
+
+      {/* 3. Badge Strip */}
+      <BadgeStrip />
+
+      {/* 4. Services Grid */}
+      <ServicesGrid />
+
+      {/* 5. Why Choose Us */}
+      <WhyChooseUs />
+
+      {/* 6. Testimonials (wraps itself in SectionWrapper) */}
+      <TestimonialCarousel />
+
+      {/* 7. Service Areas Overview */}
+      <ServiceAreasOverview />
+
+      {/* 8. FAQ Section */}
       <SectionWrapper tone="secondary">
         <ScrollReveal>
-          <h2 className="font-heading font-bold text-[1.75rem] text-text-primary">
-            Our Services
+          <h2 className="font-heading font-bold text-[1.75rem] text-text-primary mb-6">
+            Frequently Asked Questions
           </h2>
-          <p className="text-text-secondary text-lg mt-3">
-            From emergency repairs to full commercial roof replacements, we
-            handle every roofing need in Hudson County.
-          </p>
+          <FaqAccordion faqs={HOMEPAGE_FAQS} defaultOpenIndex={0} />
         </ScrollReveal>
       </SectionWrapper>
 
+      {/* 9. Full Quote Form (wraps itself in SectionWrapper) */}
+      <QuoteForm />
+
+      {/* 10. CTA Banner */}
       <CTABanner />
-
-      <SectionWrapper tone="dominant">
-        <ScrollReveal>
-          <h2 className="font-heading font-bold text-[1.75rem] text-text-primary">
-            Serving All 12 Hudson County Municipalities
-          </h2>
-          <p className="text-text-secondary text-lg mt-3">
-            Jersey City, Hoboken, Bayonne, North Bergen, Union City, West New
-            York, Secaucus, Kearny, Harrison, East Newark, Guttenberg, and
-            Weehawken.
-          </p>
-        </ScrollReveal>
-      </SectionWrapper>
-
-      <SectionWrapper tone="secondary">
-        <ScrollReveal>
-          <h2 className="font-heading font-bold text-[1.75rem] text-text-primary">
-            Why Choose Us
-          </h2>
-          <p className="text-text-secondary text-lg mt-3">
-            GAF Master Elite Contractor. CertainTeed SELECT ShingleMaster. Over
-            20 years serving Hudson County homeowners and property managers.
-          </p>
-        </ScrollReveal>
-      </SectionWrapper>
     </>
   );
 }
