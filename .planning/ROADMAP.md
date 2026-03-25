@@ -123,12 +123,13 @@ Plans:
   2. Flat Roof Systems page covers TPO, EPDM, and modified bitumen with material-specific content differentiating it from residential pages
   3. Each commercial page includes process explainer, FAQ, testimonials, cost factors, and embedded quote form following the same standards established in Phase 5
   4. Commercial pages are reachable via the silo navigation at `/services/commercial/[service]` with correct breadcrumbs and schema
-**Plans**: TBD
+**Plans**: 3 plans
 **UI hint**: yes
 
 Plans:
-- [ ] 06-01: TBD
-- [ ] 06-02: TBD
+- [ ] 06-01-PLAN.md -- Commercial content data files (4 services, 2200+ words each) with test suite extension for commercial voice validation
+- [ ] 06-02-PLAN.md -- CommercialRelatedServicesRow component with commercial icon map and /services/commercial/ link prefix
+- [ ] 06-03-PLAN.md -- Page assembly: wire content data, components, and SEO into commercial [service]/page.tsx with full build verification
 
 ### Phase 7: Location Hub Pages
 **Goal**: Visitors searching for roofing in any Hudson County municipality find a dedicated, locally-relevant page that establishes the company as a local expert in their specific city
@@ -214,7 +215,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 3. Lead Capture System | 0/2 | Not started | - |
 | 4. Core Marketing Pages | 0/3 | Planned    |  |
 | 5. Residential Service Pages | 0/5 | Planned | - |
-| 6. Commercial Service Pages | 0/2 | Not started | - |
+| 6. Commercial Service Pages | 0/3 | Planned | - |
 | 7. Location Hub Pages | 0/3 | Not started | - |
 | 8. Service-in-City Pages | 0/3 | Not started | - |
 | 9. Blog & Supporting Content | 0/3 | Not started | - |
