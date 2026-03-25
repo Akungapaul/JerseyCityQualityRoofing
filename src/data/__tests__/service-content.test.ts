@@ -10,12 +10,20 @@ import { ROOF_REPAIR_CONTENT } from '@/data/content/roof-repair';
 import { ROOF_REPLACEMENT_CONTENT } from '@/data/content/roof-replacement';
 import { ROOF_INSPECTION_CONTENT } from '@/data/content/roof-inspection';
 import { EMERGENCY_ROOFING_CONTENT } from '@/data/content/emergency-roofing';
+import { FLAT_ROOF_SYSTEMS_CONTENT } from '@/data/content/flat-roof-systems';
+import { ROOF_MAINTENANCE_CONTENT } from '@/data/content/roof-maintenance';
+import { COMMERCIAL_REPAIR_CONTENT } from '@/data/content/commercial-repair';
+import { COMMERCIAL_REPLACEMENT_CONTENT } from '@/data/content/commercial-replacement';
 import type { ServiceContent, EmergencyContent } from '@/data/types';
 
 const STANDARD_CONTENTS: Array<{ name: string; content: ServiceContent }> = [
   { name: 'roof-repair', content: ROOF_REPAIR_CONTENT },
   { name: 'roof-replacement', content: ROOF_REPLACEMENT_CONTENT },
   { name: 'roof-inspection', content: ROOF_INSPECTION_CONTENT },
+  { name: 'flat-roof-systems', content: FLAT_ROOF_SYSTEMS_CONTENT },
+  { name: 'roof-maintenance', content: ROOF_MAINTENANCE_CONTENT },
+  { name: 'commercial-repair', content: COMMERCIAL_REPAIR_CONTENT },
+  { name: 'commercial-replacement', content: COMMERCIAL_REPLACEMENT_CONTENT },
 ];
 
 const ALL_CONTENTS: Array<{ name: string; content: ServiceContent }> = [
@@ -104,6 +112,44 @@ describe('service content data', () => {
       const hasLocal = localTerms.some((term) => allText.includes(term));
       expect(hasLocal).toBe(true);
     });
+  });
+
+  describe('commercial voice and terminology', () => {
+    const COMMERCIAL_CONTENTS: Array<{ name: string; content: ServiceContent }> = [
+      { name: 'flat-roof-systems', content: FLAT_ROOF_SYSTEMS_CONTENT },
+      { name: 'roof-maintenance', content: ROOF_MAINTENANCE_CONTENT },
+      { name: 'commercial-repair', content: COMMERCIAL_REPAIR_CONTENT },
+      { name: 'commercial-replacement', content: COMMERCIAL_REPLACEMENT_CONTENT },
+    ];
+
+    it.each(COMMERCIAL_CONTENTS)(
+      '$name uses commercial terminology (not residential)',
+      ({ content }) => {
+        const allText = [
+          content.introNarrative,
+          content.processNarrative,
+          content.materialsIntro,
+        ].join(' ').toLowerCase();
+        const commercialTerms = [
+          'building',
+          'property manager',
+          'membrane',
+          'flat roof',
+          'commercial',
+        ];
+        const hasCommercial = commercialTerms.some((term) => allText.includes(term));
+        expect(hasCommercial).toBe(true);
+      },
+    );
+
+    it.each(COMMERCIAL_CONTENTS)(
+      '$name does not use residential-only language in intro',
+      ({ content }) => {
+        const introLower = content.introNarrative.toLowerCase();
+        expect(introLower).not.toContain('homeowner');
+        expect(introLower).not.toContain('your home');
+      },
+    );
   });
 
   describe('word count per content file', () => {
