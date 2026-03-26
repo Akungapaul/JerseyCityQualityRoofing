@@ -221,3 +221,10 @@ export interface CityHubContent {
   closingNarrative: string;              // ~200 words: final call to action
   cityFaqs: FAQ[];                       // 8-10 city-specific FAQs
 }
+
+// Phase 8: Service-in-city component types
+export interface NeighborhoodServiceInsight {
+  neighborhoodName: string;
+  insight: string;
+  commonIssue: string;
+}
