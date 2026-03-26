@@ -221,6 +221,32 @@ export function buildCityRoofingContractorJsonLd(
   } as WithContext<RoofingContractor>;
 }
 
+export function buildServiceInCityJsonLd(
+  service: ServiceData,
+  city: Municipality,
+  canonicalUrl: string
+): WithContext<ServiceSchema> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': `${canonicalUrl}#service`,
+    name: `${service.name} in ${city.name}`,
+    description: `Professional ${service.name.toLowerCase()} services in ${city.name}, NJ. ${service.shortDescription}`,
+    serviceType: service.name,
+    url: canonicalUrl,
+    areaServed: {
+      '@type': 'City',
+      name: city.name,
+      '@id': `${BASE_URL}/service-areas/${city.slug}#city`,
+    },
+    provider: {
+      '@type': 'RoofingContractor',
+      '@id': `${BASE_URL}/#organization`,
+      name: BUSINESS_INFO.name,
+    },
+  };
+}
+
 // XSS-safe JSON-LD renderer component
 export function JsonLd({ data }: { data: Record<string, unknown> }) {
   return (
