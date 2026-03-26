@@ -41,7 +41,7 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Location Pages (LOC)
 
 - [x] **LOC-01**: City hub pages for all 12 Hudson County municipalities (Jersey City, Hoboken, Bayonne, North Bergen, Union City, West New York, Secaucus, Kearny, Harrison, East Newark, Guttenberg, Weehawken) — each with unique local content, services overview, testimonials, and FAQ
-- [ ] **LOC-02**: Service-in-city pages (~96 pages) generated programmatically via generateStaticParams, each service x each municipality
+- [x] **LOC-02**: Service-in-city pages (~96 pages) generated programmatically via generateStaticParams, each service x each municipality
 - [ ] **LOC-03**: Each service-in-city page achieves 70%+ content uniqueness using municipality data registries (local landmarks, housing stock data, city-specific stats, building codes, weather patterns)
 - [ ] **LOC-04**: Each service-in-city page includes unique FAQ section tailored to that city's specific roofing concerns
 - [x] **LOC-05**: Each location page includes city-specific testimonials (tagged by municipality)
@@ -89,7 +89,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **SEO-13**: Core Web Vitals optimized: LCP < 2.5s, FID < 100ms, CLS < 0.1
 - [x] **SEO-14**: NAP (Name, Address, Phone) consistency across all pages, aligned with Google Business Profile
 - [x] **SEO-15**: Google Map embed on contact page and city hub pages
-- [ ] **SEO-16**: Semantic SEO: entity mapping, NLP-optimized copy with co-occurring terms, comprehensive topic coverage per silo
+- [x] **SEO-16**: Semantic SEO: entity mapping, NLP-optimized copy with co-occurring terms, comprehensive topic coverage per silo
 
 ### Design & UX (UX)
 
@@ -176,7 +176,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | COMM-03 | Phase 6 | Pending |
 | COMM-04 | Phase 6 | Pending |
 | LOC-01 | Phase 7 | Complete |
-| LOC-02 | Phase 8 | Pending |
+| LOC-02 | Phase 8 | Complete |
 | LOC-03 | Phase 8 | Pending |
 | LOC-04 | Phase 8 | Pending |
 | LOC-05 | Phase 7 | Complete |
@@ -215,7 +215,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SEO-13 | Phase 10 | Pending |
 | SEO-14 | Phase 4 | Complete |
 | SEO-15 | Phase 4 | Complete |
-| SEO-16 | Phase 8 | Pending |
+| SEO-16 | Phase 8 | Complete |
 | UX-01 | Phase 2 | Complete |
 | UX-02 | Phase 2 | Complete |
 | UX-03 | Phase 2 | Complete |
