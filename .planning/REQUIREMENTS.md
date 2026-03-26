@@ -44,7 +44,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **LOC-02**: Service-in-city pages (~96 pages) generated programmatically via generateStaticParams, each service x each municipality
 - [ ] **LOC-03**: Each service-in-city page achieves 70%+ content uniqueness using municipality data registries (local landmarks, housing stock data, city-specific stats, building codes, weather patterns)
 - [ ] **LOC-04**: Each service-in-city page includes unique FAQ section tailored to that city's specific roofing concerns
-- [ ] **LOC-05**: Each location page includes city-specific testimonials (tagged by municipality)
+- [x] **LOC-05**: Each location page includes city-specific testimonials (tagged by municipality)
 
 ### Content & Authority (CONT)
 
@@ -74,10 +74,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### SEO Infrastructure (SEO)
 
-- [ ] **SEO-01**: JSON-LD structured data on every page: RoofingContractor (LocalBusiness subtype), BreadcrumbList
+- [x] **SEO-01**: JSON-LD structured data on every page: RoofingContractor (LocalBusiness subtype), BreadcrumbList
 - [ ] **SEO-02**: Service schema on all service pages with FAQ schema for rich snippets
 - [x] **SEO-03**: Review/AggregateRating schema on pages displaying testimonials
-- [ ] **SEO-04**: Knowledge graph JSON-LD mapping entity relationships: Service -> Location -> Materials -> Problems -> Solutions
+- [x] **SEO-04**: Knowledge graph JSON-LD mapping entity relationships: Service -> Location -> Materials -> Problems -> Solutions
 - [ ] **SEO-05**: Automated internal linking system: contextual links between related services, locations, and blog posts within and across silos
 - [x] **SEO-06**: Breadcrumb navigation on every page (auto-generated from route hierarchy) with BreadcrumbList schema
 - [x] **SEO-07**: XML sitemap auto-generated covering all service, location, service-in-city, blog, and content pages
@@ -179,7 +179,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | LOC-02 | Phase 8 | Pending |
 | LOC-03 | Phase 8 | Pending |
 | LOC-04 | Phase 8 | Pending |
-| LOC-05 | Phase 7 | Pending |
+| LOC-05 | Phase 7 | Complete |
 | CONT-01 | Phase 9 | Pending |
 | CONT-02 | Phase 9 | Pending |
 | CONT-03 | Phase 9 | Pending |
@@ -200,10 +200,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CRO-09 | Phase 10 | Pending |
 | CRO-10 | Phase 3 | Complete |
 | CRO-11 | Phase 3 | Complete |
-| SEO-01 | Phase 7 | Pending |
+| SEO-01 | Phase 7 | Complete |
 | SEO-02 | Phase 5 | Pending |
 | SEO-03 | Phase 4 | Complete |
-| SEO-04 | Phase 7 | Pending |
+| SEO-04 | Phase 7 | Complete |
 | SEO-05 | Phase 9 | Pending |
 | SEO-06 | Phase 2 | Complete |
 | SEO-07 | Phase 1 | Complete |

@@ -149,7 +149,7 @@ Plans:
 - [x] 07-02-PLAN.md -- 7 new city hub section components (CityHubHero, HousingStockSection, WeatherClimateSection, NeighborhoodBreakdown, ServicesInCityGrid, CityLandmarksSection, LocalExpertiseSection)
 - [x] 07-03-PLAN.md -- Tier 2 city content data files (Union City, West New York, Secaucus, Kearny)
 - [x] 07-04-PLAN.md -- Tier 3 city content data files (Harrison, East Newark, Guttenberg, Weehawken)
-- [ ] 07-05-PLAN.md -- Page assembly: wire content, components, JSON-LD into [city]/page.tsx with full build verification
+- [x] 07-05-PLAN.md -- Page assembly: wire content, components, JSON-LD into [city]/page.tsx with full build verification
 
 ### Phase 8: Service-in-City Pages
 **Goal**: Every "[service] in [city]" search query across all 8 services and 12 municipalities has a dedicated, genuinely unique page that ranks without triggering doorway page classification
