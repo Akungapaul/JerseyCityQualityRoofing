@@ -38,10 +38,10 @@ Declared values (must be multiples of 4):
 | xl | 32px | Layout gaps between major content blocks |
 | 2xl | 48px | Section vertical padding (mobile: py-12) |
 | 3xl | 64px | Section vertical padding (sm: py-16), page-level hero padding |
-| 4xl | 80px | Section vertical padding (lg: py-20), hero padding desktop |
 
 Exceptions:
 - 44px minimum touch target for all interactive elements (buttons, accordion triggers, phone links) -- per WCAG AA and established Phase 2 pattern (`min-h-[44px]`)
+- 80px (`lg:py-20`) -- established hero/section desktop padding pattern carried forward from Phase 2 SectionWrapper and used consistently across Phase 5 residential and Phase 6 commercial service pages
 - 1280px max content width (`max-w-[1280px]`) -- established in SectionWrapper and all page templates
 
 ---
@@ -50,16 +50,17 @@ Exceptions:
 
 | Role | Size | Weight | Line Height | Font Family |
 |------|------|--------|-------------|-------------|
+| Badge / Detail | 14px (0.875rem) | 500 (medium) or 700 (bold) | 1.5 | Cormorant Garamond |
 | Body | 18px (1.125rem) | 500 (medium) | 1.7 | Cormorant Garamond |
-| Label / Secondary | 18px (text-lg) | 500 (medium) | 1.625 (leading-relaxed) | Cormorant Garamond |
 | Section Heading (h2) | 28px (1.75rem) | 700 (bold) | 1.2 | Cormorant |
 | Page Title (h1) | 40px mobile / 48px desktop (2.5rem / 3rem) | 700 (bold) | 1.1 | Cormorant |
 
-Source: Established in Phase 2 globals.css and confirmed across all service page components.
+Source: Established in Phase 2 globals.css and confirmed across all service page components. The 14px (0.875rem) size is used exclusively for badge text in compact visual elements (neighborhood roof type badges, key challenge labels, landmark significance tags).
 
 Notes:
 - All heading sizes use `font-heading font-bold` classes
 - Body text uses `text-lg text-text-secondary` for secondary paragraphs, `text-text-primary` for primary
+- Badge / Detail (14px) is reserved for compact inline badges and uppercase tracking labels only -- never for body copy or paragraph text
 - Neighborhood subheadings (h3) use `text-lg font-heading font-bold text-text-primary` (same as FAQ accordion headings)
 
 ---
@@ -207,9 +208,11 @@ Structure:
       - Description: text-lg text-text-secondary mt-2, ~100 words
       - Common roof types: flex flex-wrap gap-2 mt-3
         Each: inline-flex badge, bg-dominant rounded-full px-3 py-1 text-text-secondary text-[0.875rem]
+        (Badge / Detail size per typography table)
       - Key challenge: mt-3
         Label: text-text-secondary text-[0.875rem] font-bold uppercase tracking-wider
           Copy: "Key Challenge"
+          (Badge / Detail size per typography table)
         Value: text-lg text-accent mt-1
           Copy: "{keyChallenge}"
 ```
@@ -254,6 +257,7 @@ Structure:
       - Significance badge: mt-3
         - inline-flex, bg-secondary rounded-full px-3 py-1, text-accent text-[0.875rem] font-bold
         Copy: "{landmark.significance}"
+        (Badge / Detail size per typography table)
 ```
 
 ---
@@ -320,6 +324,8 @@ Destructive actions: None in this phase. City hub pages are read-only content pa
 - Auto-play with Embla Carousel Autoplay plugin
 - Left/right navigation arrows (ChevronLeft, ChevronRight)
 - Keyboard accessible navigation buttons
+- Previous arrow: `aria-label="Previous testimonial"`
+- Next arrow: `aria-label="Next testimonial"`
 
 ### Service Card Links (Forward Links)
 - `prefetch={false}` on all service-in-city links (pages do not exist until Phase 8)
@@ -366,6 +372,7 @@ Destructive actions: None in this phase. City hub pages are read-only content pa
 | Color contrast | text-primary (#f0ede6) on dominant (#2a2e22) = 11.2:1 ratio (AAA). text-secondary (#b0ae9e) on dominant = 5.8:1 ratio (AA). accent (#c89640) on dominant = 5.1:1 ratio (AA). |
 | Reduced motion | Global `prefers-reduced-motion: reduce` media query disables all animations |
 | Keyboard navigation | Tab order follows visual order. Accordion triggers focusable. Carousel arrows focusable. All links focusable. |
+| Carousel navigation aria | Previous arrow button: `aria-label="Previous testimonial"`. Next arrow button: `aria-label="Next testimonial"`. |
 
 ---
 
