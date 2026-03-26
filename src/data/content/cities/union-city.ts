@@ -107,7 +107,7 @@ We are ready to inspect your roof, provide an honest assessment, and recommend t
     },
     {
       question: 'How often should I inspect my Union City flat roof?',
-      answer: 'We recommend inspecting Union City flat roofs at least twice per year, in spring and fall, plus after any significant storm event. The spring inspection catches damage from winter freeze-thaw cycles that may have opened cracks in parapet mortar joints or lifted membrane seams. The fall inspection ensures drains are clear and the roof is prepared for the heavy precipitation and potential nor'easters of the winter season. For buildings with interior drains, which are common in Union City row houses, checking that drain screens are clear of debris should happen quarterly because a clogged drain leads directly to ponding water that stresses the membrane and can cause structural damage over time.',
+      answer: 'We recommend inspecting Union City flat roofs at least twice per year, in spring and fall, plus after any significant storm event. The spring inspection catches damage from winter freeze-thaw cycles that may have opened cracks in parapet mortar joints or lifted membrane seams. The fall inspection ensures drains are clear and the roof is prepared for the heavy precipitation and potential nor\'easters of the winter season. For buildings with interior drains, which are common in Union City row houses, checking that drain screens are clear of debris should happen quarterly because a clogged drain leads directly to ponding water that stresses the membrane and can cause structural damage over time.',
     },
     {
       question: 'Is asbestos a concern for roof replacement in Union City?',
