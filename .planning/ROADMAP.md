@@ -165,7 +165,7 @@ Plans:
 **UI hint**: yes
 
 Plans:
-- [ ] 08-01-PLAN.md -- Foundation: ServiceInCityContent interface, buildServiceInCityJsonLd builder, Wave 0 test scaffolds (uniqueness, structure, SEO, cumulative word count)
+- [x] 08-01-PLAN.md -- Foundation: ServiceInCityContent interface, buildServiceInCityJsonLd builder, Wave 0 test scaffolds (uniqueness, structure, SEO, cumulative word count)
 - [ ] 08-02-PLAN.md -- 5 new section components + unit tests: CityServiceHero, LocalServiceContext, NeighborhoodServiceInsights, CitySpecificConcerns, SiblingCitiesNav
 - [ ] 08-03-PLAN.md -- Tier 1 content: Jersey City (8 services) = 8 content data files
 - [ ] 08-04-PLAN.md -- Tier 1 content: Hoboken (8 services) = 8 content data files
