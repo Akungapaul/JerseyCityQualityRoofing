@@ -191,3 +191,26 @@ export interface EmergencyContent extends ServiceContent {
   stormDamageTypes: StormDamageType[];
   insuranceClaims: InsuranceClaimsContent;
 }
+
+// Phase 7: City hub content data types
+export interface NeighborhoodSection {
+  name: string;
+  description: string;      // ~100 words: roofing concerns in this neighborhood
+  commonRoofTypes: string[];
+  keyChallenge: string;
+}
+
+export interface CityHubContent {
+  slug: string;                          // Municipality slug (e.g., 'jersey-city')
+  heroHeadline: string;                  // City-specific H1
+  heroSubtitle: string;                  // Supporting tagline
+  localExpertiseNarrative: string;       // ~500 words: first-person expert voice about this city
+  housingStockNarrative: string;         // ~400 words: architecture, building ages, roof types
+  weatherClimateNarrative: string;       // ~400 words: weather patterns, seasonal concerns
+  neighborhoodBreakdown: NeighborhoodSection[]; // Per-neighborhood roofing insights
+  landmarksNarrative: string;            // ~300 words: how local landmarks reflect roofing needs
+  buildingCodeNarrative: string;         // ~200 words: permits, inspections, special requirements
+  whyChooseUsNarrative: string;          // ~300 words: why this company for this city
+  closingNarrative: string;              // ~200 words: final call to action
+  cityFaqs: FAQ[];                       // 8-10 city-specific FAQs
+}

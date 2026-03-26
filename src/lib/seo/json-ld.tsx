@@ -1,7 +1,7 @@
 import type { RoofingContractor, WithContext, BreadcrumbList, FAQPage, Service as ServiceSchema } from 'schema-dts';
 import { BUSINESS_INFO } from '@/data/business-info';
 import { BASE_URL } from '@/lib/constants';
-import type { Testimonial, Service as ServiceData } from '@/data/types';
+import type { Testimonial, Service as ServiceData, Municipality } from '@/data/types';
 
 export function buildRoofingContractorJsonLd(): WithContext<RoofingContractor> {
   return {
@@ -167,6 +167,58 @@ export function buildServicePageJsonLd(
       }],
     },
   };
+}
+
+export function buildCityRoofingContractorJsonLd(
+  city: Municipality,
+  services: ServiceData[]
+): WithContext<RoofingContractor> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'RoofingContractor',
+    '@id': `${BASE_URL}/#organization`,
+    name: BUSINESS_INFO.name,
+    telephone: BUSINESS_INFO.phone,
+    email: BUSINESS_INFO.email,
+    url: BASE_URL,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: BUSINESS_INFO.address.street,
+      addressLocality: BUSINESS_INFO.address.city,
+      addressRegion: BUSINESS_INFO.address.state,
+      postalCode: BUSINESS_INFO.address.zip,
+      addressCountry: 'US',
+    },
+    areaServed: {
+      '@type': 'City',
+      name: city.name,
+      '@id': `${BASE_URL}/service-areas/${city.slug}#city`,
+    },
+    knowsAbout: [
+      `Roofing services in ${city.name}`,
+      ...city.commonRoofTypes,
+      ...city.architectureStyles.slice(0, 3).map((s: string) => `${s} roof repair`),
+    ],
+    makesOffer: services.map((s) => ({
+      '@type': 'Offer' as const,
+      itemOffered: {
+        '@type': 'Service' as const,
+        '@id': `${BASE_URL}/services/${s.category}/${s.slug}#service`,
+        name: s.name,
+        description: s.shortDescription,
+        areaServed: {
+          '@type': 'City' as const,
+          name: city.name,
+        },
+      },
+    })),
+    openingHoursSpecification: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '07:00',
+      closes: '18:00',
+    },
+  } as WithContext<RoofingContractor>;
 }
 
 // XSS-safe JSON-LD renderer component
