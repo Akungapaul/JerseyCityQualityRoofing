@@ -145,10 +145,10 @@ Plans:
 **UI hint**: yes
 
 Plans:
-- [ ] 07-01-PLAN.md -- CityHubContent interface, JSON-LD builder with @id entities, Wave 0 test scaffolds, Tier 1 city content (Jersey City, Hoboken, Bayonne, North Bergen)
-- [ ] 07-02-PLAN.md -- 7 new city hub section components (CityHubHero, HousingStockSection, WeatherClimateSection, NeighborhoodBreakdown, ServicesInCityGrid, CityLandmarksSection, LocalExpertiseSection)
+- [x] 07-01-PLAN.md -- CityHubContent interface, JSON-LD builder with @id entities, Wave 0 test scaffolds, Tier 1 city content (Jersey City, Hoboken, Bayonne, North Bergen)
+- [x] 07-02-PLAN.md -- 7 new city hub section components (CityHubHero, HousingStockSection, WeatherClimateSection, NeighborhoodBreakdown, ServicesInCityGrid, CityLandmarksSection, LocalExpertiseSection)
 - [ ] 07-03-PLAN.md -- Tier 2 city content data files (Union City, West New York, Secaucus, Kearny)
-- [ ] 07-04-PLAN.md -- Tier 3 city content data files (Harrison, East Newark, Guttenberg, Weehawken)
+- [x] 07-04-PLAN.md -- Tier 3 city content data files (Harrison, East Newark, Guttenberg, Weehawken)
 - [ ] 07-05-PLAN.md -- Page assembly: wire content, components, JSON-LD into [city]/page.tsx with full build verification
 
 ### Phase 8: Service-in-City Pages
