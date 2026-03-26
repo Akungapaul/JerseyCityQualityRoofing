@@ -13,11 +13,16 @@ function getAllServices(): Service[] {
   ];
 }
 
+// Cast JSON-LD result to a generic record for property access in tests.
+// The builder returns WithContext<RoofingContractor> which is a strict union
+// type from schema-dts that doesn't expose extended properties directly.
+type JsonLdRecord = Record<string, unknown>;
+
 describe('city roofing contractor JSON-LD', () => {
   describe('jersey-city schema', () => {
     const city = getMunicipality('jersey-city')!;
     const services = getAllServices();
-    const result = buildCityRoofingContractorJsonLd(city, services);
+    const result = buildCityRoofingContractorJsonLd(city, services) as unknown as JsonLdRecord;
 
     it('has @type RoofingContractor', () => {
       expect(result['@type']).toBe('RoofingContractor');
@@ -28,25 +33,25 @@ describe('city roofing contractor JSON-LD', () => {
     });
 
     it('has areaServed with @type City, name Jersey City, and @id', () => {
-      const areaServed = result.areaServed as Record<string, unknown>;
+      const areaServed = result['areaServed'] as Record<string, unknown>;
       expect(areaServed['@type']).toBe('City');
       expect(areaServed['name']).toBe('Jersey City');
       expect(areaServed['@id']).toBe(`${BASE_URL}/service-areas/jersey-city#city`);
     });
 
     it('has knowsAbout array with length > 0 containing city-specific entry', () => {
-      const knowsAbout = result.knowsAbout as string[];
+      const knowsAbout = result['knowsAbout'] as string[];
       expect(knowsAbout.length).toBeGreaterThan(0);
       expect(knowsAbout).toContain('Roofing services in Jersey City');
     });
 
     it('has makesOffer array with 8 entries (4 residential + 4 commercial)', () => {
-      const makesOffer = result.makesOffer as Array<Record<string, unknown>>;
+      const makesOffer = result['makesOffer'] as Array<Record<string, unknown>>;
       expect(makesOffer.length).toBe(8);
     });
 
     it('each makesOffer[].itemOffered has @id matching service pattern', () => {
-      const makesOffer = result.makesOffer as Array<{ itemOffered: Record<string, unknown> }>;
+      const makesOffer = result['makesOffer'] as Array<{ itemOffered: Record<string, unknown> }>;
       const serviceIdPattern = new RegExp(
         `^${BASE_URL.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}/services/(residential|commercial)/[a-z-]+#service$`
       );
@@ -56,12 +61,12 @@ describe('city roofing contractor JSON-LD', () => {
     });
 
     it('has address.streetAddress matching BUSINESS_INFO (NAP consistency)', () => {
-      const address = result.address as Record<string, unknown>;
+      const address = result['address'] as Record<string, unknown>;
       expect(address['streetAddress']).toBe(BUSINESS_INFO.address.street);
     });
 
     it('has telephone matching BUSINESS_INFO (NAP consistency)', () => {
-      expect(result.telephone).toBe(BUSINESS_INFO.phone);
+      expect(result['telephone']).toBe(BUSINESS_INFO.phone);
     });
   });
 
@@ -73,7 +78,7 @@ describe('city roofing contractor JSON-LD', () => {
       '$slug produces valid JSON-LD with no undefined values',
       ({ slug }) => {
         const city = getMunicipality(slug)!;
-        const result = buildCityRoofingContractorJsonLd(city, services);
+        const result = buildCityRoofingContractorJsonLd(city, services) as unknown as JsonLdRecord;
 
         // Serialize and check for undefined (JSON.stringify drops undefined keys)
         const serialized = JSON.stringify(result);
@@ -83,7 +88,7 @@ describe('city roofing contractor JSON-LD', () => {
         expect(result['@id']).toBe(`${BASE_URL}/#organization`);
 
         // Check areaServed has proper @id
-        const areaServed = result.areaServed as Record<string, unknown>;
+        const areaServed = result['areaServed'] as Record<string, unknown>;
         expect(areaServed['@id']).toBe(`${BASE_URL}/service-areas/${slug}#city`);
         expect(areaServed['name']).toBe(city.name);
       }
@@ -97,7 +102,7 @@ describe('city roofing contractor JSON-LD', () => {
     it('@id for the organization is identical across all 12 cities', () => {
       const orgIds = allSlugs.map((slug) => {
         const city = getMunicipality(slug)!;
-        const result = buildCityRoofingContractorJsonLd(city, services);
+        const result = buildCityRoofingContractorJsonLd(city, services) as unknown as JsonLdRecord;
         return result['@id'];
       });
 
