@@ -141,13 +141,15 @@ Plans:
   3. City-specific testimonials display on each location page (tagged by municipality)
   4. RoofingContractor (LocalBusiness) and BreadcrumbList JSON-LD schema renders correctly on every location page with proper entity relationships
   5. Each city page links to all 8 service-in-city child pages (forward links ready for Phase 8)
-**Plans**: TBD
+**Plans**: 5 plans
 **UI hint**: yes
 
 Plans:
-- [ ] 07-01: TBD
-- [ ] 07-02: TBD
-- [ ] 07-03: TBD
+- [ ] 07-01-PLAN.md -- CityHubContent interface, JSON-LD builder with @id entities, Wave 0 test scaffolds, Tier 1 city content (Jersey City, Hoboken, Bayonne, North Bergen)
+- [ ] 07-02-PLAN.md -- 7 new city hub section components (CityHubHero, HousingStockSection, WeatherClimateSection, NeighborhoodBreakdown, ServicesInCityGrid, CityLandmarksSection, LocalExpertiseSection)
+- [ ] 07-03-PLAN.md -- Tier 2 city content data files (Union City, West New York, Secaucus, Kearny)
+- [ ] 07-04-PLAN.md -- Tier 3 city content data files (Harrison, East Newark, Guttenberg, Weehawken)
+- [ ] 07-05-PLAN.md -- Page assembly: wire content, components, JSON-LD into [city]/page.tsx with full build verification
 
 ### Phase 8: Service-in-City Pages
 **Goal**: Every "[service] in [city]" search query across all 8 services and 12 municipalities has a dedicated, genuinely unique page that ranks without triggering doorway page classification
@@ -216,7 +218,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 4. Core Marketing Pages | 0/3 | Planned    |  |
 | 5. Residential Service Pages | 0/5 | Planned | - |
 | 6. Commercial Service Pages | 0/3 | Planned | - |
-| 7. Location Hub Pages | 0/3 | Not started | - |
+| 7. Location Hub Pages | 0/5 | Planned | - |
 | 8. Service-in-City Pages | 0/3 | Not started | - |
 | 9. Blog & Supporting Content | 0/3 | Not started | - |
 | 10. Conversion & Performance Polish | 0/3 | Not started | - |
