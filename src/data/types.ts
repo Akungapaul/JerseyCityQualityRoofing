@@ -1,4 +1,11 @@
 // Sub-types
+export interface NeighborhoodSection {
+  name: string;
+  description: string;
+  commonRoofTypes: string[];
+  keyChallenge: string;
+}
+
 export interface Landmark {
   name: string;
   description: string;
