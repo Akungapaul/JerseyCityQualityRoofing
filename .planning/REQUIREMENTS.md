@@ -40,7 +40,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Location Pages (LOC)
 
-- [ ] **LOC-01**: City hub pages for all 12 Hudson County municipalities (Jersey City, Hoboken, Bayonne, North Bergen, Union City, West New York, Secaucus, Kearny, Harrison, East Newark, Guttenberg, Weehawken) — each with unique local content, services overview, testimonials, and FAQ
+- [x] **LOC-01**: City hub pages for all 12 Hudson County municipalities (Jersey City, Hoboken, Bayonne, North Bergen, Union City, West New York, Secaucus, Kearny, Harrison, East Newark, Guttenberg, Weehawken) — each with unique local content, services overview, testimonials, and FAQ
 - [ ] **LOC-02**: Service-in-city pages (~96 pages) generated programmatically via generateStaticParams, each service x each municipality
 - [ ] **LOC-03**: Each service-in-city page achieves 70%+ content uniqueness using municipality data registries (local landmarks, housing stock data, city-specific stats, building codes, weather patterns)
 - [ ] **LOC-04**: Each service-in-city page includes unique FAQ section tailored to that city's specific roofing concerns
@@ -175,7 +175,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | COMM-02 | Phase 6 | Pending |
 | COMM-03 | Phase 6 | Pending |
 | COMM-04 | Phase 6 | Pending |
-| LOC-01 | Phase 7 | Pending |
+| LOC-01 | Phase 7 | Complete |
 | LOC-02 | Phase 8 | Pending |
 | LOC-03 | Phase 8 | Pending |
 | LOC-04 | Phase 8 | Pending |
