@@ -127,9 +127,9 @@ Plans:
 **UI hint**: yes
 
 Plans:
-- [ ] 06-01-PLAN.md -- Commercial content data files (4 services, 2200+ words each) with test suite extension for commercial voice validation
-- [ ] 06-02-PLAN.md -- CommercialRelatedServicesRow component with commercial icon map and /services/commercial/ link prefix
-- [ ] 06-03-PLAN.md -- Page assembly: wire content data, components, and SEO into commercial [service]/page.tsx with full build verification
+- [x] 06-01-PLAN.md -- Commercial content data files (4 services, 2200+ words each) with test suite extension for commercial voice validation
+- [x] 06-02-PLAN.md -- CommercialRelatedServicesRow component with commercial icon map and /services/commercial/ link prefix
+- [x] 06-03-PLAN.md -- Page assembly: wire content data, components, and SEO into commercial [service]/page.tsx with full build verification
 
 ### Phase 7: Location Hub Pages
 **Goal**: Visitors searching for roofing in any Hudson County municipality find a dedicated, locally-relevant page that establishes the company as a local expert in their specific city
