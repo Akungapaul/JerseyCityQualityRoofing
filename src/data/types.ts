@@ -221,3 +221,25 @@ export interface CityHubContent {
   closingNarrative: string;              // ~200 words: final call to action
   cityFaqs: FAQ[];                       // 8-10 city-specific FAQs
 }
+
+// Phase 8: Service-in-city content data types
+export interface NeighborhoodServiceInsight {
+  neighborhoodName: string;
+  insight: string;       // ~100 words: what's unique about this service in this neighborhood
+  commonIssue: string;   // The #1 issue seen in this neighborhood
+}
+
+export interface ServiceInCityContent {
+  serviceSlug: string;
+  citySlug: string;
+  heroHeadline: string;                              // City-specific H1, e.g., "Expert Roof Repair in Jersey City, NJ"
+  heroSubtitle: string;                              // Unique supporting tagline
+  cityServiceNarrative: string;                      // ~600 words: first-person expert narrative about doing THIS service in THIS city
+  neighborhoodServiceInsights: NeighborhoodServiceInsight[]; // 3-5 per-neighborhood insights for this service
+  localCaseScenario: string;                         // ~400 words: realistic case study / scenario for this service in this city
+  cityMaterialsAdvice: string;                       // ~300 words: which materials work best in this city for this service
+  cityCostContext: string;                           // ~200 words: cost factors specific to this city
+  citySpecificProcess: string;                       // ~300 words: how the process differs in this city
+  extendedFaqs: FAQ[];                               // 3-5 additional FAQs beyond the resolver's 5
+  closingNarrative: string;                          // ~200 words: city-specific closing CTA
+}
