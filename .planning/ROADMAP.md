@@ -161,19 +161,25 @@ Plans:
   3. Each page achieves 70%+ content uniqueness vs. the same service in other cities (verified by content resolver enforcement)
   4. Each service-in-city page includes unique FAQ section with 5+ questions tailored to that city's specific roofing concerns
   5. Pages are launched in batches (Tier 1: Jersey City, Hoboken, Bayonne, North Bergen first) with Search Console indexing validation before expanding
-**Plans**: 9 plans
+**Plans**: 15 plans
 **UI hint**: yes
 
 Plans:
-- [ ] 08-01-PLAN.md -- Foundation: ServiceInCityContent interface, buildServiceInCityJsonLd builder, Wave 0 test scaffolds (uniqueness, structure, SEO)
-- [ ] 08-02-PLAN.md -- 5 new section components: CityServiceHero, LocalServiceContext, NeighborhoodServiceInsights, CitySpecificConcerns, SiblingCitiesNav
-- [ ] 08-03-PLAN.md -- Tier 1 content: Jersey City (8 services) + Hoboken (8 services) = 16 content data files
-- [ ] 08-04-PLAN.md -- Tier 1 content: Bayonne (8 services) + North Bergen (8 services) = 16 content data files
-- [ ] 08-05-PLAN.md -- Tier 2 content: Union City (8 services) + West New York (8 services) = 16 content data files
-- [ ] 08-06-PLAN.md -- Tier 2 content: Secaucus (8 services) + Kearny (8 services) = 16 content data files
-- [ ] 08-07-PLAN.md -- Tier 3 content: Harrison (8 services) + East Newark (8 services) = 16 content data files
-- [ ] 08-08-PLAN.md -- Tier 3 content: Guttenberg (8 services) + Weehawken (8 services) = 16 content data files
-- [ ] 08-09-PLAN.md -- Page assembly: wire content, components, JSON-LD into residential + commercial [city]/page.tsx, activate tests, full build verification
+- [ ] 08-01-PLAN.md -- Foundation: ServiceInCityContent interface, buildServiceInCityJsonLd builder, Wave 0 test scaffolds (uniqueness, structure, SEO, cumulative word count)
+- [ ] 08-02-PLAN.md -- 5 new section components + unit tests: CityServiceHero, LocalServiceContext, NeighborhoodServiceInsights, CitySpecificConcerns, SiblingCitiesNav
+- [ ] 08-03-PLAN.md -- Tier 1 content: Jersey City (8 services) = 8 content data files
+- [ ] 08-04-PLAN.md -- Tier 1 content: Hoboken (8 services) = 8 content data files
+- [ ] 08-05-PLAN.md -- Tier 1 content: Bayonne (8 services) = 8 content data files
+- [ ] 08-06-PLAN.md -- Tier 1 content: North Bergen (8 services) = 8 content data files
+- [ ] 08-07-PLAN.md -- Tier 2 content: Union City (8 services) = 8 content data files
+- [ ] 08-08-PLAN.md -- Tier 2 content: West New York (8 services) = 8 content data files
+- [ ] 08-09-PLAN.md -- Tier 2 content: Secaucus (8 services) = 8 content data files
+- [ ] 08-10-PLAN.md -- Tier 2 content: Kearny (8 services) = 8 content data files
+- [ ] 08-11-PLAN.md -- Tier 3 content: Harrison (8 services) = 8 content data files
+- [ ] 08-12-PLAN.md -- Tier 3 content: East Newark (8 services) = 8 content data files
+- [ ] 08-13-PLAN.md -- Tier 3 content: Guttenberg (8 services) = 8 content data files
+- [ ] 08-14-PLAN.md -- Tier 3 content: Weehawken (8 services) = 8 content data files
+- [ ] 08-15-PLAN.md -- Page assembly: wire templates, add parent service page city downlinks, activate tests, full build verification
 
 ### Phase 9: Blog & Supporting Content
 **Goal**: The site covers the full informational search landscape for roofing topics, with every blog post and content page strengthening the authority of its parent silo
@@ -225,6 +231,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 5. Residential Service Pages | 0/5 | Planned | - |
 | 6. Commercial Service Pages | 0/3 | Planned | - |
 | 7. Location Hub Pages | 0/5 | Planned | - |
-| 8. Service-in-City Pages | 0/9 | Planned | - |
+| 8. Service-in-City Pages | 0/15 | Planned | - |
 | 9. Blog & Supporting Content | 0/3 | Not started | - |
 | 10. Conversion & Performance Polish | 0/3 | Not started | - |
