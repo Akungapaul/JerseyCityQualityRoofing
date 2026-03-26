@@ -3,8 +3,8 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Ready to plan
-stopped_at: Completed 08-01-PLAN.md
-last_updated: "2026-03-26T15:55:30.104Z"
+stopped_at: Completed Wave 1 (08-01 + 08-02)
+last_updated: "2026-03-26T15:56:00Z"
 progress:
   total_phases: 10
   completed_phases: 7
@@ -19,7 +19,7 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-22)
 
 **Core value:** Every visitor within Hudson County searching for roofing services finds this site, trusts it as the local authority, and converts into a lead.
-**Current focus:** Phase 06 — commercial-service-pages
+**Current focus:** Phase 08 — service-in-city-pages
 
 ## Current Position
 
@@ -62,6 +62,7 @@ Plan: Not started
 | Phase 07 P04 | 12min | 2 tasks | 4 files |
 | Phase 07 P05 | 3min | 1 tasks | 1 files |
 | Phase 08 P01 | 3min | 2 tasks | 5 files |
+| Phase 08 P02 | 3min | 2 tasks | 8 files |
 
 ## Accumulated Context
 
@@ -106,6 +107,10 @@ Recent decisions affecting current work:
 - [Phase 07]: City testimonials use 3+ threshold: city-specific if available, global pool as fallback (per LOC-05)
 - [Phase 08]: ServiceInCityContent uses 12 distinct prose fields for structured content depth; content data files must provide >= 2500 prose words (resolver adds ~527 to reach 3000+)
 - [Phase 08]: Jaccard similarity threshold set at 30% for cross-city content uniqueness validation; Wave 0 test scaffolds use describe.skip until content tiers are created
+- [Phase 08]: CityServiceHero follows CityHubHero own-section-wrapper pattern (no SectionWrapper) with emergency variant swapping accent to #d4782f
+- [Phase 08]: Server Component tests use renderToStaticMarkup + createElement + vi.mock for client component dependencies
+- [Phase 08]: SiblingCitiesNav uses prefetch={false} on all Link elements to avoid 11x96 prefetch overhead
+- [Phase 08]: Vitest config extended to include .tsx test files for component rendering tests
 
 ### Pending Todos
 
@@ -119,6 +124,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-26T15:55:30.102Z
-Stopped at: Completed 08-01-PLAN.md
+Last session: 2026-03-26T15:56:00Z
+Stopped at: Completed Wave 1 (08-01 + 08-02)
 Resume file: None

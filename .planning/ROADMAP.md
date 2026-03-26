@@ -166,7 +166,7 @@ Plans:
 
 Plans:
 - [x] 08-01-PLAN.md -- Foundation: ServiceInCityContent interface, buildServiceInCityJsonLd builder, Wave 0 test scaffolds (uniqueness, structure, SEO, cumulative word count)
-- [ ] 08-02-PLAN.md -- 5 new section components + unit tests: CityServiceHero, LocalServiceContext, NeighborhoodServiceInsights, CitySpecificConcerns, SiblingCitiesNav
+- [x] 08-02-PLAN.md -- 5 new section components + unit tests: CityServiceHero, LocalServiceContext, NeighborhoodServiceInsights, CitySpecificConcerns, SiblingCitiesNav
 - [ ] 08-03-PLAN.md -- Tier 1 content: Jersey City (8 services) = 8 content data files
 - [ ] 08-04-PLAN.md -- Tier 1 content: Hoboken (8 services) = 8 content data files
 - [ ] 08-05-PLAN.md -- Tier 1 content: Bayonne (8 services) = 8 content data files
@@ -231,6 +231,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 5. Residential Service Pages | 0/5 | Planned | - |
 | 6. Commercial Service Pages | 0/3 | Planned | - |
 | 7. Location Hub Pages | 0/5 | Planned | - |
-| 8. Service-in-City Pages | 0/15 | Planned | - |
+| 8. Service-in-City Pages | 1/15 | In Progress|  |
 | 9. Blog & Supporting Content | 0/3 | Not started | - |
 | 10. Conversion & Performance Polish | 0/3 | Not started | - |
