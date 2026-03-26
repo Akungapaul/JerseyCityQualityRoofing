@@ -42,6 +42,7 @@ Declared values (must be multiples of 4):
 Exceptions:
 - 44px minimum touch target for all interactive elements (buttons, accordion triggers, phone links) -- per WCAG AA and established Phase 2 pattern (`min-h-[44px]`)
 - 80px (`lg:py-20`) -- established hero/section desktop padding pattern carried forward from Phase 2 SectionWrapper and used consistently across Phase 5 residential and Phase 6 commercial service pages
+- 96px (`lg:py-24`) -- hero large-desktop top/bottom padding, completing the mobile-to-desktop responsive ramp py-16 (64px) to py-20 (80px) to py-24 (96px) carried forward from existing hero section patterns in hero-section.tsx, service-hero.tsx, and about page
 - 1280px max content width (`max-w-[1280px]`) -- established in SectionWrapper and all page templates
 
 ---
