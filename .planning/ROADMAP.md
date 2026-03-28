@@ -19,7 +19,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [ ] **Phase 5: Residential Service Pages** - Four 3000+ word residential service pillar pages with process explainers and FAQs
 - [ ] **Phase 6: Commercial Service Pages** - Four 3000+ word commercial service pillar pages
 - [ ] **Phase 7: Location Hub Pages** - Twelve city hub pages with unique local content and full schema markup
-- [ ] **Phase 8: Service-in-City Pages** - 96 programmatic pages launched in validated batches with content uniqueness enforcement
+- [x] **Phase 8: Service-in-City Pages** - 96 programmatic pages launched in validated batches with content uniqueness enforcement (completed 2026-03-28)
 - [ ] **Phase 9: Blog & Supporting Content** - Blog system, silo articles, cost guides, material guides, problem-solution pages
 - [ ] **Phase 10: Conversion & Performance Polish** - Gallery, exit-intent, floating CTAs, emergency banners, Core Web Vitals
 
@@ -175,11 +175,11 @@ Plans:
 - [x] 08-08-PLAN.md -- Tier 2 content: West New York (8 services) = 8 content data files
 - [x] 08-09-PLAN.md -- Tier 2 content: Secaucus (8 services) = 8 content data files
 - [x] 08-10-PLAN.md -- Tier 2 content: Kearny (8 services) = 8 content data files
-- [ ] 08-11-PLAN.md -- Tier 3 content: Harrison (8 services) = 8 content data files
-- [ ] 08-12-PLAN.md -- Tier 3 content: East Newark (8 services) = 8 content data files
-- [ ] 08-13-PLAN.md -- Tier 3 content: Guttenberg (8 services) = 8 content data files
+- [x] 08-11-PLAN.md -- Tier 3 content: Harrison (8 services) = 8 content data files
+- [x] 08-12-PLAN.md -- Tier 3 content: East Newark (8 services) = 8 content data files
+- [x] 08-13-PLAN.md -- Tier 3 content: Guttenberg (8 services) = 8 content data files
 - [x] 08-14-PLAN.md -- Tier 3 content: Weehawken (8 services) = 8 content data files
-- [ ] 08-15-PLAN.md -- Page assembly: wire templates, add parent service page city downlinks, activate tests, full build verification
+- [x] 08-15-PLAN.md -- Page assembly: wire templates, add parent service page city downlinks, activate tests, full build verification
 
 ### Phase 9: Blog & Supporting Content
 **Goal**: The site covers the full informational search landscape for roofing topics, with every blog post and content page strengthening the authority of its parent silo
@@ -231,6 +231,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 5. Residential Service Pages | 0/5 | Planned | - |
 | 6. Commercial Service Pages | 0/3 | Planned | - |
 | 7. Location Hub Pages | 0/5 | Planned | - |
-| 8. Service-in-City Pages | 1/15 | In Progress|  |
+| 8. Service-in-City Pages | 15/15 | Complete   | 2026-03-28 |
 | 9. Blog & Supporting Content | 0/3 | Not started | - |
 | 10. Conversion & Performance Polish | 0/3 | Not started | - |
