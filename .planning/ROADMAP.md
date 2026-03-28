@@ -176,8 +176,8 @@ Plans:
 - [x] 08-09-PLAN.md -- Tier 2 content: Secaucus (8 services) = 8 content data files
 - [x] 08-10-PLAN.md -- Tier 2 content: Kearny (8 services) = 8 content data files
 - [ ] 08-11-PLAN.md -- Tier 3 content: Harrison (8 services) = 8 content data files
-- [x] 08-12-PLAN.md -- Tier 3 content: East Newark (8 services) = 8 content data files
-- [ ] 08-13-PLAN.md -- Tier 3 content: Guttenberg (8 services) = 8 content data files
+- [ ] 08-12-PLAN.md -- Tier 3 content: East Newark (8 services) = 8 content data files
+- [x] 08-13-PLAN.md -- Tier 3 content: Guttenberg (8 services) = 8 content data files
 - [ ] 08-14-PLAN.md -- Tier 3 content: Weehawken (8 services) = 8 content data files
 - [ ] 08-15-PLAN.md -- Page assembly: wire templates, add parent service page city downlinks, activate tests, full build verification
 
