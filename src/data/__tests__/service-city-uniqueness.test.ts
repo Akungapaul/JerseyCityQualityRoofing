@@ -1,5 +1,11 @@
 import { describe, it, expect } from 'vitest';
 
+// Content imports for uniqueness comparison: roof-repair across 4 representative cities
+import { JERSEY_CITY_ROOF_REPAIR_CONTENT } from '@/data/content/service-cities/jersey-city/roof-repair';
+import { HOBOKEN_ROOF_REPAIR_CONTENT } from '@/data/content/service-cities/hoboken/roof-repair';
+import { BAYONNE_ROOF_REPAIR_CONTENT } from '@/data/content/service-cities/bayonne/roof-repair';
+import { SECAUCUS_ROOF_REPAIR_CONTENT } from '@/data/content/service-cities/secaucus/roof-repair';
+
 /**
  * Jaccard word-set similarity: measures overlap between two texts.
  * Returns 0 (completely different) to 1 (identical word sets).
@@ -20,15 +26,44 @@ describe('service-city content uniqueness', () => {
     expect(jaccardSimilarity('', '')).toBe(0);
   });
 
-  describe.skip('cross-city uniqueness (enable when Tier 1 content data exists)', () => {
-    // These tests will be unskipped as content files are created.
-    // Each test compares cityServiceNarrative between two cities for the same service.
-    // Threshold: < 30% Jaccard similarity (70%+ uniqueness).
-    it('roof-repair: jersey-city vs hoboken narrative similarity < 30%', () => {
-      // Import content files when available
-      // const jc = JERSEY_CITY_ROOF_REPAIR_CONTENT.cityServiceNarrative;
-      // const hob = HOBOKEN_ROOF_REPAIR_CONTENT.cityServiceNarrative;
-      // expect(jaccardSimilarity(jc, hob)).toBeLessThan(0.30);
+  describe('cross-city uniqueness — cityServiceNarrative Jaccard < 30%', () => {
+    // All 6 pairwise combinations of 4 cities for roof-repair
+    const cities = [
+      { name: 'Jersey City', narrative: JERSEY_CITY_ROOF_REPAIR_CONTENT.cityServiceNarrative },
+      { name: 'Hoboken', narrative: HOBOKEN_ROOF_REPAIR_CONTENT.cityServiceNarrative },
+      { name: 'Bayonne', narrative: BAYONNE_ROOF_REPAIR_CONTENT.cityServiceNarrative },
+      { name: 'Secaucus', narrative: SECAUCUS_ROOF_REPAIR_CONTENT.cityServiceNarrative },
+    ];
+
+    // Generate all 6 pairwise combinations
+    for (let i = 0; i < cities.length; i++) {
+      for (let j = i + 1; j < cities.length; j++) {
+        const cityA = cities[i];
+        const cityB = cities[j];
+        it(`roof-repair: ${cityA.name} vs ${cityB.name} narrative similarity < 30%`, () => {
+          const similarity = jaccardSimilarity(cityA.narrative, cityB.narrative);
+          expect(similarity).toBeLessThan(0.30);
+        });
+      }
+    }
+  });
+
+  describe('cross-city uniqueness — localCaseScenario Jaccard < 30%', () => {
+    // Test localCaseScenario for 2 representative pairs
+    it('roof-repair: Jersey City vs Hoboken case scenario similarity < 30%', () => {
+      const similarity = jaccardSimilarity(
+        JERSEY_CITY_ROOF_REPAIR_CONTENT.localCaseScenario,
+        HOBOKEN_ROOF_REPAIR_CONTENT.localCaseScenario,
+      );
+      expect(similarity).toBeLessThan(0.30);
+    });
+
+    it('roof-repair: Bayonne vs Secaucus case scenario similarity < 30%', () => {
+      const similarity = jaccardSimilarity(
+        BAYONNE_ROOF_REPAIR_CONTENT.localCaseScenario,
+        SECAUCUS_ROOF_REPAIR_CONTENT.localCaseScenario,
+      );
+      expect(similarity).toBeLessThan(0.30);
     });
   });
 });

@@ -1,5 +1,13 @@
 import { describe, it, expect } from 'vitest';
 import type { ServiceInCityContent } from '../types';
+import { getService } from '../services';
+import { getMunicipality } from '../municipalities';
+
+// Sample content imports: 4 diverse files across cities and services
+import { JERSEY_CITY_ROOF_REPAIR_CONTENT } from '@/data/content/service-cities/jersey-city/roof-repair';
+import { HOBOKEN_FLAT_ROOF_SYSTEMS_CONTENT } from '@/data/content/service-cities/hoboken/flat-roof-systems';
+import { SECAUCUS_EMERGENCY_ROOFING_CONTENT } from '@/data/content/service-cities/secaucus/emergency-roofing';
+import { WEEHAWKEN_COMMERCIAL_REPAIR_CONTENT } from '@/data/content/service-cities/weehawken/commercial-repair';
 
 /**
  * Counts words in a string (rough word count for content length validation).
@@ -42,28 +50,86 @@ describe('service-city content data validation', () => {
   });
 
   it('totalProseWords helper aggregates all prose fields', () => {
-    // Verify the helper compiles and runs without errors
     expect(typeof totalProseWords).toBe('function');
   });
 
-  describe.skip('content structure (enable when Tier 1 content data exists)', () => {
-    // These tests will be unskipped as content files are created.
-    // Each test validates:
-    // 1. All required fields are non-empty strings
-    // 2. cityServiceNarrative >= 400 words
-    // 3. localCaseScenario >= 250 words
-    // 4. cityMaterialsAdvice >= 150 words
-    // 5. cityCostContext >= 100 words
-    // 6. citySpecificProcess >= 150 words
-    // 7. closingNarrative >= 100 words
-    // 8. neighborhoodServiceInsights has 3-5 entries
-    // 9. extendedFaqs has 3-5 entries
-    // 10. serviceSlug matches a valid service slug
-    // 11. citySlug matches a valid municipality slug
-    // 12. CUMULATIVE: totalProseWords(content) >= 2500 (resolver adds ~527 to reach 3000+)
-    it('placeholder: jersey-city/roof-repair content meets all criteria including cumulative word count', () => {
-      // Will be implemented when content exists:
-      // expect(totalProseWords(content)).toBeGreaterThanOrEqual(2500);
-    });
+  // ---------------------------------------------------------------------------
+  // Sample content validation: each file checked against all criteria
+  // ---------------------------------------------------------------------------
+
+  const samples: Array<{ label: string; content: ServiceInCityContent }> = [
+    { label: 'jersey-city/roof-repair', content: JERSEY_CITY_ROOF_REPAIR_CONTENT },
+    { label: 'hoboken/flat-roof-systems', content: HOBOKEN_FLAT_ROOF_SYSTEMS_CONTENT },
+    { label: 'secaucus/emergency-roofing', content: SECAUCUS_EMERGENCY_ROOFING_CONTENT },
+    { label: 'weehawken/commercial-repair', content: WEEHAWKEN_COMMERCIAL_REPAIR_CONTENT },
+  ];
+
+  describe('content structure and word counts', () => {
+    for (const { label, content } of samples) {
+      describe(label, () => {
+        it('cityServiceNarrative >= 400 words', () => {
+          expect(wordCount(content.cityServiceNarrative)).toBeGreaterThanOrEqual(400);
+        });
+
+        it('localCaseScenario >= 250 words', () => {
+          expect(wordCount(content.localCaseScenario)).toBeGreaterThanOrEqual(250);
+        });
+
+        it('cityMaterialsAdvice >= 150 words', () => {
+          expect(wordCount(content.cityMaterialsAdvice)).toBeGreaterThanOrEqual(150);
+        });
+
+        it('cityCostContext >= 100 words', () => {
+          expect(wordCount(content.cityCostContext)).toBeGreaterThanOrEqual(100);
+        });
+
+        it('citySpecificProcess >= 150 words', () => {
+          expect(wordCount(content.citySpecificProcess)).toBeGreaterThanOrEqual(150);
+        });
+
+        it('closingNarrative >= 100 words', () => {
+          expect(wordCount(content.closingNarrative)).toBeGreaterThanOrEqual(100);
+        });
+
+        it('neighborhoodServiceInsights has 3-5 entries', () => {
+          expect(content.neighborhoodServiceInsights.length).toBeGreaterThanOrEqual(3);
+          expect(content.neighborhoodServiceInsights.length).toBeLessThanOrEqual(5);
+        });
+
+        it('each neighborhood insight >= 50 words', () => {
+          for (const n of content.neighborhoodServiceInsights) {
+            expect(wordCount(n.insight)).toBeGreaterThanOrEqual(50);
+          }
+        });
+
+        it('extendedFaqs has 3-5 entries', () => {
+          expect(content.extendedFaqs.length).toBeGreaterThanOrEqual(3);
+          expect(content.extendedFaqs.length).toBeLessThanOrEqual(5);
+        });
+
+        it('each FAQ answer >= 30 words', () => {
+          for (const faq of content.extendedFaqs) {
+            expect(wordCount(faq.answer)).toBeGreaterThanOrEqual(30);
+          }
+        });
+
+        it('serviceSlug matches a valid service', () => {
+          const service = getService(content.serviceSlug);
+          expect(service).toBeDefined();
+          expect(service!.slug).toBe(content.serviceSlug);
+        });
+
+        it('citySlug matches a valid municipality', () => {
+          const city = getMunicipality(content.citySlug);
+          expect(city).toBeDefined();
+          expect(city!.slug).toBe(content.citySlug);
+        });
+
+        it('totalProseWords >= 2500 (content data contribution to 3000+ page)', () => {
+          const total = totalProseWords(content);
+          expect(total).toBeGreaterThanOrEqual(2500);
+        });
+      });
+    }
   });
 });

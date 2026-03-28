@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 import { generatePageMetadata } from '@/lib/seo/metadata';
 import {
   JsonLd,
@@ -7,6 +8,7 @@ import {
   buildFaqPageJsonLd,
 } from '@/lib/seo/json-ld';
 import { getService, getResidentialServiceSlugs } from '@/data/services';
+import { getAllMunicipalities } from '@/data/municipalities';
 import { getTestimonialsByService, TESTIMONIALS } from '@/data/testimonials';
 import { PHONE_NUMBER, PHONE_HREF, BASE_URL } from '@/lib/constants';
 import type {
@@ -277,6 +279,30 @@ function StandardTemplate({
         </ScrollReveal>
       </SectionWrapper>
 
+      {/* 10b. Cities We Serve (secondary, per RESEARCH.md Pitfall 5 — parent links to city variants) */}
+      <SectionWrapper tone="secondary">
+        <ScrollReveal>
+          <h2 className="font-heading font-bold text-[1.75rem] text-text-primary mb-4">
+            {service.name} in Hudson County Cities
+          </h2>
+          <p className="text-lg text-text-secondary mb-6 leading-relaxed">
+            We provide expert {service.name.toLowerCase()} services across all 12 Hudson County municipalities. Select your city for location-specific information, pricing, and FAQs.
+          </p>
+          <nav aria-label="Service available in these cities" className="flex flex-wrap gap-3">
+            {getAllMunicipalities().map((city) => (
+              <Link
+                key={city.slug}
+                href={`/services/residential/${service.slug}/${city.slug}`}
+                prefetch={false}
+                className="inline-flex items-center bg-secondary rounded-lg px-4 py-2 text-lg text-text-primary border border-[#4a5040] hover:border-accent transition-colors duration-[150ms] min-h-[44px]"
+              >
+                {city.name}
+              </Link>
+            ))}
+          </nav>
+        </ScrollReveal>
+      </SectionWrapper>
+
       {/* 11. FAQ Accordion (secondary, per D-19) */}
       <SectionWrapper tone="secondary">
         <ScrollReveal>
@@ -377,6 +403,30 @@ function EmergencyTemplate({
 
       {/* 9. Testimonials */}
       <TestimonialCarousel testimonials={displayTestimonials} />
+
+      {/* 9b. Cities We Serve (secondary, per RESEARCH.md Pitfall 5) */}
+      <SectionWrapper tone="secondary">
+        <ScrollReveal>
+          <h2 className="font-heading font-bold text-[1.75rem] text-text-primary mb-4">
+            {service.name} in Hudson County Cities
+          </h2>
+          <p className="text-lg text-text-secondary mb-6 leading-relaxed">
+            We provide expert {service.name.toLowerCase()} services across all 12 Hudson County municipalities. Select your city for location-specific information, pricing, and FAQs.
+          </p>
+          <nav aria-label="Service available in these cities" className="flex flex-wrap gap-3">
+            {getAllMunicipalities().map((city) => (
+              <Link
+                key={city.slug}
+                href={`/services/residential/${service.slug}/${city.slug}`}
+                prefetch={false}
+                className="inline-flex items-center bg-secondary rounded-lg px-4 py-2 text-lg text-text-primary border border-[#4a5040] hover:border-accent transition-colors duration-[150ms] min-h-[44px]"
+              >
+                {city.name}
+              </Link>
+            ))}
+          </nav>
+        </ScrollReveal>
+      </SectionWrapper>
 
       {/* 10. FAQ Accordion (dominant) */}
       <SectionWrapper tone="dominant">
