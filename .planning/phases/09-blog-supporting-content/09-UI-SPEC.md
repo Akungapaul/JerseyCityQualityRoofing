@@ -58,18 +58,20 @@ Source: SectionWrapper `py-12 sm:py-16 lg:py-20`, ServiceHero `py-16 sm:py-20 lg
 |------|------|--------|-------------|-----------|
 | Body | 18px (1.125rem) | 500 (medium) | 1.7 | default body styles from globals.css |
 | Body Large | 18px (text-lg) | 500 | 1.625 (leading-relaxed) | `text-lg text-text-secondary leading-relaxed` |
-| Label / Badge / Tag | 14px (0.875rem) | 700 (bold) | 1.5 | `text-[0.875rem] font-bold uppercase tracking-wider` |
-| Article Meta | 16px (1rem) | 500 | 1.5 | `text-[1rem] text-text-secondary` |
+| Small / Label / Meta | 14px (0.875rem) | 700 (bold) for labels; 500 (medium) for meta | 1.5 | Labels: `text-[0.875rem] font-bold uppercase tracking-wider`. Meta: `text-[0.875rem] text-text-secondary` |
 | Section Heading (H2) | 28px (1.75rem) | 700 (bold) | 1.2 | `text-[1.75rem] font-heading font-bold text-text-primary` |
-| Sub-section Heading (H3) | 22px (1.375rem) | 700 (bold) | 1.2 | `text-[1.375rem] font-heading font-bold text-text-primary` |
+| Sub-section Heading (H3) | 18px (text-lg) | 700 (bold) | 1.2 | `text-lg font-heading font-bold text-text-primary` |
 | Page Title (H1) | 40px/48px (2.5rem/3rem) | 700 (bold) | 1.1 | `text-[2.5rem] lg:text-[3rem] font-heading font-bold leading-[1.1]` |
-| TOC Link | 16px (1rem) | 500 (medium) | 1.4 | `text-[1rem] text-text-secondary hover:text-accent transition-colors` |
+
+**4-size scale:** 14px (small/label/meta), 18px (body + H3), 28px (H2), 40px/48px (H1).
+
+H3 at 18px is visually distinct from body text because it uses the heading font family (Cormorant via `font-heading`) and bold weight (700), whereas body text uses Cormorant Garamond at medium weight (500). The font family switch provides clear hierarchy without requiring a separate size token.
+
+The "Small / Label / Meta" token at 14px covers: silo badges, category badges, article metadata (date, reading time, author), TOC links, cost table header labels, cost table notes, disclaimers, and the "FROM OUR SERVICE LIBRARY" label.
 
 Font loading: `next/font/google` self-hosts Cormorant and Cormorant Garamond. CSS variables `--font-heading` and `--font-body` set in `@theme` block.
 
-Note: The Article Meta role (16px) is introduced for date, reading time, and author attribution metadata displayed below blog headlines. This is the only new size -- all other sizes are inherited from previous phases.
-
-Source: globals.css base styles, ServiceHero H1 pattern, ServiceContentSection heading patterns from Phases 5/6/7/8
+Source: globals.css base styles, ServiceHero H1 pattern, ServiceContentSection heading patterns from Phases 5/6/7/8. Typography consolidated from 6 sizes to 4 per checker review.
 
 ---
 
@@ -231,7 +233,7 @@ Hero section for blog article pages with metadata display.
 | Silo badge | `inline-flex items-center bg-accent text-dominant rounded-full px-3 py-1 text-[0.875rem] font-bold uppercase tracking-wider` -- displays silo category (e.g., "ROOF REPAIR"). Standalone articles show "ROOFING EDUCATION" |
 | H1 | `text-[2.5rem] lg:text-[3rem] font-heading font-bold text-text-primary leading-[1.1] mt-4` |
 | Subtitle | `text-lg text-text-secondary mt-4 leading-relaxed max-w-3xl` |
-| Meta row | `flex flex-wrap items-center gap-4 mt-6 text-[1rem] text-text-secondary` containing author, date, reading time |
+| Meta row | `flex flex-wrap items-center gap-4 mt-6 text-[0.875rem] text-text-secondary` containing author, date, reading time |
 | Date format | "March 1, 2026" -- `Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'long', day: 'numeric' })` |
 | Reading time | `inline-flex items-center gap-1` with Clock icon (size 16, `text-accent`) + "{N} min read" |
 | Vertical padding | `py-16 sm:py-20 lg:py-24` |
@@ -284,7 +286,7 @@ Renders a single `ArticleSection` (heading + prose) with support for H2 and H3 l
 | File | `src/components/sections/blog-article-body.tsx` |
 | Server Component | Yes |
 | H2 | `text-[1.75rem] font-heading font-bold text-text-primary` (same as ServiceContentSection) |
-| H3 | `text-[1.375rem] font-heading font-bold text-text-primary` |
+| H3 | `text-lg font-heading font-bold text-text-primary` |
 | Body | Multi-paragraph prose rendered via `\n\n` split pattern (same as ServiceContentSection) -- `text-lg text-text-secondary leading-relaxed mt-4` |
 | Heading anchor | Each heading gets an `id` attribute derived from heading text (slugified) for TOC linking |
 | Max prose width | `max-w-3xl` on the content container for optimal line length |
@@ -308,9 +310,9 @@ Auto-generated table of contents from article section headings.
 | File | `src/components/sections/table-of-contents.tsx` |
 | Server Component | Yes (generated from data, not DOM -- per RESEARCH.md "Don't Hand-Roll") |
 | Layout | `bg-secondary rounded-lg p-6 border border-[#4a5040]` |
-| Heading | `text-[1.375rem] font-heading font-bold text-text-primary mb-4` -- "In This Article" |
+| Heading | `text-lg font-heading font-bold text-text-primary mb-4` -- "In This Article" |
 | List | `<nav aria-label="Table of contents">` wrapping an `<ol>` |
-| H2 items | `py-2 text-[1rem] text-text-secondary hover:text-accent transition-colors duration-[150ms]` as `<a href="#heading-id">` |
+| H2 items | `py-2 text-[0.875rem] text-text-secondary hover:text-accent transition-colors duration-[150ms]` as `<a href="#heading-id">` |
 | H3 items | Same as H2 but with `pl-4` left indent to show hierarchy |
 | Active indicator | `border-l-2 border-accent pl-4` on active heading (if sticky TOC is implemented as client component in Phase 10) |
 | Touch target | All links `min-h-[44px] inline-flex items-center` |
@@ -357,7 +359,7 @@ Preview card for a blog article, used in hub page grid and related articles sect
 | Silo badge | `inline-flex items-center bg-accent/10 text-accent rounded-full px-2 py-0.5 text-[0.875rem] font-bold uppercase tracking-wider` |
 | Title | H3: `text-lg font-heading font-bold text-text-primary mt-3` |
 | Description | `text-lg text-text-secondary mt-2 line-clamp-3` |
-| Meta | `text-[1rem] text-text-secondary mt-3` with date and reading time |
+| Meta | `text-[0.875rem] text-text-secondary mt-3` with date and reading time |
 | Read link | `inline-flex items-center gap-1 text-accent font-bold text-lg mt-4 group-hover:gap-2 transition-all duration-[150ms]` with ArrowRight icon (matching CityCard "View Services" link pattern) |
 | Touch target | Entire card is a `next/link` wrapping the content |
 
@@ -434,7 +436,7 @@ Pricing comparison table for cost guide pages.
 | Body rows | Alternating `bg-dominant` / `bg-secondary` |
 | Body cells | `px-4 py-3 text-lg text-text-secondary border-b border-[#4a5040]` |
 | Price range column | `text-text-primary font-bold` (higher visual weight than other columns) |
-| Notes column | `text-text-secondary text-[1rem]` (de-emphasized) |
+| Notes column | `text-text-secondary text-[0.875rem]` (de-emphasized, uses small/meta token) |
 | Disclaimer | `text-[0.875rem] text-text-secondary mt-4 italic` -- "* Prices are estimates based on regional averages and vary by project scope, materials, and site conditions." |
 | Accessibility | `<table>` with `<caption>` for screen readers, `<thead>` / `<tbody>` semantic structure |
 
@@ -503,7 +505,7 @@ Inline badge displaying estimated reading time.
 | Server Component | Yes |
 | Layout | `inline-flex items-center gap-1` |
 | Icon | Clock from lucide-react, size 16, `text-accent` |
-| Text | `text-[1rem] text-text-secondary` -- "{N} min read" |
+| Text | `text-[0.875rem] text-text-secondary` -- "{N} min read" |
 
 Props:
 ```
