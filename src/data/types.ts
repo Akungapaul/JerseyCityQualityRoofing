@@ -243,3 +243,17 @@ export interface ServiceInCityContent {
   extendedFaqs: FAQ[];                               // 3-5 additional FAQs beyond the resolver's 5
   closingNarrative: string;                          // ~200 words: city-specific closing CTA
 }
+
+// Phase 9: Blog & supporting content data types
+export interface CostRange {
+  item: string;
+  lowEstimate: string;
+  highEstimate: string;
+  notes: string;
+}
+
+export interface LocationPricing {
+  cityName: string;
+  citySlug: string;
+  priceContext: string;
+}
