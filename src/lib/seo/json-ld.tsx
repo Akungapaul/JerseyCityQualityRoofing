@@ -1,4 +1,4 @@
-import type { RoofingContractor, WithContext, BreadcrumbList, FAQPage, Service as ServiceSchema } from 'schema-dts';
+import type { RoofingContractor, WithContext, BreadcrumbList, FAQPage, Service as ServiceSchema, BlogPosting, CollectionPage } from 'schema-dts';
 import { BUSINESS_INFO } from '@/data/business-info';
 import { BASE_URL } from '@/lib/constants';
 import type { Testimonial, Service as ServiceData, Municipality } from '@/data/types';
@@ -245,6 +245,64 @@ export function buildServiceInCityJsonLd(
       name: BUSINESS_INFO.name,
     },
   };
+}
+
+export function buildBlogPostingJsonLd(article: {
+  title: string;
+  slug: string;
+  description: string;
+  publishDate: string;
+  updatedDate: string | null;
+  authorName: string;
+  siloService: string | null;
+  wordCount: number;
+  basePath?: string; // defaults to '/blog'
+  schemaType?: 'BlogPosting' | 'Article'; // defaults to 'BlogPosting'
+}): WithContext<BlogPosting> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': article.schemaType ?? 'BlogPosting',
+    headline: article.title,
+    description: article.description,
+    datePublished: article.publishDate,
+    dateModified: article.updatedDate ?? article.publishDate,
+    author: {
+      '@type': 'Person',
+      name: article.authorName,
+      url: `${BASE_URL}/about`,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: BUSINESS_INFO.name,
+      url: BASE_URL,
+    },
+    url: `${BASE_URL}${article.basePath ?? '/blog'}/${article.slug}`,
+    wordCount: article.wordCount,
+    articleSection: article.siloService ?? 'Roofing',
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${BASE_URL}${article.basePath ?? '/blog'}/${article.slug}`,
+    },
+  } as unknown as WithContext<BlogPosting>;
+}
+
+export function buildCollectionPageJsonLd(hub: {
+  name: string;
+  description: string;
+  path: string;
+}): WithContext<CollectionPage> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: hub.name,
+    description: hub.description,
+    url: `${BASE_URL}${hub.path}`,
+    isPartOf: {
+      '@type': 'WebSite',
+      name: BUSINESS_INFO.name,
+      url: BASE_URL,
+    },
+  } as unknown as WithContext<CollectionPage>;
 }
 
 // XSS-safe JSON-LD renderer component
