@@ -49,8 +49,8 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Content & Authority (CONT)
 
 - [x] **CONT-01**: Blog system with article pages supporting silo-linking (articles link back into service silos)
-- [ ] **CONT-02**: At least 5 initial silo-supporting blog articles (one per major service category)
-- [ ] **CONT-03**: At least 3 standalone educational articles for topical authority
+- [x] **CONT-02**: At least 5 initial silo-supporting blog articles (one per major service category)
+- [x] **CONT-03**: At least 3 standalone educational articles for topical authority
 - [x] **CONT-04**: Cost guide pages per service type ("How much does roof replacement cost in Jersey City?")
 - [x] **CONT-05**: Material deep-dive guides for major roofing materials (asphalt shingles, TPO, EPDM, slate, metal, modified bitumen)
 - [x] **CONT-06**: Problem-to-solution pages mapping common roofing problems (ice dams, ponding water, flashing failure, wind damage, missing shingles) to relevant services
@@ -181,8 +181,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | LOC-04 | Phase 8 | Complete |
 | LOC-05 | Phase 7 | Complete |
 | CONT-01 | Phase 9 | Complete |
-| CONT-02 | Phase 9 | Pending |
-| CONT-03 | Phase 9 | Pending |
+| CONT-02 | Phase 9 | Complete |
+| CONT-03 | Phase 9 | Complete |
 | CONT-04 | Phase 9 | Complete |
 | CONT-05 | Phase 9 | Complete |
 | CONT-06 | Phase 9 | Complete |
