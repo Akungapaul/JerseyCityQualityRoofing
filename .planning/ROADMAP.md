@@ -208,14 +208,14 @@ Plans:
   2. Exit-intent popup triggers on service and location pages when cursor moves toward browser chrome (desktop) or after back-button intent (mobile)
   3. Before/after project gallery displays with comparison sliders, filterable by service type and city, using lazy-loaded optimized images
   4. Emergency/urgency banner renders conditionally on emergency service pages and during storm season
-  5. All pages score LCP < 2.5s, FID < 100ms, CLS < 0.1 on mobile (Lighthouse CI on heaviest page, not just homepage)
-**Plans**: TBD
+  5. All pages score LCP < 2.5s, INP < 200ms, CLS < 0.1 on mobile (Lighthouse on heaviest page, not just homepage)
+**Plans**: 3 plans
 **UI hint**: yes
 
 Plans:
-- [ ] 10-01: TBD
-- [ ] 10-02: TBD
-- [ ] 10-03: TBD
+- [ ] 10-01-PLAN.md -- CRO components: FloatingCTA, ExitIntentPopup, UrgencyBanner, custom hooks, layout wiring, FAQ accordion verification
+- [ ] 10-02-PLAN.md -- Gallery system: GalleryProject type, placeholder data, comparison slider cards, filterable grid, page assembly
+- [ ] 10-03-PLAN.md -- Image audit (SEO-12), Core Web Vitals optimization (SEO-13), Lighthouse verification checkpoint
 
 ## Progress
 
@@ -233,4 +233,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 7. Location Hub Pages | 0/5 | Planned | - |
 | 8. Service-in-City Pages | 15/15 | Complete   | 2026-03-28 |
 | 9. Blog & Supporting Content | 5/5 | Complete   | 2026-03-29 |
-| 10. Conversion & Performance Polish | 0/3 | Not started | - |
+| 10. Conversion & Performance Polish | 0/3 | Planned | - |
