@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Ready to plan
-stopped_at: Completed 09-04-PLAN.md
-last_updated: "2026-03-29T16:09:04.118Z"
+stopped_at: Completed 09-05-PLAN.md
+last_updated: "2026-03-29T16:30:03Z"
 progress:
   total_phases: 10
-  completed_phases: 8
+  completed_phases: 9
   total_plans: 45
-  completed_plans: 43
+  completed_plans: 44
 ---
 
 # Project State
@@ -19,12 +19,12 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-22)
 
 **Core value:** Every visitor within Hudson County searching for roofing services finds this site, trusts it as the local authority, and converts into a lead.
-**Current focus:** Phase 08 — service-in-city-pages
+**Current focus:** Phase 09 — blog-supporting-content (complete)
 
 ## Current Position
 
 Phase: 9
-Plan: Not started
+Plan: 5 of 5 (complete)
 
 ## Performance Metrics
 
@@ -69,6 +69,7 @@ Plan: Not started
 | Phase 08 P15 | 8min | 2 tasks | 6 files |
 | Phase 09 P02 | 4min | 2 tasks | 18 files |
 | Phase 09 P04 | 23min | 2 tasks | 13 files |
+| Phase 09 P05 | 8min | 4 tasks | 14 files |
 
 ## Accumulated Context
 
@@ -126,6 +127,9 @@ Recent decisions affecting current work:
 - [Phase 09]: Blog content components all Server Components; BlogHero uses own-section-wrapper pattern matching CityHubHero
 - [Phase 09]: Material guides cover Hudson County suitability with salt air, nor'easters, freeze-thaw, heat island factors
 - [Phase 09]: Problem-solution pages include honest DIY vs professional assessment to build trust
+- [Phase 09]: initializeContentRegistry() uses idempotent pattern with module-level initialized flag
+- [Phase 09]: Blog article template uses <article> wrapper (not <main>) per HTML5 semantics
+- [Phase 09]: buildBlogPostingJsonLd reused for cost/material/problem pages via schemaType and basePath overrides
 
 ### Pending Todos
 
@@ -139,6 +143,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-29T16:09:04.116Z
-Stopped at: Completed 09-04-PLAN.md
+Last session: 2026-03-29T16:30:03Z
+Stopped at: Completed 09-05-PLAN.md
 Resume file: None
