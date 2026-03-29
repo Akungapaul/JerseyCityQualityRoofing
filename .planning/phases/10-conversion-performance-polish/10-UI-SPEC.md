@@ -5,6 +5,7 @@ status: draft
 shadcn_initialized: false
 preset: none
 created: 2026-03-29
+revised: 2026-03-29
 ---
 
 # Phase 10 -- UI Design Contract
@@ -34,8 +35,8 @@ Declared values (must be multiples of 4):
 | Token | Value | Usage |
 |-------|-------|-------|
 | xs | 4px | Icon gaps, inline padding, dismiss button padding |
-| sm | 8px | Compact element spacing, filter bar gaps, banner internal padding |
-| md | 16px | Default element spacing, gallery card padding, popup inner padding |
+| sm | 8px | Compact element spacing, filter bar gaps, banner internal vertical padding, pill vertical padding |
+| md | 16px | Default element spacing, gallery card padding, popup inner padding, banner horizontal padding |
 | lg | 24px | Gallery card `p-6`, popup content padding, filter bar section padding |
 | xl | 32px | Gallery grid gap (`gap-8`), popup outer margin |
 | 2xl | 48px | Section vertical padding (mapped to `py-12`) |
@@ -46,37 +47,38 @@ Exceptions:
 - Floating CTA: positioned `bottom-6 right-6` (24px from edges) to avoid content overlap
 - Exit popup: centered with `max-w-lg` (512px), `p-8` (32px) internal padding
 - Gallery comparison slider container: `aspect-[4/3]` with no explicit padding (image fills container)
-- Urgency banner: `py-3 px-4` (12px/16px) -- compact to minimize vertical space consumption
 
-Source: SectionWrapper established patterns, RESEARCH.md component specifications
+Source: SectionWrapper established patterns, RESEARCH.md component specifications. Revision note: urgency banner changed from `py-3` (12px) to `py-2` (8px) and pill components changed from `py-1` (4px, already in scale) -- all values now strictly within the declared scale.
 
 ---
 
 ## Typography
 
+4 declared sizes, 2 declared weights:
+
 | Role | Size | Weight | Line Height | CSS Class |
 |------|------|--------|-------------|-----------|
 | Body | 18px (1.125rem) | 500 (medium) | 1.7 | default body styles from globals.css |
-| Body Large | 18px (text-lg) | 500 | 1.625 (leading-relaxed) | `text-lg text-text-secondary leading-relaxed` |
 | Label / Badge | 14px (0.875rem) | 700 (bold) | 1.5 | `text-[0.875rem] font-bold uppercase tracking-wider` |
-| Section Heading (H2) | 28px (1.75rem) | 700 (bold) | 1.2 | `text-[1.75rem] font-heading font-bold text-text-primary` |
-| Page Title (H1) | 40px/48px (2.5rem/3rem) | 700 (bold) | 1.1 | `text-[2.5rem] lg:text-[3rem] font-heading font-bold leading-[1.1]` |
+| Heading (H2) | 28px (1.75rem) | 700 (bold) | 1.2 | `text-[1.75rem] font-heading font-bold text-text-primary` |
+| Display (H1) | 40px/48px (2.5rem/3rem) | 700 (bold) | 1.1 | `text-[2.5rem] lg:text-[3rem] font-heading font-bold leading-[1.1]` |
 
-Phase 10 specific typography:
+Phase 10 specific typography (all mapped to the 4 sizes above):
+
 | Context | Size | Weight | Line Height | Detail |
 |---------|------|--------|-------------|--------|
-| Floating CTA button label | 18px (text-lg) | 700 (bold) | 1 | Single-line button text |
-| Exit popup heading | 24px (text-2xl) | 700 (bold) | 1.2 | `font-heading font-bold text-text-primary` |
-| Exit popup body | 18px (text-lg) | 500 | 1.625 | `text-text-secondary leading-relaxed` |
-| Urgency banner text | 16px (text-base) | 700 (bold) | 1.5 | `font-bold text-text-primary` on emergency accent background |
-| Gallery card title | 20px (text-xl) | 700 (bold) | 1.2 | `font-heading font-bold text-text-primary` |
-| Gallery card description | 18px (text-lg) | 500 | 1.625 | `text-text-secondary leading-relaxed` |
-| Filter dropdown label | 18px (text-lg) | 500 | 1.5 | `text-text-primary` |
-| "Before" / "After" overlay label | 14px (text-sm) | 700 (bold) | 1 | `uppercase tracking-wider` on semi-transparent background |
+| Floating CTA button label | 18px (text-lg) | 700 (bold) | 1 | Single-line button text, uses Body size |
+| Exit popup heading | 28px (1.75rem) | 700 (bold) | 1.2 | `font-heading font-bold text-text-primary`, uses Heading size |
+| Exit popup body | 18px (text-lg) | 500 | 1.625 | `text-text-secondary leading-relaxed`, uses Body size |
+| Urgency banner text | 18px (text-lg) | 700 (bold) | 1.5 | `font-bold text-dominant` on emergency accent background, uses Body size |
+| Gallery card title | 28px (1.75rem) | 700 (bold) | 1.2 | `font-heading font-bold text-text-primary`, uses Heading size |
+| Gallery card description | 18px (text-lg) | 500 | 1.625 | `text-text-secondary leading-relaxed`, uses Body size |
+| Filter dropdown label | 18px (text-lg) | 500 | 1.5 | `text-text-primary`, uses Body size |
+| "Before" / "After" overlay label | 14px (text-sm) | 700 (bold) | 1 | `uppercase tracking-wider` on semi-transparent background, uses Label size |
 
 Font loading: `next/font/google` self-hosts Cormorant and Cormorant Garamond. CSS variables `--font-heading` and `--font-body` set in `@theme` block.
 
-Source: globals.css base styles, established heading patterns from Phases 2/5/7/8
+Source: globals.css base styles, established heading patterns from Phases 2/5/7/8. Revision note: consolidated from 7 sizes to 4. Merged 16px (urgency banner) into 18px Body size. Merged 20px (gallery card title) and 24px (exit popup heading) into 28px Heading size.
 
 ---
 
@@ -142,7 +144,7 @@ Fixed-position quote request button that appears after scrolling past the first 
 | File | `src/components/sections/floating-cta.tsx` |
 | Server Component | No -- `"use client"` (requires useState, IntersectionObserver) |
 | Position | `fixed bottom-6 right-6 z-40` (below header z-50, above content) |
-| CTA button | `bg-accent hover:bg-accent-hover text-dominant font-bold text-lg px-6 py-3 rounded-lg min-h-[44px] shadow-lg` |
+| CTA button | `bg-accent hover:bg-accent-hover text-dominant font-bold text-lg px-6 py-2 rounded-lg min-h-[44px] shadow-lg` |
 | Dismiss button | `bg-[#33382b] text-text-secondary hover:text-text-primary rounded-full w-8 h-8 flex items-center justify-center` positioned top-right of container |
 | Icon | Phone icon (lucide-react, size 20) left of text on CTA button |
 | Animation | Motion `AnimatePresence`: initial `opacity: 0, y: 20`, animate `opacity: 1, y: 0`, exit `opacity: 0, y: 20`, duration 300ms |
@@ -167,9 +169,9 @@ Dialog that triggers when user shows intent to leave, displayed on service and l
 | Overlay | `fixed inset-0 z-[60] bg-black/60` (above header z-50) |
 | Dialog | `bg-secondary rounded-xl p-8 max-w-lg w-[calc(100%-2rem)] mx-auto shadow-2xl` centered vertically with `flex items-center justify-center min-h-screen` |
 | Close button | `absolute top-4 right-4 text-text-secondary hover:text-text-primary w-10 h-10 flex items-center justify-center rounded-full hover:bg-[#4a5040] transition-colors` with X icon (size 20) |
-| Heading | H2: `text-2xl font-heading font-bold text-text-primary` |
+| Heading | H2: `text-[1.75rem] font-heading font-bold text-text-primary` |
 | Body | `text-lg text-text-secondary leading-relaxed mt-2` |
-| CTA button | `bg-accent hover:bg-accent-hover text-dominant font-bold text-lg px-8 py-3 rounded-lg min-h-[44px] w-full mt-6` |
+| CTA button | `bg-accent hover:bg-accent-hover text-dominant font-bold text-lg px-8 py-2 rounded-lg min-h-[44px] w-full mt-6` |
 | Phone link | `text-accent flex items-center justify-center gap-2 text-lg font-bold mt-3 min-h-[44px]` |
 | Animation | Motion `AnimatePresence`: overlay fades in (opacity 0 to 1, 200ms), dialog scales up (scale 0.95 to 1, opacity 0 to 1, 300ms, ease "easeOut") |
 | Focus trap | Custom implementation: Tab/Shift+Tab cycles through focusable elements within dialog; Escape key dismisses |
@@ -201,9 +203,9 @@ Conditional banner for emergency service pages and storm season.
 | Background | `bg-[#d4782f]` (emergency accent) |
 | Text color | `text-dominant` (#2a2e22 dark text on orange background) for contrast |
 | Icon | AlertTriangle (lucide-react, size 20, `text-dominant`) left of text |
-| Banner text | `text-base font-bold` -- see copywriting contract for exact strings |
+| Banner text | `text-lg font-bold` -- see copywriting contract for exact strings |
 | Phone link | `text-dominant underline underline-offset-4 font-bold hover:opacity-80 transition-opacity min-h-[44px] inline-flex items-center` |
-| Height | `py-3 px-4` resulting in ~48px height; no `min-height` needed since content is single-line |
+| Height | `py-2 px-4` resulting in compact bar; `min-h-[44px]` on phone link ensures touch target compliance |
 | CLS prevention | Server-rendered with deterministic output; no layout shift because height is fixed by content |
 | Emergency variant | Always renders on emergency service pages |
 | Storm-season variant | Renders June 1 -- November 30 (month >= 5 && month <= 10, 0-indexed). Date computed server-side at build time. |
@@ -289,7 +291,7 @@ Individual before/after comparison card wrapping react-compare-slider.
 | Slider | `ReactCompareSlider` with `defaultPosition={50}`, `keyboardIncrement={5}`, `style={{ width: "100%", height: "100%" }}` |
 | Before/After labels | Absolute-positioned: `absolute top-3 z-10 px-2 py-1 rounded bg-black/50 text-sm font-bold uppercase tracking-wider text-text-primary` -- "Before" at `left-3`, "After" at `right-3` |
 | Card body | `p-6` |
-| Title | `text-xl font-heading font-bold text-text-primary` |
+| Title | `text-[1.75rem] font-heading font-bold text-text-primary` |
 | Description | `text-lg text-text-secondary leading-relaxed mt-2` |
 | Project details | `flex flex-wrap gap-2 mt-3` -- each detail as `inline-flex items-center bg-[#33382b] rounded-full px-3 py-1 text-sm text-text-secondary` pill |
 | Placeholder images | Gradient SVG with "Before"/"After" text overlay: `bg-gradient-to-br from-secondary to-[#33382b]` matching hero-section.tsx placeholder pattern |
