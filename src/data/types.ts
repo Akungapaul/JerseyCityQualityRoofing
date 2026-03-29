@@ -243,3 +243,103 @@ export interface ServiceInCityContent {
   extendedFaqs: FAQ[];                               // 3-5 additional FAQs beyond the resolver's 5
   closingNarrative: string;                          // ~200 words: city-specific closing CTA
 }
+
+// Phase 9: Blog & Supporting Content types
+
+export interface ArticleSection {
+  heading: string;
+  headingLevel: 2 | 3;
+  content: string; // ~400-600 words per section, \n\n paragraph splits
+}
+
+export interface BlogArticle {
+  slug: string;
+  title: string;
+  headline: string;
+  subtitle: string;
+  siloService: string | null;
+  siloCategory: ServiceCategory | null;
+  parentPillarLink: string | null;
+  author: string;
+  publishDate: string; // ISO 8601
+  updatedDate: string | null;
+  readingTimeMinutes: number;
+  tags: string[];
+  introNarrative: string; // ~300 words
+  sections: ArticleSection[];
+  closingNarrative: string; // ~200 words
+  faqs: FAQ[];
+  relatedServiceSlugs: string[];
+  relatedCitySlugs: string[];
+  relatedMaterialSlugs: string[];
+  relatedProblemSlugs: string[];
+}
+
+export interface CostRange {
+  item: string;
+  lowEstimate: string;
+  highEstimate: string;
+  notes: string;
+}
+
+export interface LocationPricing {
+  cityName: string;
+  citySlug: string;
+  priceContext: string; // ~100 words
+}
+
+export interface CostGuide {
+  slug: string;
+  serviceSlug: string;
+  serviceCategory: ServiceCategory;
+  title: string;
+  headline: string;
+  subtitle: string;
+  introNarrative: string; // ~500 words
+  costOverview: CostRange[];
+  costFactorsNarrative: string; // ~500 words
+  locationPricing: LocationPricing[];
+  savingStrategies: string; // ~300 words
+  whenToInvest: string; // ~300 words
+  financingOptions: string; // ~200 words
+  closingNarrative: string; // ~200 words
+  faqs: FAQ[];
+}
+
+export interface MaterialGuide {
+  slug: string;
+  materialName: string;
+  title: string;
+  headline: string;
+  subtitle: string;
+  introNarrative: string; // ~500 words
+  materialProperties: string; // ~400 words
+  lifespanAndDurability: string; // ~300 words
+  costAnalysis: string; // ~300 words
+  prosAndCons: { pros: string[]; cons: string[] };
+  bestApplications: string; // ~400 words
+  hudsonCountySuitability: string; // ~300 words
+  installationProcess: string; // ~300 words
+  maintenanceRequirements: string; // ~200 words
+  closingNarrative: string; // ~200 words
+  faqs: FAQ[];
+  relatedServiceSlugs: string[];
+}
+
+export interface ProblemSolution {
+  slug: string;
+  problemName: string;
+  title: string;
+  headline: string;
+  subtitle: string;
+  introNarrative: string; // ~500 words
+  causesNarrative: string; // ~400 words
+  identificationSigns: string[];
+  diyVsProfessional: string; // ~300 words
+  professionalSolution: string; // ~400 words
+  preventionStrategies: string; // ~300 words
+  hudsonCountyContext: string; // ~200 words
+  closingNarrative: string; // ~200 words
+  faqs: FAQ[];
+  relatedServiceSlugs: string[];
+}
