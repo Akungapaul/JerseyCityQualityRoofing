@@ -3,8 +3,8 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Ready to plan
-stopped_at: Completed 09-01-PLAN.md
-last_updated: "2026-03-29T15:42:10.807Z"
+stopped_at: Completed 09-02-PLAN.md
+last_updated: "2026-03-29T15:42:29.177Z"
 progress:
   total_phases: 10
   completed_phases: 8
@@ -67,7 +67,7 @@ Plan: Not started
 | Phase 08 P10 | 19min | 1 tasks | 8 files |
 | Phase 08 P14 | 16min | 1 tasks | 8 files |
 | Phase 08 P15 | 8min | 2 tasks | 6 files |
-| Phase 09 P01 | 4min | 2 tasks | 8 files |
+| Phase 09 P02 | 4min | 2 tasks | 18 files |
 
 ## Accumulated Context
 
@@ -121,10 +121,8 @@ Recent decisions affecting current work:
 - [Phase 08]: Weehawken content uses waterfront-Heights Palisades divide as primary differentiator; Lincoln Tunnel vibration as third micro-zone; 5 neighborhood insights per file
 - [Phase 08]: Nested CONTENT_MAP (Record<citySlug, Record<serviceSlug, Content>>) for O(1) lookup avoids barrel index; 15-section template per 08-UI-SPEC.md tone alternation
 - [Phase 08]: Parent service pages link down to all 12 city variants via Cities We Serve section (RESEARCH.md Pitfall 5); bidirectional linking complete
-- [Phase 09]: Internal linking uses module-level registry with registerContent/registerBulk pattern for lazy initialization
-- [Phase 09]: Relevance scoring: same silo +10, shared tags +2, shared services +3, shared materials +2, shared problems +2
-- [Phase 09]: Cross-silo links prefer standalone (siloService=null) articles over other-silo articles
-- [Phase 09]: Wave 0 test scaffolds use describe.skip with placeholder arrays, activated when content arrives in Plans 03-06
+- [Phase 09]: Added CostRange, LocationPricing types and internal-links.ts inline (Rule 3) since Plan 01 runs in parallel
+- [Phase 09]: Blog content components all Server Components; BlogHero uses own-section-wrapper pattern matching CityHubHero
 
 ### Pending Todos
 
@@ -138,6 +136,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-29T15:42:10.805Z
-Stopped at: Completed 09-01-PLAN.md
+Last session: 2026-03-29T15:42:29.174Z
+Stopped at: Completed 09-02-PLAN.md
 Resume file: None
