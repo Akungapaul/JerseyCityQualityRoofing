@@ -1,13 +1,7 @@
 import { describe, it, expect } from 'vitest';
-import type { CostGuide } from '@/data/types';
+import { ALL_COST_GUIDES } from '@/data/content/cost-guides';
 
-// TODO: Import content registries when created in Plan 04
-// import { ALL_COST_GUIDES } from '@/data/content/cost-guides';
-
-// Placeholder until content data arrives
-const ALL_COST_GUIDES: CostGuide[] = [];
-
-describe.skip('Cost guide content validation', () => {
+describe('Cost guide content validation', () => {
   it('should have 8 cost guides, one per service', () => {
     expect(ALL_COST_GUIDES.length).toBe(8);
   });

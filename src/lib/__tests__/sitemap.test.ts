@@ -8,10 +8,11 @@ describe('sitemap generation', () => {
     expect(entries.length).toBeGreaterThan(0);
   });
 
-  it('generates 125 total URLs', () => {
+  it('generates 152 total URLs', () => {
     const entries = sitemap();
-    // 9 static + 4 residential + 4 commercial + 12 city + 48 res-city + 48 com-city = 125
-    expect(entries).toHaveLength(125);
+    // 9 static + 4 residential + 4 commercial + 12 city + 48 res-city + 48 com-city
+    // + 8 blog + 8 cost guides + 6 material guides + 5 problems = 152
+    expect(entries).toHaveLength(152);
   });
 
   it('includes homepage with priority 1.0', () => {

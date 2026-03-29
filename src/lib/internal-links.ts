@@ -1,4 +1,8 @@
 import type { ServiceCategory } from '@/data/types';
+import { ALL_BLOG_ARTICLES } from '@/data/content/blog';
+import { ALL_COST_GUIDES } from '@/data/content/cost-guides';
+import { ALL_MATERIAL_GUIDES } from '@/data/content/material-guides';
+import { ALL_PROBLEMS } from '@/data/content/problems';
 
 export interface ContentNode {
   slug: string;
@@ -23,6 +27,7 @@ export interface InternalLink {
 
 // Module-level content registry
 const CONTENT_REGISTRY: ContentNode[] = [];
+let initialized = false;
 
 /**
  * Register a single content node in the registry.
@@ -254,12 +259,86 @@ export function getRelatedProblems(currentSlug: string, limit = 3): InternalLink
 
 /**
  * Initialize the content registry with all content from data files.
- * TODO: Wire this up in Plan 07 when all content data files exist.
+ * Idempotent: only populates on the first call.
  */
 export function initializeContentRegistry(): void {
-  // TODO: Import all content registries and populate the registry
-  // import { ALL_BLOG_ARTICLES } from '@/data/content/blog';
-  // import { ALL_COST_GUIDES } from '@/data/content/cost-guides';
-  // import { ALL_MATERIAL_GUIDES } from '@/data/content/material-guides';
-  // import { ALL_PROBLEMS } from '@/data/content/problems';
+  if (initialized) return;
+
+  // Blog articles
+  for (const article of ALL_BLOG_ARTICLES) {
+    registerContent({
+      slug: article.slug,
+      type: 'blog',
+      title: article.title,
+      path: `/blog/${article.slug}`,
+      siloService: article.siloService,
+      siloCategory: article.siloCategory,
+      tags: article.tags,
+      relatedServiceSlugs: article.relatedServiceSlugs,
+      relatedCitySlugs: article.relatedCitySlugs,
+      relatedMaterialSlugs: article.relatedMaterialSlugs,
+      relatedProblemSlugs: article.relatedProblemSlugs,
+    });
+  }
+
+  // Cost guides
+  for (const guide of ALL_COST_GUIDES) {
+    registerContent({
+      slug: guide.slug,
+      type: 'cost-guide',
+      title: guide.title,
+      path: `/guides/cost/${guide.slug}`,
+      siloService: guide.serviceSlug,
+      siloCategory: guide.serviceCategory,
+      tags: [],
+      relatedServiceSlugs: [guide.serviceSlug],
+      relatedCitySlugs: guide.locationPricing.map((lp) => lp.citySlug),
+      relatedMaterialSlugs: [],
+      relatedProblemSlugs: [],
+    });
+  }
+
+  // Material guides
+  for (const guide of ALL_MATERIAL_GUIDES) {
+    registerContent({
+      slug: guide.slug,
+      type: 'material-guide',
+      title: guide.title,
+      path: `/guides/materials/${guide.slug}`,
+      siloService: null,
+      siloCategory: null,
+      tags: [],
+      relatedServiceSlugs: guide.relatedServiceSlugs,
+      relatedCitySlugs: [],
+      relatedMaterialSlugs: [],
+      relatedProblemSlugs: [],
+    });
+  }
+
+  // Problems
+  for (const problem of ALL_PROBLEMS) {
+    registerContent({
+      slug: problem.slug,
+      type: 'problem',
+      title: problem.title,
+      path: `/problems/${problem.slug}`,
+      siloService: null,
+      siloCategory: null,
+      tags: [],
+      relatedServiceSlugs: problem.relatedServiceSlugs,
+      relatedCitySlugs: [],
+      relatedMaterialSlugs: [],
+      relatedProblemSlugs: [],
+    });
+  }
+
+  initialized = true;
+}
+
+/**
+ * Reset the registry and initialized flag. Exported for test use only.
+ */
+export function resetRegistry(): void {
+  clearRegistry();
+  initialized = false;
 }

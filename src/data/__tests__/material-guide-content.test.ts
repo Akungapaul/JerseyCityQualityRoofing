@@ -1,11 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import type { MaterialGuide } from '@/data/types';
-
-// TODO: Import content registries when created in Plan 05
-// import { ALL_MATERIAL_GUIDES } from '@/data/content/material-guides';
-
-// Placeholder until content data arrives
-const ALL_MATERIAL_GUIDES: MaterialGuide[] = [];
+import { ALL_MATERIAL_GUIDES } from '@/data/content/material-guides';
 
 const REQUIRED_MATERIALS = [
   'asphalt-shingles',
@@ -16,7 +10,7 @@ const REQUIRED_MATERIALS = [
   'modified-bitumen',
 ];
 
-describe.skip('Material guide content validation', () => {
+describe('Material guide content validation', () => {
   it('should have 6 material guides', () => {
     expect(ALL_MATERIAL_GUIDES.length).toBe(6);
   });

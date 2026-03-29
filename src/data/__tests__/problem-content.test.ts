@@ -1,11 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import type { ProblemSolution } from '@/data/types';
-
-// TODO: Import content registries when created in Plan 06
-// import { ALL_PROBLEMS } from '@/data/content/problems';
-
-// Placeholder until content data arrives
-const ALL_PROBLEMS: ProblemSolution[] = [];
+import { ALL_PROBLEMS } from '@/data/content/problems';
 
 const REQUIRED_PROBLEMS = [
   'ice-dams',
@@ -15,7 +9,7 @@ const REQUIRED_PROBLEMS = [
   'missing-shingles',
 ];
 
-describe.skip('Problem-solution content validation', () => {
+describe('Problem-solution content validation', () => {
   it('should have 5 problem pages', () => {
     expect(ALL_PROBLEMS.length).toBe(5);
   });

@@ -1,13 +1,7 @@
 import { describe, it, expect } from 'vitest';
-import type { BlogArticle } from '@/data/types';
+import { ALL_BLOG_ARTICLES } from '@/data/content/blog';
 
-// TODO: Import content registries when created in Plan 03
-// import { ALL_BLOG_ARTICLES } from '@/data/content/blog';
-
-// Placeholder until content data arrives
-const ALL_BLOG_ARTICLES: BlogArticle[] = [];
-
-describe.skip('Blog article content validation', () => {
+describe('Blog article content validation', () => {
   it('should have at least 8 blog articles total', () => {
     expect(ALL_BLOG_ARTICLES.length).toBeGreaterThanOrEqual(8);
   });
