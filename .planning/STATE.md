@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Ready to plan
-stopped_at: Completed 08-15-PLAN.md
-last_updated: "2026-03-28T23:27:03.283Z"
+stopped_at: Completed 09-02-PLAN.md
+last_updated: "2026-03-29T15:42:29.177Z"
 progress:
   total_phases: 10
   completed_phases: 8
-  total_plans: 40
-  completed_plans: 40
+  total_plans: 45
+  completed_plans: 41
 ---
 
 # Project State
@@ -67,6 +67,7 @@ Plan: Not started
 | Phase 08 P10 | 19min | 1 tasks | 8 files |
 | Phase 08 P14 | 16min | 1 tasks | 8 files |
 | Phase 08 P15 | 8min | 2 tasks | 6 files |
+| Phase 09 P02 | 4min | 2 tasks | 18 files |
 
 ## Accumulated Context
 
@@ -120,6 +121,8 @@ Recent decisions affecting current work:
 - [Phase 08]: Weehawken content uses waterfront-Heights Palisades divide as primary differentiator; Lincoln Tunnel vibration as third micro-zone; 5 neighborhood insights per file
 - [Phase 08]: Nested CONTENT_MAP (Record<citySlug, Record<serviceSlug, Content>>) for O(1) lookup avoids barrel index; 15-section template per 08-UI-SPEC.md tone alternation
 - [Phase 08]: Parent service pages link down to all 12 city variants via Cities We Serve section (RESEARCH.md Pitfall 5); bidirectional linking complete
+- [Phase 09]: Added CostRange, LocationPricing types and internal-links.ts inline (Rule 3) since Plan 01 runs in parallel
+- [Phase 09]: Blog content components all Server Components; BlogHero uses own-section-wrapper pattern matching CityHubHero
 
 ### Pending Todos
 
@@ -133,6 +136,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-28T23:15:30Z
-Stopped at: Completed 08-15-PLAN.md
+Last session: 2026-03-29T15:42:29.174Z
+Stopped at: Completed 09-02-PLAN.md
 Resume file: None
