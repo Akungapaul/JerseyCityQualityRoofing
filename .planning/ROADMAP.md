@@ -231,8 +231,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [x] 11-01-PLAN.md -- Wave 0 test scaffolds, JSON-LD @id anchor fix, OG route constants fix, sitemap silo index entries
-- [ ] 11-02-PLAN.md -- Three silo index pages: /services, /services/residential, /services/commercial with hub page pattern
+- [ ] 11-01-PLAN.md -- Wave 0 test scaffolds, JSON-LD @id anchor fix, OG route constants fix, sitemap silo index entries
+- [x] 11-02-PLAN.md -- Three silo index pages: /services, /services/residential, /services/commercial with hub page pattern
 
 ## Progress
 
