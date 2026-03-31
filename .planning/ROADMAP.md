@@ -214,7 +214,7 @@ Plans:
 
 Plans:
 - [x] 10-01-PLAN.md -- CRO components: FloatingCTA, ExitIntentPopup, UrgencyBanner, custom hooks, layout wiring, FAQ accordion verification
-- [ ] 10-02-PLAN.md -- Gallery system: GalleryProject type, placeholder data, comparison slider cards, filterable grid, page assembly
+- [x] 10-02-PLAN.md -- Gallery system: GalleryProject type, placeholder data, comparison slider cards, filterable grid, page assembly
 - [ ] 10-03-PLAN.md -- Image audit (SEO-12), Core Web Vitals optimization (SEO-13), Lighthouse verification checkpoint
 
 ## Progress
@@ -233,4 +233,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 7. Location Hub Pages | 0/5 | Planned | - |
 | 8. Service-in-City Pages | 15/15 | Complete   | 2026-03-28 |
 | 9. Blog & Supporting Content | 5/5 | Complete   | 2026-03-29 |
-| 10. Conversion & Performance Polish | 1/3 | In Progress|  |
+| 10. Conversion & Performance Polish | 2/3 | In Progress|  |

@@ -67,7 +67,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **CRO-05**: Exit-intent popup with quote offer on service and location pages
 - [x] **CRO-06**: Customer testimonials with star ratings displayed on homepage, service pages, and location pages
 - [x] **CRO-07**: Certification and license badge strip on homepage and in footer across all pages
-- [ ] **CRO-08**: Before/after project gallery with comparison sliders, filterable by service type and city
+- [x] **CRO-08**: Before/after project gallery with comparison sliders, filterable by service type and city
 - [x] **CRO-09**: Emergency/urgency banner for storm season and emergency service pages
 - [x] **CRO-10**: Form submission sends notification email via Resend and returns confirmation to user
 - [x] **CRO-11**: Cloudflare Turnstile invisible captcha on all forms for spam protection
@@ -196,7 +196,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CRO-05 | Phase 10 | Complete |
 | CRO-06 | Phase 4 | Complete |
 | CRO-07 | Phase 4 | Complete |
-| CRO-08 | Phase 10 | Pending |
+| CRO-08 | Phase 10 | Complete |
 | CRO-09 | Phase 10 | Complete |
 | CRO-10 | Phase 3 | Complete |
 | CRO-11 | Phase 3 | Complete |
