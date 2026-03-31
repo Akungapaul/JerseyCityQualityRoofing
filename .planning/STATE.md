@@ -2,6 +2,7 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
+<<<<<<< Updated upstream
 status: Executing Phase 10
 stopped_at: Completed 12-01-PLAN.md (content data and linking fixes)
 last_updated: "2026-03-31T16:07:10.284Z"
@@ -10,6 +11,16 @@ progress:
   completed_phases: 12
   total_plans: 51
   completed_plans: 51
+=======
+status: Executing Phase 12
+stopped_at: Phase 12 UI-SPEC approved
+last_updated: "2026-03-31T16:02:17.404Z"
+progress:
+  total_phases: 13
+  completed_phases: 11
+  total_plans: 51
+  completed_plans: 50
+>>>>>>> Stashed changes
 ---
 
 # Project State
@@ -19,12 +30,12 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-22)
 
 **Core value:** Every visitor within Hudson County searching for roofing services finds this site, trusts it as the local authority, and converts into a lead.
-**Current focus:** Phase 10 — conversion-performance-polish
+**Current focus:** Phase 12 — content-data-linking-fixes
 
 ## Current Position
 
-Phase: 11
-Plan: Not started
+Phase: 12 (content-data-linking-fixes) — EXECUTING
+Plan: 1 of 1
 
 ## Performance Metrics
 
@@ -158,12 +169,6 @@ None yet.
 
 ## Session Continuity
 
-<<<<<<< Updated upstream
 Last session: 2026-03-31T16:07:10.281Z
 Stopped at: Completed 12-01-PLAN.md (content data and linking fixes)
 Resume file: None
-=======
-Last session: 2026-03-29T17:15:19.845Z
-Stopped at: Phase 10 UI-SPEC approved
-Resume file: .planning/phases/10-conversion-performance-polish/10-UI-SPEC.md
->>>>>>> Stashed changes
