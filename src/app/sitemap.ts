@@ -23,6 +23,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog`, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${BASE_URL}/guides`, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/problems`, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${BASE_URL}/services`, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/services/residential`, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/services/commercial`, changeFrequency: 'monthly', priority: 0.8 },
   ];
 
   // Residential service pillar pages (priority 0.9)

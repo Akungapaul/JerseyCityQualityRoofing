@@ -1,5 +1,6 @@
 import { ImageResponse } from 'next/og';
 import { getService } from '@/data/services';
+import { PHONE_NUMBER, SITE_NAME } from '@/lib/constants';
 
 export const runtime = 'edge';
 
@@ -83,7 +84,7 @@ export async function GET(request: Request) {
             marginTop: '48px',
           }}
         >
-          Jersey City Quality Roofing
+          {SITE_NAME}
         </div>
 
         {/* Phone number */}
@@ -96,7 +97,7 @@ export async function GET(request: Request) {
             marginTop: '12px',
           }}
         >
-          (201) 555-0123
+          {PHONE_NUMBER}
         </div>
 
         {/* Gold accent line at bottom */}
