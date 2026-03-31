@@ -12,16 +12,17 @@ This roadmap delivers a topical-authority lead generation website for a local ro
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Project Scaffold & Data Architecture** - Next.js project, URL routing, data registries, SEO infrastructure stubs
+- [x] **Phase 1: Project Scaffold & Data Architecture** - Next.js project, URL routing, data registries, SEO infrastructure stubs (completed 2026-03-23)
 - [x] **Phase 2: Design System & Layout Shell** - Typography, color theme, components, layout shell with header/footer/nav/breadcrumbs (completed 2026-03-24)
-- [ ] **Phase 3: Lead Capture System** - Quote forms, Resend email delivery, Cloudflare Turnstile spam protection
-- [ ] **Phase 4: Core Marketing Pages** - Homepage, About, Contact, Service Areas hub with trust signals and schema
-- [ ] **Phase 5: Residential Service Pages** - Four 3000+ word residential service pillar pages with process explainers and FAQs
-- [ ] **Phase 6: Commercial Service Pages** - Four 3000+ word commercial service pillar pages
-- [ ] **Phase 7: Location Hub Pages** - Twelve city hub pages with unique local content and full schema markup
+- [x] **Phase 3: Lead Capture System** - Quote forms, Resend email delivery, Cloudflare Turnstile spam protection (completed 2026-03-25)
+- [x] **Phase 4: Core Marketing Pages** - Homepage, About, Contact, Service Areas hub with trust signals and schema (completed 2026-03-26)
+- [x] **Phase 5: Residential Service Pages** - Four 3000+ word residential service pillar pages with process explainers and FAQs (completed 2026-03-27)
+- [x] **Phase 6: Commercial Service Pages** - Four 3000+ word commercial service pillar pages (completed 2026-03-27)
+- [x] **Phase 7: Location Hub Pages** - Twelve city hub pages with unique local content and full schema markup (completed 2026-03-28)
 - [x] **Phase 8: Service-in-City Pages** - 96 programmatic pages launched in validated batches with content uniqueness enforcement (completed 2026-03-28)
 - [x] **Phase 9: Blog & Supporting Content** - Blog system, silo articles, cost guides, material guides, problem-solution pages (completed 2026-03-29)
 - [x] **Phase 10: Conversion & Performance Polish** - Gallery, exit-intent, floating CTAs, emergency banners, Core Web Vitals (completed 2026-03-31)
+- [ ] **Phase 11: SEO & Data Consistency Fixes** - Silo index pages, JSON-LD entity anchor, NAP hardcode fixes, OG image constant fix
 
 ## Phase Details
 
@@ -74,7 +75,7 @@ Plans:
 
 Plans:
 - [x] 03-01-PLAN.md -- Install dependencies, create Zod validation schemas, form types, Turnstile server verification, Resend email sender, React Email notification template
-- [ ] 03-02-PLAN.md -- Build form input primitives, CompactQuoteForm, QuoteForm, TurnstileWidget, Server Action, wire header CTA scroll-to-form
+- [x] 03-02-PLAN.md -- Build form input primitives, CompactQuoteForm, QuoteForm, TurnstileWidget, Server Action, wire header CTA scroll-to-form
 
 ### Phase 4: Core Marketing Pages
 **Goal**: Visitors landing on the site can understand what the business offers, see proof of credibility, contact the company, and browse all service areas
@@ -92,7 +93,7 @@ Plans:
 Plans:
 - [x] 04-01-PLAN.md -- JSON-LD schema builders (AggregateRating, FAQPage, RoofingContractor), content data files (homepage FAQ, about content), Wave 0 test scaffolds (NAP consistency, testimonial completeness)
 - [x] 04-02-PLAN.md -- Build all 16 section components: HeroSection, BadgeStrip, ServicesGrid, WhyChooseUs, TestimonialCarousel, StarRating, FaqAccordion, GoogleMapEmbed, CityCard, CityCardGrid, ContactInfoColumn, BusinessHoursTable, About sections
-- [ ] 04-03-PLAN.md -- Assemble 4 complete pages: Homepage (10 sections + 2 JSON-LD schemas), About, Contact (two-column + map + schema), Service Areas hub (map + tiered grid)
+- [x] 04-03-PLAN.md -- Assemble 4 complete pages: Homepage (10 sections + 2 JSON-LD schemas), About, Contact (two-column + map + schema), Service Areas hub (map + tiered grid)
 
 ### Phase 5: Residential Service Pages
 **Goal**: Homeowners searching for residential roofing services find comprehensive, authoritative pages that answer all their questions and convert them into leads
@@ -112,7 +113,7 @@ Plans:
 - [x] 05-02-PLAN.md -- Standard template section components: ServiceHero, ProcessTimeline, MaterialCards, CostFactorsSection, WarningSignsSection, ServiceContentSection
 - [x] 05-03-PLAN.md -- Emergency + shared components: EmergencyHero, WhatToDoSection, InsuranceClaimsSection, StormDamageTypes, MidPageCTA, RelatedServicesRow
 - [x] 05-04-PLAN.md -- JSON-LD Service schema builder, dynamic OG image route, emergency accent CSS variable
-- [ ] 05-05-PLAN.md -- Page assembly: wire standard and emergency templates into [service]/page.tsx with full build verification
+- [x] 05-05-PLAN.md -- Page assembly: wire standard and emergency templates into [service]/page.tsx with full build verification
 
 ### Phase 6: Commercial Service Pages
 **Goal**: Property managers and commercial building owners searching for commercial roofing services find comprehensive pages that establish expertise in commercial systems
@@ -217,20 +218,33 @@ Plans:
 - [x] 10-02-PLAN.md -- Gallery system: GalleryProject type, placeholder data, comparison slider cards, filterable grid, page assembly
 - [x] 10-03-PLAN.md -- Image audit (SEO-12), Core Web Vitals optimization (SEO-13), Lighthouse verification checkpoint
 
+### Phase 11: SEO & Data Consistency Fixes
+**Goal**: All breadcrumb links resolve, JSON-LD entity graph is fully connected, and NAP data uses single source of truth everywhere
+**Depends on**: Phase 10
+**Requirements**: SEO-14, FNDN-02, SEO-06, SEO-04
+**Gap Closure:** Closes all gaps from v1.0 milestone audit
+**Success Criteria** (what must be TRUE):
+  1. `/services`, `/services/residential`, `/services/commercial` resolve as silo index pages (no more breadcrumb 404s on ~104 pages)
+  2. Root JSON-LD `buildRoofingContractorJsonLd` includes `@id: BASE_URL/#organization` anchor (cross-page entity graph resolves on ~108 pages)
+  3. Contact page metadata description and google-map-embed noscript fallback use BUSINESS_INFO/PHONE_NUMBER constants (not hardcoded values)
+  4. OG image route uses PHONE_NUMBER constant instead of literal string
+**Plans**: TBD
+
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
+Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10 -> 11
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Project Scaffold & Data Architecture | 4/4 | Complete | - |
-| 2. Design System & Layout Shell | 3/3 | Complete   | 2026-03-24 |
-| 3. Lead Capture System | 0/2 | Not started | - |
-| 4. Core Marketing Pages | 0/3 | Planned    |  |
-| 5. Residential Service Pages | 0/5 | Planned | - |
-| 6. Commercial Service Pages | 0/3 | Planned | - |
-| 7. Location Hub Pages | 0/5 | Planned | - |
-| 8. Service-in-City Pages | 15/15 | Complete   | 2026-03-28 |
-| 9. Blog & Supporting Content | 5/5 | Complete   | 2026-03-29 |
-| 10. Conversion & Performance Polish | 3/3 | Complete    | 2026-03-31 |
+| 1. Project Scaffold & Data Architecture | 4/4 | Complete | 2026-03-23 |
+| 2. Design System & Layout Shell | 3/3 | Complete | 2026-03-24 |
+| 3. Lead Capture System | 2/2 | Complete | 2026-03-25 |
+| 4. Core Marketing Pages | 3/3 | Complete | 2026-03-26 |
+| 5. Residential Service Pages | 5/5 | Complete | 2026-03-27 |
+| 6. Commercial Service Pages | 3/3 | Complete | 2026-03-27 |
+| 7. Location Hub Pages | 5/5 | Complete | 2026-03-28 |
+| 8. Service-in-City Pages | 15/15 | Complete | 2026-03-28 |
+| 9. Blog & Supporting Content | 5/5 | Complete | 2026-03-29 |
+| 10. Conversion & Performance Polish | 3/3 | Complete | 2026-03-31 |
+| 11. SEO & Data Consistency Fixes | 0/1 | Not started | - |
