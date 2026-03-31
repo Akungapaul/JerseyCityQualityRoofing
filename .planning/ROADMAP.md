@@ -23,7 +23,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 9: Blog & Supporting Content** - Blog system, silo articles, cost guides, material guides, problem-solution pages (completed 2026-03-29)
 - [x] **Phase 10: Conversion & Performance Polish** - Gallery, exit-intent, floating CTAs, emergency banners, Core Web Vitals (completed 2026-03-31)
 - [x] **Phase 11: SEO & Data Consistency Fixes** - Silo index pages, JSON-LD entity anchor, NAP hardcode fixes, OG image constant fix (completed 2026-03-31)
-- [ ] **Phase 12: Content Data & Linking Fixes** - Blog silo data error, content registry service/city nodes, FloatingCTA id mismatch (gap closure)
+- [x] **Phase 12: Content Data & Linking Fixes** - Blog silo data error, content registry service/city nodes, FloatingCTA id mismatch (gap closure) (completed 2026-03-31)
 - [ ] **Phase 13: SEO Cleanup & Code Quality** - Duplicate BreadcrumbList removal, testimonials page, duplicate interface, lint/TS error fixes (gap closure)
 
 ## Phase Details
@@ -248,7 +248,7 @@ Plans:
 **Plans**: 1 plan
 
 Plans:
-- [ ] 12-01-PLAN.md -- Wave 0 test scaffolds for all 3 fixes, then apply blog silo data correction, content registry service/city node registration, and contact page id="quote-form" wrapper
+- [x] 12-01-PLAN.md -- Wave 0 test scaffolds for all 3 fixes, then apply blog silo data correction, content registry service/city node registration, and contact page id="quote-form" wrapper
 
 ### Phase 13: SEO Cleanup & Code Quality
 **Goal**: Eliminate duplicate schema markup, thin content in sitemap, and accumulated code quality issues across the codebase
@@ -281,5 +281,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 9. Blog & Supporting Content | 5/5 | Complete | 2026-03-29 |
 | 10. Conversion & Performance Polish | 3/3 | Complete | 2026-03-31 |
 | 11. SEO & Data Consistency Fixes | 1/2 | Complete    | 2026-03-31 |
-| 12. Content Data & Linking Fixes | 0/1 | Pending | — |
+| 12. Content Data & Linking Fixes | 1/1 | Complete   | 2026-03-31 |
 | 13. SEO Cleanup & Code Quality | 0/0 | Pending | — |

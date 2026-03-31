@@ -48,7 +48,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Content & Authority (CONT)
 
-- [ ] **CONT-01**: Blog system with article pages supporting silo-linking (articles link back into service silos)
+- [x] **CONT-01**: Blog system with article pages supporting silo-linking (articles link back into service silos)
 - [x] **CONT-02**: At least 5 initial silo-supporting blog articles (one per major service category)
 - [x] **CONT-03**: At least 3 standalone educational articles for topical authority
 - [x] **CONT-04**: Cost guide pages per service type ("How much does roof replacement cost in Jersey City?")
@@ -62,7 +62,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [x] **CRO-01**: Quote request form embedded on every service page, location page, and service-in-city page (5-6 fields max)
 - [x] **CRO-02**: Sticky header with click-to-call phone number visible at all scroll positions on all pages
-- [ ] **CRO-03**: Floating quote request button (persistent CTA) on all pages
+- [x] **CRO-03**: Floating quote request button (persistent CTA) on all pages
 - [x] **CRO-04**: Above-the-fold CTA on every page (visible without scrolling)
 - [x] **CRO-05**: Exit-intent popup with quote offer on service and location pages
 - [x] **CRO-06**: Customer testimonials with star ratings displayed on homepage, service pages, and location pages
@@ -78,7 +78,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **SEO-02**: Service schema on all service pages with FAQ schema for rich snippets
 - [x] **SEO-03**: Review/AggregateRating schema on pages displaying testimonials
 - [x] **SEO-04**: Knowledge graph JSON-LD mapping entity relationships: Service -> Location -> Materials -> Problems -> Solutions
-- [ ] **SEO-05**: Automated internal linking system: contextual links between related services, locations, and blog posts within and across silos
+- [x] **SEO-05**: Automated internal linking system: contextual links between related services, locations, and blog posts within and across silos
 - [ ] **SEO-06**: Breadcrumb navigation on every page (auto-generated from route hierarchy) with BreadcrumbList schema
 - [x] **SEO-07**: XML sitemap auto-generated covering all service, location, service-in-city, blog, and content pages
 - [x] **SEO-08**: robots.txt properly configured
@@ -180,7 +180,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | LOC-03 | Phase 8 | Complete |
 | LOC-04 | Phase 8 | Complete |
 | LOC-05 | Phase 7 | Complete |
-| CONT-01 | Phase 9, 12 | Pending |
+| CONT-01 | Phase 9, 12 | Complete |
 | CONT-02 | Phase 9 | Complete |
 | CONT-03 | Phase 9 | Complete |
 | CONT-04 | Phase 9 | Complete |
@@ -191,7 +191,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CONT-09 | Phase 5 | Complete |
 | CRO-01 | Phase 3 | Complete |
 | CRO-02 | Phase 2 | Complete |
-| CRO-03 | Phase 10, 12 | Pending |
+| CRO-03 | Phase 10, 12 | Complete |
 | CRO-04 | Phase 2 | Complete |
 | CRO-05 | Phase 10 | Complete |
 | CRO-06 | Phase 4 | Complete |
@@ -204,7 +204,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SEO-02 | Phase 5 | Complete |
 | SEO-03 | Phase 4 | Complete |
 | SEO-04 | Phase 7 | Complete |
-| SEO-05 | Phase 9, 12 | Pending |
+| SEO-05 | Phase 9, 12 | Complete |
 | SEO-06 | Phase 2, 13 | Pending |
 | SEO-07 | Phase 1 | Complete |
 | SEO-08 | Phase 1 | Complete |
