@@ -46,6 +46,11 @@ describe('JSON-LD generators', () => {
       const schema = buildRoofingContractorJsonLd() as unknown as Record<string, unknown>;
       expect(schema.openingHoursSpecification).toBeDefined();
     });
+
+    it('includes @id entity anchor for cross-page graph resolution', () => {
+      const schema = buildRoofingContractorJsonLd() as unknown as Record<string, unknown>;
+      expect(schema['@id']).toBe(`${BASE_URL}/#organization`);
+    });
   });
 
   describe('buildBreadcrumbJsonLd', () => {

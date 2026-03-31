@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import sitemap from '@/app/sitemap';
+import { BASE_URL } from '@/lib/constants';
 
 describe('sitemap generation', () => {
   it('returns an array of sitemap entries', () => {
@@ -8,11 +9,11 @@ describe('sitemap generation', () => {
     expect(entries.length).toBeGreaterThan(0);
   });
 
-  it('generates 152 total URLs', () => {
+  it('generates 155 total URLs', () => {
     const entries = sitemap();
-    // 9 static + 4 residential + 4 commercial + 12 city + 48 res-city + 48 com-city
-    // + 8 blog + 8 cost guides + 6 material guides + 5 problems = 152
-    expect(entries).toHaveLength(152);
+    // 9 static + 3 silo index + 4 residential + 4 commercial + 12 city + 48 res-city + 48 com-city
+    // + 8 blog + 8 cost guides + 6 material guides + 5 problems = 155
+    expect(entries).toHaveLength(155);
   });
 
   it('includes homepage with priority 1.0', () => {
@@ -36,6 +37,14 @@ describe('sitemap generation', () => {
     );
     // 4 residential x 12 cities + 4 commercial x 12 cities = 96
     expect(serviceCityPages).toHaveLength(96);
+  });
+
+  it('includes silo index pages for /services, /services/residential, /services/commercial', () => {
+    const entries = sitemap();
+    const urls = entries.map((e) => e.url);
+    expect(urls).toContain(`${BASE_URL}/services`);
+    expect(urls).toContain(`${BASE_URL}/services/residential`);
+    expect(urls).toContain(`${BASE_URL}/services/commercial`);
   });
 
   it('all URLs start with https://', () => {

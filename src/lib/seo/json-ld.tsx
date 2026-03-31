@@ -7,6 +7,7 @@ export function buildRoofingContractorJsonLd(): WithContext<RoofingContractor> {
   return {
     '@context': 'https://schema.org',
     '@type': 'RoofingContractor',
+    '@id': `${BASE_URL}/#organization`,
     name: BUSINESS_INFO.name,
     telephone: BUSINESS_INFO.phone,
     email: BUSINESS_INFO.email,
