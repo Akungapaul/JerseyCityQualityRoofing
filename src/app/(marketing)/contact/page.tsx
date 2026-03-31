@@ -39,7 +39,7 @@ export default function ContactPage() {
       </SectionWrapper>
 
       {/* 2. Two-column layout: form + info (D-10) */}
-      <SectionWrapper tone="secondary">
+      <SectionWrapper id="quote-form" tone="secondary">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* On mobile: info above form (order-1). On desktop: form left (order-1), info right (order-2) */}
           <div className="order-2 lg:order-1 [&>section]:py-0 [&>section]:bg-transparent">

@@ -3,6 +3,8 @@ import { ALL_BLOG_ARTICLES } from '@/data/content/blog';
 import { ALL_COST_GUIDES } from '@/data/content/cost-guides';
 import { ALL_MATERIAL_GUIDES } from '@/data/content/material-guides';
 import { ALL_PROBLEMS } from '@/data/content/problems';
+import { SERVICES } from '@/data/services';
+import { MUNICIPALITIES } from '@/data/municipalities';
 
 export interface ContentNode {
   slug: string;
@@ -327,6 +329,40 @@ export function initializeContentRegistry(): void {
       tags: [],
       relatedServiceSlugs: problem.relatedServiceSlugs,
       relatedCitySlugs: [],
+      relatedMaterialSlugs: [],
+      relatedProblemSlugs: [],
+    });
+  }
+
+  // Services
+  for (const service of Object.values(SERVICES)) {
+    registerContent({
+      slug: service.slug,
+      type: 'service',
+      title: service.name,
+      path: `/services/${service.category}/${service.slug}`,
+      siloService: service.slug,
+      siloCategory: service.category,
+      tags: [],
+      relatedServiceSlugs: service.relatedServices,
+      relatedCitySlugs: [],
+      relatedMaterialSlugs: [],
+      relatedProblemSlugs: [],
+    });
+  }
+
+  // Cities
+  for (const city of Object.values(MUNICIPALITIES)) {
+    registerContent({
+      slug: city.slug,
+      type: 'city',
+      title: city.name,
+      path: `/service-areas/${city.slug}`,
+      siloService: null,
+      siloCategory: null,
+      tags: [],
+      relatedServiceSlugs: [],
+      relatedCitySlugs: [city.slug],
       relatedMaterialSlugs: [],
       relatedProblemSlugs: [],
     });
