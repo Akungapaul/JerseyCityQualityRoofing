@@ -228,7 +228,11 @@ Plans:
   2. Root JSON-LD `buildRoofingContractorJsonLd` includes `@id: BASE_URL/#organization` anchor (cross-page entity graph resolves on ~108 pages)
   3. Contact page metadata description and google-map-embed noscript fallback use BUSINESS_INFO/PHONE_NUMBER constants (not hardcoded values)
   4. OG image route uses PHONE_NUMBER constant instead of literal string
-**Plans**: TBD
+**Plans**: 2 plans
+
+Plans:
+- [ ] 11-01-PLAN.md -- Wave 0 test scaffolds, JSON-LD @id anchor fix, OG route constants fix, sitemap silo index entries
+- [ ] 11-02-PLAN.md -- Three silo index pages: /services, /services/residential, /services/commercial with hub page pattern
 
 ## Progress
 
@@ -247,4 +251,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 8. Service-in-City Pages | 15/15 | Complete | 2026-03-28 |
 | 9. Blog & Supporting Content | 5/5 | Complete | 2026-03-29 |
 | 10. Conversion & Performance Polish | 3/3 | Complete | 2026-03-31 |
-| 11. SEO & Data Consistency Fixes | 0/1 | Not started | - |
+| 11. SEO & Data Consistency Fixes | 0/2 | Not started | - |
