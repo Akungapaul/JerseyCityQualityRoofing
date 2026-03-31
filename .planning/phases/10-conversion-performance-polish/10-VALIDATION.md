@@ -2,12 +2,12 @@
 phase: 10
 slug: conversion-performance-polish
 status: draft
-nyquist_compliant: false
+nyquist_compliant: true
 wave_0_complete: false
 created: 2026-03-29
 ---
 
-# Phase 10 — Validation Strategy
+# Phase 10 -- Validation Strategy
 
 > Per-phase validation contract for feedback sampling during execution.
 
@@ -38,26 +38,28 @@ created: 2026-03-29
 
 | Task ID | Plan | Wave | Requirement | Test Type | Automated Command | File Exists | Status |
 |---------|------|------|-------------|-----------|-------------------|-------------|--------|
-| 10-01-01 | 01 | 1 | CRO-03 | unit | `pnpm test -- src/components/sections/__tests__/floating-cta.test.tsx -x` | ❌ W0 | ⬜ pending |
-| 10-01-02 | 01 | 1 | CRO-05 | unit | `pnpm test -- src/hooks/__tests__/use-exit-intent.test.ts -x` | ❌ W0 | ⬜ pending |
-| 10-01-03 | 01 | 1 | CRO-09 | unit | `pnpm test -- src/components/sections/__tests__/urgency-banner.test.tsx -x` | ❌ W0 | ⬜ pending |
-| 10-02-01 | 02 | 1 | CRO-08 | unit | `pnpm test -- src/data/__tests__/gallery-projects.test.ts -x` | ❌ W0 | ⬜ pending |
-| 10-02-02 | 02 | 1 | UX-07 | unit | `pnpm test -- src/components/sections/__tests__/faq-accordion.test.tsx -x` | ❌ W0 | ⬜ pending |
-| 10-03-01 | 03 | 2 | SEO-12 | audit | Manual code audit (grep for `<img` without next/image) | Manual | ⬜ pending |
-| 10-03-02 | 03 | 2 | SEO-13 | manual-only | Lighthouse in Chrome DevTools on heaviest page | Manual | ⬜ pending |
+| 10-01-01 | 01 | 1 | CRO-03 | unit | `pnpm test -- src/components/sections/__tests__/floating-cta.test.tsx -x` | W0 (Plan 01 Task 1 creates) | pending |
+| 10-01-02 | 01 | 1 | CRO-05 | unit | `pnpm test -- src/components/sections/__tests__/exit-intent-popup.test.tsx src/hooks/__tests__/use-exit-intent.test.ts -x` | W0 (Plan 01 Task 1 creates) | pending |
+| 10-01-03 | 01 | 1 | CRO-09 | unit | `pnpm test -- src/components/sections/__tests__/urgency-banner.test.tsx -x` | W0 (Plan 01 Task 1 creates) | pending |
+| 10-01-04 | 01 | 1 | UX-07 | unit | `pnpm test -- src/components/sections/__tests__/faq-accordion.test.tsx -x` | W0 (Plan 01 Task 1 creates) | pending |
+| 10-02-01 | 02 | 2 | CRO-08 | unit | `pnpm test -- src/data/__tests__/gallery-projects.test.ts -x` | W0 (Plan 02 Task 1 creates) | pending |
+| 10-03-01 | 03 | 3 | SEO-12 | audit | Manual code audit (grep for `<img` without next/image) | Manual | pending |
+| 10-03-02 | 03 | 3 | SEO-13 | manual-only | Lighthouse in Chrome DevTools on heaviest page | Manual | pending |
 
-*Status: ⬜ pending · ✅ green · ❌ red · ⚠️ flaky*
+*Status: pending / green / red / flaky*
 
 ---
 
 ## Wave 0 Requirements
 
-- [ ] `src/hooks/__tests__/use-exit-intent.test.ts` — stubs for CRO-05 hook logic
-- [ ] `src/hooks/__tests__/use-scroll-past-fold.test.ts` — stubs for CRO-03 scroll detection
-- [ ] `src/data/__tests__/gallery-projects.test.ts` — stubs for CRO-08 data validation
-- [ ] `src/components/sections/__tests__/urgency-banner.test.tsx` — stubs for CRO-09
-- [ ] `src/components/sections/__tests__/faq-accordion.test.tsx` — stubs for UX-07
-- [ ] `src/hooks/` directory creation — does not exist yet
+- [ ] `src/hooks/__tests__/use-scroll-past-fold.test.ts` -- stubs for CRO-03 scroll detection (Plan 01 Task 1)
+- [ ] `src/hooks/__tests__/use-exit-intent.test.ts` -- stubs for CRO-05 hook logic (Plan 01 Task 1)
+- [ ] `src/components/sections/__tests__/floating-cta.test.tsx` -- stubs for CRO-03 FloatingCTA component (Plan 01 Task 1)
+- [ ] `src/components/sections/__tests__/exit-intent-popup.test.tsx` -- stubs for CRO-05 ExitIntentPopup component (Plan 01 Task 1)
+- [ ] `src/components/sections/__tests__/urgency-banner.test.tsx` -- stubs for CRO-09 (Plan 01 Task 1)
+- [ ] `src/components/sections/__tests__/faq-accordion.test.tsx` -- stubs for UX-07 (Plan 01 Task 1)
+- [ ] `src/data/__tests__/gallery-projects.test.ts` -- stubs for CRO-08 data validation (Plan 02 Task 1)
+- [ ] `src/hooks/` directory creation -- does not exist yet (Plan 01 Task 1)
 
 ---
 
@@ -74,11 +76,11 @@ created: 2026-03-29
 
 ## Validation Sign-Off
 
-- [ ] All tasks have `<automated>` verify or Wave 0 dependencies
-- [ ] Sampling continuity: no 3 consecutive tasks without automated verify
-- [ ] Wave 0 covers all MISSING references
+- [x] All tasks have `<automated>` verify or Wave 0 dependencies
+- [x] Sampling continuity: no 3 consecutive tasks without automated verify
+- [x] Wave 0 covers all MISSING references (floating-cta.test.tsx, exit-intent-popup.test.tsx now listed)
 - [ ] No watch-mode flags
 - [ ] Feedback latency < 15s
-- [ ] `nyquist_compliant: true` set in frontmatter
+- [x] `nyquist_compliant: true` set in frontmatter
 
 **Approval:** pending
