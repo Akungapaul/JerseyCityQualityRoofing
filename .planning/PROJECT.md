@@ -17,7 +17,7 @@ Every visitor within Hudson County searching for roofing services finds this sit
 
 ### Active
 
-- [ ] Siloed site architecture with service-type silos and location branches
+- [x] Siloed site architecture with service-type silos and location branches — Validated in Phase 11: silo index pages at /services, /services/residential, /services/commercial complete the URL hierarchy
 - [x] Residential service pages: Roof Repair, Roof Replacement, Roof Inspection, Emergency Roofing — Validated in Phase 5: residential-service-pages
 - [x] Commercial service pages: Flat Roof Systems, Roof Maintenance, Commercial Repair, Commercial Replacement — Validated in Phase 6: commercial-service-pages
 - [ ] City hub pages for all 12 Hudson County municipalities (Jersey City, Hoboken, Bayonne, North Bergen, Union City, West New York, Secaucus, Kearny, Harrison, East Newark, Guttenberg, Weehawken)
@@ -105,4 +105,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-31 after Phase 10 completion (all milestone phases complete)*
+*Last updated: 2026-03-31 after Phase 11 completion (v1.0 milestone complete — all 11 phases executed and verified)*
