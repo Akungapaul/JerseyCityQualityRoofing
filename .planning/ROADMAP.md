@@ -245,7 +245,10 @@ Plans:
   1. Blog article `preventative-roof-maintenance-checklist` has `siloCategory: 'commercial'` and `parentPillarLink: '/services/commercial/roof-maintenance'` — silo pillar link resolves (no 404)
   2. `initializeContentRegistry()` registers service and city nodes — `getProblemRelatedServices()` and `getMaterialRelatedServices()` return non-empty arrays
   3. FloatingCTA on `/contact` page does not self-link — `#quote-form` element is found by IntersectionObserver
-**Plans**: TBD
+**Plans**: 1 plan
+
+Plans:
+- [ ] 12-01-PLAN.md -- Wave 0 test scaffolds for all 3 fixes, then apply blog silo data correction, content registry service/city node registration, and contact page id="quote-form" wrapper
 
 ### Phase 13: SEO Cleanup & Code Quality
 **Goal**: Eliminate duplicate schema markup, thin content in sitemap, and accumulated code quality issues across the codebase
@@ -278,5 +281,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 9. Blog & Supporting Content | 5/5 | Complete | 2026-03-29 |
 | 10. Conversion & Performance Polish | 3/3 | Complete | 2026-03-31 |
 | 11. SEO & Data Consistency Fixes | 1/2 | Complete    | 2026-03-31 |
-| 12. Content Data & Linking Fixes | 0/0 | Pending | — |
+| 12. Content Data & Linking Fixes | 0/1 | Pending | — |
 | 13. SEO Cleanup & Code Quality | 0/0 | Pending | — |
