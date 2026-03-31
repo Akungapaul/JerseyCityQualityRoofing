@@ -209,4 +209,4 @@ export const GALLERY_PROJECTS: GalleryProject[] = [
       "Reflective Coating Applied",
     ],
   },
-] as const satisfies readonly GalleryProject[];
+] satisfies GalleryProject[];
