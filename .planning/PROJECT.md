@@ -13,7 +13,7 @@ Every visitor within Hudson County searching for roofing services finds this sit
 ### Validated
 
 - [x] Dual lead capture: phone (click-to-call) and quote request forms, equally weighted — Validated in Phase 3: Lead Capture System
-- [x] Sticky/persistent CTAs: phone number header, floating quote button, exit-intent forms — Partially validated in Phase 3 (header CTA scroll-to-form; floating button and exit-intent deferred to Phase 10)
+- [x] Sticky/persistent CTAs: phone number header, floating quote button, exit-intent forms — Validated in Phase 3 (header CTA) + Phase 10 (FloatingCTA, ExitIntentPopup)
 
 ### Active
 
@@ -30,7 +30,7 @@ Every visitor within Hudson County searching for roofing services finds this sit
 - [ ] About page (company story, team, certifications, insurance)
 - [ ] Contact page with form and map
 - [ ] Testimonials/reviews section with social proof on every page
-- [ ] Gallery/portfolio with before/after project photos
+- [x] Gallery/portfolio with before/after project photos — Validated in Phase 10: conversion-performance-polish (8 projects, comparison sliders, filterable grid)
 - [x] Blog — dual purpose: silo-supporting articles + standalone educational content — Validated in Phase 9: blog-supporting-content (8 articles: 5 silo-supporting + 3 standalone)
 - [x] Cost guides per service and location — Validated in Phase 9: blog-supporting-content (8 cost guides with location-specific pricing)
 - [x] Material deep-dive guides (asphalt, TPO, EPDM, slate, metal) — Validated in Phase 9: blog-supporting-content (6 material guides)
@@ -40,11 +40,11 @@ Every visitor within Hudson County searching for roofing services finds this sit
 - [ ] JSON-LD knowledge graph mapping entities: Service -> Location -> Materials -> Problems -> Solutions
 - [ ] Google Business Profile alignment: NAP consistency, map embeds, GBP-aligned content
 - [x] Automated internal linking across silos + breadcrumbs + related content — Validated in Phase 9: blog-supporting-content (10 linking functions with silo-aware scoring)
-- [ ] Technical SEO: Core Web Vitals, XML sitemap, robots.txt, canonical URLs, meta optimization
+- [x] Technical SEO: Core Web Vitals, XML sitemap, robots.txt, canonical URLs, meta optimization — Validated across Phases 1 (sitemap, robots, metadata), 10 (CWV audit, image optimization)
 - [ ] Semantic SEO: entity mapping, exhaustive topic clusters, NLP-optimized copy, co-occurring terms
 - [ ] Trust signals: certifications, insurance badges, guarantees, years in business
-- [ ] Sticky/persistent CTAs: phone number header, floating quote button, exit-intent forms
-- [ ] Urgency elements: emergency banners, seasonal promotions
+- [x] Sticky/persistent CTAs: phone number header, floating quote button, exit-intent forms — Validated in Phase 10: conversion-performance-polish (FloatingCTA, ExitIntentPopup)
+- [x] Urgency elements: emergency banners, seasonal promotions — Validated in Phase 10: conversion-performance-polish (UrgencyBanner with emergency + storm-season variants)
 - [ ] Star ratings and review displays on service and location pages
 
 ### Out of Scope
@@ -105,4 +105,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-29 after Phase 9 completion*
+*Last updated: 2026-03-31 after Phase 10 completion (all milestone phases complete)*
