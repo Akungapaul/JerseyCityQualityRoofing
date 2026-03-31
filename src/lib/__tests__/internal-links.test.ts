@@ -15,6 +15,8 @@ import {
   getBlogArticlesForService,
   getCostGuideForService,
   getRelatedProblems,
+  initializeContentRegistry,
+  resetRegistry,
 } from '@/lib/internal-links';
 import type { ContentNode } from '@/lib/internal-links';
 
@@ -408,6 +410,36 @@ describe('internal-links', () => {
       expect(results.length).toBe(2);
       // missing-shingles should be first (shared relatedProblemSlugs)
       expect(results[0].path).toBe('/problems/missing-shingles');
+    });
+  });
+
+  describe('initializeContentRegistry — service and city nodes', () => {
+    beforeEach(() => {
+      resetRegistry();
+    });
+
+    it('registers 8 service nodes and 12 city nodes in addition to content nodes', () => {
+      initializeContentRegistry();
+      const size = getRegistrySize();
+      // 8 blog + N cost guides + 6 material guides + 5 problems + 8 services + 12 cities
+      // Must be at least 39 (8+6+5+8+12)
+      expect(size).toBeGreaterThanOrEqual(8 + 6 + 5 + 8 + 12);
+    });
+
+    it('getProblemRelatedServices returns service links after initialization', () => {
+      initializeContentRegistry();
+      // missing-shingles problem has relatedServiceSlugs: ['roof-repair', 'emergency-roofing']
+      const results = getProblemRelatedServices('missing-shingles');
+      expect(results.length).toBeGreaterThan(0);
+      expect(results.map((r) => r.path)).toContain('/services/residential/roof-repair');
+    });
+
+    it('getMaterialRelatedServices returns service links after initialization', () => {
+      initializeContentRegistry();
+      // asphalt-shingles material has relatedServiceSlugs: ['roof-repair', 'roof-replacement']
+      const results = getMaterialRelatedServices('asphalt-shingles');
+      expect(results.length).toBeGreaterThan(0);
+      expect(results.map((r) => r.path)).toContain('/services/residential/roof-repair');
     });
   });
 });
