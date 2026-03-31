@@ -21,7 +21,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [ ] **Phase 7: Location Hub Pages** - Twelve city hub pages with unique local content and full schema markup
 - [x] **Phase 8: Service-in-City Pages** - 96 programmatic pages launched in validated batches with content uniqueness enforcement (completed 2026-03-28)
 - [x] **Phase 9: Blog & Supporting Content** - Blog system, silo articles, cost guides, material guides, problem-solution pages (completed 2026-03-29)
-- [ ] **Phase 10: Conversion & Performance Polish** - Gallery, exit-intent, floating CTAs, emergency banners, Core Web Vitals
+- [x] **Phase 10: Conversion & Performance Polish** - Gallery, exit-intent, floating CTAs, emergency banners, Core Web Vitals (completed 2026-03-31)
 
 ## Phase Details
 
@@ -215,7 +215,7 @@ Plans:
 Plans:
 - [x] 10-01-PLAN.md -- CRO components: FloatingCTA, ExitIntentPopup, UrgencyBanner, custom hooks, layout wiring, FAQ accordion verification
 - [x] 10-02-PLAN.md -- Gallery system: GalleryProject type, placeholder data, comparison slider cards, filterable grid, page assembly
-- [ ] 10-03-PLAN.md -- Image audit (SEO-12), Core Web Vitals optimization (SEO-13), Lighthouse verification checkpoint
+- [x] 10-03-PLAN.md -- Image audit (SEO-12), Core Web Vitals optimization (SEO-13), Lighthouse verification checkpoint
 
 ## Progress
 
@@ -233,4 +233,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 7. Location Hub Pages | 0/5 | Planned | - |
 | 8. Service-in-City Pages | 15/15 | Complete   | 2026-03-28 |
 | 9. Blog & Supporting Content | 5/5 | Complete   | 2026-03-29 |
-| 10. Conversion & Performance Polish | 2/3 | In Progress|  |
+| 10. Conversion & Performance Polish | 3/3 | Complete   | 2026-03-31 |

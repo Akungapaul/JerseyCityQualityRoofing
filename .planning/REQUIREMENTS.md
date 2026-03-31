@@ -85,8 +85,8 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **SEO-09**: Canonical URLs set via alternates.canonical in metadata on every page
 - [x] **SEO-10**: generateMetadata() on every page with title, description, openGraph, and alternates
 - [x] **SEO-11**: One H1 per page with strict heading hierarchy (H1 > H2 > H3, no skipping)
-- [ ] **SEO-12**: All images use next/image with descriptive alt text (not filenames)
-- [ ] **SEO-13**: Core Web Vitals optimized: LCP < 2.5s, FID < 100ms, CLS < 0.1
+- [x] **SEO-12**: All images use next/image with descriptive alt text (not filenames)
+- [x] **SEO-13**: Core Web Vitals optimized: LCP < 2.5s, FID < 100ms, CLS < 0.1
 - [x] **SEO-14**: NAP (Name, Address, Phone) consistency across all pages, aligned with Google Business Profile
 - [x] **SEO-15**: Google Map embed on contact page and city hub pages
 - [x] **SEO-16**: Semantic SEO: entity mapping, NLP-optimized copy with co-occurring terms, comprehensive topic coverage per silo
@@ -211,8 +211,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SEO-09 | Phase 1 | Complete |
 | SEO-10 | Phase 1 | Complete |
 | SEO-11 | Phase 1 | Complete |
-| SEO-12 | Phase 10 | Pending |
-| SEO-13 | Phase 10 | Pending |
+| SEO-12 | Phase 10 | Complete |
+| SEO-13 | Phase 10 | Complete |
 | SEO-14 | Phase 4 | Complete |
 | SEO-15 | Phase 4 | Complete |
 | SEO-16 | Phase 8 | Complete |
