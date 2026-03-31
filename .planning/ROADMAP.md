@@ -23,6 +23,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 9: Blog & Supporting Content** - Blog system, silo articles, cost guides, material guides, problem-solution pages (completed 2026-03-29)
 - [x] **Phase 10: Conversion & Performance Polish** - Gallery, exit-intent, floating CTAs, emergency banners, Core Web Vitals (completed 2026-03-31)
 - [x] **Phase 11: SEO & Data Consistency Fixes** - Silo index pages, JSON-LD entity anchor, NAP hardcode fixes, OG image constant fix (completed 2026-03-31)
+- [ ] **Phase 12: Content Data & Linking Fixes** - Blog silo data error, content registry service/city nodes, FloatingCTA id mismatch (gap closure)
+- [ ] **Phase 13: SEO Cleanup & Code Quality** - Duplicate BreadcrumbList removal, testimonials page, duplicate interface, lint/TS error fixes (gap closure)
 
 ## Phase Details
 
@@ -234,10 +236,34 @@ Plans:
 - [ ] 11-01-PLAN.md -- Wave 0 test scaffolds, JSON-LD @id anchor fix, OG route constants fix, sitemap silo index entries
 - [x] 11-02-PLAN.md -- Three silo index pages: /services, /services/residential, /services/commercial with hub page pattern
 
+### Phase 12: Content Data & Linking Fixes
+**Goal**: All content data references resolve correctly, internal linking system returns related services/cities, and FloatingCTA works on every page including /contact
+**Depends on**: Phase 11
+**Requirements**: CONT-01, SEO-05, CRO-03
+**Gap Closure:** Closes integration gaps from v1.0 milestone audit (data_error, partial_implementation, integration_gap)
+**Success Criteria** (what must be TRUE):
+  1. Blog article `preventative-roof-maintenance-checklist` has `siloCategory: 'commercial'` and `parentPillarLink: '/services/commercial/roof-maintenance'` — silo pillar link resolves (no 404)
+  2. `initializeContentRegistry()` registers service and city nodes — `getProblemRelatedServices()` and `getMaterialRelatedServices()` return non-empty arrays
+  3. FloatingCTA on `/contact` page does not self-link — `#quote-form` element is found by IntersectionObserver
+**Plans**: TBD
+
+### Phase 13: SEO Cleanup & Code Quality
+**Goal**: Eliminate duplicate schema markup, thin content in sitemap, and accumulated code quality issues across the codebase
+**Depends on**: Phase 12
+**Requirements**: SEO-06
+**Gap Closure:** Closes advisory integration gaps and tech debt from v1.0 milestone audit
+**Success Criteria** (what must be TRUE):
+  1. Each page emits exactly one BreadcrumbList JSON-LD script (no duplicates across ~20 pages)
+  2. `/testimonials` page either has full content or is excluded from sitemap
+  3. No duplicate `NeighborhoodSection` interface in location hub types.ts
+  4. No react-hooks/refs lint errors in compact-quote-form.tsx and quote-form.tsx
+  5. No pre-existing TS errors in urgency-banner.test.tsx and gallery-comparison-card.tsx
+**Plans**: TBD
+
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10 -> 11
+Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10 -> 11 -> 12 -> 13
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
@@ -252,3 +278,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 9. Blog & Supporting Content | 5/5 | Complete | 2026-03-29 |
 | 10. Conversion & Performance Polish | 3/3 | Complete | 2026-03-31 |
 | 11. SEO & Data Consistency Fixes | 1/2 | Complete    | 2026-03-31 |
+| 12. Content Data & Linking Fixes | 0/0 | Pending | — |
+| 13. SEO Cleanup & Code Quality | 0/0 | Pending | — |
