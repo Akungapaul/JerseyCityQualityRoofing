@@ -151,12 +151,6 @@ None yet.
 
 ## Session Continuity
 
-<<<<<<< Updated upstream
 Last session: 2026-03-31T02:49:57.748Z
 Stopped at: Completed 10-02-PLAN.md
 Resume file: None
-=======
-Last session: 2026-03-29T17:15:19.845Z
-Stopped at: Phase 10 UI-SPEC approved
-Resume file: .planning/phases/10-conversion-performance-polish/10-UI-SPEC.md
->>>>>>> Stashed changes
