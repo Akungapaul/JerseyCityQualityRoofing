@@ -343,3 +343,18 @@ export interface ProblemSolution {
   faqs: FAQ[];
   relatedServiceSlugs: string[];
 }
+
+// Phase 10: Gallery project data types
+export interface GalleryProject {
+  id: string;
+  title: string;
+  description: string;
+  serviceSlug: string;
+  citySlug: string;
+  beforeImage: string;
+  afterImage: string;
+  beforeAlt: string;
+  afterAlt: string;
+  completionDate: string;
+  projectDetails: string[];
+}
