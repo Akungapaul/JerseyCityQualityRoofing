@@ -62,13 +62,13 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [x] **CRO-01**: Quote request form embedded on every service page, location page, and service-in-city page (5-6 fields max)
 - [x] **CRO-02**: Sticky header with click-to-call phone number visible at all scroll positions on all pages
-- [ ] **CRO-03**: Floating quote request button (persistent CTA) on all pages
+- [x] **CRO-03**: Floating quote request button (persistent CTA) on all pages
 - [x] **CRO-04**: Above-the-fold CTA on every page (visible without scrolling)
-- [ ] **CRO-05**: Exit-intent popup with quote offer on service and location pages
+- [x] **CRO-05**: Exit-intent popup with quote offer on service and location pages
 - [x] **CRO-06**: Customer testimonials with star ratings displayed on homepage, service pages, and location pages
 - [x] **CRO-07**: Certification and license badge strip on homepage and in footer across all pages
 - [ ] **CRO-08**: Before/after project gallery with comparison sliders, filterable by service type and city
-- [ ] **CRO-09**: Emergency/urgency banner for storm season and emergency service pages
+- [x] **CRO-09**: Emergency/urgency banner for storm season and emergency service pages
 - [x] **CRO-10**: Form submission sends notification email via Resend and returns confirmation to user
 - [x] **CRO-11**: Cloudflare Turnstile invisible captcha on all forms for spam protection
 
@@ -99,7 +99,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **UX-04**: Semantic HTML throughout (main, nav, section, article, aside)
 - [x] **UX-05**: All interactive elements keyboard-accessible with focus-visible ring styles
 - [x] **UX-06**: WCAG AA color contrast compliance
-- [ ] **UX-07**: Collapsible accordion UI for FAQ sections
+- [x] **UX-07**: Collapsible accordion UI for FAQ sections
 - [x] **UX-08**: Internal links use next/link, phone numbers use tel: links
 
 ## v2 Requirements
@@ -191,13 +191,13 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CONT-09 | Phase 5 | Pending |
 | CRO-01 | Phase 3 | Complete |
 | CRO-02 | Phase 2 | Complete |
-| CRO-03 | Phase 10 | Pending |
+| CRO-03 | Phase 10 | Complete |
 | CRO-04 | Phase 2 | Complete |
-| CRO-05 | Phase 10 | Pending |
+| CRO-05 | Phase 10 | Complete |
 | CRO-06 | Phase 4 | Complete |
 | CRO-07 | Phase 4 | Complete |
 | CRO-08 | Phase 10 | Pending |
-| CRO-09 | Phase 10 | Pending |
+| CRO-09 | Phase 10 | Complete |
 | CRO-10 | Phase 3 | Complete |
 | CRO-11 | Phase 3 | Complete |
 | SEO-01 | Phase 7 | Complete |
@@ -222,7 +222,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | UX-04 | Phase 2 | Complete |
 | UX-05 | Phase 2 | Complete |
 | UX-06 | Phase 2 | Complete |
-| UX-07 | Phase 10 | Pending |
+| UX-07 | Phase 10 | Complete |
 | UX-08 | Phase 2 | Complete |
 
 **Coverage:**
