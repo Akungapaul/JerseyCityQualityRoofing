@@ -300,7 +300,7 @@ Plans:
 
 Plans:
 - [ ] 15-01-PLAN.md -- JSON-LD @id entity anchor fix, OG route city parameter support, Wave 0 test scaffolds
-- [ ] 15-02-PLAN.md -- Add Resources panel to MegaMenu, Resources accordion to MobileNav, Resources column to Footer
+- [x] 15-02-PLAN.md -- Add Resources panel to MegaMenu, Resources accordion to MobileNav, Resources column to Footer
 
 ### Phase 16: Silo Linking & Breadcrumb Polish
 **Goal**: Service pillar pages link forward into blog/cost guide content, breadcrumbs use proper labels for all content sections, and dead code is cleaned up
@@ -334,5 +334,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 12. Content Data & Linking Fixes | 1/1 | Complete    | 2026-03-31 |
 | 13. SEO Cleanup & Code Quality | 1/2 | Complete    | 2026-04-02 |
 | 14. Material Guide Service Cross-Links | 1/1 | Complete    | 2026-04-02 |
-| 15. Navigation & SEO Entity Polish | 0/2 | Planned    | — |
+| 15. Navigation & SEO Entity Polish | 1/2 | In Progress|  |
 | 16. Silo Linking & Breadcrumb Polish | 0/0 | Not Started | — |
