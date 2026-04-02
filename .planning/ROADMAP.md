@@ -248,9 +248,9 @@ Plans:
 **Requirements**: CONT-01, SEO-05, CRO-03
 **Gap Closure:** Closes integration gaps from v1.0 milestone audit (data_error, partial_implementation, integration_gap)
 **Success Criteria** (what must be TRUE):
-  1. Blog article `preventative-roof-maintenance-checklist` has `siloCategory: 'commercial'` and `parentPillarLink: '/services/commercial/roof-maintenance'` — silo pillar link resolves (no 404)
-  2. `initializeContentRegistry()` registers service and city nodes — `getProblemRelatedServices()` and `getMaterialRelatedServices()` return non-empty arrays
-  3. FloatingCTA on `/contact` page does not self-link — `#quote-form` element is found by IntersectionObserver
+  1. Blog article `preventative-roof-maintenance-checklist` has `siloCategory: 'commercial'` and `parentPillarLink: '/services/commercial/roof-maintenance'` -- silo pillar link resolves (no 404)
+  2. `initializeContentRegistry()` registers service and city nodes -- `getProblemRelatedServices()` and `getMaterialRelatedServices()` return non-empty arrays
+  3. FloatingCTA on `/contact` page does not self-link -- `#quote-form` element is found by IntersectionObserver
 **Plans**: 1 plan
 
 Plans:
@@ -274,14 +274,14 @@ Plans:
 - [x] 13-02-PLAN.md -- Fix duplicate NeighborhoodSection interface, react-hooks/refs lint errors, TS errors in test/component files, install missing dependency
 
 ### Phase 14: Material Guide Service Cross-Links
-**Goal**: All 6 material guide pages display related service cross-links, completing the material guide → service page navigation flow
+**Goal**: All 6 material guide pages display related service cross-links, completing the material guide -> service page navigation flow
 **Depends on**: Phase 12
 **Requirements**: SEO-05
 **Gap Closure:** Closes residual integration gap from v1.0 milestone audit (getMaterialRelatedServices unwired from consumer page)
 **Success Criteria** (what must be TRUE):
   1. `getMaterialRelatedServices` is imported and called in `src/app/(marketing)/guides/materials/[slug]/page.tsx`
   2. All 6 material guide pages render related service links using the existing component that accepts `InternalLink[]`
-  3. E2E flow "Material guide → Related service links → Service page" completes successfully
+  3. E2E flow "Material guide -> Related service links -> Service page" completes successfully
 **Plans**: 1 plan
 
 Plans:
@@ -311,7 +311,11 @@ Plans:
   1. Each service pillar page (8 pages) includes forward links to related blog articles and cost guides via `getSiloArticles()` and/or `getCostGuideForService()`
   2. SEGMENT_LABELS in breadcrumbs.tsx includes entries for guides, cost, materials, problems, and gallery (20 pages render human-readable breadcrumb labels)
   3. `service-in-city` ContentNode type is either populated in `initializeContentRegistry()` or removed from the type union
-**Plans**: TBD
+**Plans**: 2 plans
+
+Plans:
+- [ ] 16-01-PLAN.md -- Create SiloContentLinks component and wire forward silo links into all 8 service pillar pages
+- [ ] 16-02-PLAN.md -- Add 5 missing SEGMENT_LABELS to breadcrumbs and remove dead 'service-in-city' ContentNode type
 
 ## Progress
 
@@ -335,4 +339,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 13. SEO Cleanup & Code Quality | 1/2 | Complete    | 2026-04-02 |
 | 14. Material Guide Service Cross-Links | 1/1 | Complete    | 2026-04-02 |
 | 15. Navigation & SEO Entity Polish | 1/2 | Complete    | 2026-04-02 |
-| 16. Silo Linking & Breadcrumb Polish | 0/0 | Not Started | — |
+| 16. Silo Linking & Breadcrumb Polish | 0/2 | Not Started | -- |
