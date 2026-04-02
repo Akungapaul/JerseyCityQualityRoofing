@@ -56,9 +56,12 @@ Source: SectionWrapper py-12/py-16/py-20 pattern, BlogCard p-6, MaterialServiceC
 | Heading | 28px (1.75rem) | 700 (bold) | 1.2 | Cormorant |
 | Display | 36px (2.25rem) | 700 (bold) | 1.2 | Cormorant |
 
+**Max sizes: 4.** No additional font sizes are introduced in this phase.
+
 Phase 16 uses Body, Label, and Heading roles:
 - **Heading** (28px/700): SiloContentLinks section heading "{serviceName} Resources & Guides"
 - **Body** (18px/500): Narrative paragraph introducing the related content, breadcrumb segment text
+- **Body bold variant** (18px/700): "Related Articles" sub-heading (h3). Uses the Body size (18px) at bold weight to create visual hierarchy beneath the 28px section heading without introducing a 5th font size. The weight-only distinction is sufficient because margin-top separation (mt-8) and the heading font family (Cormorant) provide additional differentiation.
 - **Label** (14px/700): BlogCard silo badge text (uppercase), BlogCard metadata (date, reading time)
 
 Source: globals.css body font-size 1.125rem, RelatedArticles text-[1.75rem] for heading, BlogCard text-[0.875rem] for badge and metadata.
@@ -124,7 +127,7 @@ Source: globals.css @theme, BlogCard and GuideCard existing class patterns, brea
 
 **Visual specification -- Blog article cards grid (when articles.length > 0):**
 
-- Heading above grid: `text-[1.25rem] font-heading font-bold text-text-primary mb-4` -- reads "Related Articles"
+- Sub-heading above grid: `text-lg font-heading font-bold text-text-primary mb-4` -- reads "Related Articles". This uses the Body size (18px) at bold weight with the heading font family, creating a weight-only sub-heading variant that stays within the 4-size typography scale.
 - Grid container: `grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6`
 - Each card: Reuse existing `BlogCard` component directly (same pattern as RelatedArticles)
 - Maximum 3 articles displayed (articles.slice(0, 3))
@@ -288,7 +291,7 @@ Source: RESEARCH.md breadcrumb segment analysis, SEGMENT_LABELS current state in
 | |     View Cost Guide ->                                   |  |
 | +----------------------------------------------------------+  |
 |                                                               |
-| [H3] Related Articles                                         |
+| [H3] Related Articles (18px bold, heading font)               |
 |                                                               |
 | +------------------+ +------------------+ +------------------+ |
 | | BlogCard 1       | | BlogCard 2       | | BlogCard 3       | |
