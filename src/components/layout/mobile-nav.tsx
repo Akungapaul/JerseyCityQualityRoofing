@@ -237,6 +237,36 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
               </div>
             </AccordionSection>
 
+            <AccordionSection
+              title="Resources"
+              isExpanded={expandedSection === "resources"}
+              onToggle={() => toggleSection("resources")}
+            >
+              <div className="space-y-1">
+                <Link
+                  href="/blog"
+                  className="block rounded-md px-3 py-2 font-body text-lg text-text-secondary hover:text-accent hover:bg-secondary transition-colors duration-[--duration-fast] min-h-[44px] flex items-center"
+                  onClick={onClose}
+                >
+                  Blog
+                </Link>
+                <Link
+                  href="/guides"
+                  className="block rounded-md px-3 py-2 font-body text-lg text-text-secondary hover:text-accent hover:bg-secondary transition-colors duration-[--duration-fast] min-h-[44px] flex items-center"
+                  onClick={onClose}
+                >
+                  Roofing Guides
+                </Link>
+                <Link
+                  href="/problems"
+                  className="block rounded-md px-3 py-2 font-body text-lg text-text-secondary hover:text-accent hover:bg-secondary transition-colors duration-[--duration-fast] min-h-[44px] flex items-center"
+                  onClick={onClose}
+                >
+                  Common Problems
+                </Link>
+              </div>
+            </AccordionSection>
+
             {/* Company links */}
             <div className="px-4 py-4 space-y-1">
               <Link

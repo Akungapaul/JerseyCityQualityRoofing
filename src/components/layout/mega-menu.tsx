@@ -7,7 +7,7 @@ import { ChevronDown } from "lucide-react";
 import { getServicesByCategory } from "@/data/services";
 import { getAllMunicipalities } from "@/data/municipalities";
 
-type PanelId = "residential" | "commercial" | "locations" | null;
+type PanelId = "residential" | "commercial" | "locations" | "resources" | null;
 
 export function MegaMenu() {
   const [activePanel, setActivePanel] = useState<PanelId>(null);
@@ -105,6 +105,7 @@ export function MegaMenu() {
     { id: "residential", label: "Residential Services" },
     { id: "commercial", label: "Commercial Services" },
     { id: "locations", label: "Service Areas" },
+    { id: "resources", label: "Resources" },
   ];
 
   return (
@@ -217,6 +218,53 @@ export function MegaMenu() {
                         </Link>
                       ))}
                     </div>
+                  </div>
+                )}
+
+                {item.id === "resources" && (
+                  <div className="grid gap-4">
+                    <p className="font-heading font-bold text-lg text-accent mb-1">
+                      Roofing Resources
+                    </p>
+                    <Link
+                      href="/blog"
+                      className="group block rounded-md p-2 -mx-2 transition-colors duration-[--duration-fast] hover:bg-dominant-lighter"
+                      onClick={closePanel}
+                      role="menuitem"
+                    >
+                      <span className="block font-body font-bold text-lg text-text-primary group-hover:text-accent transition-colors duration-[--duration-fast]">
+                        Blog
+                      </span>
+                      <span className="block text-text-secondary text-lg leading-snug mt-0.5">
+                        Roofing tips, guides, and industry insights
+                      </span>
+                    </Link>
+                    <Link
+                      href="/guides"
+                      className="group block rounded-md p-2 -mx-2 transition-colors duration-[--duration-fast] hover:bg-dominant-lighter"
+                      onClick={closePanel}
+                      role="menuitem"
+                    >
+                      <span className="block font-body font-bold text-lg text-text-primary group-hover:text-accent transition-colors duration-[--duration-fast]">
+                        Roofing Guides
+                      </span>
+                      <span className="block text-text-secondary text-lg leading-snug mt-0.5">
+                        Cost guides and material deep-dives
+                      </span>
+                    </Link>
+                    <Link
+                      href="/problems"
+                      className="group block rounded-md p-2 -mx-2 transition-colors duration-[--duration-fast] hover:bg-dominant-lighter"
+                      onClick={closePanel}
+                      role="menuitem"
+                    >
+                      <span className="block font-body font-bold text-lg text-text-primary group-hover:text-accent transition-colors duration-[--duration-fast]">
+                        Common Problems
+                      </span>
+                      <span className="block text-text-secondary text-lg leading-snug mt-0.5">
+                        Solutions for ice dams, leaks, and storm damage
+                      </span>
+                    </Link>
                   </div>
                 )}
               </motion.div>
