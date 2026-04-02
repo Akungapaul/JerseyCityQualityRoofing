@@ -26,6 +26,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 12: Content Data & Linking Fixes** - Blog silo data error, content registry service/city nodes, FloatingCTA id mismatch (gap closure) (completed 2026-03-31)
 - [x] **Phase 13: SEO Cleanup & Code Quality** - Duplicate BreadcrumbList removal, testimonials page, duplicate interface, lint/TS error fixes (gap closure) (completed 2026-04-02)
 - [x] **Phase 14: Material Guide Service Cross-Links** - Wire getMaterialRelatedServices into material guide pages for service cross-links (gap closure) (completed 2026-04-02)
+- [ ] **Phase 15: Navigation & SEO Entity Polish** - Add content navigation entry points, JSON-LD @id entity anchor, and city-aware OG images (gap closure)
+- [ ] **Phase 16: Silo Linking & Breadcrumb Polish** - Forward silo links from service pillars, breadcrumb segment labels, and dead type cleanup (gap closure)
 
 ## Phase Details
 
@@ -285,10 +287,32 @@ Plans:
 Plans:
 - [ ] 14-01-PLAN.md -- Create MaterialServiceCTA component and wire getMaterialRelatedServices into material guide page template
 
+### Phase 15: Navigation & SEO Entity Polish
+**Goal**: Content sections (/blog, /guides, /problems) are discoverable from site navigation, service pillar JSON-LD has proper entity anchors, and OG images are unique per service-in-city page
+**Depends on**: Phase 14
+**Requirements**: UX-08, SEO-02, SEO-04, SEO-05, SEO-09
+**Gap Closure:** Closes high + medium advisory integration gaps from v1.0 milestone audit
+**Success Criteria** (what must be TRUE):
+  1. Header mega-menu or footer includes navigation links to /blog, /guides, and /problems (27 content pages reachable from persistent nav)
+  2. `buildServicePageJsonLd` provider node includes `@id: BASE_URL/#organization` entity anchor (8 service pillar pages emit anchored entity)
+  3. OG image route at `/api/og/route.tsx` reads and renders the `?city=` parameter for service-in-city pages (96 pages get unique OG images)
+**Plans**: TBD
+
+### Phase 16: Silo Linking & Breadcrumb Polish
+**Goal**: Service pillar pages link forward into blog/cost guide content, breadcrumbs use proper labels for all content sections, and dead code is cleaned up
+**Depends on**: Phase 15
+**Requirements**: CONT-08, SEO-05, SEO-06
+**Gap Closure:** Closes low-priority advisory integration gaps from v1.0 milestone audit
+**Success Criteria** (what must be TRUE):
+  1. Each service pillar page (8 pages) includes forward links to related blog articles and cost guides via `getSiloArticles()` and/or `getCostGuideForService()`
+  2. SEGMENT_LABELS in breadcrumbs.tsx includes entries for guides, cost, materials, problems, and gallery (20 pages render human-readable breadcrumb labels)
+  3. `service-in-city` ContentNode type is either populated in `initializeContentRegistry()` or removed from the type union
+**Plans**: TBD
+
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10 -> 11 -> 12 -> 13 -> 14
+Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10 -> 11 -> 12 -> 13 -> 14 -> 15 -> 16
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
@@ -306,3 +330,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 12. Content Data & Linking Fixes | 1/1 | Complete    | 2026-03-31 |
 | 13. SEO Cleanup & Code Quality | 1/2 | Complete    | 2026-04-02 |
 | 14. Material Guide Service Cross-Links | 1/1 | Complete    | 2026-04-02 |
+| 15. Navigation & SEO Entity Polish | 0/0 | Not Started | — |
+| 16. Silo Linking & Breadcrumb Polish | 0/0 | Not Started | — |

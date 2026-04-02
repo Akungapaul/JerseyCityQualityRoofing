@@ -187,7 +187,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CONT-05 | Phase 9 | Complete |
 | CONT-06 | Phase 9 | Complete |
 | CONT-07 | Phase 5 | Complete |
-| CONT-08 | Phase 5 | Complete |
+| CONT-08 | Phase 5, 16 | Complete |
 | CONT-09 | Phase 5 | Complete |
 | CRO-01 | Phase 3 | Complete |
 | CRO-02 | Phase 2 | Complete |
@@ -201,14 +201,14 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CRO-10 | Phase 3 | Complete |
 | CRO-11 | Phase 3 | Complete |
 | SEO-01 | Phase 7 | Complete |
-| SEO-02 | Phase 5 | Complete |
+| SEO-02 | Phase 5, 15 | Complete |
 | SEO-03 | Phase 4 | Complete |
-| SEO-04 | Phase 7 | Complete |
-| SEO-05 | Phase 9, 12, 14 | Complete |
-| SEO-06 | Phase 2, 13 | Complete |
+| SEO-04 | Phase 7, 15 | Complete |
+| SEO-05 | Phase 9, 12, 14, 16 | Complete |
+| SEO-06 | Phase 2, 13, 16 | Complete |
 | SEO-07 | Phase 1 | Complete |
 | SEO-08 | Phase 1 | Complete |
-| SEO-09 | Phase 1 | Complete |
+| SEO-09 | Phase 1, 15 | Complete |
 | SEO-10 | Phase 1 | Complete |
 | SEO-11 | Phase 1 | Complete |
 | SEO-12 | Phase 10 | Complete |
@@ -223,7 +223,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | UX-05 | Phase 2 | Complete |
 | UX-06 | Phase 2 | Complete |
 | UX-07 | Phase 10 | Complete |
-| UX-08 | Phase 2 | Complete |
+| UX-08 | Phase 2, 15 | Complete |
 
 **Coverage:**
 - v1 requirements: 68 total
@@ -234,4 +234,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-03-22*
-*Last updated: 2026-04-01 after v1.0 milestone audit gap closure phase 14 added*
+*Last updated: 2026-04-02 after v1.0 milestone audit gap closure phases 15-16 added*
