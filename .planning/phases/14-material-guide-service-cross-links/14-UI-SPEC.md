@@ -1,7 +1,8 @@
 ---
 phase: 14
 slug: material-guide-service-cross-links
-status: draft
+status: approved
+reviewed_at: 2026-04-01
 shadcn_initialized: false
 preset: none
 created: 2026-04-01
