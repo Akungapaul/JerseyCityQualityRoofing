@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Milestone complete
-stopped_at: Completed 14-01-PLAN.md
-last_updated: "2026-04-02T04:16:49.958Z"
+stopped_at: Completed 15-01-PLAN.md
+last_updated: "2026-04-02T15:29:05.128Z"
 progress:
-  total_phases: 14
+  total_phases: 16
   completed_phases: 14
-  total_plans: 54
-  completed_plans: 54
+  total_plans: 56
+  completed_plans: 55
 ---
 
 # Project State
@@ -78,6 +78,7 @@ Plan: Not started
 | Phase 13 P01 | 8min | 2 tasks | 16 files |
 | Phase 13 P02 | 5min | 2 tasks | 4 files |
 | Phase 14 P01 | 2min | 2 tasks | 2 files |
+| Phase 15 P01 | 2min | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -153,6 +154,7 @@ Recent decisions affecting current work:
 - [Phase 13]: vi.useFakeTimers replaces custom MockDate class for Server Component date mocking -- eliminates TS strict mode errors
 - [Phase 14]: MaterialServiceCTA as Server Component (no use client) matching ProblemSolutionCTA pattern
 - [Phase 14]: Section placed between FAQ Accordion and Related Guides with tone=dominant
+- [Phase 15]: @id entity anchor added only to nested provider object in buildServicePageJsonLd, matching existing patterns in buildServiceInCityJsonLd and buildCityRoofingContractorJsonLd
 
 ### Pending Todos
 
@@ -166,6 +168,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-02T04:11:22.790Z
-Stopped at: Completed 14-01-PLAN.md
+Last session: 2026-04-02T15:29:05.125Z
+Stopped at: Completed 15-01-PLAN.md
 Resume file: None
