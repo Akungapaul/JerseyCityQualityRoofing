@@ -34,6 +34,16 @@ import { ServiceContentSection } from '@/components/sections/service-content-sec
 import { MidPageCTA } from '@/components/sections/mid-page-cta';
 import { CommercialRelatedServicesRow } from '@/components/sections/commercial-related-services-row';
 
+// Forward silo link components (Phase 16, CONT-08/SEO-05)
+import {
+  initializeContentRegistry,
+  getSiloArticles,
+  getBlogArticlesForService,
+  getCostGuideForService,
+} from '@/lib/internal-links';
+import type { InternalLink } from '@/lib/internal-links';
+import { SiloContentLinks } from '@/components/sections/silo-content-links';
+
 // Existing reusable components
 import { BadgeStrip } from '@/components/sections/badge-strip';
 import { TestimonialCarousel } from '@/components/sections/testimonial-carousel';
@@ -127,6 +137,14 @@ export default async function CommercialServicePage({
   const displayTestimonials: readonly Testimonial[] =
     serviceTestimonials.length >= 3 ? serviceTestimonials : TESTIMONIALS;
 
+  // Initialize content registry for forward silo links (Phase 16, CONT-08/SEO-05)
+  initializeContentRegistry();
+  const siloArticles = getSiloArticles(service.slug);
+  const blogArticles = siloArticles.length > 0
+    ? siloArticles
+    : getBlogArticlesForService(service.slug);
+  const costGuide = getCostGuideForService(service.slug);
+
   return (
     <>
       {/* JSON-LD schemas */}
@@ -153,6 +171,8 @@ export default async function CommercialServicePage({
         content={content}
         combinedFaqs={combinedFaqs}
         displayTestimonials={displayTestimonials}
+        blogArticles={blogArticles}
+        costGuide={costGuide}
       />
     </>
   );
@@ -167,11 +187,15 @@ function StandardTemplate({
   content,
   combinedFaqs,
   displayTestimonials,
+  blogArticles,
+  costGuide,
 }: {
   service: Service;
   content: ServiceContent;
   combinedFaqs: FAQ[];
   displayTestimonials: readonly Testimonial[];
+  blogArticles: InternalLink[];
+  costGuide: InternalLink | null;
 }) {
   return (
     <>
@@ -287,6 +311,19 @@ function StandardTemplate({
           <FaqAccordion faqs={combinedFaqs} defaultOpenIndex={0} />
         </ScrollReveal>
       </SectionWrapper>
+
+      {/* 11.5. Silo Content Forward Links (Phase 16, CONT-08/SEO-05) */}
+      {(blogArticles.length > 0 || costGuide) && (
+        <SectionWrapper tone="dominant">
+          <ScrollReveal>
+            <SiloContentLinks
+              articles={blogArticles}
+              costGuide={costGuide}
+              serviceName={service.name}
+            />
+          </ScrollReveal>
+        </SectionWrapper>
+      )}
 
       {/* 12. Full Quote Form */}
       <div id="quote-form">
