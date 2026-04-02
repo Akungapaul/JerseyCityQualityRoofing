@@ -52,7 +52,7 @@ export function Footer() {
 
       {/* Section 2: Multi-column sitemap */}
       <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-12">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-12">
           {/* Column 1: Residential Services */}
           <div>
             <h3 className="font-heading font-bold text-lg text-text-primary mb-4">
@@ -110,7 +110,48 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 4: Contact Us */}
+          {/* Column 4: Resources */}
+          <div>
+            <h3 className="font-heading font-bold text-lg text-text-primary mb-4">
+              Resources
+            </h3>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/blog"
+                  className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast]"
+                >
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/guides"
+                  className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast]"
+                >
+                  Roofing Guides
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/problems"
+                  className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast]"
+                >
+                  Common Problems
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/gallery"
+                  className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast]"
+                >
+                  Project Gallery
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 5: Contact Us */}
           <div>
             <h3 className="font-heading font-bold text-lg text-text-primary mb-4">
               Contact Us
