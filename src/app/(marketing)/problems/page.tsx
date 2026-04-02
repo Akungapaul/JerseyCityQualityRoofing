@@ -5,9 +5,7 @@ import {
   JsonLd,
   buildCollectionPageJsonLd,
   buildRoofingContractorJsonLd,
-  buildBreadcrumbJsonLd,
 } from '@/lib/seo/json-ld';
-import { BASE_URL } from '@/lib/constants';
 import { ALL_PROBLEMS } from '@/data/content/problems';
 import { GuideHero } from '@/components/sections/guide-hero';
 import { BadgeStrip } from '@/components/sections/badge-strip';
@@ -26,7 +24,7 @@ export const metadata: Metadata = generatePageMetadata({
 export default function ProblemsPage() {
   return (
     <>
-      {/* JSON-LD: CollectionPage + RoofingContractor + Breadcrumb */}
+      {/* JSON-LD: CollectionPage + RoofingContractor */}
       <JsonLd
         data={
           buildCollectionPageJsonLd({
@@ -40,15 +38,6 @@ export default function ProblemsPage() {
       <JsonLd
         data={buildRoofingContractorJsonLd() as unknown as Record<string, unknown>}
       />
-      <JsonLd
-        data={
-          buildBreadcrumbJsonLd([
-            { name: 'Home', url: BASE_URL },
-            { name: 'Common Roofing Problems', url: `${BASE_URL}/problems` },
-          ]) as unknown as Record<string, unknown>
-        }
-      />
-
       {/* 1. Hub Hero (dominant) */}
       <GuideHero
         headline="Common Roofing Problems — Identification & Solutions"

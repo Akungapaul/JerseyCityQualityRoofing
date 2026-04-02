@@ -6,9 +6,7 @@ import {
   buildBlogPostingJsonLd,
   buildFaqPageJsonLd,
   buildRoofingContractorJsonLd,
-  buildBreadcrumbJsonLd,
 } from '@/lib/seo/json-ld';
-import { BASE_URL } from '@/lib/constants';
 import { ALL_MATERIAL_GUIDES, getMaterialGuide } from '@/data/content/material-guides';
 import {
   initializeContentRegistry,
@@ -95,7 +93,7 @@ export default async function MaterialsGuidePage({
 
   return (
     <>
-      {/* JSON-LD: Article + FAQPage + RoofingContractor + Breadcrumb */}
+      {/* JSON-LD: Article + FAQPage + RoofingContractor */}
       <JsonLd
         data={
           buildBlogPostingJsonLd({
@@ -118,17 +116,6 @@ export default async function MaterialsGuidePage({
       <JsonLd
         data={buildRoofingContractorJsonLd() as unknown as Record<string, unknown>}
       />
-      <JsonLd
-        data={
-          buildBreadcrumbJsonLd([
-            { name: 'Home', url: BASE_URL },
-            { name: 'Guides', url: `${BASE_URL}/guides` },
-            { name: 'Material Guides', url: `${BASE_URL}/guides` },
-            { name: guide.title, url: `${BASE_URL}/guides/materials/${guide.slug}` },
-          ]) as unknown as Record<string, unknown>
-        }
-      />
-
       {/* 1. GuideHero (dominant) */}
       <GuideHero
         headline={guide.headline}

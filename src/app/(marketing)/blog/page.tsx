@@ -4,9 +4,7 @@ import {
   JsonLd,
   buildCollectionPageJsonLd,
   buildRoofingContractorJsonLd,
-  buildBreadcrumbJsonLd,
 } from '@/lib/seo/json-ld';
-import { BASE_URL } from '@/lib/constants';
 import { ALL_BLOG_ARTICLES } from '@/data/content/blog';
 import { GuideHero } from '@/components/sections/guide-hero';
 import { BadgeStrip } from '@/components/sections/badge-strip';
@@ -30,7 +28,7 @@ export default function BlogPage() {
 
   return (
     <>
-      {/* JSON-LD: CollectionPage + RoofingContractor + Breadcrumb */}
+      {/* JSON-LD: CollectionPage + RoofingContractor */}
       <JsonLd
         data={
           buildCollectionPageJsonLd({
@@ -44,15 +42,6 @@ export default function BlogPage() {
       <JsonLd
         data={buildRoofingContractorJsonLd() as unknown as Record<string, unknown>}
       />
-      <JsonLd
-        data={
-          buildBreadcrumbJsonLd([
-            { name: 'Home', url: BASE_URL },
-            { name: 'Blog', url: `${BASE_URL}/blog` },
-          ]) as unknown as Record<string, unknown>
-        }
-      />
-
       {/* 1. Hero (dominant) */}
       <GuideHero
         headline="Roofing Blog — Expert Tips & Guides"

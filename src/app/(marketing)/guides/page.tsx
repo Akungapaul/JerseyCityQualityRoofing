@@ -5,9 +5,7 @@ import {
   JsonLd,
   buildCollectionPageJsonLd,
   buildRoofingContractorJsonLd,
-  buildBreadcrumbJsonLd,
 } from '@/lib/seo/json-ld';
-import { BASE_URL } from '@/lib/constants';
 import { ALL_COST_GUIDES } from '@/data/content/cost-guides';
 import { ALL_MATERIAL_GUIDES } from '@/data/content/material-guides';
 import { GuideHero } from '@/components/sections/guide-hero';
@@ -27,7 +25,7 @@ export const metadata: Metadata = generatePageMetadata({
 export default function GuidesPage() {
   return (
     <>
-      {/* JSON-LD: CollectionPage + RoofingContractor + Breadcrumb */}
+      {/* JSON-LD: CollectionPage + RoofingContractor */}
       <JsonLd
         data={
           buildCollectionPageJsonLd({
@@ -41,15 +39,6 @@ export default function GuidesPage() {
       <JsonLd
         data={buildRoofingContractorJsonLd() as unknown as Record<string, unknown>}
       />
-      <JsonLd
-        data={
-          buildBreadcrumbJsonLd([
-            { name: 'Home', url: BASE_URL },
-            { name: 'Guides', url: `${BASE_URL}/guides` },
-          ]) as unknown as Record<string, unknown>
-        }
-      />
-
       {/* 1. Hub Hero (dominant) */}
       <GuideHero
         headline="Roofing Guides — Cost, Materials & Expert Advice"

@@ -6,9 +6,7 @@ import {
   buildBlogPostingJsonLd,
   buildFaqPageJsonLd,
   buildRoofingContractorJsonLd,
-  buildBreadcrumbJsonLd,
 } from '@/lib/seo/json-ld';
-import { BASE_URL } from '@/lib/constants';
 import { ALL_PROBLEMS, getProblem } from '@/data/content/problems';
 import {
   initializeContentRegistry,
@@ -96,7 +94,7 @@ export default async function ProblemPage({
 
   return (
     <>
-      {/* JSON-LD: Article + FAQPage + RoofingContractor + Breadcrumb */}
+      {/* JSON-LD: Article + FAQPage + RoofingContractor */}
       <JsonLd
         data={
           buildBlogPostingJsonLd({
@@ -119,16 +117,6 @@ export default async function ProblemPage({
       <JsonLd
         data={buildRoofingContractorJsonLd() as unknown as Record<string, unknown>}
       />
-      <JsonLd
-        data={
-          buildBreadcrumbJsonLd([
-            { name: 'Home', url: BASE_URL },
-            { name: 'Common Roofing Problems', url: `${BASE_URL}/problems` },
-            { name: problem.title, url: `${BASE_URL}/problems/${problem.slug}` },
-          ]) as unknown as Record<string, unknown>
-        }
-      />
-
       {/* 1. GuideHero (dominant) */}
       <GuideHero
         headline={problem.headline}

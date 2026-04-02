@@ -5,7 +5,6 @@ import {
   JsonLd,
   buildServiceInCityJsonLd,
   buildFaqPageJsonLd,
-  buildBreadcrumbJsonLd,
 } from '@/lib/seo/json-ld';
 import { getService, getResidentialServiceSlugs } from '@/data/services';
 import { getMunicipality, getAllMunicipalitySlugs } from '@/data/municipalities';
@@ -280,18 +279,6 @@ export default async function ResidentialServiceCityPage({
       ? cityServiceTestimonials
       : TESTIMONIALS;
 
-  // Breadcrumb: Home > Services > Residential > [Service] > [City]
-  const breadcrumbItems = [
-    { name: 'Home', url: BASE_URL },
-    { name: 'Services', url: `${BASE_URL}/services` },
-    { name: 'Residential', url: `${BASE_URL}/services/residential` },
-    {
-      name: service.name,
-      url: `${BASE_URL}/services/residential/${serviceSlug}`,
-    },
-    { name: city.name, url: canonicalUrl },
-  ];
-
   return (
     <>
       {/* JSON-LD: Service (city-scoped areaServed) */}
@@ -313,16 +300,6 @@ export default async function ResidentialServiceCityPage({
           >
         }
       />
-      {/* JSON-LD: BreadcrumbList (5 items) */}
-      <JsonLd
-        data={
-          buildBreadcrumbJsonLd(breadcrumbItems) as unknown as Record<
-            string,
-            unknown
-          >
-        }
-      />
-
       {/* 1. CityServiceHero (dominant, own wrapper) */}
       <CityServiceHero
         heroHeadline={content.heroHeadline}

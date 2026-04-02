@@ -6,9 +6,7 @@ import {
   buildBlogPostingJsonLd,
   buildFaqPageJsonLd,
   buildRoofingContractorJsonLd,
-  buildBreadcrumbJsonLd,
 } from '@/lib/seo/json-ld';
-import { BASE_URL } from '@/lib/constants';
 import { ALL_BLOG_ARTICLES, getBlogArticle } from '@/data/content/blog';
 import {
   initializeContentRegistry,
@@ -130,7 +128,7 @@ export default async function BlogArticlePage({
 
   return (
     <article>
-      {/* JSON-LD: BlogPosting + FAQPage + RoofingContractor + Breadcrumb */}
+      {/* JSON-LD: BlogPosting + FAQPage + RoofingContractor */}
       <JsonLd
         data={
           buildBlogPostingJsonLd({
@@ -151,16 +149,6 @@ export default async function BlogArticlePage({
       <JsonLd
         data={buildRoofingContractorJsonLd() as unknown as Record<string, unknown>}
       />
-      <JsonLd
-        data={
-          buildBreadcrumbJsonLd([
-            { name: 'Home', url: BASE_URL },
-            { name: 'Blog', url: `${BASE_URL}/blog` },
-            { name: article.title, url: `${BASE_URL}/blog/${article.slug}` },
-          ]) as unknown as Record<string, unknown>
-        }
-      />
-
       {/* 1. BlogHero (dominant, own section wrapper) */}
       <BlogHero
         headline={article.headline}

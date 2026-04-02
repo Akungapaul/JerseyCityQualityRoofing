@@ -13,9 +13,7 @@ import {
   JsonLd,
   buildCollectionPageJsonLd,
   buildRoofingContractorJsonLd,
-  buildBreadcrumbJsonLd,
 } from '@/lib/seo/json-ld';
-import { BASE_URL } from '@/lib/constants';
 import { getServicesByCategory } from '@/data/services';
 import { GuideHero } from '@/components/sections/guide-hero';
 import { SectionWrapper } from '@/components/sections/section-wrapper';
@@ -41,7 +39,7 @@ export default function CommercialServicesPage() {
 
   return (
     <>
-      {/* JSON-LD: CollectionPage + RoofingContractor + Breadcrumb */}
+      {/* JSON-LD: CollectionPage + RoofingContractor */}
       <JsonLd
         data={
           buildCollectionPageJsonLd({
@@ -55,16 +53,6 @@ export default function CommercialServicesPage() {
       <JsonLd
         data={buildRoofingContractorJsonLd() as unknown as Record<string, unknown>}
       />
-      <JsonLd
-        data={
-          buildBreadcrumbJsonLd([
-            { name: 'Home', url: BASE_URL },
-            { name: 'Services', url: `${BASE_URL}/services` },
-            { name: 'Commercial Services', url: `${BASE_URL}/services/commercial` },
-          ]) as unknown as Record<string, unknown>
-        }
-      />
-
       {/* 1. Hero (dominant) */}
       <GuideHero
         headline="Commercial Roofing Services"

@@ -4,13 +4,11 @@ import { generatePageMetadata } from '@/lib/seo/metadata';
 import {
   JsonLd,
   buildCityRoofingContractorJsonLd,
-  buildBreadcrumbJsonLd,
   buildFaqPageJsonLd,
 } from '@/lib/seo/json-ld';
 import { getMunicipality, getAllMunicipalitySlugs } from '@/data/municipalities';
 import { getTestimonialsByCity, TESTIMONIALS } from '@/data/testimonials';
 import { getServicesByCategory } from '@/data/services';
-import { BASE_URL } from '@/lib/constants';
 import type { CityHubContent, Testimonial } from '@/data/types';
 
 // City content data imports (all 12)
@@ -124,25 +122,12 @@ export default async function CityHubPage({
   const displayTestimonials: readonly Testimonial[] =
     cityTestimonials.length >= 3 ? cityTestimonials : TESTIMONIALS;
 
-  // Breadcrumb items
-  const breadcrumbItems = [
-    { name: 'Home', url: BASE_URL },
-    { name: 'Service Areas', url: `${BASE_URL}/service-areas` },
-    { name: city.name, url: `${BASE_URL}/service-areas/${city.slug}` },
-  ];
-
   return (
     <>
       {/* JSON-LD: RoofingContractor with @id entity relationships (SEO-01, SEO-04) */}
       <JsonLd
         data={
           buildCityRoofingContractorJsonLd(city, allServices) as unknown as Record<string, unknown>
-        }
-      />
-      {/* JSON-LD: BreadcrumbList (SEO-01) */}
-      <JsonLd
-        data={
-          buildBreadcrumbJsonLd(breadcrumbItems) as unknown as Record<string, unknown>
         }
       />
       {/* JSON-LD: FAQPage for city-specific FAQs */}
