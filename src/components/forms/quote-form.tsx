@@ -163,8 +163,8 @@ export function QuoteForm({ defaultServiceType }: QuoteFormProps) {
                 )}
               </AnimatePresence>
 
-              {/* eslint-disable-next-line react-hooks/refs -- handleSubmit only invokes onSubmit in event handler context, never during render. Ref access (turnstileRef.current.reset()) is safe. */}
               <form
+                // eslint-disable-next-line react-hooks/refs -- handleSubmit only invokes onSubmit in event handler context, never during render
                 onSubmit={handleSubmit(onSubmit)}
                 noValidate
                 className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4"
