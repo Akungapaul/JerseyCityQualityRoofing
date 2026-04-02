@@ -9,11 +9,17 @@ describe('sitemap generation', () => {
     expect(entries.length).toBeGreaterThan(0);
   });
 
-  it('generates 155 total URLs', () => {
+  it('generates 154 total URLs', () => {
     const entries = sitemap();
-    // 9 static + 3 silo index + 4 residential + 4 commercial + 12 city + 48 res-city + 48 com-city
-    // + 8 blog + 8 cost guides + 6 material guides + 5 problems = 155
-    expect(entries).toHaveLength(155);
+    // 8 static + 3 silo index + 4 residential + 4 commercial + 12 city + 48 res-city + 48 com-city
+    // + 8 blog + 8 cost guides + 6 material guides + 5 problems = 154
+    expect(entries).toHaveLength(154);
+  });
+
+  it('excludes testimonials stub page from sitemap', () => {
+    const entries = sitemap();
+    const urls = entries.map((e) => e.url);
+    expect(urls).not.toContain(`${BASE_URL}/testimonials`);
   });
 
   it('includes homepage with priority 1.0', () => {

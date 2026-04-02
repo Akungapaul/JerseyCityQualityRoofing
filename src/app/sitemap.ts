@@ -18,7 +18,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/about`, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/contact`, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/gallery`, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${BASE_URL}/testimonials`, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/service-areas`, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/blog`, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${BASE_URL}/guides`, changeFrequency: 'monthly', priority: 0.6 },
