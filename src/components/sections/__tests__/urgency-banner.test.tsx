@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
+import { describe, it, expect, vi, afterEach } from "vitest";
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 
@@ -20,14 +20,8 @@ vi.mock("@/lib/utils", () => ({
 }));
 
 describe("UrgencyBanner", () => {
-  let originalDate: DateConstructor;
-
-  beforeEach(() => {
-    originalDate = globalThis.Date;
-  });
-
   afterEach(() => {
-    globalThis.Date = originalDate;
+    vi.useRealTimers();
     vi.resetModules();
   });
 
@@ -65,19 +59,8 @@ describe("UrgencyBanner", () => {
   });
 
   it("storm-season variant returns null outside storm season", async () => {
-    // Mock Date to January (month = 0)
-    const MockDate = class extends originalDate {
-      constructor(...args: ConstructorParameters<DateConstructor>) {
-        if (args.length === 0) {
-          super(2026, 0, 15); // January 15
-        } else {
-          // @ts-expect-error -- spread constructor args
-          super(...args);
-        }
-      }
-      static now = originalDate.now;
-    } as unknown as DateConstructor;
-    globalThis.Date = MockDate;
+    vi.useFakeTimers();
+    vi.setSystemTime(new Date(2026, 0, 15)); // January 15
 
     vi.resetModules();
     const { UrgencyBanner } = await import("../urgency-banner");
@@ -88,19 +71,8 @@ describe("UrgencyBanner", () => {
   });
 
   it("storm-season variant renders during storm season", async () => {
-    // Mock Date to July (month = 6)
-    const MockDate = class extends originalDate {
-      constructor(...args: ConstructorParameters<DateConstructor>) {
-        if (args.length === 0) {
-          super(2026, 6, 15); // July 15
-        } else {
-          // @ts-expect-error -- spread constructor args
-          super(...args);
-        }
-      }
-      static now = originalDate.now;
-    } as unknown as DateConstructor;
-    globalThis.Date = MockDate;
+    vi.useFakeTimers();
+    vi.setSystemTime(new Date(2026, 6, 15)); // July 15
 
     vi.resetModules();
     const { UrgencyBanner } = await import("../urgency-banner");
@@ -112,19 +84,8 @@ describe("UrgencyBanner", () => {
   });
 
   it("storm-season variant contains 'Storm Season Alert' text", async () => {
-    // Mock Date to August (month = 7)
-    const MockDate = class extends originalDate {
-      constructor(...args: ConstructorParameters<DateConstructor>) {
-        if (args.length === 0) {
-          super(2026, 7, 15); // August 15
-        } else {
-          // @ts-expect-error -- spread constructor args
-          super(...args);
-        }
-      }
-      static now = originalDate.now;
-    } as unknown as DateConstructor;
-    globalThis.Date = MockDate;
+    vi.useFakeTimers();
+    vi.setSystemTime(new Date(2026, 7, 15)); // August 15
 
     vi.resetModules();
     const { UrgencyBanner } = await import("../urgency-banner");

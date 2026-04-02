@@ -265,7 +265,7 @@ Plans:
 
 Plans:
 - [x] 13-01-PLAN.md -- Remove duplicate BreadcrumbList JSON-LD from 13 page files, exclude testimonials from sitemap, add noindex to testimonials page
-- [ ] 13-02-PLAN.md -- Fix duplicate NeighborhoodSection interface, react-hooks/refs lint errors, TS errors in test/component files, install missing dependency
+- [x] 13-02-PLAN.md -- Fix duplicate NeighborhoodSection interface, react-hooks/refs lint errors, TS errors in test/component files, install missing dependency
 
 ## Progress
 
