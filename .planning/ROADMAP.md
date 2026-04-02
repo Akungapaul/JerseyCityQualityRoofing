@@ -296,7 +296,11 @@ Plans:
   1. Header mega-menu or footer includes navigation links to /blog, /guides, and /problems (27 content pages reachable from persistent nav)
   2. `buildServicePageJsonLd` provider node includes `@id: BASE_URL/#organization` entity anchor (8 service pillar pages emit anchored entity)
   3. OG image route at `/api/og/route.tsx` reads and renders the `?city=` parameter for service-in-city pages (96 pages get unique OG images)
-**Plans**: TBD
+**Plans**: 2 plans
+
+Plans:
+- [ ] 15-01-PLAN.md -- JSON-LD @id entity anchor fix, OG route city parameter support, Wave 0 test scaffolds
+- [ ] 15-02-PLAN.md -- Add Resources panel to MegaMenu, Resources accordion to MobileNav, Resources column to Footer
 
 ### Phase 16: Silo Linking & Breadcrumb Polish
 **Goal**: Service pillar pages link forward into blog/cost guide content, breadcrumbs use proper labels for all content sections, and dead code is cleaned up
@@ -330,5 +334,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 12. Content Data & Linking Fixes | 1/1 | Complete    | 2026-03-31 |
 | 13. SEO Cleanup & Code Quality | 1/2 | Complete    | 2026-04-02 |
 | 14. Material Guide Service Cross-Links | 1/1 | Complete    | 2026-04-02 |
-| 15. Navigation & SEO Entity Polish | 0/0 | Not Started | — |
+| 15. Navigation & SEO Entity Polish | 0/2 | Planned    | — |
 | 16. Silo Linking & Breadcrumb Polish | 0/0 | Not Started | — |
