@@ -316,7 +316,7 @@ Plans:
 Plans:
 - [x] 16-00-PLAN.md -- Wave 0 test stubs: silo forward links coverage test + breadcrumb SEGMENT_LABELS completeness test
 - [ ] 16-01-PLAN.md -- Create SiloContentLinks component and wire forward silo links into all 8 service pillar pages
-- [ ] 16-02-PLAN.md -- Add 5 missing SEGMENT_LABELS to breadcrumbs and remove dead 'service-in-city' ContentNode type
+- [x] 16-02-PLAN.md -- Add 5 missing SEGMENT_LABELS to breadcrumbs and remove dead 'service-in-city' ContentNode type
 
 ## Progress
 
@@ -340,4 +340,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 13. SEO Cleanup & Code Quality | 1/2 | Complete    | 2026-04-02 |
 | 14. Material Guide Service Cross-Links | 1/1 | Complete    | 2026-04-02 |
 | 15. Navigation & SEO Entity Polish | 1/2 | Complete    | 2026-04-02 |
-| 16. Silo Linking & Breadcrumb Polish | 1/3 | In Progress|  |
+| 16. Silo Linking & Breadcrumb Polish | 2/3 | In Progress|  |
