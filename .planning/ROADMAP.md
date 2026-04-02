@@ -195,7 +195,10 @@ Plans:
   3. Cost guide pages exist for each service type with location-specific pricing data (e.g., "How much does roof replacement cost in Jersey City?")
   4. Material deep-dive guides exist for at least 6 roofing materials (asphalt, TPO, EPDM, slate, metal, modified bitumen)
   5. Automated internal linking connects related services, locations, and blog posts within and across silos following silo boundary rules
-**Plans**: TBD
+**Plans**: 1 plan
+
+Plans:
+- [ ] 14-01-PLAN.md -- Create MaterialServiceCTA component and wire getMaterialRelatedServices into material guide page template
 **UI hint**: yes
 
 Plans:
@@ -277,7 +280,10 @@ Plans:
   1. `getMaterialRelatedServices` is imported and called in `src/app/(marketing)/guides/materials/[slug]/page.tsx`
   2. All 6 material guide pages render related service links using the existing component that accepts `InternalLink[]`
   3. E2E flow "Material guide → Related service links → Service page" completes successfully
-**Plans**: TBD
+**Plans**: 1 plan
+
+Plans:
+- [ ] 14-01-PLAN.md -- Create MaterialServiceCTA component and wire getMaterialRelatedServices into material guide page template
 
 ## Progress
 
@@ -299,4 +305,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 11. SEO & Data Consistency Fixes | 1/2 | Complete    | 2026-03-31 |
 | 12. Content Data & Linking Fixes | 1/1 | Complete    | 2026-03-31 |
 | 13. SEO Cleanup & Code Quality | 1/2 | Complete    | 2026-04-02 |
-| 14. Material Guide Service Cross-Links | 0/0 | Planned | — |
+| 14. Material Guide Service Cross-Links | 0/1 | Planned | — |
