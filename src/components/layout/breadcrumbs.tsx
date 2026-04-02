@@ -14,6 +14,11 @@ const SEGMENT_LABELS: Record<string, string> = {
   about: "About Us",
   contact: "Contact",
   blog: "Blog",
+  guides: "Guides",
+  cost: "Cost Guides",
+  materials: "Material Guides",
+  problems: "Common Roofing Problems",
+  gallery: "Project Gallery",
 };
 
 function slugToTitle(slug: string): string {
