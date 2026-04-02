@@ -163,6 +163,7 @@ export function QuoteForm({ defaultServiceType }: QuoteFormProps) {
                 )}
               </AnimatePresence>
 
+              {/* eslint-disable-next-line react-hooks/refs -- handleSubmit only invokes onSubmit in event handler context, never during render. Ref access (turnstileRef.current.reset()) is safe. */}
               <form
                 onSubmit={handleSubmit(onSubmit)}
                 noValidate

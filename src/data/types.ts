@@ -200,13 +200,6 @@ export interface EmergencyContent extends ServiceContent {
 }
 
 // Phase 7: City hub content data types
-export interface NeighborhoodSection {
-  name: string;
-  description: string;      // ~100 words: roofing concerns in this neighborhood
-  commonRoofTypes: string[];
-  keyChallenge: string;
-}
-
 export interface CityHubContent {
   slug: string;                          // Municipality slug (e.g., 'jersey-city')
   heroHeadline: string;                  // City-specific H1
