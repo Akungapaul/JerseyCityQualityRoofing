@@ -26,7 +26,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 12: Content Data & Linking Fixes** - Blog silo data error, content registry service/city nodes, FloatingCTA id mismatch (gap closure) (completed 2026-03-31)
 - [x] **Phase 13: SEO Cleanup & Code Quality** - Duplicate BreadcrumbList removal, testimonials page, duplicate interface, lint/TS error fixes (gap closure) (completed 2026-04-02)
 - [x] **Phase 14: Material Guide Service Cross-Links** - Wire getMaterialRelatedServices into material guide pages for service cross-links (gap closure) (completed 2026-04-02)
-- [ ] **Phase 15: Navigation & SEO Entity Polish** - Add content navigation entry points, JSON-LD @id entity anchor, and city-aware OG images (gap closure)
+- [x] **Phase 15: Navigation & SEO Entity Polish** - Add content navigation entry points, JSON-LD @id entity anchor, and city-aware OG images (gap closure) (completed 2026-04-02)
 - [ ] **Phase 16: Silo Linking & Breadcrumb Polish** - Forward silo links from service pillars, breadcrumb segment labels, and dead type cleanup (gap closure)
 
 ## Phase Details
@@ -334,5 +334,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 12. Content Data & Linking Fixes | 1/1 | Complete    | 2026-03-31 |
 | 13. SEO Cleanup & Code Quality | 1/2 | Complete    | 2026-04-02 |
 | 14. Material Guide Service Cross-Links | 1/1 | Complete    | 2026-04-02 |
-| 15. Navigation & SEO Entity Polish | 1/2 | In Progress|  |
+| 15. Navigation & SEO Entity Polish | 1/2 | Complete    | 2026-04-02 |
 | 16. Silo Linking & Breadcrumb Polish | 0/0 | Not Started | — |
