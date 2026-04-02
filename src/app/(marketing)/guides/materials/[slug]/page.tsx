@@ -11,6 +11,7 @@ import { ALL_MATERIAL_GUIDES, getMaterialGuide } from '@/data/content/material-g
 import {
   initializeContentRegistry,
   getRelatedGuides,
+  getMaterialRelatedServices,
 } from '@/lib/internal-links';
 
 // Section components
@@ -19,6 +20,7 @@ import { BadgeStrip } from '@/components/sections/badge-strip';
 import { ServiceContentSection } from '@/components/sections/service-content-section';
 import { MaterialComparison } from '@/components/sections/material-comparison';
 import { MidPageCTA } from '@/components/sections/mid-page-cta';
+import { MaterialServiceCTA } from '@/components/sections/material-service-cta';
 import { FaqAccordion } from '@/components/sections/faq-accordion';
 import { RelatedGuides } from '@/components/sections/related-guides';
 import { QuoteForm } from '@/components/forms/quote-form';
@@ -88,6 +90,7 @@ export default async function MaterialsGuidePage({
   // Initialize internal linking
   initializeContentRegistry();
   const relatedGuides = getRelatedGuides(slug, 3);
+  const serviceLinks = getMaterialRelatedServices(slug);
 
   const wordCount = countWords(guide);
 
@@ -232,6 +235,18 @@ export default async function MaterialsGuidePage({
           <FaqAccordion faqs={guide.faqs} defaultOpenIndex={0} />
         </ScrollReveal>
       </SectionWrapper>
+
+      {/* 13.5. Related Services CTA (dominant) */}
+      {serviceLinks.length > 0 && (
+        <SectionWrapper tone="dominant">
+          <ScrollReveal>
+            <MaterialServiceCTA
+              materialName={guide.materialName}
+              serviceLinks={serviceLinks}
+            />
+          </ScrollReveal>
+        </SectionWrapper>
+      )}
 
       {/* 14. Related Guides (secondary) */}
       {relatedGuides.length > 0 && (
