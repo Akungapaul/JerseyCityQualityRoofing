@@ -25,6 +25,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 11: SEO & Data Consistency Fixes** - Silo index pages, JSON-LD entity anchor, NAP hardcode fixes, OG image constant fix (completed 2026-03-31)
 - [x] **Phase 12: Content Data & Linking Fixes** - Blog silo data error, content registry service/city nodes, FloatingCTA id mismatch (gap closure) (completed 2026-03-31)
 - [x] **Phase 13: SEO Cleanup & Code Quality** - Duplicate BreadcrumbList removal, testimonials page, duplicate interface, lint/TS error fixes (gap closure) (completed 2026-04-02)
+- [ ] **Phase 14: Material Guide Service Cross-Links** - Wire getMaterialRelatedServices into material guide pages for service cross-links (gap closure)
 
 ## Phase Details
 
@@ -267,10 +268,21 @@ Plans:
 - [x] 13-01-PLAN.md -- Remove duplicate BreadcrumbList JSON-LD from 13 page files, exclude testimonials from sitemap, add noindex to testimonials page
 - [x] 13-02-PLAN.md -- Fix duplicate NeighborhoodSection interface, react-hooks/refs lint errors, TS errors in test/component files, install missing dependency
 
+### Phase 14: Material Guide Service Cross-Links
+**Goal**: All 6 material guide pages display related service cross-links, completing the material guide → service page navigation flow
+**Depends on**: Phase 12
+**Requirements**: SEO-05
+**Gap Closure:** Closes residual integration gap from v1.0 milestone audit (getMaterialRelatedServices unwired from consumer page)
+**Success Criteria** (what must be TRUE):
+  1. `getMaterialRelatedServices` is imported and called in `src/app/(marketing)/guides/materials/[slug]/page.tsx`
+  2. All 6 material guide pages render related service links using the existing component that accepts `InternalLink[]`
+  3. E2E flow "Material guide → Related service links → Service page" completes successfully
+**Plans**: TBD
+
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10 -> 11 -> 12 -> 13
+Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10 -> 11 -> 12 -> 13 -> 14
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
@@ -287,3 +299,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 11. SEO & Data Consistency Fixes | 1/2 | Complete    | 2026-03-31 |
 | 12. Content Data & Linking Fixes | 1/1 | Complete    | 2026-03-31 |
 | 13. SEO Cleanup & Code Quality | 1/2 | Complete    | 2026-04-02 |
+| 14. Material Guide Service Cross-Links | 0/0 | Planned | — |
