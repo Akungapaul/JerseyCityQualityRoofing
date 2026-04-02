@@ -1,5 +1,6 @@
 import { ImageResponse } from 'next/og';
 import { getService } from '@/data/services';
+import { getMunicipality } from '@/data/municipalities';
 import { PHONE_NUMBER, SITE_NAME } from '@/lib/constants';
 
 export const runtime = 'edge';
@@ -8,13 +9,17 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const serviceSlug = searchParams.get('service');
   const service = serviceSlug ? getService(serviceSlug) : null;
+  const citySlug = searchParams.get('city');
+  const city = citySlug ? getMunicipality(citySlug) : null;
 
   // Load Cormorant Bold font for the OG image
   const fontData = await fetch(
     new URL('https://fonts.gstatic.com/s/cormorant/v21/H4c2BXOCl9bbnla_nHIq75u9.ttf')
   ).then((res) => res.arrayBuffer());
 
-  const title = service?.name ?? 'Professional Roofing Services';
+  const title = service && city
+    ? `${service.name} in ${city.name}`
+    : service?.name ?? 'Professional Roofing Services';
   const subtitle = service?.shortDescription ?? 'Licensed, insured, and locally trusted across Hudson County.';
 
   return new ImageResponse(
