@@ -311,9 +311,10 @@ Plans:
   1. Each service pillar page (8 pages) includes forward links to related blog articles and cost guides via `getSiloArticles()` and/or `getCostGuideForService()`
   2. SEGMENT_LABELS in breadcrumbs.tsx includes entries for guides, cost, materials, problems, and gallery (20 pages render human-readable breadcrumb labels)
   3. `service-in-city` ContentNode type is either populated in `initializeContentRegistry()` or removed from the type union
-**Plans**: 2 plans
+**Plans**: 3 plans
 
 Plans:
+- [ ] 16-00-PLAN.md -- Wave 0 test stubs: silo forward links coverage test + breadcrumb SEGMENT_LABELS completeness test
 - [ ] 16-01-PLAN.md -- Create SiloContentLinks component and wire forward silo links into all 8 service pillar pages
 - [ ] 16-02-PLAN.md -- Add 5 missing SEGMENT_LABELS to breadcrumbs and remove dead 'service-in-city' ContentNode type
 
@@ -339,4 +340,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 13. SEO Cleanup & Code Quality | 1/2 | Complete    | 2026-04-02 |
 | 14. Material Guide Service Cross-Links | 1/1 | Complete    | 2026-04-02 |
 | 15. Navigation & SEO Entity Polish | 1/2 | Complete    | 2026-04-02 |
-| 16. Silo Linking & Breadcrumb Polish | 0/2 | Not Started | -- |
+| 16. Silo Linking & Breadcrumb Polish | 0/3 | Not Started | -- |
