@@ -140,6 +140,7 @@ export function buildServicePageJsonLd(
     url: canonicalUrl,
     provider: {
       '@type': 'RoofingContractor',
+      '@id': `${BASE_URL}/#organization`,
       name: BUSINESS_INFO.name,
       telephone: BUSINESS_INFO.phone,
       address: {

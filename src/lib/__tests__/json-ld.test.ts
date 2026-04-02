@@ -277,5 +277,11 @@ describe('JSON-LD generators', () => {
       expect(offered['@type']).toBe('Service');
       expect(offered.name).toBe('Roof Repair');
     });
+
+    it('provider includes @id entity anchor for organization graph merging', () => {
+      const schema = buildServicePageJsonLd(service, canonicalUrl) as unknown as Record<string, unknown>;
+      const provider = schema.provider as Record<string, unknown>;
+      expect(provider['@id']).toBe(`${BASE_URL}/#organization`);
+    });
   });
 });
