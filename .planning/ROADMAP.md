@@ -300,7 +300,7 @@ Plans:
 
 Plans:
 - [x] 15-01-PLAN.md -- JSON-LD @id entity anchor fix, OG route city parameter support, Wave 0 test scaffolds
-- [ ] 15-02-PLAN.md -- Add Resources panel to MegaMenu, Resources accordion to MobileNav, Resources column to Footer
+- [x] 15-02-PLAN.md -- Add Resources panel to MegaMenu, Resources accordion to MobileNav, Resources column to Footer
 
 ### Phase 16: Silo Linking & Breadcrumb Polish
 **Goal**: Service pillar pages link forward into blog/cost guide content, breadcrumbs use proper labels for all content sections, and dead code is cleaned up
