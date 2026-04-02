@@ -315,8 +315,8 @@ Plans:
 
 Plans:
 - [x] 16-00-PLAN.md -- Wave 0 test stubs: silo forward links coverage test + breadcrumb SEGMENT_LABELS completeness test
-- [x] 16-01-PLAN.md -- Create SiloContentLinks component and wire forward silo links into all 8 service pillar pages
-- [ ] 16-02-PLAN.md -- Add 5 missing SEGMENT_LABELS to breadcrumbs and remove dead 'service-in-city' ContentNode type
+- [ ] 16-01-PLAN.md -- Create SiloContentLinks component and wire forward silo links into all 8 service pillar pages
+- [x] 16-02-PLAN.md -- Add 5 missing SEGMENT_LABELS to breadcrumbs and remove dead 'service-in-city' ContentNode type
 
 ## Progress
 

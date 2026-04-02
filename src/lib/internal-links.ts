@@ -8,7 +8,7 @@ import { MUNICIPALITIES } from '@/data/municipalities';
 
 export interface ContentNode {
   slug: string;
-  type: 'service' | 'city' | 'service-in-city' | 'blog' | 'cost-guide' | 'material-guide' | 'problem';
+  type: 'service' | 'city' | 'blog' | 'cost-guide' | 'material-guide' | 'problem';
   title: string;
   path: string;
   siloService: string | null;
