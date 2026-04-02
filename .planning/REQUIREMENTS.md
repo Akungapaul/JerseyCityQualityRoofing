@@ -79,7 +79,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **SEO-03**: Review/AggregateRating schema on pages displaying testimonials
 - [x] **SEO-04**: Knowledge graph JSON-LD mapping entity relationships: Service -> Location -> Materials -> Problems -> Solutions
 - [x] **SEO-05**: Automated internal linking system: contextual links between related services, locations, and blog posts within and across silos
-- [ ] **SEO-06**: Breadcrumb navigation on every page (auto-generated from route hierarchy) with BreadcrumbList schema
+- [x] **SEO-06**: Breadcrumb navigation on every page (auto-generated from route hierarchy) with BreadcrumbList schema
 - [x] **SEO-07**: XML sitemap auto-generated covering all service, location, service-in-city, blog, and content pages
 - [x] **SEO-08**: robots.txt properly configured
 - [x] **SEO-09**: Canonical URLs set via alternates.canonical in metadata on every page
@@ -205,7 +205,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SEO-03 | Phase 4 | Complete |
 | SEO-04 | Phase 7 | Complete |
 | SEO-05 | Phase 9, 12 | Complete |
-| SEO-06 | Phase 2, 13 | Pending |
+| SEO-06 | Phase 2, 13 | Complete |
 | SEO-07 | Phase 1 | Complete |
 | SEO-08 | Phase 1 | Complete |
 | SEO-09 | Phase 1 | Complete |

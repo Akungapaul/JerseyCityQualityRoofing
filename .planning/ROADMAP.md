@@ -264,7 +264,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 13-01-PLAN.md -- Remove duplicate BreadcrumbList JSON-LD from 13 page files, exclude testimonials from sitemap, add noindex to testimonials page
+- [x] 13-01-PLAN.md -- Remove duplicate BreadcrumbList JSON-LD from 13 page files, exclude testimonials from sitemap, add noindex to testimonials page
 - [ ] 13-02-PLAN.md -- Fix duplicate NeighborhoodSection interface, react-hooks/refs lint errors, TS errors in test/component files, install missing dependency
 
 ## Progress
@@ -286,4 +286,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 10. Conversion & Performance Polish | 3/3 | Complete | 2026-03-31 |
 | 11. SEO & Data Consistency Fixes | 1/2 | Complete    | 2026-03-31 |
 | 12. Content Data & Linking Fixes | 1/1 | Complete    | 2026-03-31 |
-| 13. SEO Cleanup & Code Quality | 0/2 | Pending | — |
+| 13. SEO Cleanup & Code Quality | 1/2 | In Progress|  |
