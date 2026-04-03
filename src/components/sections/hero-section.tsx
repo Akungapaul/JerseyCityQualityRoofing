@@ -11,11 +11,11 @@ export function HeroSection() {
           {/* Left side: headline, subtext, CTAs */}
           <div className="lg:w-[60%] text-center lg:text-left">
             <h1 className="font-heading font-bold text-[2.5rem] lg:text-[3rem] leading-[1.1] text-text-primary">
-              Hudson County&apos;s Most Trusted Roofing Experts
+              Jersey City&apos;s Most Trusted Roofing Experts
             </h1>
             <p className="text-text-secondary text-lg mt-4 max-w-xl lg:max-w-none">
-              Professional residential and commercial roofing services across
-              all 12 Hudson County municipalities. Licensed, insured, and
+              Professional residential and commercial roofing services in
+              Jersey City and across Hudson County. Licensed, insured, and
               locally trusted since 2003.
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-3 mt-8">

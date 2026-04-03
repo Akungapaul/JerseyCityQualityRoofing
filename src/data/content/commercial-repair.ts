@@ -4,7 +4,7 @@ import type { ServiceContent } from '@/data/types';
 
 export const COMMERCIAL_REPAIR_CONTENT: ServiceContent = {
   slug: 'commercial-repair',
-  heroHeadline: 'Commercial Roof Repair for Hudson County Buildings',
+  heroHeadline: 'Commercial Roof Repair in Jersey City & Hudson County',
   heroSubtitle:
     'Large-scale leak repair, membrane restoration, emergency response, and targeted fixes that keep your building watertight and your tenants operational.',
 

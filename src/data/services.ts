@@ -6,7 +6,7 @@ export const SERVICES = {
     slug: 'roof-repair',
     category: 'residential',
     shortDescription:
-      'Professional roof repair services to fix leaks, damaged shingles, flashing failures, and storm damage before small problems become costly replacements.',
+      'Professional roof repair services in Jersey City — fix leaks, damaged shingles, flashing failures, and storm damage before small problems become costly replacements.',
     fullDescription:
       'Our roof repair team diagnoses and fixes the full spectrum of residential roofing issues across Hudson County. From a single missing shingle after a nor\'easter to chronic valley leaks on aging brownstones, we trace every leak to its source and apply lasting repairs using manufacturer-specified techniques. We handle asphalt shingle repairs, flat roof patching, flashing replacement, gutter reattachment, and emergency tarping — all backed by our workmanship warranty.',
     processSteps: [
@@ -217,7 +217,7 @@ export const SERVICES = {
     slug: 'roof-replacement',
     category: 'residential',
     shortDescription:
-      'Complete roof replacement with premium materials and expert installation, transforming aging or damaged roofs into durable, weather-resistant systems built for Hudson County conditions.',
+      'Complete roof replacement in Jersey City & Hudson County with premium materials and expert installation — durable, weather-resistant systems built for local conditions.',
     fullDescription:
       'A full roof replacement removes every layer of existing roofing material down to the deck, addresses any structural issues, and installs a complete new roofing system from underlayment to ridge cap. We specialize in replacing aging roofs on Hudson County\'s diverse housing stock — from brownstone mansard roofs in Hoboken to Cape Cod gable roofs in Bayonne. Every replacement includes ice-and-water shield in valleys and eaves, synthetic underlayment, proper ventilation assessment, and new flashing at all penetrations.',
     processSteps: [
@@ -457,7 +457,7 @@ export const SERVICES = {
     slug: 'roof-inspection',
     category: 'residential',
     shortDescription:
-      'Comprehensive professional roof inspections for homeowners, buyers, sellers, and insurance purposes — identifying issues before they become emergencies.',
+      'Comprehensive professional roof inspections in Jersey City & Hudson County — identifying issues before they become emergencies.',
     fullDescription:
       'Our certified roof inspections provide a thorough evaluation of your entire roofing system — from ridge to foundation. We inspect the roof surface, flashing, gutters, ventilation, attic space, and structural components. We provide a detailed written report with photos documenting every finding, along with prioritized recommendations for maintenance or repair. Inspections are essential for real estate transactions, insurance claims, post-storm assessment, and proactive maintenance planning.',
     processSteps: [
@@ -621,7 +621,7 @@ export const SERVICES = {
     slug: 'emergency-roofing',
     category: 'residential',
     shortDescription:
-      '24/7 emergency roof repair for storm damage, fallen trees, active leaks, and structural failures — rapid response across Hudson County when you cannot wait.',
+      '24/7 emergency roof repair for storm damage, fallen trees, active leaks, and structural failures — rapid response in Jersey City & Hudson County when you cannot wait.',
     fullDescription:
       'When a nor\'easter tears off shingles, a tree limb punches through your roof, or you wake up to water pouring through your ceiling, our emergency team responds within 60 minutes across Hudson County. We provide immediate tarping and water mitigation to stop active damage, followed by permanent repair scheduling. Our emergency crews carry tarps, plywood, fasteners, and sealants for rapid stabilization of any residential roof system.',
     processSteps: [
@@ -796,7 +796,7 @@ export const SERVICES = {
     slug: 'flat-roof-systems',
     category: 'commercial',
     shortDescription:
-      'Expert installation and replacement of commercial flat roof systems — TPO, EPDM, PVC, and modified bitumen — engineered for Hudson County\'s commercial buildings.',
+      'Expert installation and replacement of commercial flat roof systems — TPO, EPDM, PVC, and modified bitumen — for Jersey City & Hudson County commercial buildings.',
     fullDescription:
       'Commercial flat roofs require specialized materials, techniques, and experience that differ fundamentally from residential pitched roofs. We design and install complete flat roof systems for commercial, industrial, and institutional buildings across Hudson County. From single-ply TPO and PVC membranes to multi-layer built-up roofing, we match the system to your building\'s use, budget, energy goals, and maintenance plan. Our commercial crews are trained in hot-air welding, adhesive application, and mechanical fastening for every major flat roof platform.',
     processSteps: [
@@ -1020,7 +1020,7 @@ export const SERVICES = {
     slug: 'roof-maintenance',
     category: 'commercial',
     shortDescription:
-      'Preventive maintenance programs for commercial and industrial roofs — scheduled inspections, cleaning, minor repairs, and documentation to maximize roof lifespan.',
+      'Preventive maintenance programs for commercial roofs in Jersey City & Hudson County — scheduled inspections, cleaning, minor repairs, and documentation to maximize roof lifespan.',
     fullDescription:
       'Proactive roof maintenance extends the life of a commercial roof by 25-50% compared to reactive repair-only approaches. Our maintenance programs include semi-annual inspections, debris clearing, drain maintenance, sealant renewal, minor membrane repairs, and detailed condition reporting. We create a maintenance log for each building that tracks condition over time, projects replacement timing, and supports capital planning. For property managers and building owners across Hudson County, our maintenance contracts provide predictable costs and fewer emergency calls.',
     processSteps: [
@@ -1195,7 +1195,7 @@ export const SERVICES = {
     slug: 'commercial-repair',
     category: 'commercial',
     shortDescription:
-      'Targeted repairs for commercial flat roof systems — membrane patches, flashing restoration, drain repairs, and leak elimination without full replacement.',
+      'Targeted commercial roof repairs in Jersey City & Hudson County — membrane patches, flashing restoration, drain repairs, and leak elimination without full replacement.',
     fullDescription:
       'Commercial roof repairs address specific failures in flat roof membrane systems without the cost and disruption of full replacement. Our commercial repair team handles membrane punctures, seam failures, flashing separations, drain blockages, and parapet wall leaks on TPO, EPDM, PVC, modified bitumen, and built-up roof systems. We use infrared moisture scanning to precisely map damage extent, ensuring repairs address the full problem — not just the visible symptom. For Hudson County\'s commercial building owners and property managers, targeted repairs can extend roof life by years at a fraction of replacement cost.',
     processSteps: [
@@ -1366,7 +1366,7 @@ export const SERVICES = {
     slug: 'commercial-replacement',
     category: 'commercial',
     shortDescription:
-      'Full commercial roof system replacement — tear-off, deck repair, insulation, and new membrane installation — engineered for maximum lifespan and energy efficiency.',
+      'Full commercial roof replacement in Jersey City & Hudson County — tear-off, deck repair, insulation, and new membrane installation for maximum lifespan and energy efficiency.',
     fullDescription:
       'When a commercial roof has reached end of life or suffered irreparable damage, a full replacement provides the opportunity to upgrade to a modern high-performance system. We manage commercial roof replacements from initial engineering through final warranty issuance on buildings from 5,000 to 200,000+ square feet across Hudson County. Our replacement process addresses every layer: deck structural repair, vapor barrier, rigid insulation to current energy code, tapered drainage system, and premium membrane installation with manufacturer-backed NDL warranties.',
     processSteps: [

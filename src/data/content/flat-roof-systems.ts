@@ -4,7 +4,7 @@ import type { ServiceContent } from '@/data/types';
 
 export const FLAT_ROOF_SYSTEMS_CONTENT: ServiceContent = {
   slug: 'flat-roof-systems',
-  heroHeadline: 'Commercial Flat Roof Systems for Hudson County Buildings',
+  heroHeadline: 'Commercial Flat Roof Systems for Jersey City & Hudson County',
   heroSubtitle:
     'TPO, EPDM, PVC, and modified bitumen membrane systems engineered for your building\'s performance, budget, and longevity.',
 

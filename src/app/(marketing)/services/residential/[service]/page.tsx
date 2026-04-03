@@ -104,7 +104,7 @@ export async function generateMetadata({
 
   const canonicalPath = `/services/residential/${service.slug}`;
   const metadata = generatePageMetadata({
-    title: `${service.name} Services`,
+    title: `${service.name} in Jersey City, NJ`,
     description: service.shortDescription,
     path: canonicalPath,
   });
@@ -309,10 +309,10 @@ function StandardTemplate({
       <SectionWrapper tone="secondary">
         <ScrollReveal>
           <h2 className="font-heading font-bold text-[1.75rem] text-text-primary mb-4">
-            {service.name} in Hudson County Cities
+            {service.name} Across Jersey City & Hudson County
           </h2>
           <p className="text-lg text-text-secondary mb-6 leading-relaxed">
-            We provide expert {service.name.toLowerCase()} services across all 12 Hudson County municipalities. Select your city for location-specific information, pricing, and FAQs.
+            We provide expert {service.name.toLowerCase()} services across Jersey City and all Hudson County municipalities. Select your city for location-specific information, pricing, and FAQs.
           </p>
           <nav aria-label="Service available in these cities" className="flex flex-wrap gap-3">
             {getAllMunicipalities().map((city) => (
@@ -451,10 +451,10 @@ function EmergencyTemplate({
       <SectionWrapper tone="secondary">
         <ScrollReveal>
           <h2 className="font-heading font-bold text-[1.75rem] text-text-primary mb-4">
-            {service.name} in Hudson County Cities
+            {service.name} Across Jersey City & Hudson County
           </h2>
           <p className="text-lg text-text-secondary mb-6 leading-relaxed">
-            We provide expert {service.name.toLowerCase()} services across all 12 Hudson County municipalities. Select your city for location-specific information, pricing, and FAQs.
+            We provide expert {service.name.toLowerCase()} services across Jersey City and all Hudson County municipalities. Select your city for location-specific information, pricing, and FAQs.
           </p>
           <nav aria-label="Service available in these cities" className="flex flex-wrap gap-3">
             {getAllMunicipalities().map((city) => (

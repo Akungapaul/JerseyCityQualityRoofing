@@ -4,7 +4,7 @@ import type { ServiceContent } from '@/data/types';
 
 export const ROOF_MAINTENANCE_CONTENT: ServiceContent = {
   slug: 'roof-maintenance',
-  heroHeadline: 'Commercial Roof Maintenance Programs for Hudson County Properties',
+  heroHeadline: 'Commercial Roof Maintenance Programs for Jersey City & Hudson County',
   heroSubtitle:
     'Preventative maintenance, scheduled inspections, and proactive care that extends your commercial roof\'s lifecycle by decades.',
 

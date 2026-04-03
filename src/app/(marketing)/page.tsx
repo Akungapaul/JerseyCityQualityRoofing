@@ -21,17 +21,17 @@ import { HOMEPAGE_FAQS } from "@/data/homepage-faq";
 import { BASE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Jersey City Quality Roofing | Hudson County's Trusted Roofing Experts",
+  title: "Jersey City Quality Roofing | Jersey City's Trusted Roofing Experts",
   description:
-    "Professional residential and commercial roofing services across all 12 Hudson County municipalities. Licensed, insured, and locally trusted since 2003.",
+    "Professional residential and commercial roofing services in Jersey City and across Hudson County. Licensed, insured, and locally trusted since 2003.",
   alternates: {
     canonical: BASE_URL,
   },
   openGraph: {
     title:
-      "Jersey City Quality Roofing | Hudson County's Trusted Roofing Experts",
+      "Jersey City Quality Roofing | Jersey City's Trusted Roofing Experts",
     description:
-      "Professional residential and commercial roofing services across all 12 Hudson County municipalities. Licensed, insured, and locally trusted since 2003.",
+      "Professional residential and commercial roofing services in Jersey City and across Hudson County. Licensed, insured, and locally trusted since 2003.",
     type: "website",
   },
 };

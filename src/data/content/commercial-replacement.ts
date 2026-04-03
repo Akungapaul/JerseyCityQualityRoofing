@@ -4,7 +4,7 @@ import type { ServiceContent } from '@/data/types';
 
 export const COMMERCIAL_REPLACEMENT_CONTENT: ServiceContent = {
   slug: 'commercial-replacement',
-  heroHeadline: 'Commercial Roof Replacement for Hudson County Buildings',
+  heroHeadline: 'Commercial Roof Replacement in Jersey City & Hudson County',
   heroSubtitle:
     'Full tear-off, new membrane systems, energy-efficient insulation upgrades, and code-compliant installations that protect your building investment for decades.',
 

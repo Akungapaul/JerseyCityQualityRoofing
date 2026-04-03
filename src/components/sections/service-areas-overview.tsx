@@ -16,7 +16,7 @@ export function ServiceAreasOverview() {
     <SectionWrapper tone="dominant">
       <ScrollReveal>
         <h2 className="font-heading font-bold text-[1.75rem] text-text-primary mb-8">
-          Serving All of Hudson County
+          Serving Jersey City & All of Hudson County
         </h2>
 
         {/* Featured Tier 1 cities */}
