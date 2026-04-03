@@ -7,6 +7,7 @@ import { motion, useScroll, useMotionValueEvent } from "motion/react";
 import { Phone, Menu } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { SITE_NAME, PHONE_NUMBER, PHONE_HREF } from "@/lib/constants";
+import { RoofIcon } from "@/components/layout/logo";
 import { MegaMenu } from "@/components/layout/mega-menu";
 import { MobileNav } from "@/components/layout/mobile-nav";
 import { cn } from "@/lib/utils";
@@ -49,8 +50,18 @@ export function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-dominant rounded-md"
+            className="flex items-center gap-2.5 focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-dominant rounded-md"
+            aria-label={`${SITE_NAME} — Home`}
           >
+            <motion.div
+              animate={{
+                width: isScrolled ? 28 : 34,
+                height: isScrolled ? 28 : 34,
+              }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
+            >
+              <RoofIcon className="size-full" />
+            </motion.div>
             <motion.span
               className="font-heading font-bold text-text-primary whitespace-nowrap"
               animate={{

@@ -20,7 +20,7 @@ const cormorantGaramond = Cormorant_Garamond({
 export const metadata: Metadata = {
   title: {
     default:
-      "Jersey City Quality Roofing | Expert Roofing Services in Hudson County",
+      "Jersey City Quality Roofing | Expert Roofing Services in Jersey City, NJ",
     template: "%s | Jersey City Quality Roofing",
   },
   description:
