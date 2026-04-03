@@ -2,9 +2,9 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Milestone complete
+status: v1.0 milestone complete
 stopped_at: Completed 16-02-PLAN.md
-last_updated: "2026-04-02T17:56:51.341Z"
+last_updated: "2026-04-03T18:49:35.304Z"
 progress:
   total_phases: 16
   completed_phases: 16
@@ -16,7 +16,10 @@ progress:
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-03-22)
+See: .planning/PROJECT.md (updated 2026-04-03)
+
+**Core value:** Every visitor within Hudson County searching for roofing services finds this site, trusts it as the local authority, and converts into a lead.
+**Current focus:** v1.0 shipped — planning next milestone
 
 **Core value:** Every visitor within Hudson County searching for roofing services finds this site, trusts it as the local authority, and converts into a lead.
 **Current focus:** Phase 16 — silo-linking-breadcrumb-polish
