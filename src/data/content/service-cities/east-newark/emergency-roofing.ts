@@ -107,5 +107,5 @@ The borough's building official is notified of any emergency that involves struc
 
   closingNarrative: `When the storm hits East Newark, the borough's compact size and connected building stock turn a weather event into a community-wide roofing emergency. Our crews understand this dynamic and respond accordingly, with multi-property triage, party wall protection, and the speed that comes from serving a municipality where every address is within walking distance of every other.
 
-Call our 24/7 emergency line at (201) 555-0123 at the first sign of roof damage. In the smallest borough in New Jersey, the fastest response reaches every home in the community. We are that response, and we arrive ready to protect not just your building but the connected structures that share your walls and your block.`,
+Request urgent roofing help online at the first sign of roof damage. In the smallest borough in New Jersey, the fastest response reaches every home in the community. We are that response, and we arrive ready to protect not just your building but the connected structures that share your walls and your block.`,
 };

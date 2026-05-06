@@ -30,7 +30,7 @@ export function UrgencyBanner({ variant, className }: UrgencyBannerProps) {
       />
       <span className="text-lg font-bold">
         {variant === "emergency"
-          ? "24/7 Emergency Service Available \u2014 Call Now:"
+          ? "Urgent Roof Help Available \u2014 Request Service:"
           : "Storm Season Alert: Schedule Your Free Roof Inspection"}
       </span>
       <a

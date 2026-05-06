@@ -95,5 +95,5 @@ We coordinate with the Town of Kearny Construction Department as needed after th
 
   closingNarrative: `Roof emergencies in Kearny do not distinguish between a Victorian masterpiece in Kearny Center and a warehouse in South Kearny. Both need rapid, competent response to stop active damage and protect the people and property inside. Our 24/7 emergency crews are equipped for the full range of Kearny building types and respond within one to two hours to any address in the municipality.
 
-Call our emergency line at (201) 555-0123 immediately when you discover roof damage. Do not wait for business hours, and do not try to assess or repair the damage yourself. We handle the roof so you can focus on protecting your family, your tenants, or your business operations inside.`,
+Request urgent roofing help online immediately when you discover roof damage. Do not wait for business hours, and do not try to assess or repair the damage yourself. We handle the roof so you can focus on protecting your family, your tenants, or your business operations inside.`,
 };

@@ -99,5 +99,5 @@ Permitting for commercial roof repairs in North Bergen depends on the scope. Sta
 
   closingNarrative: `Commercial roof repair in North Bergen requires a contractor who understands the Tonnelle Avenue corridor's business-critical demands, the Boulevard East cliff-edge wind exposure, and the diverse building stock that makes this township's commercial roofing landscape one of the most varied in Hudson County. We repair every membrane type on every building type, and we adapt our scheduling and logistics to match each building's operational reality.
 
-Call us at (201) 555-0123 to report a commercial roof issue or request a maintenance assessment. We respond to commercial inquiries within four business hours because we understand that a leaking commercial roof is a business problem that costs money every hour it remains unresolved.`,
+Request a quote online to report a commercial roof issue or request a maintenance assessment. We respond to commercial inquiries within four business hours because we understand that a leaking commercial roof is a business problem that costs money every hour it remains unresolved.`,
 };

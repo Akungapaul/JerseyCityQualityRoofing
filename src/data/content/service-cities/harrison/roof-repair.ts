@@ -93,5 +93,5 @@ The Harrison permitting process runs through the Town of Harrison Construction D
 
   closingNarrative: `Harrison's split personality, century-old homes on one block and luxury waterfront condos on the next, demands a repair contractor who understands both markets and excels in each. We have built our Harrison practice across this entire spectrum, from pulling corroded galvanized flashing off 1920s two-family homes to heat-welding TPO patches on buildings that did not exist five years ago. The Passaic River does not care whether your building is old or new; it tests every roof the same way, and we bring the materials, techniques, and local knowledge to make every repair hold against that constant moisture pressure.
 
-Call us at (201) 555-0123 to schedule a repair inspection, or submit a request through our website. We respond within one business day for all Harrison properties, and our emergency line operates around the clock because a leaking roof on a brand-new condo is just as urgent as one on a hundred-year-old row house.`,
+Request a quote online to schedule a repair inspection, or submit a request through our website. We respond within one business day for all Harrison properties, and our emergency line operates around the clock because a leaking roof on a brand-new condo is just as urgent as one on a hundred-year-old row house.`,
 };

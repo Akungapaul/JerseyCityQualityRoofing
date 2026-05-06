@@ -93,5 +93,5 @@ The permitting process for all Kearny roof replacements runs through the Town of
 
   closingNarrative: `Whether you are replacing a 120-year-old slate roof on a Kearny Center Victorian, upgrading the combination shingle-and-flat system on a Gunnell Oval two-family, or planning a full membrane replacement on a South Kearny warehouse, we bring the specialized expertise that each of these very different projects demands. Kearny's architectural diversity is our specialty, and we deliver replacement systems engineered for the specific building type, environmental zone, and investment objective of every project.
 
-Call us at (201) 555-0123 to schedule a replacement assessment, or submit a request through our website. We respond to every inquiry within one business day, and our project planning timeline ensures your replacement is scheduled, permitted, and completed with the thoroughness that Kearny's diverse roofing challenges require.`,
+Request a quote online to schedule a replacement assessment, or submit a request through our website. We respond to every inquiry within one business day, and our project planning timeline ensures your replacement is scheduled, permitted, and completed with the thoroughness that Kearny's diverse roofing challenges require.`,
 };

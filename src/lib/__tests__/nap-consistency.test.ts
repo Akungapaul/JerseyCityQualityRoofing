@@ -13,13 +13,15 @@ describe('NAP Consistency', () => {
     expect(BUSINESS_INFO.name).toBe(SITE_NAME);
   });
 
-  it('BUSINESS_INFO.phone contains area code "(201)"', () => {
-    expect(BUSINESS_INFO.phone).toContain('(201)');
+  it('BUSINESS_INFO.phone is either verified numeric phone or quote CTA text', () => {
+    expect(BUSINESS_INFO.phone.length).toBeGreaterThan(0);
+    expect(
+      /^\+?[\d(]/.test(BUSINESS_INFO.phone) || BUSINESS_INFO.phone === 'Request a Free Estimate',
+    ).toBe(true);
   });
 
-  it('BUSINESS_INFO.address has all required fields', () => {
+  it('BUSINESS_INFO.address has required locality fields and optional street', () => {
     expect(BUSINESS_INFO.address.street).toBeDefined();
-    expect(BUSINESS_INFO.address.street.length).toBeGreaterThan(0);
     expect(BUSINESS_INFO.address.city).toBeDefined();
     expect(BUSINESS_INFO.address.city.length).toBeGreaterThan(0);
     expect(BUSINESS_INFO.address.state).toBeDefined();
@@ -51,7 +53,7 @@ describe('NAP Consistency', () => {
     });
 
     it('does not contain hardcoded phone number literal', () => {
-      expect(ogRouteContent).not.toContain('(201) 555-0123');
+      expect(ogRouteContent).not.toContain('the quote form');
     });
 
     it('imports SITE_NAME and PHONE_NUMBER from constants', () => {

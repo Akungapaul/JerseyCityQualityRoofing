@@ -29,7 +29,7 @@ describe('Breadcrumb SEGMENT_LABELS (SEO-06)', () => {
   it('SEGMENT_LABELS has at least 12 entries', () => {
     // Extract the SEGMENT_LABELS block and count key-value pairs
     const labelsBlock = breadcrumbsSource.match(
-      /SEGMENT_LABELS[^{]*\{([^}]+)\}/s
+      /SEGMENT_LABELS[^{]*\{([\s\S]+?)\}/
     );
     expect(labelsBlock).not.toBeNull();
     // Match both quoted keys ("service-areas":) and unquoted keys (services:)

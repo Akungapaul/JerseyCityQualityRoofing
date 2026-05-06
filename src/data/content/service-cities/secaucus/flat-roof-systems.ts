@@ -101,5 +101,5 @@ Permitting for flat roof system replacement in Secaucus requires a building perm
 
   closingNarrative: `Flat roof systems in Secaucus operate in the most demanding ponding and moisture environment in Hudson County. Whether you are managing a massive commercial warehouse roof in the Meadowlands corridor, maintaining a Harmon Cove townhouse flat section, or planning a replacement for an aging garden apartment complex in Clarendon, the drainage engineering and membrane selection decisions you make determine whether your flat roof achieves a decade of service or a full generation. We bring the Secaucus-specific drainage expertise that turns chronically ponding flat roofs into properly performing systems.
 
-Call us at (201) 555-0123 to schedule a drainage survey and flat roof assessment, or submit a quote request through our website. We provide detailed proposals with drainage engineering drawings so you can see exactly how the ponding conditions will be eliminated on your specific roof.`,
+Request a quote online to schedule a drainage survey and flat roof assessment, or submit a quote request through our website. We provide detailed proposals with drainage engineering drawings so you can see exactly how the ponding conditions will be eliminated on your specific roof.`,
 };

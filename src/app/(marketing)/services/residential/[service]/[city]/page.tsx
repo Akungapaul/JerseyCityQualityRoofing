@@ -217,7 +217,7 @@ export async function generateMetadata({
   const canonicalPath = `/services/residential/${service.slug}/${city.slug}`;
   const metadata = generatePageMetadata({
     title: `${service.name} in ${city.name}, NJ`,
-    description: `Professional ${service.name.toLowerCase()} services in ${city.name}, NJ. ${service.shortDescription}`,
+    description: `${service.name} in ${city.name}, NJ for leaks, storm damage, inspections, and estimates from Hudson County roofing pros.`,
     path: canonicalPath,
   });
 

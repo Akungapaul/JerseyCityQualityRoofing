@@ -15,7 +15,7 @@ export function useExitIntent(options: UseExitIntentOptions = {}): {
 } {
   const { enabled = true, delayMs = 5000 } = options;
   const [isTriggered, setIsTriggered] = useState(false);
-  const mountTime = useRef(Date.now());
+  const mountTime = useRef<number | null>(null);
   const lastScrollY = useRef(0);
 
   // Desktop: mouseLeave on document
@@ -27,8 +27,10 @@ export function useExitIntent(options: UseExitIntentOptions = {}): {
       return;
     }
 
+    mountTime.current ??= Date.now();
+
     const handleMouseLeave = (e: MouseEvent) => {
-      if (dismissed) return;
+      if (dismissed || mountTime.current === null) return;
       if (e.clientY <= 0 && Date.now() - mountTime.current > delayMs) {
         setIsTriggered(true);
       }
@@ -47,10 +49,11 @@ export function useExitIntent(options: UseExitIntentOptions = {}): {
       return;
     }
 
+    mountTime.current ??= Date.now();
     lastScrollY.current = window.scrollY;
 
     const handleScroll = () => {
-      if (dismissed) return;
+      if (dismissed || mountTime.current === null) return;
       const currentY = window.scrollY;
       const delta = lastScrollY.current - currentY;
 

@@ -103,5 +103,5 @@ Once the repair scope is defined and any required approvals are obtained, we sch
 
   closingNarrative: `Hoboken packs more roofing complexity into one square mile than most contractors encounter across an entire county. The brownstone party walls, the waterfront wind exposure, the Historic District regulations, and the extreme density create a repair environment that rewards deep local knowledge and punishes generic approaches. Whether your leak is in a century-old Bloomfield Street brownstone, a Midtown walk-up with decades of accumulated patches, or a newer Southwest waterfront building facing salt air corrosion, we have diagnosed and fixed the exact problem before.
 
-Call us at (201) 555-0123 to schedule a Hoboken roof inspection, or submit a quote request through our website. We respond within one business day, and our 24/7 emergency line ensures that storm damage and active leaks get immediate attention. Your Hoboken roof deserves a contractor who knows this square mile as well as you do.`,
+Request a quote online to schedule a Hoboken roof inspection, or submit a quote request through our website. We respond within one business day, and our 24/7 emergency line ensures that storm damage and active leaks get immediate attention. Your Hoboken roof deserves a contractor who knows this square mile as well as you do.`,
 } satisfies ServiceInCityContent;

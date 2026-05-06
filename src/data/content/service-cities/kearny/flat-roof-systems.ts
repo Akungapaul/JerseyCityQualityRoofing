@@ -95,5 +95,5 @@ The permitting process for flat roof work in Kearny depends on the project scope
 
   closingNarrative: `Flat roof systems in Kearny range from the small residential sections that keep two-family home additions dry to the industrial-scale membranes that protect South Kearny warehouses. At every scale, the fundamentals are the same: the right membrane for the environment, positive drainage to prevent ponding, and meticulous flashing at every transition and penetration. We deliver that quality across the full range of Kearny flat roof applications.
 
-Call us at (201) 555-0123 to schedule a flat roof assessment, or submit a request through our website. Whether your flat roof is 200 square feet or 50,000, we engineer the solution to match the building and the environment it sits in.`,
+Request a quote online to schedule a flat roof assessment, or submit a request through our website. Whether your flat roof is 200 square feet or 50,000, we engineer the solution to match the building and the environment it sits in.`,
 };

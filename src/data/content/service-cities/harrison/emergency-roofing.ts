@@ -101,5 +101,5 @@ Post-emergency, we schedule a follow-up inspection within 48 hours to verify tha
 
   closingNarrative: `Harrison's position along the Passaic River means that severe weather hits this town harder than most of Hudson County, and the dual building market means emergencies come in residential and commercial varieties simultaneously. Our emergency response is built for exactly this scenario: dedicated crews for both building types, pre-loaded with the right materials, responding within two hours to stop water damage before it escalates. Whether the emergency is on a century-old home in Harrison Center or a luxury waterfront building that did not exist a decade ago, the response is immediate, professional, and documented for your insurance claim.
 
-Call our emergency line at (201) 555-0123 any time, day or night. A roofing emergency does not wait for business hours, and neither do we. If your Harrison property is taking on water, call now and our dispatch will have a crew on the way within minutes.`,
+Request urgent roofing help online any time, day or night. A roofing emergency does not wait for business hours, and neither do we. If your Harrison property is taking on water, call now and our dispatch will have a crew on the way within minutes.`,
 };

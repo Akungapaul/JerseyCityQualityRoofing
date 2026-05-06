@@ -99,5 +99,5 @@ Following the emergency protection, we schedule a full daylight inspection withi
 
   closingNarrative: `When the Palisades ridge wind rips into your North Bergen roof, the hours immediately following the damage determine whether you are dealing with a contained repair or a cascading restoration project. Our 24/7 emergency response reaches every North Bergen neighborhood with crews and equipment specifically prepared for the ridge-top conditions that make this township's emergencies uniquely challenging.
 
-Call our emergency line at (201) 555-0123 any hour, any day. We dispatch immediately, communicate our estimated arrival, and do not stop working until your property is protected. For proactive preparation, call during business hours to schedule a pre-storm assessment that identifies and addresses the vulnerable points on your roof before the next storm tests them.`,
+Request urgent roofing help online any hour, any day. We dispatch immediately, communicate our estimated arrival, and do not stop working until your property is protected. For proactive preparation, call during business hours to schedule a pre-storm assessment that identifies and addresses the vulnerable points on your roof before the next storm tests them.`,
 };

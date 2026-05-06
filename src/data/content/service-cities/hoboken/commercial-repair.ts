@@ -113,5 +113,5 @@ After repair completion, we document the work with photographs, provide a warran
 
   closingNarrative: `Commercial roof repair in Hoboken requires diagnostic precision that identifies root causes rather than chasing symptoms, materials specified for the actual waterfront environment rather than generic code minimums, and logistics expertise that navigates the tightest urban constraints in Hudson County. Whether your building is a Washington Street mixed-use property, a Midtown apartment complex, a waterfront office building, or any other commercial structure in Hoboken's one square mile, we deliver repairs that solve problems permanently rather than starting the next emergency countdown.
 
-Contact us at (201) 555-0123 to schedule a commercial roof assessment for your Hoboken property, or submit a request through our website. We serve individual buildings and multi-property portfolios with the same diagnostic thoroughness and repair quality that Hoboken's dense, demanding environment requires.`,
+Request a quote online to schedule a commercial roof assessment for your Hoboken property, or submit a request through our website. We serve individual buildings and multi-property portfolios with the same diagnostic thoroughness and repair quality that Hoboken's dense, demanding environment requires.`,
 } satisfies ServiceInCityContent;

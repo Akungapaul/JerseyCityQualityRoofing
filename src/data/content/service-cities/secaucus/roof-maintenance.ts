@@ -103,5 +103,5 @@ The maintenance report is delivered within five business days of the visit, form
 
   closingNarrative: `Roof maintenance in Secaucus is the most cost-effective investment a property owner can make against the Meadowlands moisture environment that attacks every roof in this town continuously. Our biannual maintenance programs are designed specifically for the biological growth, sealant degradation, and ventilation challenges that the Meadowlands creates, catching developing conditions before they escalate into the expensive repairs and premature replacements that deferred maintenance produces in this uniquely moisture-intensive community.
 
-Call us at (201) 555-0123 to discuss a maintenance program for your Secaucus property, or submit an inquiry through our website. We offer individual and community-wide programs tailored to the specific needs of your neighborhood and building type.`,
+Request a quote online to discuss a maintenance program for your Secaucus property, or submit an inquiry through our website. We offer individual and community-wide programs tailored to the specific needs of your neighborhood and building type.`,
 };

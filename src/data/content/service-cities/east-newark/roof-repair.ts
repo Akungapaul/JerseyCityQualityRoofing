@@ -99,5 +99,5 @@ Equipment staging in East Newark requires advance planning because the narrow re
 
   closingNarrative: `Every roof in East Newark tells the same story: a mid-century home built for working families, maintained through generations of owners and tenants, and now facing the accumulated effects of age, moisture, and deferred maintenance. We understand these roofs because we have repaired hundreds of them, and we understand this community because our work here is visible to everyone who lives on the block.
 
-Call us at (201) 555-0123 to schedule a repair inspection, or submit a request through our website. In the smallest borough in New Jersey, your roofing contractor's reputation is only as good as their last job. We intend to keep ours spotless, one repair at a time.`,
+Request a quote online to schedule a repair inspection, or submit a request through our website. In the smallest borough in New Jersey, your roofing contractor's reputation is only as good as their last job. We intend to keep ours spotless, one repair at a time.`,
 };

@@ -99,5 +99,5 @@ We maintain records for every North Bergen property in our maintenance program, 
 
   closingNarrative: `Roof maintenance in North Bergen is the difference between controlling your roofing costs and having your roofing costs control you. The Palisades ridge accelerates every deterioration pattern that affects roofing systems, and systematic maintenance is the only strategy that keeps pace with the elevation-driven wear that this township imposes on every building. Whether you own a single home on the ridge or manage a portfolio of apartment buildings across the township, our maintenance programs deliver the proactive protection that North Bergen roofs demand.
 
-Call us at (201) 555-0123 to discuss a maintenance program tailored to your North Bergen property. We provide a detailed scope and pricing proposal after an initial assessment, and our first inspection is included in the setup at no additional charge.`,
+Request a quote online to discuss a maintenance program tailored to your North Bergen property. We provide a detailed scope and pricing proposal after an initial assessment, and our first inspection is included in the setup at no additional charge.`,
 };

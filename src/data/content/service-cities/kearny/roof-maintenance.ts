@@ -99,5 +99,5 @@ All maintenance findings are documented in a written report delivered to the pro
 
   closingNarrative: `Proactive maintenance is the most cost-effective investment you can make in your Kearny roof, whether it is a Victorian in Kearny Center, a colonial near Gunnell Oval, a ranch in West Kearny, or an industrial building in South Kearny. Our maintenance programs are calibrated to the specific demands of each building type and environmental zone, catching small issues before they become expensive problems and extending your roof's service life beyond what neglected systems achieve.
 
-Call us at (201) 555-0123 to enroll in a maintenance program, or submit a request through our website. We will assess your property, recommend the appropriate maintenance frequency, and schedule your first visit within two weeks. Your roof protects everything beneath it, and maintenance protects your roof.`,
+Request a quote online to enroll in a maintenance program, or submit a request through our website. We will assess your property, recommend the appropriate maintenance frequency, and schedule your first visit within two weeks. Your roof protects everything beneath it, and maintenance protects your roof.`,
 };

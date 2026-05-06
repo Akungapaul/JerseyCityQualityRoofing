@@ -125,5 +125,5 @@ Installation proceeds according to the system specification with manufacturer-ce
 
   closingNarrative: `Flat roof systems in Weehawken must perform in conditions that range from the salt spray and wind tunnel environment of the waterfront to the freeze-thaw and cliff-edge wind conditions of The Heights. The right membrane, the right metal components, the right insulation, and the right transition details make the difference between a flat roof that lasts decades and one that fails within years. Our experience across both sides of the Palisades divide gives us the material knowledge and installation expertise that every Weehawken flat-roof project demands.
 
-Call us at (201) 555-0123 to schedule an assessment of your Weehawken flat-roof system or submit a quote request through our website. Whether you manage a waterfront commercial building or own a Heights home with a flat-roofed addition, we will specify and install a system built for the specific conditions your building faces.`,
+Request a quote online to schedule an assessment of your Weehawken flat-roof system or submit a quote request through our website. Whether you manage a waterfront commercial building or own a Heights home with a flat-roofed addition, we will specify and install a system built for the specific conditions your building faces.`,
 };

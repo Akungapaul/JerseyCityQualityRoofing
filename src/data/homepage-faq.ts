@@ -9,12 +9,12 @@ export const HOMEPAGE_FAQS = [
   {
     question: 'Are you licensed and insured?',
     answer:
-      'Yes. We hold NJ Home Improvement Contractor license NJ-HIC-13VH12345678 and are fully insured through Liberty Mutual with both general liability and workers\u2019 compensation coverage. We carry certificates of insurance and provide them to homeowners and property managers upon request before any work begins.',
+      'We provide license and insurance documentation upon request before work begins. Homeowners and property managers should verify current credentials before approving any roofing contractor.',
   },
   {
     question: 'How fast can you get here for emergencies?',
     answer:
-      'For emergency roof situations, we typically arrive within 60\u201390 minutes anywhere in Hudson County. Our emergency line is available 24/7, 365 days a year. Whether it\u2019s storm damage, a fallen tree, or an active leak, our crews carry tarps, plywood, and emergency sealants to stabilize your roof until a permanent repair can be scheduled.',
+      'For urgent roof situations, submit the quote form with details about the leak or storm damage. We prioritize active water intrusion, fallen-tree damage, and unsafe roof conditions.',
   },
   {
     question: 'What types of roofs do you work on?',
@@ -29,6 +29,6 @@ export const HOMEPAGE_FAQS = [
   {
     question: 'What certifications do you hold?',
     answer:
-      'We are a GAF Master Elite Contractor and CertainTeed SELECT ShingleMaster \u2014 credentials held by less than 2% of roofing contractors nationwide. We are also OSHA 30-Hour Safety Certified and EPA Lead-Safe Certified, which is particularly important when working on older Hudson County homes built before 1978.',
+      'Our crew positioning is based on manufacturer training, safe work practices, and experience with Hudson County roof systems. Ask for current documentation before work begins.',
   },
 ] as const satisfies readonly FAQ[];

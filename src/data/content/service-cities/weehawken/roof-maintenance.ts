@@ -118,5 +118,5 @@ New maintenance program clients receive an initial comprehensive assessment that
 
   closingNarrative: `The environmental conditions in Weehawken -- salt spray at the waterfront, cliff-edge wind in The Heights, tunnel vibration along the approach corridor -- do not pause between storms. They work on your roof continuously, season after season, year after year. Proactive maintenance is the most cost-effective strategy for counteracting these conditions and extending the lifespan of your roofing investment.
 
-Contact us at (201) 555-0123 to discuss a maintenance program tailored to your Weehawken property or submit a request through our website. Whether you manage a waterfront tower or own a Heights Victorian, our maintenance programs are designed for the specific conditions your building faces, delivered on a schedule that keeps your roof ahead of the deterioration rather than chasing it.`,
+Request a quote online to discuss a maintenance program tailored to your Weehawken property or submit a request through our website. Whether you manage a waterfront tower or own a Heights Victorian, our maintenance programs are designed for the specific conditions your building faces, delivered on a schedule that keeps your roof ahead of the deterioration rather than chasing it.`,
 };

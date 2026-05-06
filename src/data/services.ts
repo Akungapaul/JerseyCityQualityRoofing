@@ -430,7 +430,7 @@ export const SERVICES = {
       {
         question: 'What warranty comes with a new roof?',
         answer:
-          'You receive two warranties: our 10-year workmanship warranty covering installation quality, and the manufacturer\'s material warranty (typically 25-50 years depending on the product line). As GAF Master Elite contractors, we offer enhanced manufacturer warranties that cover both materials and workmanship.',
+          'You receive two warranties: our 10-year workmanship warranty covering installation quality, and the manufacturer\'s material warranty (typically 25-50 years depending on the product line). As Manufacturer-Trained contractors, we offer enhanced manufacturer warranties that cover both materials and workmanship.',
       },
       {
         question: 'Will a new roof increase my home\'s value?',
@@ -449,7 +449,7 @@ export const SERVICES = {
     emergencyAvailable: false,
     typicalDuration: '3-7 days',
     warrantyInfo:
-      '10-year workmanship warranty. Manufacturer material warranties range from 25-50 years depending on product line. GAF Master Elite enhanced warranty available.',
+      '10-year workmanship warranty. Manufacturer material warranties range from 25-50 years depending on product line. Manufacturer-Trained enhanced warranty available.',
   },
 
   'roof-inspection': {

@@ -11,12 +11,12 @@ export function HeroSection() {
           {/* Left side: headline, subtext, CTAs */}
           <div className="lg:w-[60%] text-center lg:text-left">
             <h1 className="font-heading font-bold text-[2.5rem] lg:text-[3rem] leading-[1.1] text-text-primary">
-              Jersey City&apos;s Most Trusted Roofing Experts
+              Roofer in Jersey City, NJ for Roof Repair, Replacement &amp; Commercial Roofing
             </h1>
             <p className="text-text-secondary text-lg mt-4 max-w-xl lg:max-w-none">
-              Professional residential and commercial roofing services in
-              Jersey City and across Hudson County. Licensed, insured, and
-              locally trusted since 2003.
+              Local Jersey City roofing contractors for roof replacement, roof
+              repair, roof inspections, flat roofs, emergency leaks, and
+              commercial roofing across Hudson County.
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-3 mt-8">
               <a

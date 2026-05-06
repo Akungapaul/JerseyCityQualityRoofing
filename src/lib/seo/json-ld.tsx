@@ -3,22 +3,36 @@ import { BUSINESS_INFO } from '@/data/business-info';
 import { BASE_URL } from '@/lib/constants';
 import type { Testimonial, Service as ServiceData, Municipality } from '@/data/types';
 
+function hasVerifiedPhone(): boolean {
+  return /^\+?[\d(]/.test(BUSINESS_INFO.phone);
+}
+
+function buildVerifiedContactFields() {
+  return {
+    ...(hasVerifiedPhone() ? { telephone: BUSINESS_INFO.phone } : {}),
+    email: BUSINESS_INFO.email,
+    ...(BUSINESS_INFO.address.street
+      ? {
+          address: {
+            '@type': 'PostalAddress' as const,
+            streetAddress: BUSINESS_INFO.address.street,
+            addressLocality: BUSINESS_INFO.address.city,
+            addressRegion: BUSINESS_INFO.address.state,
+            postalCode: BUSINESS_INFO.address.zip,
+            addressCountry: 'US',
+          },
+        }
+      : {}),
+  };
+}
+
 export function buildRoofingContractorJsonLd(): WithContext<RoofingContractor> {
   return {
     '@context': 'https://schema.org',
     '@type': 'RoofingContractor',
     '@id': `${BASE_URL}/#organization`,
     name: BUSINESS_INFO.name,
-    telephone: BUSINESS_INFO.phone,
-    email: BUSINESS_INFO.email,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: BUSINESS_INFO.address.street,
-      addressLocality: BUSINESS_INFO.address.city,
-      addressRegion: BUSINESS_INFO.address.state,
-      postalCode: BUSINESS_INFO.address.zip,
-      addressCountry: 'US',
-    },
+    ...buildVerifiedContactFields(),
     url: BASE_URL,
     areaServed: BUSINESS_INFO.serviceAreas.map((area) => ({
       '@type': 'City',
@@ -92,20 +106,11 @@ export function buildContactPageJsonLd(): WithContext<RoofingContractor> {
     '@context': 'https://schema.org',
     '@type': 'RoofingContractor',
     name: BUSINESS_INFO.name,
-    telephone: BUSINESS_INFO.phone,
-    email: BUSINESS_INFO.email,
+    ...buildVerifiedContactFields(),
     url: BASE_URL,
     image: `${BASE_URL}/og-image.png`,
     priceRange: '$$',
     paymentAccepted: 'Cash, Check, Credit Card',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: BUSINESS_INFO.address.street,
-      addressLocality: BUSINESS_INFO.address.city,
-      addressRegion: BUSINESS_INFO.address.state,
-      postalCode: BUSINESS_INFO.address.zip,
-      addressCountry: 'US',
-    },
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
@@ -142,15 +147,7 @@ export function buildServicePageJsonLd(
       '@type': 'RoofingContractor',
       '@id': `${BASE_URL}/#organization`,
       name: BUSINESS_INFO.name,
-      telephone: BUSINESS_INFO.phone,
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: BUSINESS_INFO.address.street,
-        addressLocality: BUSINESS_INFO.address.city,
-        addressRegion: BUSINESS_INFO.address.state,
-        postalCode: BUSINESS_INFO.address.zip,
-        addressCountry: 'US',
-      },
+      ...buildVerifiedContactFields(),
     },
     areaServed: BUSINESS_INFO.serviceAreas.map((area) => ({
       '@type': 'City' as const,
@@ -180,17 +177,8 @@ export function buildCityRoofingContractorJsonLd(
     '@type': 'RoofingContractor',
     '@id': `${BASE_URL}/#organization`,
     name: BUSINESS_INFO.name,
-    telephone: BUSINESS_INFO.phone,
-    email: BUSINESS_INFO.email,
+    ...buildVerifiedContactFields(),
     url: BASE_URL,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: BUSINESS_INFO.address.street,
-      addressLocality: BUSINESS_INFO.address.city,
-      addressRegion: BUSINESS_INFO.address.state,
-      postalCode: BUSINESS_INFO.address.zip,
-      addressCountry: 'US',
-    },
     areaServed: {
       '@type': 'City',
       name: city.name,

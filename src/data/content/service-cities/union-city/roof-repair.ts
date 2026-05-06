@@ -103,5 +103,5 @@ Material delivery in Union City is scheduled during early morning hours when str
 
   closingNarrative: `Union City packs more roofing complexity per square foot than any other municipality in New Jersey. The shared party walls, the zero-lot-line construction, the multi-layered legacy roof systems, and the extreme access constraints create a repair environment where deep local knowledge is the difference between solving a problem and creating a cycle of failed patches. Whether your leak is in a Union Hill row house, a Bergenline Avenue mixed-use building, a West Hoboken Victorian, or a Heights property facing Palisades wind exposure, we have diagnosed and repaired the exact problem before.
 
-Call us at (201) 555-0123 to schedule a Union City roof inspection, or submit a quote request through our website. We respond within one business day, and our 24/7 emergency line ensures that storm damage and active leaks in Union City's tightly packed buildings get the immediate response that density demands.`,
+Request a quote online to schedule a Union City roof inspection, or submit a quote request through our website. We respond within one business day, and our 24/7 emergency line ensures that storm damage and active leaks in Union City's tightly packed buildings get the immediate response that density demands.`,
 } satisfies ServiceInCityContent;

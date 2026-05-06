@@ -99,5 +99,5 @@ Permitting for commercial roof repairs in Kearny follows the Town of Kearny Cons
 
   closingNarrative: `Commercial roof repair in Kearny demands a contractor who can work across the full spectrum of building types this town contains, from the Passaic Avenue retail corridor to the South Kearny industrial zone. We deliver rapid diagnosis, precise repair execution, and thorough documentation for every commercial repair project, with the environmental compliance expertise that South Kearny industrial properties require.
 
-Call us at (201) 555-0123 for commercial repair service, or submit a request through our website. Active leaks receive same-day response. Your business cannot wait for your roof to stop leaking, and neither should your roofing contractor.`,
+Request a quote online for commercial repair service, or submit a request through our website. Active leaks receive same-day response. Your business cannot wait for your roof to stop leaking, and neither should your roofing contractor.`,
 };

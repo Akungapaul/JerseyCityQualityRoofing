@@ -101,5 +101,5 @@ Scheduling inspections in Secaucus accounts for the morning fog pattern. We avoi
 
   closingNarrative: `A roof inspection in Secaucus is not a routine checkup. It is a moisture assessment that determines whether your roof system is managing the Meadowlands environment or being slowly destroyed by it. Our comprehensive inspection protocol goes beyond surface observation to measure the hidden moisture conditions that cause the most expensive damage in this unique community. Whether you need a biannual maintenance inspection, a pre-sale assessment, or an insurance documentation inspection, we provide the thorough, Secaucus-specific analysis that standard inspections do not deliver.
 
-Call us at (201) 555-0123 to schedule an inspection, or submit a request through our website. We respond within one business day, and our inspection team is available six days a week during the prime inspection season from March through November.`,
+Request a quote online to schedule an inspection, or submit a request through our website. We respond within one business day, and our inspection team is available six days a week during the prime inspection season from March through November.`,
 };

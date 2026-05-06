@@ -14,7 +14,7 @@ import { ABOUT_CONTENT } from "@/data/about-content";
 export const metadata: Metadata = generatePageMetadata({
   title: "About Us | Jersey City Quality Roofing",
   description:
-    "Learn about Jersey City Quality Roofing - over 20 years serving Hudson County homeowners and businesses with expert roofing services. GAF Master Elite Contractor.",
+    "Learn about Jersey City Quality Roofing - over 20 years serving Hudson County homeowners and businesses with expert roofing services. Manufacturer-Trained Roofing Contractor.",
   path: "/about",
 });
 

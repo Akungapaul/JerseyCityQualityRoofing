@@ -118,5 +118,5 @@ Following repair completion, we provide documentation that includes before and a
 
   closingNarrative: `Commercial roof repair in Weehawken demands expertise in the salt spray environment that defines the waterfront market, the wind exposure that challenges ridgetop properties, and the coordination logistics that luxury and commercial building management requires. The investment in marine-grade materials and Weehawken-specific repair techniques protects your commercial building asset for years rather than months, and our maintenance programs prevent the emergency failures that disrupt operations and escalate costs.
 
-Contact us at (201) 555-0123 to discuss a commercial repair need or schedule a building assessment. Whether you manage a Port Imperial luxury tower, a Lincoln Harbor hotel, or a Boulevard East commercial property, our commercial roofing division has the certifications, insurance, and local expertise that Weehawken's commercial market demands.`,
+Request a quote online to discuss a commercial repair need or schedule a building assessment. Whether you manage a Port Imperial luxury tower, a Lincoln Harbor hotel, or a Boulevard East commercial property, our commercial roofing division has the certifications, insurance, and local expertise that Weehawken's commercial market demands.`,
 };

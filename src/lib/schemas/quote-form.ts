@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-// Flexible US phone regex per D-17: accepts (201) 555-0123, 201-555-0123, 2015550123, +1 201 555 0123
+// Flexible US phone regex per D-17: accepts (201) 000-0000, 201-000-0000, 2010000000, +1 201 000 0000
 const phoneRegex = /^[+]?1?\s*[-.]?\s*\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/;
 
 // Strip all non-digit characters, keep only digits per D-17

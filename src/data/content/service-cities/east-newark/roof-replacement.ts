@@ -98,5 +98,5 @@ The installation follows manufacturer specifications for the selected shingle sy
 
   closingNarrative: `A new roof in East Newark is more than a building improvement. It is a statement to the entire borough that you invest in your property and your community. In the smallest municipality in New Jersey, where every neighbor can see the condition of your home from their own front steps, a quality roof replacement sets the standard for the block and demonstrates the pride of ownership that keeps this tight-knit community strong.
 
-Call us at (201) 555-0123 to schedule a replacement consultation, or submit a request through our website. We will provide an honest assessment of your current roof's condition, a detailed written estimate with no hidden costs, and a project plan that accounts for the specific logistics that East Newark's compact geography demands. Your next roof will be the one the neighbors point to when their own time comes.`,
+Request a quote online to schedule a replacement consultation, or submit a request through our website. We will provide an honest assessment of your current roof's condition, a detailed written estimate with no hidden costs, and a project plan that accounts for the specific logistics that East Newark's compact geography demands. Your next roof will be the one the neighbors point to when their own time comes.`,
 };

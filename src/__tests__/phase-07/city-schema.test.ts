@@ -60,13 +60,21 @@ describe('city roofing contractor JSON-LD', () => {
       });
     });
 
-    it('has address.streetAddress matching BUSINESS_INFO (NAP consistency)', () => {
-      const address = result['address'] as Record<string, unknown>;
-      expect(address['streetAddress']).toBe(BUSINESS_INFO.address.street);
+    it('only has address.streetAddress when BUSINESS_INFO has a verified street address', () => {
+      if (BUSINESS_INFO.address.street) {
+        const address = result['address'] as Record<string, unknown>;
+        expect(address['streetAddress']).toBe(BUSINESS_INFO.address.street);
+      } else {
+        expect(result['address']).toBeUndefined();
+      }
     });
 
-    it('has telephone matching BUSINESS_INFO (NAP consistency)', () => {
-      expect(result['telephone']).toBe(BUSINESS_INFO.phone);
+    it('only has telephone when BUSINESS_INFO has a verified phone number', () => {
+      if (/^\+?[\d(]/.test(BUSINESS_INFO.phone)) {
+        expect(result['telephone']).toBe(BUSINESS_INFO.phone);
+      } else {
+        expect(result['telephone']).toBeUndefined();
+      }
     });
   });
 

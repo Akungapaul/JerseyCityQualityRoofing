@@ -93,5 +93,5 @@ Our inspection reports are delivered within two business days and include a comp
 
   closingNarrative: `A North Bergen roof inspection is your first line of defense against the elevation-driven wear that the Palisades ridge imposes on every roofing system in the township. Whether you are maintaining a colonial on the ridge crest in Woodcliff, managing a garden apartment complex in Nungessers, or purchasing a home in Tyler Park, our elevation-aware inspection methodology identifies current problems and predicts emerging vulnerabilities before they produce damage.
 
-Call us at (201) 555-0123 to schedule your North Bergen roof inspection. We typically complete the inspection within three to five business days of scheduling and deliver the full report within two business days after the inspection. Emergency post-storm inspections are available with same-day or next-day response.`,
+Request a quote online to schedule your North Bergen roof inspection. We typically complete the inspection within three to five business days of scheduling and deliver the full report within two business days after the inspection. Emergency post-storm inspections are available with same-day or next-day response.`,
 };

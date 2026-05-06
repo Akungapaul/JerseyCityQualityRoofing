@@ -80,7 +80,7 @@ We carry full liability insurance and workers' compensation coverage. Our state 
 
   closingNarrative: `Living on a peninsula surrounded by water on three sides means your roof works harder than most. The wind comes from every direction, the salt air never stops, and the nor'easters that blow through each year test every shingle, every membrane, and every flashing joint on every building in Bayonne. Working with a contractor who understands these specific conditions is the difference between a roof that lasts its full expected lifespan and one that fails early because it was designed for a climate that does not exist here.
 
-We are ready to inspect your Bayonne roof and provide a straightforward assessment of its condition and your options. Call us at (201) 555-0123 to schedule an inspection, or submit a quote request on our website. We respond to every inquiry within one business day, and emergency calls are answered around the clock because storm damage does not wait for Monday morning.`,
+We are ready to inspect your Bayonne roof and provide a straightforward assessment of its condition and your options. Request a quote online to schedule an inspection, or submit a quote request on our website. We respond to every inquiry within one business day, and emergency calls are answered around the clock because storm damage does not wait for Monday morning.`,
 
   cityFaqs: [
     {

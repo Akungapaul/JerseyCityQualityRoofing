@@ -11,7 +11,7 @@ vi.mock("lucide-react", () => ({
 }));
 
 vi.mock("@/lib/constants", () => ({
-  PHONE_NUMBER: "(201) 555-0123",
+  PHONE_NUMBER: "the quote form",
   PHONE_HREF: "tel:+12015550123",
 }));
 
@@ -33,12 +33,12 @@ describe("UrgencyBanner", () => {
     expect(html).toContain('role="alert"');
   });
 
-  it("emergency variant contains '24/7 Emergency Service Available'", async () => {
+  it("emergency variant contains urgent roof help message", async () => {
     const { UrgencyBanner } = await import("../urgency-banner");
     const html = renderToStaticMarkup(
       createElement(UrgencyBanner, { variant: "emergency" }),
     );
-    expect(html).toContain("24/7 Emergency Service Available");
+    expect(html).toContain("Urgent Roof Help Available");
   });
 
   it("emergency variant contains phone number link with tel: href", async () => {
@@ -47,7 +47,7 @@ describe("UrgencyBanner", () => {
       createElement(UrgencyBanner, { variant: "emergency" }),
     );
     expect(html).toContain("tel:+12015550123");
-    expect(html).toContain("(201) 555-0123");
+    expect(html).toContain("the quote form");
   });
 
   it("emergency variant has bg-[#d4782f] background", async () => {

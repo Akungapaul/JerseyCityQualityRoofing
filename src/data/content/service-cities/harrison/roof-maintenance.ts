@@ -109,5 +109,5 @@ Post-storm maintenance visits are scheduled within 48 hours of any major weather
 
   closingNarrative: `Roof maintenance in Harrison is the most cost-effective strategy for protecting your property in the Passaic River's demanding moisture environment. Whether you own a traditional home in Harrison Center that needs annual attention to stay ahead of the river-driven deterioration, or you manage a waterfront luxury building that needs comprehensive maintenance documentation for warranty compliance and fiduciary reporting, our programs deliver the systematic care that Harrison roofs require. The river does not take a season off, and neither does our maintenance program.
 
-Call us at (201) 555-0123 to discuss a maintenance program for your Harrison property, or submit a request through our website. We will assess your roof's current condition, design a maintenance schedule tailored to your building's specific needs and environmental exposure, and provide a clear annual cost that you can budget with confidence.`,
+Request a quote online to discuss a maintenance program for your Harrison property, or submit a request through our website. We will assess your roof's current condition, design a maintenance schedule tailored to your building's specific needs and environmental exposure, and provide a clear annual cost that you can budget with confidence.`,
 };

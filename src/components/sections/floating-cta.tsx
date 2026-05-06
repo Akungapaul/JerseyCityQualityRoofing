@@ -10,14 +10,10 @@ export function FloatingCTA() {
   const isPastFold = useScrollPastFold();
   const [isDismissed, setIsDismissed] = useState(false);
   const [isNearForm, setIsNearForm] = useState(false);
-  const [ctaHref, setCtaHref] = useState("#quote-form");
 
   useEffect(() => {
     const formEl = document.getElementById("quote-form");
-    if (!formEl) {
-      setCtaHref("/contact");
-      return;
-    }
+    if (!formEl) return;
     const observer = new IntersectionObserver(
       ([entry]) => setIsNearForm(entry.isIntersecting),
       { threshold: 0 },
@@ -48,7 +44,7 @@ export function FloatingCTA() {
             <X size={16} />
           </button>
           <a
-            href={ctaHref}
+            href="#quote-form"
             className="bg-accent hover:bg-accent-hover text-dominant font-bold text-lg px-6 py-2 rounded-lg min-h-[44px] shadow-lg inline-flex items-center gap-2 transition-colors"
             aria-label="Get a free roofing quote"
           >

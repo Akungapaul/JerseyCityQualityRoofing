@@ -99,5 +99,5 @@ The Township of North Bergen Construction Department requires permits for all fl
 
   closingNarrative: `Flat roof systems in North Bergen demand drainage engineering, wind-uplift awareness, and building-specific membrane selection that generic contractors cannot provide. Whether your flat roof is on a garden apartment complex in Nungessers, a warehouse along Tonnelle Avenue, or a residential addition in Woodcliff, we design every system for the conditions it will actually face at its specific elevation and exposure within the township.
 
-Contact us at (201) 555-0123 or request a quote online. We survey every building individually because North Bergen's terrain creates different conditions on every block, and your flat roof system should be designed for yours. We respond within one business day, and emergency flat roof services are available 24/7.`,
+Request a quote online or request a quote online. We survey every building individually because North Bergen's terrain creates different conditions on every block, and your flat roof system should be designed for yours. We respond within one business day, and emergency flat roof services are available 24/7.`,
 };

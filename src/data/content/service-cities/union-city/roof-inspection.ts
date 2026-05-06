@@ -105,5 +105,5 @@ The inspection report includes annotated photographs, infrared scan images with 
 
   closingNarrative: `Inspecting a roof in Union City is not a commodity service. The shared party walls, multi-layered legacy systems, and extreme density create hidden conditions that only purpose-built inspection protocols can detect. Our infrared-assisted inspections have saved Union City property owners thousands of dollars by identifying concealed moisture, deteriorating substrates, and failing parapets before they escalated into emergency repairs or tenant damage claims.
 
-Call us at (201) 555-0123 to schedule a Union City roof inspection, or submit a quote request through our website. For property managers and investors evaluating multi-building portfolios, we offer consolidated inspection pricing that reduces the per-building cost while delivering the comprehensive assessment each property demands.`,
+Request a quote online to schedule a Union City roof inspection, or submit a quote request through our website. For property managers and investors evaluating multi-building portfolios, we offer consolidated inspection pricing that reduces the per-building cost while delivering the comprehensive assessment each property demands.`,
 } satisfies ServiceInCityContent;

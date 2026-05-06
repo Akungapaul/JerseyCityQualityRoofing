@@ -109,5 +109,5 @@ For major storm events that generate multiple simultaneous emergency calls acros
 
   closingNarrative: `A roofing emergency in Union City is unlike a roofing emergency anywhere else. The density means more people are affected. The shared walls mean the damage spreads between buildings. The access constraints mean the response crew needs urban-specific equipment and protocols. And the 78 percent renter-occupied market means tenants, landlords, and property managers all need clear communication during what is always a stressful situation.
 
-Save our emergency number: (201) 555-0123. We respond to Union City roofing emergencies around the clock, every day of the year. When a storm hits and your Union City building is taking water, you need a contractor who already knows your block, your building type, and the shared-wall dynamics that determine how fast the damage can spread.`,
+Use the quote form for urgent roofing help. We respond to Union City roofing emergencies around the clock, every day of the year. When a storm hits and your Union City building is taking water, you need a contractor who already knows your block, your building type, and the shared-wall dynamics that determine how fast the damage can spread.`,
 } satisfies ServiceInCityContent;

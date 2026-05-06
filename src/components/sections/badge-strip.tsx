@@ -1,11 +1,11 @@
 import { Award, Shield, Star, Clock, CheckCircle } from "lucide-react";
 
 const BADGES = [
-  { icon: Award, label: "GAF Master Elite" },
+  { icon: Award, label: "Manufacturer-Trained" },
   { icon: Shield, label: "Licensed & Insured" },
-  { icon: Star, label: "BBB A+ Rated" },
+  { icon: Star, label: "Local Roofing Pros" },
   { icon: Clock, label: "20+ Years Experience" },
-  { icon: CheckCircle, label: "CertainTeed SELECT" },
+  { icon: CheckCircle, label: "Quality Materials" },
 ] as const;
 
 export function BadgeStrip() {

@@ -99,5 +99,5 @@ The written report is delivered within two business days and includes all photog
 
   closingNarrative: `In the smallest borough in New Jersey, the condition of every roof is a shared concern. The tight-knit community of East Newark deserves inspections that reveal the full picture, including the hidden moisture conditions, the shared-wall complications, and the river-influenced deterioration that generic inspections miss. We bring the local knowledge and the specialized tools to deliver that complete assessment.
 
-Call us at (201) 555-0123 to schedule an inspection, or submit a request through our website. Whether you are planning a repair, evaluating a property for purchase, or building a capital maintenance schedule for your investment portfolio, our East Newark inspection will give you the accurate information you need to make sound decisions about the roof over your head.`,
+Request a quote online to schedule an inspection, or submit a request through our website. Whether you are planning a repair, evaluating a property for purchase, or building a capital maintenance schedule for your investment portfolio, our East Newark inspection will give you the accurate information you need to make sound decisions about the roof over your head.`,
 };

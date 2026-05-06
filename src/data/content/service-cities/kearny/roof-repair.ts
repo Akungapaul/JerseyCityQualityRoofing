@@ -93,5 +93,5 @@ The permitting process in Kearny is handled through the Town of Kearny Construct
 
   closingNarrative: `Kearny roofs face the full spectrum of challenges that this architecturally diverse town creates: Victorian complexity in Kearny Center, aging suburban systems in West Kearny, ice dam susceptibility around Gunnell Oval, river-corridor moisture near the North Arlington border, and industrial-scale demands in South Kearny. We have the breadth of expertise to repair any roof type in any Kearny neighborhood, and we back every repair with documentation that serves both your maintenance records and your insurance files.
 
-Call us at (201) 555-0123 to schedule a repair inspection, or submit a request through our website. We respond within one business day, and our emergency line operates around the clock. Whether your Victorian slate has shifted or your warehouse membrane has split, the repair starts with one call.`,
+Request a quote online to schedule a repair inspection, or submit a request through our website. We respond within one business day, and our emergency line operates around the clock. Whether your Victorian slate has shifted or your warehouse membrane has split, the repair starts with one call.`,
 };

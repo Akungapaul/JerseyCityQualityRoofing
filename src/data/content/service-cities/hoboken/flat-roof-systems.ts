@@ -111,5 +111,5 @@ Final inspection by the Hoboken building department completes the permit process
 
   closingNarrative: `Commercial flat roof management in Hoboken requires a contractor who understands the intersection of waterfront exposure, historic preservation requirements, dense urban logistics, and the financial realities of building ownership in a one-square-mile city. Whether you manage Washington Street retail buildings, waterfront office towers, multi-family apartment complexes, or hospitality properties near the terminal, the flat roof is the most critical building system protecting your investment and your tenants.
 
-Contact us at (201) 555-0123 to discuss your Hoboken commercial flat roof needs, or submit a request through our website for a comprehensive assessment. We provide maintenance programs, replacement planning, and emergency response tailored to the specific challenges that make Hoboken commercial roofing unique in Hudson County.`,
+Request a quote online to discuss your Hoboken commercial flat roof needs, or submit a request through our website for a comprehensive assessment. We provide maintenance programs, replacement planning, and emergency response tailored to the specific challenges that make Hoboken commercial roofing unique in Hudson County.`,
 } satisfies ServiceInCityContent;

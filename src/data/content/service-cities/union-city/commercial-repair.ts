@@ -109,5 +109,5 @@ Union City Construction Department permits are required for commercial repairs t
 
   closingNarrative: `Commercial roof repair in Union City operates at the intersection of dense urban construction, mixed-use building complexity, and the reality that every commercial roof in this city protects not just business operations but the residential tenants living above and beside the commercial space. Whether your building is a Bergenline Avenue storefront, a Union Hill multi-family apartment complex, or a Transfer Station area commercial property, the repair demands commercial-grade expertise applied to Union City's uniquely constrained environment.
 
-Call us at (201) 555-0123 to schedule a commercial roof assessment, or submit a quote request through our website. We respond to commercial inquiries within one business day and coordinate all repair scheduling with your tenants to minimize disruption to business operations.`,
+Request a quote online to schedule a commercial roof assessment, or submit a quote request through our website. We respond to commercial inquiries within one business day and coordinate all repair scheduling with your tenants to minimize disruption to business operations.`,
 } satisfies ServiceInCityContent;

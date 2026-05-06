@@ -178,7 +178,7 @@ export function CompactQuoteForm({
                   label="Phone Number"
                   required
                   type="tel"
-                  placeholder="(201) 555-0123"
+                  placeholder="(201) 000-0000"
                   inputSize="compact"
                   error={errors.phone?.message}
                   {...register("phone")}

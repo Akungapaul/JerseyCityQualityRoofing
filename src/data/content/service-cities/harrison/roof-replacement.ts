@@ -99,5 +99,5 @@ For residential projects in Harrison Center and the Davis Avenue area, we schedu
 
   closingNarrative: `A roof replacement in Harrison is an investment that protects a property in one of the most dynamic real estate markets in Hudson County. Whether your traditional home has reached the end of its last roofing cycle and needs a full tear-off that addresses decades of accumulated issues, or your Riverbend townhouse needs its combination system replaced with materials proven to handle the river environment, we bring the dual expertise that Harrison demands. The Passaic River sets the standard every Harrison roof must meet, and we engineer every replacement to exceed that standard.
 
-Call us at (201) 555-0123 to schedule a replacement consultation, or submit a request through our website. We provide detailed proposals with clear pricing, material specifications, and warranty terms so you can make an informed decision about protecting your Harrison property for the next generation.`,
+Request a quote online to schedule a replacement consultation, or submit a request through our website. We provide detailed proposals with clear pricing, material specifications, and warranty terms so you can make an informed decision about protecting your Harrison property for the next generation.`,
 };

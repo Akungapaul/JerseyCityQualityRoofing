@@ -109,5 +109,5 @@ Emergency response is integrated into the maintenance program as a priority bene
 
   closingNarrative: `Roof maintenance in Hoboken is not optional for building owners who want to protect their investment and avoid the escalating costs of deferred repairs in a city where salt air, wind, and density accelerate every form of roof deterioration. A structured maintenance program provides predictable annual costs, eliminates the emergency repair cycle, extends the useful life of the existing roof system, and gives you the data you need to plan replacements strategically rather than reactively.
 
-Contact us at (201) 555-0123 to discuss a maintenance program for your Hoboken commercial property, or submit a request through our website. We serve individual buildings and multi-property portfolios, and our programs are tailored to the specific conditions of each building's neighborhood, exposure, and roof system type.`,
+Request a quote online to discuss a maintenance program for your Hoboken commercial property, or submit a request through our website. We serve individual buildings and multi-property portfolios, and our programs are tailored to the specific conditions of each building's neighborhood, exposure, and roof system type.`,
 } satisfies ServiceInCityContent;

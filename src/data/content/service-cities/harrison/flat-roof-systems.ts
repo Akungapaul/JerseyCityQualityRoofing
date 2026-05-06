@@ -103,5 +103,5 @@ Permitting for flat roof work in Harrison runs through the Town of Harrison Cons
 
   closingNarrative: `Flat roof systems in Harrison serve everything from century-old home extensions to luxury waterfront towers, and the Passaic River tests every one of them with the same relentless moisture pressure. Whether your project is a small modified bitumen replacement on a traditional Harrison Center home, a commercial TPO installation on a Red Bull Arena district retail building, or a full-system design for a new waterfront development, we bring the flat roof expertise that Harrison's diverse building market demands. Every system we install is specified for the actual river-adjacent conditions, not the standard manufacturer assumptions.
 
-Call us at (201) 555-0123 to discuss your flat roof project, or submit a request through our website. We provide detailed proposals with material specifications, drainage analysis, and warranty terms tailored to your Harrison property's specific needs and environmental exposure.`,
+Request a quote online to discuss your flat roof project, or submit a request through our website. We provide detailed proposals with material specifications, drainage analysis, and warranty terms tailored to your Harrison property's specific needs and environmental exposure.`,
 };

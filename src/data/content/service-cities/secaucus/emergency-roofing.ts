@@ -99,5 +99,5 @@ The follow-up visit occurs within forty-eight hours, during which we perform a f
 
   closingNarrative: `Roof emergencies in Secaucus demand response that understands the Meadowlands moisture environment and the building types that make this town unique. Our emergency protocol addresses not just the immediate water intrusion but the secondary moisture damage that the persistent humidity makes inevitable without active dehumidification. Whether your emergency is a Harmon Cove party wall cascade during a summer thunderstorm, a Clarendon moisture-failure breakthrough, or a commercial membrane failure threatening warehouse inventory, we bring the specialized equipment and Secaucus-specific experience that rapid, effective emergency response requires.
 
-Call our 24/7 emergency line at (201) 555-0123. Active roof leaks in Secaucus do not wait, and neither do we.`,
+Request urgent roofing help online. Active roof leaks in Secaucus do not wait, and neither do we.`,
 };

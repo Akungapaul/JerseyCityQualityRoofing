@@ -93,5 +93,5 @@ The permitting process for roof repairs in Secaucus is handled through the Town 
 
   closingNarrative: `Secaucus roofs face a moisture challenge that no other Hudson County municipality shares at this intensity. The Meadowlands wetlands create an environment where standard roofing approaches fall short and where the expertise to manage persistent humidity is the difference between a repair that lasts and one that fails within a year. Whether your home is a Harmon Cove waterfront townhouse battling river fog, a Clarendon colonial with decades of accumulated moisture stress, or a Millridge townhouse needing HOA-coordinated repair work, we bring the moisture-management expertise that Secaucus roofs demand.
 
-Call us at (201) 555-0123 to schedule a moisture-focused roof inspection, or submit a quote request through our website. We respond within one business day, and our emergency line is available around the clock for active leaks that cannot wait for the next dry day.`,
+Request a quote online to schedule a moisture-focused roof inspection, or submit a quote request through our website. We respond within one business day, and our emergency line is available around the clock for active leaks that cannot wait for the next dry day.`,
 };

@@ -109,5 +109,5 @@ We maintain maintenance records for every West New York building in our program 
 
   closingNarrative: `Roof maintenance in West New York is not optional. It is the difference between a roof that achieves its full lifespan and one that fails prematurely under the Palisades wind cycling that tests every building in this town. Whether your property sits on the cliff edge of Boulevard East, among the walk-up apartments along Park Avenue, or along the commercial corridor of Bergenline Avenue, our maintenance programs are calibrated for the actual wear rates that the Palisades elevation creates.
 
-Call us at (201) 555-0123 to schedule a baseline assessment and start your maintenance program, or submit a request through our website. The first maintenance visit pays for itself by catching the developing issues that would otherwise become next winter's emergency repair at five times the cost.`,
+Request a quote online to schedule a baseline assessment and start your maintenance program, or submit a request through our website. The first maintenance visit pays for itself by catching the developing issues that would otherwise become next winter's emergency repair at five times the cost.`,
 };

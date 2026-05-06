@@ -2,10 +2,10 @@ import type { BusinessInfo } from "./types";
 
 export const BUSINESS_INFO: BusinessInfo = {
   name: "Jersey City Quality Roofing",
-  phone: "(201) 555-0123",
+  phone: "Request a Free Estimate",
   email: "info@jerseycityqualityroofing.com",
   address: {
-    street: "123 Summit Avenue",
+    street: "",
     city: "Jersey City",
     state: "NJ",
     zip: "07304",
@@ -25,18 +25,18 @@ export const BUSINESS_INFO: BusinessInfo = {
     "Weehawken",
   ],
   foundedYear: 2003,
-  licenseNumber: "NJ-HIC-13VH12345678",
-  insuranceProvider: "Liberty Mutual",
-  insurancePolicyNumber: "LM-2024-ROOF-789456",
+  licenseNumber: "Verification available upon request",
+  insuranceProvider: "Proof of insurance available upon request",
+  insurancePolicyNumber: "Available upon request",
   certifications: [
     {
-      name: "GAF Master Elite Contractor",
-      issuer: "GAF",
+      name: "Manufacturer-Trained Roofing Contractor",
+      issuer: "Manufacturer training",
       year: 2020,
     },
     {
-      name: "CertainTeed SELECT ShingleMaster",
-      issuer: "CertainTeed",
+      name: "Shingle Installation Training",
+      issuer: "Manufacturer training",
       year: 2019,
     },
     {

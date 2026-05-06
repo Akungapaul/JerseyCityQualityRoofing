@@ -105,5 +105,5 @@ For commercial buildings that experience recurring repair needs, we provide a li
 
   closingNarrative: `Harrison's commercial roof repair market spans the full spectrum from traditional Harrison Avenue retail buildings to premium waterfront luxury developments and the specialty entertainment district around Red Bull Arena. Each market demands specific expertise, and the Passaic River's moisture influence adds a layer of environmental challenge that makes every repair more demanding than the same work in an inland location. We bring commercial-grade capabilities across all of Harrison's markets, with the manufacturer certifications, insurance documentation, and project management proficiency that the town's diverse commercial buildings require.
 
-Call us at (201) 555-0123 to schedule a commercial repair assessment, or submit a request through our website. We respond within one business day for all Harrison commercial properties, and our emergency line operates around the clock for situations that cannot wait.`,
+Request a quote online to schedule a commercial repair assessment, or submit a request through our website. We respond within one business day for all Harrison commercial properties, and our emergency line operates around the clock for situations that cannot wait.`,
 };

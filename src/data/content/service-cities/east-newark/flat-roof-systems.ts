@@ -102,5 +102,5 @@ Permitting for flat roof replacement is handled through the Borough of East Newa
 
   closingNarrative: `The flat roof sections on East Newark's buildings may be small in area, but they protect the kitchens, additions, and commercial spaces where families and businesses operate every day. In the smallest borough in New Jersey, these compact flat surfaces face the same moisture challenges and demand the same installation precision as any flat roof in the county. We deliver that precision with materials and methods calibrated specifically for East Newark's river-adjacent environment.
 
-Call us at (201) 555-0123 to schedule a flat roof assessment, or submit a request through our website. Whether your rear addition is leaking, your Grant Avenue storefront needs a new membrane, or you want a maintenance plan that keeps your flat section performing reliably, we have the specialized flat roofing expertise that East Newark's unique building stock requires.`,
+Request a quote online to schedule a flat roof assessment, or submit a request through our website. Whether your rear addition is leaking, your Grant Avenue storefront needs a new membrane, or you want a maintenance plan that keeps your flat section performing reliably, we have the specialized flat roofing expertise that East Newark's unique building stock requires.`,
 };

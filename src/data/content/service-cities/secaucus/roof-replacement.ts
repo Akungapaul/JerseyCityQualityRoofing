@@ -95,5 +95,5 @@ Permitting for roof replacement in Secaucus requires a building permit from the 
 
   closingNarrative: `A roof replacement in Secaucus is not just a new layer of shingles on your home. It is a moisture-management system designed for the Meadowlands environment that no other Hudson County municipality shares. Our Secaucus-specific replacement specification addresses the persistent humidity, the condensation risk, and the accelerated material degradation that standard approaches fail to account for, delivering a roof that achieves its full design life instead of the abbreviated lifespan that characterizes conventional installations in this environment.
 
-Call us at (201) 555-0123 to schedule a moisture audit and replacement consultation, or submit a quote request through our website. We provide detailed, itemized proposals that explain exactly what your Secaucus home needs and why, so you can make an informed decision about the most important weatherproofing investment your property will receive.`,
+Request a quote online to schedule a moisture audit and replacement consultation, or submit a quote request through our website. We provide detailed, itemized proposals that explain exactly what your Secaucus home needs and why, so you can make an informed decision about the most important weatherproofing investment your property will receive.`,
 };

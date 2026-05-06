@@ -14,7 +14,7 @@ export const ABOUT_CONTENT = {
     {
       name: '[Team Member]',
       role: 'Founder & Lead Estimator',
-      bio: 'Over 20 years of roofing experience across residential and commercial projects. Holds GAF Master Elite and CertainTeed SELECT certifications. Personally inspects every roof before providing an estimate and oversees quality control on every project.',
+      bio: 'Over 20 years of roofing experience across residential and commercial projects. Holds manufacturer-training and installation-quality standards. Personally inspects every roof before providing an estimate and oversees quality control on every project.',
       placeholder: true,
     },
     {
@@ -37,7 +37,7 @@ export const ABOUT_CONTENT = {
     averageRating: '4.8',
   },
   insurance: {
-    provider: 'Liberty Mutual',
+    provider: 'insurance documentation available upon request',
     coverageTypes: ['General Liability', 'Workers\u2019 Compensation', 'Commercial Auto'],
     policyNote: 'Certificates of insurance available upon request.',
   },

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant, Cormorant_Garamond } from "next/font/google";
+import { BASE_URL } from "@/lib/constants";
 import { JsonLd, buildRoofingContractorJsonLd } from "@/lib/seo/json-ld";
 import "@/styles/globals.css";
 
@@ -18,6 +19,7 @@ const cormorantGaramond = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(BASE_URL),
   title: {
     default:
       "Jersey City Quality Roofing | Expert Roofing Services in Jersey City, NJ",

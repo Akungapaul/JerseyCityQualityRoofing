@@ -102,5 +102,5 @@ Post-repair documentation for commercial properties includes a detailed report w
 
   closingNarrative: `East Newark's commercial roofing inventory may be small, but the buildings it covers are the lifeblood of the borough's economy and community. From the Grant Avenue storefronts that serve as the social spine of the municipality to the school that educates its children, every commercial roof in East Newark protects something irreplaceable. We bring the specialized commercial membrane expertise these buildings need, scaled to the intimate size of the borough.
 
-Call us at (201) 555-0123 to schedule a commercial roof assessment, or submit a request through our website. Whether your Grant Avenue storefront has a persistent leak or your building needs a comprehensive penetration reflashing, we deliver commercial repair quality on every East Newark project.`,
+Request a quote online to schedule a commercial roof assessment, or submit a request through our website. Whether your Grant Avenue storefront has a persistent leak or your building needs a comprehensive penetration reflashing, we deliver commercial repair quality on every East Newark project.`,
 };

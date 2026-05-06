@@ -105,5 +105,5 @@ Quality control throughout the installation includes daily seam testing on welde
 
   closingNarrative: `Commercial roof replacement in Kearny demands a contractor who can execute across the full range of project scales, from Passaic Avenue retail buildings to South Kearny industrial warehouses. We engineer replacement systems that match each building's structural capacity, environmental exposure, and operational requirements, with the phased installation approach that keeps Kearny businesses running throughout the project.
 
-Call us at (201) 555-0123 to schedule a commercial replacement assessment, or submit a request through our website. Whether your commercial roof is 3,000 or 60,000 square feet, we deliver the same disciplined process from assessment through warranty close-out.`,
+Request a quote online to schedule a commercial replacement assessment, or submit a request through our website. Whether your commercial roof is 3,000 or 60,000 square feet, we deliver the same disciplined process from assessment through warranty close-out.`,
 };

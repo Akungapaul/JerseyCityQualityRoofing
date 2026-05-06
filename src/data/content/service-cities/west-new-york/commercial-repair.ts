@@ -94,5 +94,5 @@ We coordinate all necessary permitting through the Town of West New York Buildin
 
   closingNarrative: `Commercial roofs in West New York protect the businesses that serve this community, and those businesses deserve repair services that account for the Palisades cliff-edge conditions that make this town's commercial roofing demands unique. Whether your commercial property occupies a premium Boulevard East location where hospitality standards meet extreme wind exposure, or a Bergenline Avenue storefront where rapid repair is essential to protect your business operations, we provide commercial-grade repairs calibrated for the actual conditions at your specific location.
 
-Call us at (201) 555-0123 to schedule a commercial roof assessment, or submit a request through our website. We coordinate all repair work around your business operations, and our emergency line is available 24 hours a day for business-critical situations where water intrusion threatens your commercial activity.`,
+Request a quote online to schedule a commercial roof assessment, or submit a request through our website. We coordinate all repair work around your business operations, and our emergency line is available 24 hours a day for business-critical situations where water intrusion threatens your commercial activity.`,
 };

@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { generatePageMetadata } from '@/lib/seo/metadata';
 import { buildCanonicalUrl } from '@/lib/seo/canonical';
 import { buildRoofingContractorJsonLd } from '@/lib/seo/json-ld';
+import { BUSINESS_INFO } from '@/data/business-info';
 
 describe('SEO helpers', () => {
   describe('generatePageMetadata', () => {
@@ -59,15 +60,23 @@ describe('SEO helpers', () => {
       expect(jsonLd['@type']).toBe('RoofingContractor');
     });
 
-    it('includes business name and phone', () => {
+    it('includes business name and only verified phone data', () => {
       const jsonLd = buildRoofingContractorJsonLd() as unknown as Record<string, unknown>;
       expect(jsonLd.name).toBe('Jersey City Quality Roofing');
-      expect(jsonLd.telephone).toBeDefined();
+      if (/^\+?[\d(]/.test(BUSINESS_INFO.phone)) {
+        expect(jsonLd.telephone).toBeDefined();
+      } else {
+        expect(jsonLd.telephone).toBeUndefined();
+      }
     });
 
-    it('includes address', () => {
+    it('only includes address when a street address is verified', () => {
       const jsonLd = buildRoofingContractorJsonLd() as unknown as Record<string, unknown>;
-      expect(jsonLd.address).toBeDefined();
+      if (BUSINESS_INFO.address.street) {
+        expect(jsonLd.address).toBeDefined();
+      } else {
+        expect(jsonLd.address).toBeUndefined();
+      }
     });
   });
 });

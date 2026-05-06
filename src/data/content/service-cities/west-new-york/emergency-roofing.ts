@@ -90,5 +90,5 @@ We coordinate with the West New York Police Department for traffic control when 
 
   closingNarrative: `When a storm hits West New York, the Palisades cliff edge amplifies the wind into forces that no other Hudson County community experiences. Your roof takes the full force of that geography, and when it fails, you need an emergency response team that understands what the cliff-edge wind does and how to protect against it. Standard tarps and generic repair approaches fail on West New York rooftops because the conditions are not standard. Our wind-rated emergency systems and Palisades-calibrated permanent repairs are designed for the reality of this location.
 
-Save our emergency number: (201) 555-0123, available 24 hours a day, 7 days a week, 365 days a year. When the wind peels your membrane, displaces your parapet coping, or tears your shingles off the cliff-edge roof, we respond with crews and materials built for exactly these conditions.`,
+Use the quote form for urgent roofing help, available 24 hours a day, 7 days a week, 365 days a year. When the wind peels your membrane, displaces your parapet coping, or tears your shingles off the cliff-edge roof, we respond with crews and materials built for exactly these conditions.`,
 };

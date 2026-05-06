@@ -104,7 +104,7 @@ export async function generateMetadata({
 
   const canonicalPath = `/services/residential/${service.slug}`;
   const metadata = generatePageMetadata({
-    title: `${service.name} in Jersey City, NJ`,
+    title: `${service.name} Services in Hudson County, NJ`,
     description: service.shortDescription,
     path: canonicalPath,
   });

@@ -46,7 +46,7 @@ vi.mock("next/link", () => ({
 }));
 
 vi.mock("@/lib/constants", () => ({
-  PHONE_NUMBER: "(201) 555-0123",
+  PHONE_NUMBER: "the quote form",
   PHONE_HREF: "tel:+12015550123",
 }));
 
@@ -118,7 +118,7 @@ describe("ExitIntentPopup", () => {
     const { ExitIntentPopup } = await import("../exit-intent-popup");
     const html = renderToStaticMarkup(createElement(ExitIntentPopup));
     expect(html).toContain("tel:+12015550123");
-    expect(html).toContain("(201) 555-0123");
+    expect(html).toContain("the quote form");
   });
 
   it("contains z-[60] overlay class", async () => {

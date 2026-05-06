@@ -93,5 +93,5 @@ The Town of Kearny Construction Department does not typically require permits fo
 
   closingNarrative: `Understanding your Kearny roof's condition is the foundation for every maintenance, repair, and replacement decision you will make. Whether you own a Victorian in Kearny Center, a colonial near Gunnell Oval, a ranch in West Kearny, or an industrial property in South Kearny, our inspection reports give you the detailed, location-specific information you need to protect your investment and plan your budget.
 
-Call us at (201) 555-0123 to schedule an inspection, or submit a request through our website. We respond within one business day and typically schedule inspections within one week of your request. The clarity our inspection provides is worth far more than the cost of the assessment.`,
+Request a quote online to schedule an inspection, or submit a request through our website. We respond within one business day and typically schedule inspections within one week of your request. The clarity our inspection provides is worth far more than the cost of the assessment.`,
 };

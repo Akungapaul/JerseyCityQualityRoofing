@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { HeroSection } from "@/components/sections/hero-section";
 import { CompactQuoteForm } from "@/components/forms/compact-quote-form";
 import { BadgeStrip } from "@/components/sections/badge-strip";
@@ -20,18 +21,51 @@ import { TESTIMONIALS } from "@/data/testimonials";
 import { HOMEPAGE_FAQS } from "@/data/homepage-faq";
 import { BASE_URL } from "@/lib/constants";
 
+const homeDescription =
+  "Roofer in Jersey City, NJ for roof repair, roof replacement, inspections, emergency leaks, and commercial roofing across Hudson County.";
+
+const PRIORITY_SERVICE_LINKS = [
+  {
+    href: "/services/residential/roof-replacement/jersey-city",
+    label: "Roof Replacement in Jersey City, NJ",
+    description:
+      "Full tear-offs, flat-roof membranes, and shingle replacements for Jersey City homes.",
+  },
+  {
+    href: "/services/residential/roof-repair/jersey-city",
+    label: "Roof Repair in Jersey City, NJ",
+    description:
+      "Leak tracing, storm damage repair, flashing fixes, and brownstone parapet repairs.",
+  },
+  {
+    href: "/services/commercial/commercial-replacement/jersey-city",
+    label: "Commercial Roof Replacement",
+    description:
+      "Commercial membrane replacement for Jersey City apartments, storefronts, and mixed-use buildings.",
+  },
+  {
+    href: "/services/commercial/flat-roof-systems",
+    label: "Commercial Flat Roof Systems",
+    description:
+      "TPO, EPDM, modified bitumen, drainage, and maintenance options for flat roofs.",
+  },
+  {
+    href: "/service-areas/jersey-city",
+    label: "Jersey City Service Area",
+    description:
+      "Neighborhood-specific roofing guidance for Downtown, The Heights, Journal Square, and more.",
+  },
+];
+
 export const metadata: Metadata = {
-  title: "Jersey City Quality Roofing | Jersey City's Trusted Roofing Experts",
-  description:
-    "Professional residential and commercial roofing services in Jersey City and across Hudson County. Licensed, insured, and locally trusted since 2003.",
+  title: "Roofer in Jersey City, NJ",
+  description: homeDescription,
   alternates: {
     canonical: BASE_URL,
   },
   openGraph: {
-    title:
-      "Jersey City Quality Roofing | Jersey City's Trusted Roofing Experts",
-    description:
-      "Professional residential and commercial roofing services in Jersey City and across Hudson County. Licensed, insured, and locally trusted since 2003.",
+    title: "Roofer in Jersey City, NJ | Jersey City Quality Roofing",
+    description: homeDescription,
     type: "website",
   },
 };
@@ -68,7 +102,39 @@ export default function HomePage() {
       {/* 4. Services Grid */}
       <ServicesGrid />
 
-      {/* 5. Why Choose Us */}
+      {/* 5. Priority GSC opportunity links */}
+      <SectionWrapper tone="dominant">
+        <ScrollReveal>
+          <div className="max-w-3xl mb-8">
+            <h2 className="font-heading font-bold text-[1.75rem] text-text-primary mb-3">
+              Jersey City Roofing Services People Are Searching For
+            </h2>
+            <p className="text-text-secondary text-lg">
+              Quick paths to the roof replacement, roof repair, inspection, and
+              commercial roofing pages that match current Jersey City search
+              demand.
+            </p>
+          </div>
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {PRIORITY_SERVICE_LINKS.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="group rounded-lg bg-secondary p-5 transition-colors duration-[150ms] hover:bg-[#4a5040]"
+              >
+                <span className="font-heading text-lg font-bold text-text-primary group-hover:text-accent">
+                  {link.label}
+                </span>
+                <span className="mt-2 block text-lg text-text-secondary">
+                  {link.description}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </ScrollReveal>
+      </SectionWrapper>
+
+      {/* 6. Why Choose Us */}
       <WhyChooseUs />
 
       {/* 6. Testimonials (wraps itself in SectionWrapper) */}

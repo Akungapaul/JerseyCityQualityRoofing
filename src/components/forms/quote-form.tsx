@@ -180,7 +180,7 @@ export function QuoteForm({ defaultServiceType }: QuoteFormProps) {
                   label="Phone Number"
                   required
                   type="tel"
-                  placeholder="(201) 555-0123"
+                  placeholder="(201) 000-0000"
                   error={errors.phone?.message}
                   {...register("phone")}
                 />

@@ -93,5 +93,5 @@ The permitting process in North Bergen is handled through the Township of North 
 
   closingNarrative: `North Bergen roofs face challenges that the Palisades ridge elevation imposes on every property in the township. Whether your home is a split-level on the wind-swept heights of Tyler Park, a colonial perched at the Woodcliff ridge crest, or a garden apartment in Nungessers dealing with chronic flat roof ponding, we bring the elevation-specific expertise that generic contractors simply do not have. We have repaired hundreds of North Bergen roofs and understand how the wind, the terrain, and the building stock interact to create the failures we see.
 
-Call us at (201) 555-0123 to schedule an inspection, or submit a quote request through our website. We respond within one business day, and our emergency line is available around the clock. Ridge-top wind damage does not wait for business hours, and neither do we.`,
+Request a quote online to schedule an inspection, or submit a quote request through our website. We respond within one business day, and our emergency line is available around the clock. Ridge-top wind damage does not wait for business hours, and neither do we.`,
 };

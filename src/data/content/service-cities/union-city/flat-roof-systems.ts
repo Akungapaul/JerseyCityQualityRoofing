@@ -107,5 +107,5 @@ Post-installation inspection by the Union City Construction Department is schedu
 
   closingNarrative: `Union City is flat roof territory. Virtually every building in this 1.27-square-mile city relies on a flat membrane system to keep the weather out, and the extreme density creates conditions that demand more from that membrane than any suburban installation would require. Whether you need a new flat roof on a Union Hill row house, a commercial-grade system on a Bergenline Avenue building, or a coordinated multi-building portfolio replacement, we have installed the specific system your building needs in the specific environment Union City presents.
 
-Call us at (201) 555-0123 to schedule a flat roof assessment, or submit a quote request through our website. For landlords and property managers with multiple buildings, ask about our portfolio pricing that coordinates shared parapet work and reduces per-building costs by twenty to thirty percent.`,
+Request a quote online to schedule a flat roof assessment, or submit a quote request through our website. For landlords and property managers with multiple buildings, ask about our portfolio pricing that coordinates shared parapet work and reduces per-building costs by twenty to thirty percent.`,
 } satisfies ServiceInCityContent;

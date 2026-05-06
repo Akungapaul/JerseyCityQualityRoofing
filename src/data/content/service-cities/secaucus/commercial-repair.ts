@@ -105,5 +105,5 @@ Permitting for commercial roof repairs in Secaucus follows the Town of Secaucus 
 
   closingNarrative: `Commercial roof repair in Secaucus is defined by the scale of the buildings and the severity of the ponding conditions that the Meadowlands environment creates. From the massive warehouse roofs along the Meadowlands corridor to the premium hospitality properties near Secaucus Junction, our commercial repair expertise addresses the specific challenges that make Secaucus commercial roofs the most demanding in Hudson County. We combine rapid emergency response with permanent repair solutions designed for the chronic moisture conditions that every Secaucus commercial building faces.
 
-Call us at (201) 555-0123 to schedule a commercial roof assessment, or submit a quote request through our website. We respond to commercial inquiries within four business hours because we understand that commercial roof issues directly impact your business operations.`,
+Request a quote online to schedule a commercial roof assessment, or submit a quote request through our website. We respond to commercial inquiries within four business hours because we understand that commercial roof issues directly impact your business operations.`,
 };

@@ -25,15 +25,22 @@ describe('JSON-LD generators', () => {
       expect(schema.name).toBe('Jersey City Quality Roofing');
     });
 
-    it('includes telephone', () => {
+    it('only includes telephone when the phone is verified', () => {
       const schema = buildRoofingContractorJsonLd() as unknown as Record<string, unknown>;
-      expect(schema.telephone).toBeDefined();
-      expect(typeof schema.telephone).toBe('string');
+      if (/^\+?[\d(]/.test(BUSINESS_INFO.phone)) {
+        expect(schema.telephone).toBe(BUSINESS_INFO.phone);
+      } else {
+        expect(schema.telephone).toBeUndefined();
+      }
     });
 
-    it('includes postal address', () => {
+    it('only includes PostalAddress when a street address is verified', () => {
       const schema = buildRoofingContractorJsonLd() as unknown as Record<string, unknown>;
-      expect(schema.address).toBeDefined();
+      if (BUSINESS_INFO.address.street) {
+        expect(schema.address).toBeDefined();
+      } else {
+        expect(schema.address).toBeUndefined();
+      }
     });
 
     it('includes area served with multiple cities', () => {
@@ -157,22 +164,30 @@ describe('JSON-LD generators', () => {
       expect(schema['@type']).toBe('RoofingContractor');
     });
 
-    it('includes telephone, email, and url', () => {
+    it('includes verified contact fields, email, and url', () => {
       const schema = buildContactPageJsonLd() as unknown as Record<string, unknown>;
-      expect(schema.telephone).toBe(BUSINESS_INFO.phone);
+      if (/^\+?[\d(]/.test(BUSINESS_INFO.phone)) {
+        expect(schema.telephone).toBe(BUSINESS_INFO.phone);
+      } else {
+        expect(schema.telephone).toBeUndefined();
+      }
       expect(schema.email).toBe(BUSINESS_INFO.email);
       expect(schema.url).toBe(BASE_URL);
     });
 
-    it('includes PostalAddress with all fields', () => {
+    it('only includes PostalAddress when a street address is verified', () => {
       const schema = buildContactPageJsonLd() as unknown as Record<string, unknown>;
-      const address = schema.address as Record<string, unknown>;
-      expect(address['@type']).toBe('PostalAddress');
-      expect(address.streetAddress).toBe(BUSINESS_INFO.address.street);
-      expect(address.addressLocality).toBe(BUSINESS_INFO.address.city);
-      expect(address.addressRegion).toBe(BUSINESS_INFO.address.state);
-      expect(address.postalCode).toBe(BUSINESS_INFO.address.zip);
-      expect(address.addressCountry).toBe('US');
+      if (BUSINESS_INFO.address.street) {
+        const address = schema.address as Record<string, unknown>;
+        expect(address['@type']).toBe('PostalAddress');
+        expect(address.streetAddress).toBe(BUSINESS_INFO.address.street);
+        expect(address.addressLocality).toBe(BUSINESS_INFO.address.city);
+        expect(address.addressRegion).toBe(BUSINESS_INFO.address.state);
+        expect(address.postalCode).toBe(BUSINESS_INFO.address.zip);
+        expect(address.addressCountry).toBe('US');
+      } else {
+        expect(schema.address).toBeUndefined();
+      }
     });
 
     it('includes openingHoursSpecification as array with 2 entries (weekday and Saturday)', () => {
@@ -238,20 +253,28 @@ describe('JSON-LD generators', () => {
       expect(schema.url).toBe(canonicalUrl);
     });
 
-    it('includes provider with @type RoofingContractor', () => {
+    it('includes provider with @type RoofingContractor and verified contact fields', () => {
       const schema = buildServicePageJsonLd(service, canonicalUrl) as unknown as Record<string, unknown>;
       const provider = schema.provider as Record<string, unknown>;
       expect(provider['@type']).toBe('RoofingContractor');
       expect(provider.name).toBe(BUSINESS_INFO.name);
-      expect(provider.telephone).toBe(BUSINESS_INFO.phone);
+      if (/^\+?[\d(]/.test(BUSINESS_INFO.phone)) {
+        expect(provider.telephone).toBe(BUSINESS_INFO.phone);
+      } else {
+        expect(provider.telephone).toBeUndefined();
+      }
     });
 
-    it('includes provider PostalAddress', () => {
+    it('only includes provider PostalAddress when a street address is verified', () => {
       const schema = buildServicePageJsonLd(service, canonicalUrl) as unknown as Record<string, unknown>;
       const provider = schema.provider as Record<string, unknown>;
-      const address = provider.address as Record<string, unknown>;
-      expect(address['@type']).toBe('PostalAddress');
-      expect(address.streetAddress).toBe(BUSINESS_INFO.address.street);
+      if (BUSINESS_INFO.address.street) {
+        const address = provider.address as Record<string, unknown>;
+        expect(address['@type']).toBe('PostalAddress');
+        expect(address.streetAddress).toBe(BUSINESS_INFO.address.street);
+      } else {
+        expect(provider.address).toBeUndefined();
+      }
     });
 
     it('includes areaServed with 12 cities', () => {
