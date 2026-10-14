@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Cormorant, Cormorant_Garamond } from "next/font/google";
 import { BASE_URL } from "@/lib/constants";
 import { JsonLd, buildRoofingContractorJsonLd } from "@/lib/seo/json-ld";
 import "@/styles/globals.css";
+
+const GA_MEASUREMENT_ID = "G-TPWYH6LCMM";
 
 const cormorant = Cormorant({
   weight: ["500", "700"],
@@ -40,6 +43,18 @@ export default function RootLayout({
       className={`${cormorant.variable} ${cormorantGaramond.variable}`}
     >
       <body>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
         <JsonLd data={buildRoofingContractorJsonLd() as unknown as Record<string, unknown>} />
         {children}
       </body>
