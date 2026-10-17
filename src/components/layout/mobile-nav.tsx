@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { PHONE_NUMBER, PHONE_HREF } from "@/lib/constants";
 import { getServicesByCategory } from "@/data/services";
 import { getAllMunicipalities } from "@/data/municipalities";
+import { servicePillarPath, cityHubPath } from "@/lib/paths";
 
 interface MobileNavProps {
   isOpen: boolean;
@@ -189,7 +190,7 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
                 {residentialServices.map((service) => (
                   <Link
                     key={service.slug}
-                    href={`/services/residential/${service.slug}`}
+                    href={servicePillarPath(service.slug)}
                     className="block rounded-md px-3 py-2 font-body text-lg text-text-secondary hover:text-accent hover:bg-secondary transition-colors duration-[--duration-fast] min-h-[44px] flex items-center"
                     onClick={onClose}
                   >
@@ -208,7 +209,7 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
                 {commercialServices.map((service) => (
                   <Link
                     key={service.slug}
-                    href={`/services/commercial/${service.slug}`}
+                    href={servicePillarPath(service.slug)}
                     className="block rounded-md px-3 py-2 font-body text-lg text-text-secondary hover:text-accent hover:bg-secondary transition-colors duration-[--duration-fast] min-h-[44px] flex items-center"
                     onClick={onClose}
                   >
@@ -227,7 +228,7 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
                 {municipalities.map((muni) => (
                   <Link
                     key={muni.slug}
-                    href={`/service-areas/${muni.slug}`}
+                    href={cityHubPath(muni.slug)}
                     className="block rounded-md px-3 py-2 font-body text-lg text-text-secondary hover:text-accent hover:bg-secondary transition-colors duration-[--duration-fast] min-h-[44px] flex items-center"
                     onClick={onClose}
                   >

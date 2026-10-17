@@ -8,7 +8,7 @@ export const CHOOSING_COMMERCIAL_FLAT_ROOF: BlogArticle = {
     'A building owner\'s guide to TPO, EPDM, modified bitumen, and built-up roofing in the Hudson County commercial market.',
   siloService: 'flat-roof-systems',
   siloCategory: 'commercial',
-  parentPillarLink: '/services/commercial/flat-roof-systems',
+  parentPillarLink: '/flat-roof-systems-jersey-city-nj',
   author: 'Jersey City Quality Roofing Team',
   publishDate: '2026-02-05',
   updatedDate: null,

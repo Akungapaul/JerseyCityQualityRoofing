@@ -236,7 +236,7 @@ describe('SiblingCitiesNav', () => {
     const html = renderToStaticMarkup(
       createElement(SiblingCitiesNav, baseProps)
     );
-    expect(html).toContain('/services/residential/roof-repair/hoboken');
+    expect(html).toContain('/roof-repair-hoboken-nj');
   });
 
   it('renders all 12 municipalities', () => {
@@ -256,6 +256,6 @@ describe('SiblingCitiesNav', () => {
         serviceCategory: 'commercial',
       })
     );
-    expect(html).toContain('/services/commercial/roof-repair/hoboken');
+    expect(html).toContain('/roof-repair-hoboken-nj');
   });
 });

@@ -5,6 +5,7 @@ import { buttonVariants } from "@/components/ui/button-variants";
 import { SectionWrapper } from "./section-wrapper";
 import { ScrollReveal } from "./scroll-reveal";
 import { cn } from "@/lib/utils";
+import { cityHubPath } from "@/lib/paths";
 
 export function ServiceAreasOverview() {
   const tier1 = getMunicipalitiesByTier(1);
@@ -24,7 +25,7 @@ export function ServiceAreasOverview() {
           {tier1.map((city) => (
             <Link
               key={city.slug}
-              href={`/service-areas/${city.slug}`}
+              href={cityHubPath(city.slug)}
               className="group flex items-center gap-2 bg-secondary rounded-lg p-4 text-text-primary hover:text-accent transition-colors duration-[150ms]"
             >
               <MapPin
@@ -44,7 +45,7 @@ export function ServiceAreasOverview() {
           {[...tier2, ...tier3].map((city) => (
             <Link
               key={city.slug}
-              href={`/service-areas/${city.slug}`}
+              href={cityHubPath(city.slug)}
               className="group flex items-center gap-2 text-text-primary hover:text-accent transition-colors duration-[150ms]"
             >
               <MapPin

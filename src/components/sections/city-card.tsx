@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import type { Municipality } from "@/data/types";
 import { cn } from "@/lib/utils";
+import { cityHubPath } from "@/lib/paths";
 
 interface CityCardProps {
   city: Municipality;
@@ -11,7 +12,7 @@ interface CityCardProps {
 export function CityCard({ city, featured = false }: CityCardProps) {
   return (
     <Link
-      href={`/service-areas/${city.slug}`}
+      href={cityHubPath(city.slug)}
       className={cn(
         "group block bg-secondary rounded-lg hover:border-accent border border-[#4a5040] transition-colors duration-[150ms]",
         featured ? "p-6" : "p-5",

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { LocationPricing } from "@/data/types";
+import { cityHubPath } from "@/lib/paths";
 
 interface LocationPricingSectionProps {
   locations: LocationPricing[];
@@ -21,7 +22,7 @@ export function LocationPricingSection({
           >
             <h3>
               <Link
-                href={`/service-areas/${location.citySlug}`}
+                href={cityHubPath(location.citySlug)}
                 className="text-lg font-heading font-bold text-accent hover:underline"
               >
                 {location.cityName}

@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { ALL_BLOG_ARTICLES } from '@/data/content/blog';
 import { SERVICES } from '@/data/services';
+import { servicePillarPath } from '@/lib/paths';
 
 describe('blog silo links', () => {
   const siloArticles = ALL_BLOG_ARTICLES.filter((a) => a.siloService !== null);
@@ -13,9 +14,9 @@ describe('blog silo links', () => {
     }
   });
 
-  it('every silo article parentPillarLink follows /services/{category}/{slug} pattern', () => {
+  it('every silo article parentPillarLink follows the flat pillar pattern (/<service>-jersey-city-nj)', () => {
     for (const article of siloArticles) {
-      const expectedLink = `/services/${article.siloCategory}/${article.siloService}`;
+      const expectedLink = servicePillarPath(article.siloService as string);
       expect(article.parentPillarLink, `${article.slug}: parentPillarLink mismatch`).toBe(expectedLink);
     }
   });
@@ -24,6 +25,6 @@ describe('blog silo links', () => {
     const article = ALL_BLOG_ARTICLES.find((a) => a.slug === 'preventative-roof-maintenance-checklist');
     expect(article).toBeDefined();
     expect(article!.siloCategory).toBe('commercial');
-    expect(article!.parentPillarLink).toBe('/services/commercial/roof-maintenance');
+    expect(article!.parentPillarLink).toBe('/roof-maintenance-jersey-city-nj');
   });
 });

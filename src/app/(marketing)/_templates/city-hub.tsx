@@ -6,7 +6,8 @@ import {
   buildCityRoofingContractorJsonLd,
   buildFaqPageJsonLd,
 } from '@/lib/seo/json-ld';
-import { getMunicipality, getAllMunicipalitySlugs } from '@/data/municipalities';
+import { getMunicipality } from '@/data/municipalities';
+import { cityHubPath } from '@/lib/paths';
 import { getTestimonialsByCity, TESTIMONIALS } from '@/data/testimonials';
 import { getServicesByCategory } from '@/data/services';
 import type { CityHubContent, Testimonial } from '@/data/types';
@@ -72,25 +73,16 @@ function getCityContent(slug: string): CityHubContent | undefined {
 // Static params and metadata
 // ---------------------------------------------------------------------------
 
-export const dynamicParams = false;
-
-export function generateStaticParams() {
-  return getAllMunicipalitySlugs().map((city) => ({ city }));
-}
-
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ city: string }>;
-}): Promise<Metadata> {
-  const { city: citySlug } = await params;
+export async function getCityHubMetadata(
+  citySlug: string,
+): Promise<Metadata> {
   const city = getMunicipality(citySlug);
   if (!city) return {};
 
   return generatePageMetadata({
     title: `Roofing Services in ${city.name}, NJ`,
     description: `Expert residential and commercial roofing in ${city.name}, NJ. Serving all ${city.neighborhoods.length} neighborhoods with ${city.population.toLocaleString()} residents. Roof repair, replacement, inspection & emergency services. Call for a free estimate.`,
-    path: `/service-areas/${city.slug}`,
+    path: cityHubPath(city.slug),
   });
 }
 
@@ -99,11 +91,10 @@ export async function generateMetadata({
 // ---------------------------------------------------------------------------
 
 export default async function CityHubPage({
-  params,
+  citySlug,
 }: {
-  params: Promise<{ city: string }>;
+  citySlug: string;
 }) {
-  const { city: citySlug } = await params;
   const city = getMunicipality(citySlug);
   const content = getCityContent(citySlug);
 

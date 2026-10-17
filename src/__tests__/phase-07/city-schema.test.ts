@@ -36,7 +36,7 @@ describe('city roofing contractor JSON-LD', () => {
       const areaServed = result['areaServed'] as Record<string, unknown>;
       expect(areaServed['@type']).toBe('City');
       expect(areaServed['name']).toBe('Jersey City');
-      expect(areaServed['@id']).toBe(`${BASE_URL}/service-areas/jersey-city#city`);
+      expect(areaServed['@id']).toBe(`${BASE_URL}/roofing-contractor-jersey-city-nj#city`);
     });
 
     it('has knowsAbout array with length > 0 containing city-specific entry', () => {
@@ -53,7 +53,7 @@ describe('city roofing contractor JSON-LD', () => {
     it('each makesOffer[].itemOffered has @id matching service pattern', () => {
       const makesOffer = result['makesOffer'] as Array<{ itemOffered: Record<string, unknown> }>;
       const serviceIdPattern = new RegExp(
-        `^${BASE_URL.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}/services/(residential|commercial)/[a-z-]+#service$`
+        `^${BASE_URL.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}/[a-z-]+-jersey-city-nj#service$`
       );
       makesOffer.forEach((offer) => {
         expect(offer.itemOffered['@id']).toMatch(serviceIdPattern);
@@ -97,7 +97,7 @@ describe('city roofing contractor JSON-LD', () => {
 
         // Check areaServed has proper @id
         const areaServed = result['areaServed'] as Record<string, unknown>;
-        expect(areaServed['@id']).toBe(`${BASE_URL}/service-areas/${slug}#city`);
+        expect(areaServed['@id']).toBe(`${BASE_URL}/roofing-contractor-${slug}-nj#city`);
         expect(areaServed['name']).toBe(city.name);
       }
     );

@@ -12,6 +12,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { getServicesByCategory } from "@/data/services";
+import { serviceCityPath } from "@/lib/paths";
 
 const RESIDENTIAL_ICONS: Record<string, LucideIcon> = {
   "roof-repair": Wrench,
@@ -58,7 +59,7 @@ export function ServicesInCityGrid({
           return (
             <Link
               key={service.slug}
-              href={`/services/${service.category}/${service.slug}/${citySlug}`}
+              href={serviceCityPath(service.slug, citySlug)}
               prefetch={false}
               className="group bg-dominant rounded-lg p-5 border border-[#4a5040] hover:border-accent transition-colors duration-[150ms]"
             >
@@ -85,7 +86,7 @@ export function ServicesInCityGrid({
           return (
             <Link
               key={service.slug}
-              href={`/services/${service.category}/${service.slug}/${citySlug}`}
+              href={serviceCityPath(service.slug, citySlug)}
               prefetch={false}
               className="group bg-dominant rounded-lg p-5 border border-[#4a5040] hover:border-accent transition-colors duration-[150ms]"
             >

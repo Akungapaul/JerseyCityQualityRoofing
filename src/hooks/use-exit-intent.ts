@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback, useRef } from "react";
+import { isFlatPagePath } from "@/lib/paths";
 
 let dismissed = false;
 
@@ -23,7 +24,7 @@ export function useExitIntent(options: UseExitIntentOptions = {}): {
     if (!enabled || dismissed) return;
 
     const pathname = window.location.pathname;
-    if (!pathname.startsWith("/services/") && !pathname.startsWith("/service-areas/")) {
+    if (!pathname.startsWith("/services/") && !isFlatPagePath(pathname)) {
       return;
     }
 
@@ -45,7 +46,7 @@ export function useExitIntent(options: UseExitIntentOptions = {}): {
     if (!enabled || dismissed) return;
 
     const pathname = window.location.pathname;
-    if (!pathname.startsWith("/services/") && !pathname.startsWith("/service-areas/")) {
+    if (!pathname.startsWith("/services/") && !isFlatPagePath(pathname)) {
       return;
     }
 

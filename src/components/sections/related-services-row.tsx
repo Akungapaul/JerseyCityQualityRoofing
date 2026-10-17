@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { getService } from "@/data/services";
+import { servicePillarPath } from "@/lib/paths";
 
 const SERVICE_ICON_MAP: Record<string, LucideIcon> = {
   "roof-repair": Wrench,
@@ -44,7 +45,7 @@ export function RelatedServicesRow({ serviceSlugs }: RelatedServicesRowProps) {
         {services.map((service) => (
           <Link
             key={service.slug}
-            href={`/services/residential/${service.slug}`}
+            href={servicePillarPath(service.slug)}
             className="bg-secondary rounded-lg p-6 group hover:bg-secondary-lighter transition-colors duration-[150ms]"
           >
             <service.Icon

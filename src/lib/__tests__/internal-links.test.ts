@@ -231,13 +231,13 @@ describe('internal-links', () => {
   describe('getServicePillarLink', () => {
     it('returns correct path for residential service', () => {
       const link = getServicePillarLink('roof-repair', 'residential');
-      expect(link.path).toBe('/services/residential/roof-repair');
+      expect(link.path).toBe('/roof-repair-jersey-city-nj');
       expect(link.type).toBe('service');
     });
 
     it('returns correct path for commercial service', () => {
       const link = getServicePillarLink('flat-roof-systems', 'commercial');
-      expect(link.path).toBe('/services/commercial/flat-roof-systems');
+      expect(link.path).toBe('/flat-roof-systems-jersey-city-nj');
       expect(link.type).toBe('service');
     });
   });
@@ -431,7 +431,7 @@ describe('internal-links', () => {
       // missing-shingles problem has relatedServiceSlugs: ['roof-repair', 'emergency-roofing']
       const results = getProblemRelatedServices('missing-shingles');
       expect(results.length).toBeGreaterThan(0);
-      expect(results.map((r) => r.path)).toContain('/services/residential/roof-repair');
+      expect(results.map((r) => r.path)).toContain('/roof-repair-jersey-city-nj');
     });
 
     it('getMaterialRelatedServices returns service links after initialization', () => {
@@ -439,7 +439,7 @@ describe('internal-links', () => {
       // asphalt-shingles material has relatedServiceSlugs: ['roof-repair', 'roof-replacement']
       const results = getMaterialRelatedServices('asphalt-shingles');
       expect(results.length).toBeGreaterThan(0);
-      expect(results.map((r) => r.path)).toContain('/services/residential/roof-repair');
+      expect(results.map((r) => r.path)).toContain('/roof-repair-jersey-city-nj');
     });
   });
 });

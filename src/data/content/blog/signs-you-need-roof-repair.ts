@@ -8,7 +8,7 @@ export const SIGNS_YOU_NEED_ROOF_REPAIR: BlogArticle = {
     'How to spot roof damage early before a minor leak becomes a major renovation in your Hudson County home.',
   siloService: 'roof-repair',
   siloCategory: 'residential',
-  parentPillarLink: '/services/residential/roof-repair',
+  parentPillarLink: '/roof-repair-jersey-city-nj',
   author: 'Jersey City Quality Roofing Team',
   publishDate: '2026-01-15',
   updatedDate: null,

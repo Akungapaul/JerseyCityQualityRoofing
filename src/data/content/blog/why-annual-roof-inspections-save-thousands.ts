@@ -8,7 +8,7 @@ export const WHY_ANNUAL_ROOF_INSPECTIONS: BlogArticle = {
     'The preventative investment that protects your home, your wallet, and your peace of mind against Hudson County weather.',
   siloService: 'roof-inspection',
   siloCategory: 'residential',
-  parentPillarLink: '/services/residential/roof-inspection',
+  parentPillarLink: '/roof-inspection-jersey-city-nj',
   author: 'Jersey City Quality Roofing Team',
   publishDate: '2026-01-29',
   updatedDate: null,

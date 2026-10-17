@@ -6,8 +6,9 @@ import {
   buildServiceInCityJsonLd,
   buildFaqPageJsonLd,
 } from '@/lib/seo/json-ld';
-import { getService, getResidentialServiceSlugs } from '@/data/services';
-import { getMunicipality, getAllMunicipalitySlugs } from '@/data/municipalities';
+import { getService } from '@/data/services';
+import { getMunicipality } from '@/data/municipalities';
+import { serviceCityPath, servicePillarPath, cityHubPath } from '@/lib/paths';
 import { getCityServiceContent } from '@/data/service-city-content';
 import {
   getTestimonialsByCityAndService,
@@ -194,27 +195,15 @@ const CONTENT_MAP: Record<string, Record<string, ServiceInCityContent>> = {
 // Static params and metadata
 // ---------------------------------------------------------------------------
 
-export const dynamicParams = false;
-
-export function generateStaticParams() {
-  const services = getResidentialServiceSlugs();
-  const cities = getAllMunicipalitySlugs();
-  return services.flatMap((service) =>
-    cities.map((city) => ({ service, city }))
-  );
-}
-
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ service: string; city: string }>;
-}): Promise<Metadata> {
-  const { service: serviceSlug, city: citySlug } = await params;
+export async function getResidentialComboMetadata(
+  serviceSlug: string,
+  citySlug: string,
+): Promise<Metadata> {
   const service = getService(serviceSlug);
   const city = getMunicipality(citySlug);
   if (!service || !city) return {};
 
-  const canonicalPath = `/services/residential/${service.slug}/${city.slug}`;
+  const canonicalPath = serviceCityPath(service.slug, city.slug);
   const metadata = generatePageMetadata({
     title: `${service.name} in ${city.name}, NJ`,
     description: `${service.name} in ${city.name}, NJ for leaks, storm damage, inspections, and estimates from Hudson County roofing pros.`,
@@ -242,11 +231,12 @@ export async function generateMetadata({
 // ---------------------------------------------------------------------------
 
 export default async function ResidentialServiceCityPage({
-  params,
+  serviceSlug,
+  citySlug,
 }: {
-  params: Promise<{ service: string; city: string }>;
+  serviceSlug: string;
+  citySlug: string;
 }) {
-  const { service: serviceSlug, city: citySlug } = await params;
   const service = getService(serviceSlug);
   const city = getMunicipality(citySlug);
   const content = CONTENT_MAP[citySlug]?.[serviceSlug];
@@ -261,7 +251,7 @@ export default async function ResidentialServiceCityPage({
     service.emergencyAvailable === true && serviceSlug === 'emergency-roofing';
 
   // Canonical URL
-  const canonicalUrl = `${BASE_URL}/services/residential/${serviceSlug}/${citySlug}`;
+  const canonicalUrl = `${BASE_URL}${serviceCityPath(serviceSlug, citySlug)}`;
 
   // Merge FAQs: resolver's city-specific FAQs + content file's extended FAQs
   const mergedFaqs: FAQ[] = [
@@ -319,8 +309,8 @@ export default async function ResidentialServiceCityPage({
           <LocalServiceContext
             heading={`${service.name} in ${city.name}: What Local Homeowners Need to Know`}
             narrative={content.cityServiceNarrative}
-            servicePageLink={`/services/residential/${serviceSlug}`}
-            cityPageLink={`/service-areas/${citySlug}`}
+            servicePageLink={servicePillarPath(serviceSlug)}
+            cityPageLink={cityHubPath(citySlug)}
             serviceName={service.name}
             cityName={city.name}
           />

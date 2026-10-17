@@ -38,15 +38,15 @@ describe('Blog article content validation', () => {
     });
   });
 
-  it('silo-supporting articles should have valid parentPillarLink paths starting with /services/', () => {
+  it('silo-supporting articles should have valid parentPillarLink paths (flat pillar: /<service>-jersey-city-nj)', () => {
     const siloArticles = ALL_BLOG_ARTICLES.filter(
       (a) => a.parentPillarLink !== null,
     );
     siloArticles.forEach((article) => {
       expect(
         article.parentPillarLink,
-        `${article.slug} parentPillarLink should start with /services/`,
-      ).toMatch(/^\/services\//);
+        `${article.slug} parentPillarLink should be a flat Jersey City pillar path`,
+      ).toMatch(/^\/[a-z0-9-]+-jersey-city-nj$/);
     });
   });
 
