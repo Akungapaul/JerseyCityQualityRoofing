@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const WEST_NEW_YORK_EMERGENCY_ROOFING_CONTENT: ServiceInCityContent = {
   serviceSlug: 'emergency-roofing',
   citySlug: 'west-new-york',
-  heroHeadline: 'Emergency Roofing in West New York, NJ',
-  heroSubtitle: 'Cliff-edge storms hit West New York harder than anywhere else in Hudson County -- our 24/7 emergency crews respond with wind-rated temporary protection and permanent repairs.',
+  heroHeadline: 'Emergency Roof Repair West New York, NJ',
+  seoTitle: 'Emergency Roof Repair West New York, NJ',
+  heroSubtitle: 'Emergency Roof Repair West New York, NJ — Cliff-edge storms hit West New York harder than anywhere else in Hudson County -- our 24/7 emergency crews respond with wind-rated temporary protection and permanent repairs.',
 
   cityServiceNarrative: `Emergency roofing in West New York exists in a category of its own within Hudson County because the Palisades cliff-edge geography transforms ordinary storms into extraordinary events for the buildings perched along Boulevard East and the surrounding neighborhoods. When a nor'easter or a summer thunderstorm crosses Hudson County, most municipalities experience the standard regional wind and rain conditions. West New York's cliff-edge buildings experience something measurably worse. The wind accelerates as it rises over the Palisades cliff face from the east, and approaching storm systems from the west slam into the cliff crest with concentrated force. The result is that buildings in West New York, particularly those along Boulevard East, sustain emergency-level roof damage during storms that cause only minor issues in adjacent Union City or in the lower-elevation communities along the Hudson waterfront.
 

@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const GUTTENBERG_ROOF_INSPECTION_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-inspection',
   citySlug: 'guttenberg',
-  heroHeadline: 'Professional Roof Inspection in Guttenberg, NJ',
-  heroSubtitle: 'Comprehensive roof condition assessments for America\'s densest municipality, where cliff-edge wind exposure and high-rise elevation demand inspection protocols far beyond standard residential practice.',
+  heroHeadline: 'Roof Inspection Guttenberg, NJ',
+  seoTitle: 'Roof Inspection Guttenberg, NJ',
+  heroSubtitle: 'Roof Inspection Guttenberg, NJ — comprehensive roof condition assessments for America\'s densest municipality, where cliff-edge wind exposure and high-rise elevation demand inspection protocols far beyond standard residential practice.',
 
   cityServiceNarrative: `Roof inspection in Guttenberg serves a fundamentally different purpose than inspection in a typical residential community. In most towns, a roof inspection is a homeowner maintenance activity, a prudent check performed annually or before a real estate transaction. In Guttenberg, where virtually every building is a multi-family structure governed by a condo board or management company, roof inspection is a fiduciary obligation. The building board has a duty to maintain the common elements of the property, and the roof is typically the single most expensive common element. A failure to inspect leads to deferred maintenance, which leads to emergency repairs at premium cost, which leads to special assessments that anger unit owners. Our inspection programs for Guttenberg buildings provide the documentation, condition ratings, and budget recommendations that boards need to fulfill their maintenance obligations responsibly.
 

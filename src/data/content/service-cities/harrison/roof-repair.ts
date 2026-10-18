@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const HARRISON_ROOF_REPAIR_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-repair',
   citySlug: 'harrison',
-  heroHeadline: 'Expert Roof Repair in Harrison, NJ',
-  heroSubtitle: 'From century-old two-family homes near Harrison Center to brand-new waterfront condos along the Passaic River, we diagnose every leak and deliver lasting repairs across both sides of Harrison\'s building divide.',
+  heroHeadline: 'Roof Repair Harrison, NJ',
+  seoTitle: 'Roof Repair Harrison, NJ',
+  heroSubtitle: 'Roof Repair Harrison, NJ — from century-old two-family homes near Harrison Center to brand-new waterfront condos along the Passaic River, we diagnose every leak and deliver lasting repairs across both sides of Harrison\'s building divide.',
 
   cityServiceNarrative: `Roof repair in Harrison requires a contractor who operates comfortably in two completely different worlds. On any given day, our morning call might bring us to a 1920s two-family home on Harrison Avenue where layers of patch-over-patch repairs have masked the real source of a leak for years, and our afternoon call sends us to a five-year-old luxury condo building on the waterfront where a warranty-covered membrane seam has separated and the property manager needs documentation that meets the developer's maintenance protocol. No other municipality in Hudson County presents this kind of split personality in its roofing repair needs, and the contractors who treat Harrison like a single market end up doing poor work on one side of the divide.
 

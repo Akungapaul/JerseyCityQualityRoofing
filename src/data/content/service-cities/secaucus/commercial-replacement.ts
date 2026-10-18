@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const SECAUCUS_COMMERCIAL_REPLACEMENT_CONTENT: ServiceInCityContent = {
   serviceSlug: 'commercial-replacement',
   citySlug: 'secaucus',
-  heroHeadline: 'Commercial Roof Replacement in Secaucus, NJ',
-  heroSubtitle: 'Replacing aging commercial membranes with drainage-engineered systems that solve the chronic ponding plaguing Meadowlands warehouses, outlets, and hospitality buildings.',
+  heroHeadline: 'Commercial Roof Replacement Secaucus, NJ',
+  seoTitle: 'Commercial Roof Replacement Secaucus, NJ',
+  heroSubtitle: 'Commercial Roof Replacement Secaucus, NJ — replacing aging commercial membranes with drainage-engineered systems that solve the chronic ponding plaguing Meadowlands warehouses, outlets, and hospitality buildings.',
 
   cityServiceNarrative: `Commercial roof replacement in Secaucus represents the most technically demanding roofing work we perform in Hudson County because it combines the largest roof footprints in the county with the worst drainage conditions and the most aggressive moisture environment. When we replace a commercial roof on a Meadowlands-area warehouse, an outlet center building, or a hospitality property near Secaucus Junction, we are not simply installing a new membrane over the existing structure. We are redesigning the entire water management system to solve the chronic ponding that defined the old roof's failure, engineering positive drainage that the original construction never provided, and specifying membrane materials that are selected for the specific demands of each building's use and exposure in the Meadowlands environment.
 

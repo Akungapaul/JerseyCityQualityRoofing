@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const HOBOKEN_COMMERCIAL_REPLACEMENT_CONTENT: ServiceInCityContent = {
   serviceSlug: 'commercial-replacement',
   citySlug: 'hoboken',
-  heroHeadline: 'Commercial Roof Replacement in Hoboken, NJ',
-  heroSubtitle: 'Full-system replacement for Hoboken\'s aging commercial buildings, from Washington Street retail to waterfront office towers.',
+  heroHeadline: 'Commercial Roof Replacement Hoboken, NJ',
+  seoTitle: 'Commercial Roof Replacement Hoboken, NJ',
+  heroSubtitle: 'Commercial Roof Replacement Hoboken, NJ — full-system replacement for Hoboken\'s aging commercial buildings, from Washington Street retail to waterfront office towers.',
 
   cityServiceNarrative: `Commercial roof replacement in Hoboken is a capital investment that protects everything beneath it: the revenue-generating tenants, the building structure, the mechanical systems, and the property value that makes ownership worthwhile in a city where commercial real estate commands premium pricing per square foot. When a property manager or building owner reaches the point where replacement is the right decision, the execution must account for every factor that makes Hoboken different from any other market in Hudson County.
 

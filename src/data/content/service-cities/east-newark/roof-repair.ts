@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const EAST_NEWARK_ROOF_REPAIR_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-repair',
   citySlug: 'east-newark',
-  heroHeadline: 'Expert Roof Repair in East Newark, NJ',
-  heroSubtitle: 'In a borough where every home is your neighbor, we deliver roof repairs with the care and precision that a tight-knit community demands.',
+  heroHeadline: 'Roof Repair East Newark, NJ',
+  seoTitle: 'Roof Repair East Newark, NJ',
+  heroSubtitle: 'Roof Repair East Newark, NJ — In a borough where every home is your neighbor, we deliver roof repairs with the care and precision that a tight-knit community demands.',
 
   cityServiceNarrative: `Roof repair in East Newark is unlike any other municipality in Hudson County, and it all comes down to scale. At just 0.11 square miles with roughly 2,700 residents, East Newark is the smallest borough in New Jersey, and that changes everything about how we approach every repair call. When a homeowner on Sherman Avenue notices water stains on a bedroom ceiling, there is a reasonable chance we have already worked on their building, their neighbor's building, or the row house connected to theirs by a shared party wall. That familiarity is not something we had to build through a marketing campaign. It developed naturally because in a community this compact, every roofing job is visible to the entire block.
 

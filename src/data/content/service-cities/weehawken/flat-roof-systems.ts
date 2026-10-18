@@ -4,9 +4,9 @@ export const WEEHAWKEN_FLAT_ROOF_SYSTEMS_CONTENT: ServiceInCityContent = {
   serviceSlug: 'flat-roof-systems',
   citySlug: 'weehawken',
 
-  heroHeadline: 'Flat Roof Systems in Weehawken, NJ',
-  heroSubtitle:
-    'From the massive commercial membranes atop Port Imperial luxury towers to the flat-roofed additions on Heights Victorians, we install and maintain flat roof systems built for every Weehawken condition.',
+  heroHeadline: 'Flat Roof Systems Weehawken, NJ',
+  seoTitle: 'Flat Roof Systems Weehawken, NJ',
+  heroSubtitle: 'Flat Roof Systems Weehawken, NJ — from the massive commercial membranes atop Port Imperial luxury towers to the flat-roofed additions on Heights Victorians, we install and maintain flat roof systems built for every Weehawken condition.',
 
   cityServiceNarrative: `Flat roof systems in Weehawken operate in what may be the most demanding environment in Hudson County, and the demands vary dramatically based on location within the township. The waterfront buildings at Port Imperial and Lincoln Harbor have some of the largest flat-roof installations in the area, with commercial membrane systems covering tens of thousands of square feet on buildings that are directly exposed to Hudson River salt spray, sustained humidity, and the wind-tunnel effects created by rows of luxury high-rises along the waterfront. At the other end of the spectrum, The Heights neighborhood contains hundreds of flat-roofed additions, enclosed porches, and low-slope extensions on century-old homes where the flat section is a secondary roof element that must integrate seamlessly with the pitched main roof above it.
 

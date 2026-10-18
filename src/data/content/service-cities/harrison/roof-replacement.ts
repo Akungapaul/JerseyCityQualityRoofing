@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const HARRISON_ROOF_REPLACEMENT_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-replacement',
   citySlug: 'harrison',
-  heroHeadline: 'Complete Roof Replacement in Harrison, NJ',
-  heroSubtitle: 'Whether your 1920s two-family home needs a full tear-off after decades of layered repairs or your Riverbend townhouse has reached the end of its original system life, we deliver replacement roofing engineered for Harrison\'s river-adjacent environment.',
+  heroHeadline: 'Roof Replacement Harrison, NJ',
+  seoTitle: 'Roof Replacement Harrison, NJ',
+  heroSubtitle: 'Roof Replacement Harrison, NJ — Whether your 1920s two-family home needs a full tear-off after decades of layered repairs or your Riverbend townhouse has reached the end of its original system life, we deliver replacement roofing engineered for Harrison\'s river-adjacent environment.',
 
   cityServiceNarrative: `Roof replacement in Harrison is a study in contrasts that reflects the town's unique position as the most actively transforming municipality in Hudson County. On the traditional residential blocks around Harrison Center and Davis Avenue, replacement projects involve peeling back decades of roofing history, sometimes three or four layers of shingles stacked on deteriorating decking that has been absorbing Passaic River humidity for generations. On the waterfront and in the Riverbend District, replacement projects address relatively young roof systems that have reached the end of their initial service life faster than expected because the river environment accelerated material degradation beyond what the original specifications anticipated.
 

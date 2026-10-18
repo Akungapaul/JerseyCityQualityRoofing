@@ -2,8 +2,9 @@ import type { CityHubContent } from '@/data/types';
 
 export const EAST_NEWARK_CONTENT: CityHubContent = {
   slug: 'east-newark',
-  heroHeadline: 'Dedicated Roofing Contractor in East Newark, NJ',
-  heroSubtitle: 'In the smallest borough in Hudson County, we know every block, every building, and every roofing challenge that comes with a tightly packed community along the Passaic River.',
+  heroHeadline: 'Roofing Contractor East Newark, NJ',
+  seoTitle: 'Roofing Contractor East Newark, NJ',
+  heroSubtitle: 'Roofing Contractor East Newark, NJ — In the smallest borough in Hudson County, we know every block, every building, and every roofing challenge that comes with a tightly packed community along the Passaic River.',
 
   localExpertiseNarrative: `East Newark is a place that most people drive through without realizing they have entered and left a separate municipality. At just 0.11 square miles, it is the smallest borough in Hudson County and one of the smallest municipalities in all of New Jersey. But within that compact footprint, there is a concentrated collection of homes, families, and roofing needs that we know as well as any neighborhood in the region. When a homeowner on Third Street calls about a leak, we already have a mental picture of the building because we have likely worked on the house next door, or the one across the street, or the two-family home on the corner that shares a party wall with three adjacent structures.
 

@@ -4,9 +4,9 @@ export const JERSEY_CITY_ROOF_REPLACEMENT_CONTENT = {
   serviceSlug: 'roof-replacement',
   citySlug: 'jersey-city',
 
-  heroHeadline: 'Complete Roof Replacement in Jersey City, NJ',
-  heroSubtitle:
-    'Protecting Jersey City homes from brownstone flat roofs to Heights colonials with roofing systems engineered for coastal urban conditions.',
+  heroHeadline: 'Roof Replacement Jersey City, NJ',
+  seoTitle: 'Roof Replacement Jersey City, NJ',
+  heroSubtitle: 'Roof Replacement Jersey City, NJ — protecting Jersey City homes from brownstone flat roofs to Heights colonials with roofing systems engineered for coastal urban conditions.',
 
   cityServiceNarrative: `A roof replacement in Jersey City is a project shaped by the specific building you live in, the neighborhood it sits in, and the environmental forces it faces every day. This is not a suburb where every house is a ranch on a quarter-acre lot with clear access from all four sides. Jersey City has 120,000 housing units spread across neighborhoods as different as Downtown, The Heights, Journal Square, Bergen-Lafayette, Greenville, and the West Side, and the replacement approach for a three-story brownstone in Paulus Hook has almost nothing in common with the approach for a Cape Cod in Greenville.
 

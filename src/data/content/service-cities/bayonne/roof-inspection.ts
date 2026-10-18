@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const BAYONNE_ROOF_INSPECTION_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-inspection',
   citySlug: 'bayonne',
-  heroHeadline: 'Professional Roof Inspection in Bayonne, NJ',
-  heroSubtitle: 'Comprehensive assessments tailored for peninsula homes where salt air, multi-directional wind, and coastal humidity create hidden damage that visual checks alone cannot detect.',
+  heroHeadline: 'Roof Inspection Bayonne, NJ',
+  seoTitle: 'Roof Inspection Bayonne, NJ',
+  heroSubtitle: 'Roof Inspection Bayonne, NJ — comprehensive assessments tailored for peninsula homes where salt air, multi-directional wind, and coastal humidity create hidden damage that visual checks alone cannot detect.',
 
   cityServiceNarrative: `A roof inspection in Bayonne cannot follow the same checklist used in inland communities because the conditions affecting Bayonne roofs are fundamentally different. This city sits on a peninsula surrounded by water on three sides — Newark Bay to the west, the Kill Van Kull to the south, and New York Bay to the east — and that geography creates an environment where roofing materials degrade through mechanisms that standard inspections are not designed to detect. Salt spray corrosion on concealed metal components, moisture trapped in the roof assembly by humid coastal air, wind damage from multiple directions simultaneously, and industrial particulate buildup near Constable Hook all require inspection protocols tailored specifically for peninsula conditions.
 

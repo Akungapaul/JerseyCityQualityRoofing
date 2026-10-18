@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const NORTH_BERGEN_EMERGENCY_ROOFING_CONTENT: ServiceInCityContent = {
   serviceSlug: 'emergency-roofing',
   citySlug: 'north-bergen',
-  heroHeadline: 'Emergency Roofing Services in North Bergen, NJ',
-  heroSubtitle: 'When the Palisades ridge wind tears into your roof at 2 AM, our emergency crew is already mobilizing -- 24/7 storm response for every North Bergen neighborhood.',
+  heroHeadline: 'Emergency Roof Repair North Bergen, NJ',
+  seoTitle: 'Emergency Roof Repair North Bergen, NJ',
+  heroSubtitle: 'Emergency Roof Repair North Bergen, NJ — When the Palisades ridge wind tears into your roof at 2 AM, our emergency crew is already mobilizing -- 24/7 storm response for every North Bergen neighborhood.',
 
   cityServiceNarrative: `Emergency roofing calls from North Bergen arrive with an intensity and urgency that reflect the township's position atop the Palisades. When a nor'easter drives sustained winds over the ridge at 60 mph or more, the damage it causes in Woodcliff and Tyler Park can be catastrophic compared to what the same storm produces at lower elevations. We have responded to North Bergen emergencies where an entire section of ridge cap shingles was peeled off a colonial in Woodcliff, allowing wind-driven rain to pour directly into the attic, while homes at the base of the same hill in Nungessers experienced nothing more than minor shingle lift. That difference in damage severity is the Palisades effect, and it drives more emergency roofing calls from North Bergen than from any comparably sized community in Hudson County.
 

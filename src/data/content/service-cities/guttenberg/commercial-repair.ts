@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const GUTTENBERG_COMMERCIAL_REPAIR_CONTENT: ServiceInCityContent = {
   serviceSlug: 'commercial-repair',
   citySlug: 'guttenberg',
-  heroHeadline: 'Commercial Roof Repair in Guttenberg, NJ',
-  heroSubtitle: 'Specialized commercial repair for Galaxy Towers, Boulevard East high-rises, and Bergenline Avenue retail buildings in America\'s densest municipality, where commercial-grade flat roofs cover every structure in town.',
+  heroHeadline: 'Commercial Roof Repair Guttenberg, NJ',
+  seoTitle: 'Commercial Roof Repair Guttenberg, NJ',
+  heroSubtitle: 'Commercial Roof Repair Guttenberg, NJ — specialized commercial repair for Galaxy Towers, Boulevard East high-rises, and Bergenline Avenue retail buildings in America\'s densest municipality, where commercial-grade flat roofs cover every structure in town.',
 
   cityServiceNarrative: `Commercial roof repair in Guttenberg exists in a context that defies conventional categories. In most municipalities, commercial roofing is a subset of the overall market, distinguished from residential work by building size, membrane type, and property management structure. In Guttenberg, the distinction is meaningless because virtually every building in town is a commercial-grade flat-roof structure managed by a property management company or condo board. The 57,000 people living within 0.19 square miles occupy high-rise towers, mid-rise apartment complexes, and mixed-use buildings that all require the commercial roofing expertise typically reserved for office parks and shopping centers. Commercial roof repair in Guttenberg is simply roof repair in Guttenberg, and every repair we perform here uses commercial-grade techniques, materials, and quality standards.
 

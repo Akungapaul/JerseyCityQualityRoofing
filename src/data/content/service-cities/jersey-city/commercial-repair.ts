@@ -4,9 +4,9 @@ export const JERSEY_CITY_COMMERCIAL_REPAIR_CONTENT = {
   serviceSlug: 'commercial-repair',
   citySlug: 'jersey-city',
 
-  heroHeadline: 'Commercial Roof Repair in Jersey City, NJ',
-  heroSubtitle:
-    'Fast, reliable repair for membrane breaches, flashing failures, and drainage problems on Jersey City commercial buildings.',
+  heroHeadline: 'Commercial Roof Repair Jersey City, NJ',
+  seoTitle: 'Commercial Roof Repair Jersey City, NJ',
+  heroSubtitle: 'Commercial Roof Repair Jersey City, NJ — fast, reliable repair for membrane breaches, flashing failures, and drainage problems on Jersey City commercial buildings.',
 
   cityServiceNarrative: `Commercial roof repair in Jersey City addresses a fundamentally different set of problems than residential work. When a building owner in Downtown calls about a leak in a fourth-floor office suite, the diagnosis involves tracing water through a membrane system that may span ten thousand square feet of flat surface area, with dozens of penetrations for HVAC equipment, vent stacks, electrical conduit, and drainage infrastructure. The leak source is almost never directly above the visible water damage. On commercial flat roofs, water travels horizontally beneath the membrane along insulation board joints and structural deck flutes, sometimes migrating thirty feet or more from the entry point before gravity pulls it through a seam, fastener hole, or deck penetration into the occupied space below.
 

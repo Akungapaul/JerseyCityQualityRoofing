@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const WEST_NEW_YORK_COMMERCIAL_REPLACEMENT_CONTENT: ServiceInCityContent = {
   serviceSlug: 'commercial-replacement',
   citySlug: 'west-new-york',
-  heroHeadline: 'Commercial Roof Replacement in West New York, NJ',
-  heroSubtitle: 'Full commercial roof systems engineered for Palisades cliff-edge forces -- from Boulevard East hospitality towers to Bergenline Avenue retail, built for the wind this geography delivers.',
+  heroHeadline: 'Commercial Roof Replacement West New York, NJ',
+  seoTitle: 'Commercial Roof Replacement West New York, NJ',
+  heroSubtitle: 'Commercial Roof Replacement West New York, NJ — full commercial roof systems engineered for Palisades cliff-edge forces -- from Boulevard East hospitality towers to Bergenline Avenue retail, built for the wind this geography delivers.',
 
   cityServiceNarrative: `Commercial roof replacement in West New York represents the highest-stakes roofing work we perform in Hudson County. The combination of large commercial roof areas, the Palisades cliff-edge wind engineering requirements, the business-continuity demands of occupied commercial buildings, and the access logistics on tall Boulevard East structures creates a project complexity that exceeds any other municipality in our service area. Every commercial replacement we design for West New York starts with the same question: what are the actual wind forces at this specific property, and how do we engineer a roof system that will resist those forces for the next twenty-five to thirty years without the chronic repair cycle that underspecified installations produce?
 

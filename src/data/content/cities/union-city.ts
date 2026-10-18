@@ -2,8 +2,9 @@ import type { CityHubContent } from '@/data/types';
 
 export const UNION_CITY_CONTENT: CityHubContent = {
   slug: 'union-city',
-  heroHeadline: 'Expert Roofing Contractor in Union City, NJ',
-  heroSubtitle: 'From Bergenline Avenue storefronts to the tightly packed row houses of the most densely populated city in New Jersey, we protect every roof in Union City.',
+  heroHeadline: 'Roofing Contractor Union City, NJ',
+  seoTitle: 'Roofing Contractor Union City, NJ',
+  heroSubtitle: 'Roofing Contractor Union City, NJ — from Bergenline Avenue storefronts to the tightly packed row houses of the most densely populated city in New Jersey, we protect every roof in Union City.',
 
   localExpertiseNarrative: `Working on roofs in Union City is unlike roofing anywhere else in New Jersey, and we say that from direct experience. This is a city where 73,999 people occupy just 1.27 square miles, making it the most densely populated municipality in the state and one of the most densely populated in the entire country. That density shapes every single roofing project we take on here. When a property owner on 32nd Street calls about a leak in their third-floor apartment, we already know we are walking into a row house where the building shares party walls with neighbors on both sides, where the roof access is through a narrow scuttle hatch, and where the delivery truck carrying our materials will need to double-park on a one-way street because there is no staging area within two blocks.
 

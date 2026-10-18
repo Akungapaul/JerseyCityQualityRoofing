@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const NORTH_BERGEN_ROOF_INSPECTION_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-inspection',
   citySlug: 'north-bergen',
-  heroHeadline: 'Professional Roof Inspection in North Bergen, NJ',
-  heroSubtitle: 'Elevation-aware assessments that account for Palisades ridge wind, steep terrain drainage, and the unique wear patterns North Bergen roofs develop.',
+  heroHeadline: 'Roof Inspection North Bergen, NJ',
+  seoTitle: 'Roof Inspection North Bergen, NJ',
+  heroSubtitle: 'Roof Inspection North Bergen, NJ — Elevation-aware assessments that account for Palisades ridge wind, steep terrain drainage, and the unique wear patterns North Bergen roofs develop.',
 
   cityServiceNarrative: `Roof inspections in North Bergen require an understanding of the Palisades escarpment and how it shapes the performance envelope of every roof in the township. A thorough inspection here is not the same as a thorough inspection in a flat-terrain community. When we inspect a roof on a colonial in Woodcliff, we are looking for specific wear patterns that only Palisades ridge properties develop: accelerated granule loss on west-facing slopes, backed-out fasteners from sustained uplift cycles, stressed adhesive bonds on ridge cap shingles, and micro-fractures in flashing sealant caused by the rapid thermal cycling that elevation amplifies. A generic checklist misses these elevation-specific failure indicators entirely, which is why we developed our North Bergen inspection protocol to address the conditions this township actually imposes on roofing systems.
 

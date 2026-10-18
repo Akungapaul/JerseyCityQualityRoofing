@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const KEARNY_ROOF_INSPECTION_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-inspection',
   citySlug: 'kearny',
-  heroHeadline: 'Comprehensive Roof Inspection in Kearny, NJ',
-  heroSubtitle: 'From Victorian slate assessments in Kearny Center to industrial membrane surveys in South Kearny, we deliver inspection reports calibrated to the specific demands of every building type in town.',
+  heroHeadline: 'Roof Inspection Kearny, NJ',
+  seoTitle: 'Roof Inspection Kearny, NJ',
+  heroSubtitle: 'Roof Inspection Kearny, NJ — from Victorian slate assessments in Kearny Center to industrial membrane surveys in South Kearny, we deliver inspection reports calibrated to the specific demands of every building type in town.',
 
   cityServiceNarrative: `Roof inspection in Kearny requires a level of diagnostic breadth that is unique in Hudson County. In most municipalities, an inspector encounters one or two building types and adjusts their checklist accordingly. In Kearny, a single day of inspections might include a Victorian slate roof with a turret and four dormers in Kearny Center, a 1950s Cape Cod with an original three-tab shingle system near Gunnell Oval, a two-family home with a combination pitched-and-flat roof on a side street off Passaic Avenue, and a 45,000-square-foot warehouse membrane in the South Kearny industrial zone. Each of these inspections requires a fundamentally different evaluation framework, different failure patterns to look for, and different recommendations based on what we find. This is why we staff Kearny inspections with our most experienced technicians who have the cross-disciplinary knowledge to assess every roof type the town presents.
 

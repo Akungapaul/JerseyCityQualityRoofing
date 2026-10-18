@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const HARRISON_ROOF_INSPECTION_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-inspection',
   citySlug: 'harrison',
-  heroHeadline: 'Professional Roof Inspection in Harrison, NJ',
-  heroSubtitle: 'From pre-purchase inspections on century-old two-family homes to warranty compliance assessments on waterfront luxury buildings, we deliver the detailed diagnostics Harrison\'s dual building market demands.',
+  heroHeadline: 'Roof Inspection Harrison, NJ',
+  seoTitle: 'Roof Inspection Harrison, NJ',
+  heroSubtitle: 'Roof Inspection Harrison, NJ — from pre-purchase inspections on century-old two-family homes to warranty compliance assessments on waterfront luxury buildings, we deliver the detailed diagnostics Harrison\'s dual building market demands.',
 
   cityServiceNarrative: `Roof inspection in Harrison serves two fundamentally different markets that happen to exist within the same square mile, and understanding the distinction between them is what separates a useful inspection from a generic checklist exercise. The traditional homes in Harrison Center, along Davis Avenue, and near West Hudson Park need inspections focused on aging materials, accumulated deferred maintenance, and the subtle signs that Passaic River humidity has been working on the building envelope for decades. The waterfront developments and Riverbend townhouses need inspections focused on warranty compliance, manufacturer-specified maintenance tracking, and the premature wear patterns that the river environment inflicts on materials that were specified for less demanding conditions.
 

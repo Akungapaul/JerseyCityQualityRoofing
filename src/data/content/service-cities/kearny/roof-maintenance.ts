@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const KEARNY_ROOF_MAINTENANCE_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-maintenance',
   citySlug: 'kearny',
-  heroHeadline: 'Roof Maintenance Services in Kearny, NJ',
-  heroSubtitle: 'Proactive maintenance calibrated to Kearny\'s unique combination of Victorian complexity, Meadowlands humidity, and South Kearny industrial exposure keeps your roof performing years beyond its expected lifespan.',
+  heroHeadline: 'Roof Maintenance Kearny, NJ',
+  seoTitle: 'Roof Maintenance Kearny, NJ',
+  heroSubtitle: 'Roof Maintenance Kearny, NJ — proactive maintenance calibrated to Kearny\'s unique combination of Victorian complexity, Meadowlands humidity, and South Kearny industrial exposure keeps your roof performing years beyond its expected lifespan.',
 
   cityServiceNarrative: `Roof maintenance in Kearny is not a one-size-fits-all service because the town's building stock and environmental conditions vary more dramatically within its nine square miles than across some entire counties. A maintenance program that keeps a West Kearny Cape Cod healthy is insufficient for a Victorian in Kearny Center, and both are fundamentally different from the maintenance regimen that a South Kearny warehouse demands. We have developed Kearny-specific maintenance protocols for each building type and environmental zone that address the actual deterioration patterns we observe rather than applying generic checklists that may be appropriate for buildings in more homogeneous communities.
 

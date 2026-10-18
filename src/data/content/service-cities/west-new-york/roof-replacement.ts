@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const WEST_NEW_YORK_ROOF_REPLACEMENT_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-replacement',
   citySlug: 'west-new-york',
-  heroHeadline: 'Roof Replacement in West New York, NJ',
-  heroSubtitle: 'Engineered for Palisades wind exposure -- new roof systems designed to withstand the cliff-edge gusts that define roofing in West New York.',
+  heroHeadline: 'Roof Replacement West New York, NJ',
+  seoTitle: 'Roof Replacement West New York, NJ',
+  heroSubtitle: 'Roof Replacement West New York, NJ — engineered for Palisades wind exposure -- new roof systems designed to withstand the cliff-edge gusts that define roofing in West New York.',
 
   cityServiceNarrative: `Roof replacement in West New York is an engineering exercise as much as a construction project. Every new roof system we install in this cliff-top town must be designed to withstand wind forces that are measurably higher than what identical buildings experience at lower elevations throughout Hudson County. The Palisades cliff edge that defines West New York's eastern boundary creates wind acceleration effects that push standard roofing specifications past their limits, and the consequences of installing a roof system that ignores these conditions become apparent within the first serious storm. We have seen brand-new roofs installed by contractors unfamiliar with Palisades conditions lose shingles, suffer membrane edge peeling, and develop parapet failures within months of installation because the materials and fastening methods were specified for a generic wind zone rather than for the actual cliff-edge forces this geography delivers.
 

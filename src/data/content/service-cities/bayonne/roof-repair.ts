@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const BAYONNE_ROOF_REPAIR_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-repair',
   citySlug: 'bayonne',
-  heroHeadline: 'Expert Roof Repair in Bayonne, NJ',
-  heroSubtitle: 'Protecting peninsula homes from three-sided water exposure with lasting repairs built for salt air, coastal wind, and decades of Hudson County weather.',
+  heroHeadline: 'Roof Repair Bayonne, NJ',
+  seoTitle: 'Roof Repair Bayonne, NJ',
+  heroSubtitle: 'Roof Repair Bayonne, NJ — protecting peninsula homes from three-sided water exposure with lasting repairs built for salt air, coastal wind, and decades of Hudson County weather.',
 
   cityServiceNarrative: `Roof repair in Bayonne is not the same as roof repair anywhere else in Hudson County, and any contractor who tells you otherwise does not understand this city. Bayonne sits on a peninsula surrounded by water on three sides — Newark Bay to the west, the Kill Van Kull to the south, and New York Bay to the east — and that geography creates roofing conditions that are genuinely unique. The wind does not come from one direction here. It wraps around the peninsula and hits your roof from every angle, which means a repair that only addresses the visible damage without accounting for the underlying wind-driven moisture intrusion will fail within months.
 

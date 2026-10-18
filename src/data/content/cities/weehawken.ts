@@ -2,8 +2,9 @@ import type { CityHubContent } from '@/data/types';
 
 export const WEEHAWKEN_CONTENT: CityHubContent = {
   slug: 'weehawken',
-  heroHeadline: 'Professional Roofing Contractor in Weehawken, NJ',
-  heroSubtitle: 'From luxury waterfront towers at Port Imperial to historic homes atop the Palisades, we serve both sides of Weehawken with the expertise each demands.',
+  heroHeadline: 'Roofing Contractor Weehawken, NJ',
+  seoTitle: 'Roofing Contractor Weehawken, NJ',
+  heroSubtitle: 'Roofing Contractor Weehawken, NJ — from luxury waterfront towers at Port Imperial to historic homes atop the Palisades, we serve both sides of Weehawken with the expertise each demands.',
 
   localExpertiseNarrative: `Weehawken is a township split in two by geography, and that split defines everything about how roofing works here. At the bottom, along the Hudson River, the Port Imperial and Lincoln Harbor waterfront developments feature luxury high-rise condominiums, hotels, and commercial properties with modern commercial-grade roof systems. At the top, along the Palisades ridge in The Heights, traditional single-family homes, two-family houses, and Victorian-era residences have pitched roofs with asphalt shingles, slate remnants, and the ice dam challenges that come with older construction on an elevated ridge. Between these two zones, the terrain rises dramatically through a cliff face that separates not just the elevation but the entire character of the roofing market.
 

@@ -2,8 +2,9 @@ import type { CityHubContent } from '@/data/types';
 
 export const HOBOKEN_CONTENT: CityHubContent = {
   slug: 'hoboken',
-  heroHeadline: 'Trusted Roofing Contractor in Hoboken, NJ',
-  heroSubtitle: 'Protecting Hoboken\'s iconic brownstones and waterfront properties across one square mile of historic character.',
+  heroHeadline: 'Roofing Contractor Hoboken, NJ',
+  seoTitle: 'Roofing Contractor Hoboken, NJ',
+  heroSubtitle: 'Roofing Contractor Hoboken, NJ — protecting Hoboken\'s iconic brownstones and waterfront properties across one square mile of historic character.',
 
   localExpertiseNarrative: `Hoboken is one square mile. That is it. And within that single square mile, you will find some of the most challenging roofing conditions in all of Hudson County. We have been working on Hoboken roofs for years, and the density of this city means we know every block, every building quirk, and every weather pattern that affects the roofs overhead. When a property manager on Washington Street calls about water dripping through the top-floor ceiling after a nor'easter, we already know the building likely has a flat modified bitumen roof with aging parapet cap flashing that has separated at the corners. That is not a guess. That is pattern recognition built from hundreds of Hoboken service calls.
 

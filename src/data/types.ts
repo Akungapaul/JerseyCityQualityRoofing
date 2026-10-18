@@ -202,6 +202,7 @@ export interface EmergencyContent extends ServiceContent {
 // Phase 7: City hub content data types
 export interface CityHubContent {
   slug: string;                          // Municipality slug (e.g., 'jersey-city')
+  seoTitle?: string;                     // Optional exact <title> override (Rule 7): used verbatim, bypasses the layout brand-suffix template
   heroHeadline: string;                  // City-specific H1
   heroSubtitle: string;                  // Supporting tagline
   localExpertiseNarrative: string;       // ~500 words: first-person expert voice about this city

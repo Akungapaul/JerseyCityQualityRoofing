@@ -2,8 +2,9 @@ import type { CityHubContent } from '@/data/types';
 
 export const NORTH_BERGEN_CONTENT: CityHubContent = {
   slug: 'north-bergen',
-  heroHeadline: 'Trusted Roofing Contractor in North Bergen, NJ',
-  heroSubtitle: 'From the wind-swept Palisades ridge to the commercial corridor along Tonnelle Avenue, we handle every roofing challenge elevation brings.',
+  heroHeadline: 'Roofing Contractor North Bergen, NJ',
+  seoTitle: 'Roofing Contractor North Bergen, NJ',
+  heroSubtitle: 'Roofing Contractor North Bergen, NJ — from the wind-swept Palisades ridge to the commercial corridor along Tonnelle Avenue, we handle every roofing challenge elevation brings.',
 
   localExpertiseNarrative: `North Bergen is a township of contrasts. Stand at the edge of Braddock Park on the Palisades cliff and you are 300 feet above the Hackensack River, watching wind tear across the ridge at speeds that would surprise anyone who thinks of Hudson County as a low-lying coastal area. Drive five minutes east to Tonnelle Avenue and you are at near sea level, surrounded by warehouses, retail centers, and commercial buildings with flat roofs that measure in the tens of thousands of square feet. Roofing in North Bergen means being equally comfortable on a residential split-level clinging to the ridge in Woodcliff and on a commercial warehouse along the Route 1/9 corridor. We have been handling both for years, and that dual capability is what sets us apart.
 

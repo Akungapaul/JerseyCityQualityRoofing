@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const GUTTENBERG_ROOF_REPAIR_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-repair',
   citySlug: 'guttenberg',
-  heroHeadline: 'Expert Roof Repair in Guttenberg, NJ',
-  heroSubtitle: 'In America\'s densest municipality, every roof repair demands precision logistics, cliff-edge wind expertise, and the ability to work on occupied multi-family buildings with zero staging space.',
+  heroHeadline: 'Roof Repair Guttenberg, NJ',
+  seoTitle: 'Roof Repair Guttenberg, NJ',
+  heroSubtitle: 'Roof Repair Guttenberg, NJ — In America\'s densest municipality, every roof repair demands precision logistics, cliff-edge wind expertise, and the ability to work on occupied multi-family buildings with zero staging space.',
 
   cityServiceNarrative: `Roof repair in Guttenberg is unlike roof repair anywhere else in the country. This is the densest municipality in the entire United States, with roughly 57,000 people packed into just 0.19 square miles. That means every building shares walls with its neighbors, every street is fully occupied, and every repair project operates under constraints that would be unrecognizable to contractors working in typical residential communities. There are no driveways to stage materials. There are no open lots for dumpster placement. There are no backyards where a crew can set up without coordinating with three different building managers. Roof repair in Guttenberg is a logistics operation first and a construction project second, and we have learned that lesson through years of working in this extraordinary environment.
 

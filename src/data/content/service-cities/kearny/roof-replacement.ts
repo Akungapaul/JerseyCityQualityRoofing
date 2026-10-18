@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const KEARNY_ROOF_REPLACEMENT_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-replacement',
   citySlug: 'kearny',
-  heroHeadline: 'Professional Roof Replacement in Kearny, NJ',
-  heroSubtitle: 'Whether you own a century-old Victorian near Passaic Avenue or a post-war Cape Cod in West Kearny, we deliver roof replacement systems engineered for this town\'s diverse architecture and dual-river climate.',
+  heroHeadline: 'Roof Replacement Kearny, NJ',
+  seoTitle: 'Roof Replacement Kearny, NJ',
+  heroSubtitle: 'Roof Replacement Kearny, NJ — Whether you own a century-old Victorian near Passaic Avenue or a post-war Cape Cod in West Kearny, we deliver roof replacement systems engineered for this town\'s diverse architecture and dual-river climate.',
 
   cityServiceNarrative: `Roof replacement in Kearny is unlike replacement work in any other Hudson County municipality because no other town presents the same breadth of building types within a single nine-square-mile footprint. When we replace roofs in Kearny, we move between Victorian homes with intricate multi-plane rooflines featuring turrets and dormers, post-war ranches with straightforward gable systems, two-family buildings with hybrid pitched-and-flat configurations, and industrial warehouses with flat membrane expanses measured in tens of thousands of square feet. Each building type demands different materials, different installation techniques, and different crew configurations, and Kearny is the one town in Hudson County where we deploy all of them within the same week.
 

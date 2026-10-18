@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const BAYONNE_ROOF_REPLACEMENT_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-replacement',
   citySlug: 'bayonne',
-  heroHeadline: 'Complete Roof Replacement in Bayonne, NJ',
-  heroSubtitle: 'Full tear-off and installation engineered for peninsula wind exposure, salt air corrosion, and the wood-frame housing stock that defines this waterfront city.',
+  heroHeadline: 'Roof Replacement Bayonne, NJ',
+  seoTitle: 'Roof Replacement Bayonne, NJ',
+  heroSubtitle: 'Roof Replacement Bayonne, NJ — full tear-off and installation engineered for peninsula wind exposure, salt air corrosion, and the wood-frame housing stock that defines this waterfront city.',
 
   cityServiceNarrative: `Replacing a roof in Bayonne requires more than removing old shingles and installing new ones. This is a peninsula city surrounded by water on three sides — Newark Bay, the Kill Van Kull, and New York Bay — and that geography means every material choice, every fastener pattern, and every flashing detail must be specified for coastal conditions that most inland contractors never encounter. When we replace a Bayonne roof, we are engineering a system designed to withstand multi-directional wind, constant salt spray, industrial particulate in certain neighborhoods, and the freeze-thaw cycling that Hudson County winters deliver to a city with no windbreak on any side.
 

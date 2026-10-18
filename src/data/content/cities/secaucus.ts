@@ -2,8 +2,9 @@ import type { CityHubContent } from '@/data/types';
 
 export const SECAUCUS_CONTENT: CityHubContent = {
   slug: 'secaucus',
-  heroHeadline: 'Reliable Roofing Contractor in Secaucus, NJ',
-  heroSubtitle: 'From the waterfront townhouses of Harmon Cove to the commercial warehouse districts along the Turnpike, we protect every roof in Secaucus.',
+  heroHeadline: 'Roofing Contractor Secaucus, NJ',
+  seoTitle: 'Roofing Contractor Secaucus, NJ',
+  heroSubtitle: 'Roofing Contractor Secaucus, NJ — from the waterfront townhouses of Harmon Cove to the commercial warehouse districts along the Turnpike, we protect every roof in Secaucus.',
 
   localExpertiseNarrative: `Secaucus stands apart from every other municipality in Hudson County, and the difference starts with geography. While Jersey City, Hoboken, and the Palisades towns are built on rocky upland terrain or the waterfront along the Hudson River, Secaucus sits in the middle of the Meadowlands, a vast wetland ecosystem that surrounds the town on nearly every side. That Meadowlands setting defines every roofing project we undertake in Secaucus because it creates persistent moisture conditions that do not exist in the more urbanized parts of the county. When a homeowner in Harmon Cove calls about green streaks forming on their shingles, we know immediately that the algae growth is being driven by the elevated humidity from the surrounding marshland, and we arrive prepared with solutions specific to that environment.
 

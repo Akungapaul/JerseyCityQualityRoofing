@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const UNION_CITY_ROOF_INSPECTION_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-inspection',
   citySlug: 'union-city',
-  heroHeadline: 'Professional Roof Inspection in Union City, NJ',
-  heroSubtitle: 'Thorough infrared-assisted inspections for Union City\'s tightly packed row houses and multi-family buildings, where hidden party wall moisture and multi-layered legacy roofs demand more than a visual walk-over.',
+  heroHeadline: 'Roof Inspection Union City, NJ',
+  seoTitle: 'Roof Inspection Union City, NJ',
+  heroSubtitle: 'Roof Inspection Union City, NJ — thorough infrared-assisted inspections for Union City\'s tightly packed row houses and multi-family buildings, where hidden party wall moisture and multi-layered legacy roofs demand more than a visual walk-over.',
 
   cityServiceNarrative: `Roof inspection in Union City requires a fundamentally different approach than inspection in any less dense municipality. When we inspect a roof in suburban Morris County, we walk the surface, check the flashings, look for visible damage, and write a report. When we inspect a roof in Union City, we are evaluating a flat membrane that sits on top of multiple previous layers, shares structural walls with buildings on both sides, has limited drainage access, and may be hiding moisture migration paths through masonry party walls that no visual inspection can detect. The inspection protocol we have developed for Union City addresses these density-specific conditions systematically, because a standard checklist designed for freestanding buildings misses the critical failure points that define roof problems in the most densely populated city in New Jersey.
 

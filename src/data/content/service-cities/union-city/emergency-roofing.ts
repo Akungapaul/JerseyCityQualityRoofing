@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const UNION_CITY_EMERGENCY_ROOFING_CONTENT: ServiceInCityContent = {
   serviceSlug: 'emergency-roofing',
   citySlug: 'union-city',
-  heroHeadline: 'Emergency Roof Repair in Union City, NJ',
-  heroSubtitle: '24/7 emergency response for Union City\'s densely packed row houses and multi-family buildings, where a single roof failure can displace dozens of residents across multiple connected units.',
+  heroHeadline: 'Emergency Roof Repair Union City, NJ',
+  seoTitle: 'Emergency Roof Repair Union City, NJ',
+  heroSubtitle: 'Emergency Roof Repair Union City, NJ — 24/7 emergency response for Union City\'s densely packed row houses and multi-family buildings, where a single roof failure can displace dozens of residents across multiple connected units.',
 
   cityServiceNarrative: `A roofing emergency in Union City escalates faster and affects more people than a similar emergency anywhere else in Hudson County. When a flat roof membrane fails during a nor'easter on a three-story row house in Union Hill, the water does not just damage the top-floor apartment. It cascades down through the building, reaching second-floor bedrooms and ground-floor living spaces within hours. And because Union City row houses share masonry party walls with buildings on both sides, the water frequently migrates laterally through the shared wall structure and begins damaging the adjacent building before anyone in that unit realizes the problem started next door. A single roof failure on one Union City row house can create a water damage emergency affecting three buildings and a dozen families simultaneously.
 

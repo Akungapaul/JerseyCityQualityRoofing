@@ -79,11 +79,28 @@ export async function getCityHubMetadata(
   const city = getMunicipality(citySlug);
   if (!city) return {};
 
-  return generatePageMetadata({
+  const metadata = generatePageMetadata({
     title: `Roofing Services in ${city.name}, NJ`,
     description: `Expert residential and commercial roofing in ${city.name}, NJ. Serving all ${city.neighborhoods.length} neighborhoods with ${city.population.toLocaleString()} residents. Roof repair, replacement, inspection & emergency services. Call for a free estimate.`,
     path: cityHubPath(city.slug),
   });
+
+  // Rule 7: a hub may carry an exact seoTitle in its content data; when it
+  // does, the <title> is that phrase verbatim (absolute bypasses the layout's
+  // brand-suffix template).
+  const content = getCityContent(citySlug);
+  if (content?.seoTitle) {
+    return {
+      ...metadata,
+      title: { absolute: content.seoTitle },
+      openGraph: {
+        ...metadata.openGraph,
+        title: `${content.seoTitle} | Jersey City Quality Roofing`,
+      },
+    };
+  }
+
+  return metadata;
 }
 
 // ---------------------------------------------------------------------------

@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const BAYONNE_FLAT_ROOF_SYSTEMS_CONTENT: ServiceInCityContent = {
   serviceSlug: 'flat-roof-systems',
   citySlug: 'bayonne',
-  heroHeadline: 'Commercial Flat Roof Systems in Bayonne, NJ',
-  heroSubtitle: 'Engineered membrane installations for Broadway businesses, Constable Hook industrial facilities, and Peninsula at Bayonne Harbor developments built to resist coastal wind uplift and salt corrosion.',
+  heroHeadline: 'Flat Roof Systems Bayonne, NJ',
+  seoTitle: 'Flat Roof Systems Bayonne, NJ',
+  heroSubtitle: 'Flat Roof Systems Bayonne, NJ — engineered membrane installations for Broadway businesses, Constable Hook industrial facilities, and Peninsula at Bayonne Harbor developments built to resist coastal wind uplift and salt corrosion.',
 
   cityServiceNarrative: `Flat roof systems in Bayonne operate under conditions that separate coastal commercial roofing from standard inland installation. This peninsula city surrounded by Newark Bay, the Kill Van Kull, and New York Bay subjects commercial roofs to wind uplift forces from multiple directions simultaneously, constant salt spray that corrodes mechanical fasteners and degrades adhesive bonds, and ponding loads amplified by the fifty inches of annual rainfall this city receives. Every flat roof system we install or replace in Bayonne is engineered specifically for these peninsula conditions, not adapted from a generic commercial specification.
 

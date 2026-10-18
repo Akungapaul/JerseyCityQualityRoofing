@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const GUTTENBERG_ROOF_REPLACEMENT_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-replacement',
   citySlug: 'guttenberg',
-  heroHeadline: 'Complete Roof Replacement in Guttenberg, NJ',
-  heroSubtitle: 'Full roof system replacement for America\'s densest municipality, where every project requires crane coordination, freight elevator logistics, and wind-rated specifications designed for the Palisades cliff edge.',
+  heroHeadline: 'Roof Replacement Guttenberg, NJ',
+  seoTitle: 'Roof Replacement Guttenberg, NJ',
+  heroSubtitle: 'Roof Replacement Guttenberg, NJ — full roof system replacement for America\'s densest municipality, where every project requires crane coordination, freight elevator logistics, and wind-rated specifications designed for the Palisades cliff edge.',
 
   cityServiceNarrative: `Roof replacement in Guttenberg is the most logistically demanding project type we undertake in Hudson County. A full roof replacement on a Guttenberg building means removing the entire existing membrane system, replacing deteriorated insulation and any compromised decking, and installing a new roof system that will perform for 20 to 30 years under conditions that are unique in the country. The extreme density of 57,000 people per square mile means there is nowhere to stage materials, nowhere to place dumpsters for tear-off debris, and no room for the equipment laydown areas that make roof replacements manageable in less constrained environments. Every Guttenberg roof replacement is planned with military-grade logistics because the consequences of poor planning in this environment are severe: blocked streets, disrupted residents, material shortages that halt work mid-project, and safety hazards in a town where pedestrians are inches from every construction operation.
 

@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const GUTTENBERG_COMMERCIAL_REPLACEMENT_CONTENT: ServiceInCityContent = {
   serviceSlug: 'commercial-replacement',
   citySlug: 'guttenberg',
-  heroHeadline: 'Commercial Roof Replacement in Guttenberg, NJ',
-  heroSubtitle: 'Full commercial roof system replacement for Galaxy Towers, Boulevard East high-rises, and every multi-family building in America\'s densest municipality, engineered for cliff-edge wind resistance and high-rise performance.',
+  heroHeadline: 'Commercial Roof Replacement Guttenberg, NJ',
+  seoTitle: 'Commercial Roof Replacement Guttenberg, NJ',
+  heroSubtitle: 'Commercial Roof Replacement Guttenberg, NJ — full commercial roof system replacement for Galaxy Towers, Boulevard East high-rises, and every multi-family building in America\'s densest municipality, engineered for cliff-edge wind resistance and high-rise performance.',
 
   cityServiceNarrative: `Commercial roof replacement in Guttenberg is the largest capital expenditure most building boards will authorize during their tenure, and the conditions under which this work must be executed are the most challenging in Hudson County. In a municipality where 57,000 people live within 0.19 square miles, a full commercial roof replacement means removing tens of thousands of pounds of existing roofing material, delivering an equal volume of new materials, and installing a new roof system on an occupied building while maintaining the daily lives of dozens or hundreds of residents and the operations of any commercial tenants. There are no staging areas, no laydown yards, and no room for the sprawling construction operations that commercial roof replacements require in less constrained environments. Every commercial replacement in Guttenberg is a precision logistics operation executed on a building that cannot pause its occupancy for the convenience of the construction schedule.
 

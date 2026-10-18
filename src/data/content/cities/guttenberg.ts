@@ -2,8 +2,9 @@ import type { CityHubContent } from '@/data/types';
 
 export const GUTTENBERG_CONTENT: CityHubContent = {
   slug: 'guttenberg',
-  heroHeadline: 'Specialized Roofing Contractor in Guttenberg, NJ',
-  heroSubtitle: 'In the most densely populated municipality in the United States, we bring the specialized equipment, access expertise, and flat-roof knowledge that high-rise and mid-rise buildings demand.',
+  heroHeadline: 'Roofing Contractor Guttenberg, NJ',
+  seoTitle: 'Roofing Contractor Guttenberg, NJ',
+  heroSubtitle: 'Roofing Contractor Guttenberg, NJ — In the most densely populated municipality in the United States, we bring the specialized equipment, access expertise, and flat-roof knowledge that high-rise and mid-rise buildings demand.',
 
   localExpertiseNarrative: `Guttenberg presents roofing challenges that exist nowhere else in Hudson County and arguably nowhere else in the country. With approximately 57,000 people per square mile, this small town perched on the Palisades cliff edge is often cited as the most densely populated municipality in the United States. That density defines every aspect of how roofing work gets done here. There are no empty lots for staging materials. There is no spare street space for dumpster placement without blocking traffic. There are no single-family homes with open yards where a crew can set up ladders without coordinating with three different property managers. Every roofing project in Guttenberg is an exercise in logistics as much as it is a construction job.
 

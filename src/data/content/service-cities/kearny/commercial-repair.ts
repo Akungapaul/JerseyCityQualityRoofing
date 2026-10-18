@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const KEARNY_COMMERCIAL_REPAIR_CONTENT: ServiceInCityContent = {
   serviceSlug: 'commercial-repair',
   citySlug: 'kearny',
-  heroHeadline: 'Commercial Roof Repair in Kearny, NJ',
-  heroSubtitle: 'From Passaic Avenue retail buildings to the industrial warehouses of South Kearny, we diagnose and repair commercial roof failures with the precision that business-critical properties demand.',
+  heroHeadline: 'Commercial Roof Repair Kearny, NJ',
+  seoTitle: 'Commercial Roof Repair Kearny, NJ',
+  heroSubtitle: 'Commercial Roof Repair Kearny, NJ — from Passaic Avenue retail buildings to the industrial warehouses of South Kearny, we diagnose and repair commercial roof failures with the precision that business-critical properties demand.',
 
   cityServiceNarrative: `Commercial roof repair in Kearny covers a broader spectrum of building types and challenge levels than in any other Hudson County municipality. The town's commercial and industrial building inventory spans small retail storefronts along Passaic Avenue, mid-size mixed-use buildings in Kearny Center, multi-family apartment complexes throughout the residential neighborhoods, and the large-scale warehouses, factories, and distribution centers that define the South Kearny industrial zone. Each category presents different membrane systems, different failure patterns, and different urgency levels when a leak develops, and our commercial repair division is equipped to handle all of them within the same municipality.
 

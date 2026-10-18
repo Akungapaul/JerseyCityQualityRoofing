@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const BAYONNE_COMMERCIAL_REPLACEMENT_CONTENT: ServiceInCityContent = {
   serviceSlug: 'commercial-replacement',
   citySlug: 'bayonne',
-  heroHeadline: 'Commercial Roof Replacement in Bayonne, NJ',
-  heroSubtitle: 'Full commercial re-roofing engineered for Bayonne peninsula conditions — from Broadway retail buildings to Constable Hook industrial facilities to Peninsula at Bayonne Harbor developments.',
+  heroHeadline: 'Commercial Roof Replacement Bayonne, NJ',
+  seoTitle: 'Commercial Roof Replacement Bayonne, NJ',
+  heroSubtitle: 'Commercial Roof Replacement Bayonne, NJ — full commercial re-roofing engineered for Bayonne peninsula conditions — from Broadway retail buildings to Constable Hook industrial facilities to Peninsula at Bayonne Harbor developments.',
 
   cityServiceNarrative: `Commercial roof replacement in Bayonne is a capital investment that must deliver reliable performance for two to three decades in one of the most demanding coastal environments in Hudson County. This peninsula city surrounded by Newark Bay, the Kill Van Kull, and New York Bay subjects commercial roofs to wind uplift forces from multiple directions, constant salt spray that corrodes every exposed metal component, fifty inches of annual rainfall that finds every drainage deficiency, and industrial environmental factors in the Constable Hook zone that add chemical complexity to an already challenging environment. A commercial replacement specified for Bayonne must account for every one of these factors or the building owner will be back at the replacement decision far sooner than the membrane's rated lifespan would suggest.
 

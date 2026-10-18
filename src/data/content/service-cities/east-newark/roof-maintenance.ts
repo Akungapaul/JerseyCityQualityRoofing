@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const EAST_NEWARK_ROOF_MAINTENANCE_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-maintenance',
   citySlug: 'east-newark',
-  heroHeadline: 'Roof Maintenance Programs in East Newark, NJ',
-  heroSubtitle: 'In a borough where the median home age is 75 years and every roof faces Passaic River moisture, proactive maintenance is the difference between manageable upkeep and emergency replacement.',
+  heroHeadline: 'Roof Maintenance East Newark, NJ',
+  seoTitle: 'Roof Maintenance East Newark, NJ',
+  heroSubtitle: 'Roof Maintenance East Newark, NJ — In a borough where the median home age is 75 years and every roof faces Passaic River moisture, proactive maintenance is the difference between manageable upkeep and emergency replacement.',
 
   cityServiceNarrative: `Roof maintenance in East Newark is not the optional add-on that it might be in a municipality with newer housing stock. When the median building age is 75 years and the Passaic River sustains humidity levels that accelerate roofing material deterioration year-round, maintenance transitions from a nice-to-have into a necessity that determines whether a roof reaches its expected lifespan or fails years before it should. The approximately 1,200 housing units packed into East Newark's 0.11 square miles represent one of the most concentrated inventories of aging roofing systems in Hudson County, and the majority of these roofs would benefit from the kind of systematic maintenance that prevents the emergency repair calls we receive during every significant storm.
 

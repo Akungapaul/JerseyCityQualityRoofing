@@ -4,9 +4,9 @@ export const JERSEY_CITY_EMERGENCY_ROOFING_CONTENT = {
   serviceSlug: 'emergency-roofing',
   citySlug: 'jersey-city',
 
-  heroHeadline: 'Emergency Roofing Services in Jersey City, NJ',
-  heroSubtitle:
-    'Rapid response for storm damage, active leaks, and structural failures across Jersey City\'s neighborhoods, day or night.',
+  heroHeadline: 'Emergency Roof Repair Jersey City, NJ',
+  seoTitle: 'Emergency Roof Repair Jersey City, NJ',
+  heroSubtitle: 'Emergency Roof Repair Jersey City, NJ — rapid response for storm damage, active leaks, and structural failures across Jersey City\'s neighborhoods, day or night.',
 
   cityServiceNarrative: `When a nor'easter tears through Jersey City at two in the morning and a homeowner in The Heights watches water pour through their ceiling, that call cannot wait until Monday. Emergency roofing is one of the most demanding services we provide, and in a city as densely built and architecturally diverse as Jersey City, the urgency is compounded by the complexity of the building stock and the logistics of responding in a tight urban environment. With nearly 292,500 residents spread across Downtown, The Heights, Journal Square, Bergen-Lafayette, Greenville, and the West Side, a single major storm can generate dozens of emergency calls within hours, and the ability to triage effectively determines whether we prevent further damage or simply show up too late to matter.
 

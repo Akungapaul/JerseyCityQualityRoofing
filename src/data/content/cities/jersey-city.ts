@@ -2,8 +2,9 @@ import type { CityHubContent } from '@/data/types';
 
 export const JERSEY_CITY_CONTENT: CityHubContent = {
   slug: 'jersey-city',
-  heroHeadline: 'Trusted Roofing Contractor in Jersey City, NJ',
-  heroSubtitle: 'From historic Downtown brownstones to modern Exchange Place high-rises, we protect every roof in the second-largest city in New Jersey.',
+  heroHeadline: 'Roofing Contractor Jersey City, NJ',
+  seoTitle: 'Roofing Contractor Jersey City, NJ',
+  heroSubtitle: 'Roofing Contractor Jersey City, NJ — from historic Downtown brownstones to modern Exchange Place high-rises, we protect every roof in the second-largest city in New Jersey.',
 
   localExpertiseNarrative: `We have been working on roofs across Jersey City for over two decades, and there is no neighborhood in this city that surprises us anymore. When a homeowner on Van Vorst Street calls about water staining on their parlor ceiling, we already know the likely culprits before we climb the ladder: deteriorated parapet wall flashing on a 120-year-old brownstone, a failed pipe boot buried under three layers of previous repairs, or ice dam damage along the front eave where the original cornice traps snowmelt against the roof edge. That level of familiarity only comes from years of hands-on experience in a specific city, and Jersey City is the city we know best.
 

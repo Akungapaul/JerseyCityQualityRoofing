@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const SECAUCUS_COMMERCIAL_REPAIR_CONTENT: ServiceInCityContent = {
   serviceSlug: 'commercial-repair',
   citySlug: 'secaucus',
-  heroHeadline: 'Commercial Roof Repair in Secaucus, NJ',
-  heroSubtitle: 'Repairing massive flat roof membranes on Meadowlands warehouses, outlet centers, and hospitality properties where ponding water and moisture are permanent operating conditions.',
+  heroHeadline: 'Commercial Roof Repair Secaucus, NJ',
+  seoTitle: 'Commercial Roof Repair Secaucus, NJ',
+  heroSubtitle: 'Commercial Roof Repair Secaucus, NJ — repairing massive flat roof membranes on Meadowlands warehouses, outlet centers, and hospitality properties where ponding water and moisture are permanent operating conditions.',
 
   cityServiceNarrative: `Commercial roof repair in Secaucus serves a building inventory unlike any other in Hudson County. The concentration of large-footprint commercial buildings in the Meadowlands corridor creates a commercial roofing demand driven by massive flat roof surfaces, chronic ponding conditions, and the persistent moisture environment that accelerates membrane deterioration on every building. When a property manager calls about a leak on a 40,000-square-foot warehouse roof along Paterson Plank Road, the stakes are measured not in ceiling stain remediation but in damaged inventory, disrupted distribution operations, and business interruption costs that can reach thousands of dollars per hour. Commercial roof repair in Secaucus is high-stakes work on the largest membrane surfaces in the county, under the most challenging ponding conditions.
 

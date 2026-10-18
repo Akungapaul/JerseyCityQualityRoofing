@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const KEARNY_FLAT_ROOF_SYSTEMS_CONTENT: ServiceInCityContent = {
   serviceSlug: 'flat-roof-systems',
   citySlug: 'kearny',
-  heroHeadline: 'Flat Roof Systems in Kearny, NJ',
-  heroSubtitle: 'From the two-family flat sections throughout residential Kearny to the industrial-scale membrane installations in South Kearny, we engineer flat roof solutions for every building in this architecturally diverse town.',
+  heroHeadline: 'Flat Roof Systems Kearny, NJ',
+  seoTitle: 'Flat Roof Systems Kearny, NJ',
+  heroSubtitle: 'Flat Roof Systems Kearny, NJ — from the two-family flat sections throughout residential Kearny to the industrial-scale membrane installations in South Kearny, we engineer flat roof solutions for every building in this architecturally diverse town.',
 
   cityServiceNarrative: `Flat roof systems in Kearny serve a broader range of building types than in any other Hudson County municipality, and this diversity defines our approach to every flat roof project we take on. In most towns, flat roof work falls neatly into either residential or commercial categories. Kearny blurs that line entirely. The two-family homes that are ubiquitous throughout the residential neighborhoods have flat roof sections over rear extensions, enclosed porches, and middle connectors that require the same membrane expertise as commercial work but at residential scale and budget. The mixed-use buildings along Passaic Avenue have flat roofs supporting both commercial HVAC equipment and the residential occupancy of upper-floor apartments. And the South Kearny industrial zone has flat roofs measured in acres rather than square feet, where the engineering requirements more closely resemble infrastructure projects than traditional roofing work.
 

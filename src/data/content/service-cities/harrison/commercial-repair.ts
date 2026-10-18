@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const HARRISON_COMMERCIAL_REPAIR_CONTENT: ServiceInCityContent = {
   serviceSlug: 'commercial-repair',
   citySlug: 'harrison',
-  heroHeadline: 'Commercial Roof Repair in Harrison, NJ',
-  heroSubtitle: 'From membrane seam repairs on waterfront luxury developments to leak diagnosis on Red Bull Arena district restaurants, we deliver commercial-grade repairs across Harrison\'s rapidly evolving commercial landscape.',
+  heroHeadline: 'Commercial Roof Repair Harrison, NJ',
+  seoTitle: 'Commercial Roof Repair Harrison, NJ',
+  heroSubtitle: 'Commercial Roof Repair Harrison, NJ — from membrane seam repairs on waterfront luxury developments to leak diagnosis on Red Bull Arena district restaurants, we deliver commercial-grade repairs across Harrison\'s rapidly evolving commercial landscape.',
 
   cityServiceNarrative: `Commercial roof repair in Harrison has expanded dramatically in scope and complexity over the past decade as the town's redevelopment transformed the Passaic River waterfront from dormant industrial sites into a thriving mixed-use district. Where commercial repair in Harrison once meant patching flat roofs on the small retail buildings along Harrison Avenue, it now encompasses premium membrane repairs on luxury apartment complexes, warranty-coordinated work on mixed-use waterfront developments, and specialty repairs on the entertainment and hospitality buildings that surround Red Bull Arena. Each of these commercial markets presents unique repair challenges, and the contractors who succeed in Harrison are the ones who can move between them with equal proficiency.
 

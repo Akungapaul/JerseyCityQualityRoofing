@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const EAST_NEWARK_ROOF_REPLACEMENT_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-replacement',
   citySlug: 'east-newark',
-  heroHeadline: 'Complete Roof Replacement in East Newark, NJ',
-  heroSubtitle: 'When the smallest borough in New Jersey needs a new roof, the entire community notices the result. We deliver replacements that set the standard for the block.',
+  heroHeadline: 'Roof Replacement East Newark, NJ',
+  seoTitle: 'Roof Replacement East Newark, NJ',
+  heroSubtitle: 'Roof Replacement East Newark, NJ — When the smallest borough in New Jersey needs a new roof, the entire community notices the result. We deliver replacements that set the standard for the block.',
 
   cityServiceNarrative: `Roof replacement in East Newark carries a weight that homeowners in larger municipalities never experience. In a borough of 0.11 square miles where approximately 1,200 housing units sit on tight lots separated by narrow walkways, every roof replacement is a neighborhood event. The dumpster on the street, the crew on the roof, the sound of shingle tear-off echoing between closely spaced buildings, the fresh material going on at the end of the day -- it all happens in full view of neighbors who live close enough to evaluate the quality of the work from their own windows. That visibility is something we embrace because it forces a level of craftsmanship that sloppy work cannot survive.
 
