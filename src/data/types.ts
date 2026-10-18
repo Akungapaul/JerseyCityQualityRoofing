@@ -225,6 +225,7 @@ export interface NeighborhoodServiceInsight {
 export interface ServiceInCityContent {
   serviceSlug: string;
   citySlug: string;
+  seoTitle?: string;                                 // Optional exact <title> override (Rule 7): used verbatim, bypasses the layout brand-suffix template
   heroHeadline: string;                              // City-specific H1, e.g., "Expert Roof Repair in Jersey City, NJ"
   heroSubtitle: string;                              // Unique supporting tagline
   cityServiceNarrative: string;                      // ~600 words: first-person expert narrative about doing THIS service in THIS city
