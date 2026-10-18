@@ -1,6 +1,7 @@
 import type { RoofingContractor, WithContext, BreadcrumbList, FAQPage, Service as ServiceSchema, BlogPosting, CollectionPage } from 'schema-dts';
 import { BUSINESS_INFO } from '@/data/business-info';
 import { BASE_URL } from '@/lib/constants';
+import { servicePillarPath, cityHubPath } from '@/lib/paths';
 import type { Testimonial, Service as ServiceData, Municipality } from '@/data/types';
 
 function hasVerifiedPhone(): boolean {
@@ -182,7 +183,7 @@ export function buildCityRoofingContractorJsonLd(
     areaServed: {
       '@type': 'City',
       name: city.name,
-      '@id': `${BASE_URL}/service-areas/${city.slug}#city`,
+      '@id': `${BASE_URL}${cityHubPath(city.slug)}#city`,
     },
     knowsAbout: [
       `Roofing services in ${city.name}`,
@@ -193,7 +194,7 @@ export function buildCityRoofingContractorJsonLd(
       '@type': 'Offer' as const,
       itemOffered: {
         '@type': 'Service' as const,
-        '@id': `${BASE_URL}/services/${s.category}/${s.slug}#service`,
+        '@id': `${BASE_URL}${servicePillarPath(s.slug)}#service`,
         name: s.name,
         description: s.shortDescription,
         areaServed: {
@@ -227,7 +228,7 @@ export function buildServiceInCityJsonLd(
     areaServed: {
       '@type': 'City',
       name: city.name,
-      '@id': `${BASE_URL}/service-areas/${city.slug}#city`,
+      '@id': `${BASE_URL}${cityHubPath(city.slug)}#city`,
     },
     provider: {
       '@type': 'RoofingContractor',

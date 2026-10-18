@@ -9,11 +9,12 @@ describe('sitemap generation', () => {
     expect(entries.length).toBeGreaterThan(0);
   });
 
-  it('generates 154 total URLs', () => {
+  it('generates 146 total URLs', () => {
     const entries = sitemap();
-    // 8 static + 3 silo index + 4 residential + 4 commercial + 12 city + 48 res-city + 48 com-city
-    // + 8 blog + 8 cost guides + 6 material guides + 5 problems = 154
-    expect(entries).toHaveLength(154);
+    // Flat URL structure (2026-10-17): 11 static/silo index + 12 city hubs + 96 service-in-city
+    // + 8 blog + 8 cost guides + 6 material guides + 5 problems = 146.
+    // (The 8 old service pillar pages were merged into the Jersey City combo pages.)
+    expect(entries).toHaveLength(146);
   });
 
   it('excludes testimonials stub page from sitemap', () => {
@@ -31,7 +32,7 @@ describe('sitemap generation', () => {
   it('includes all 12 city hub pages', () => {
     const entries = sitemap();
     const cityPages = entries.filter((e) =>
-      e.url.includes('/service-areas/') && !e.url.endsWith('/service-areas')
+      e.url.includes('/roofing-contractor-')
     );
     expect(cityPages).toHaveLength(12);
   });
@@ -39,7 +40,7 @@ describe('sitemap generation', () => {
   it('includes all service-in-city pages', () => {
     const entries = sitemap();
     const serviceCityPages = entries.filter((e) =>
-      e.url.match(/\/services\/(residential|commercial)\/[^/]+\/[^/]+$/)
+      e.url.match(/\/[a-z0-9-]+-nj$/) && !e.url.includes('/roofing-contractor-')
     );
     // 4 residential x 12 cities + 4 commercial x 12 cities = 96
     expect(serviceCityPages).toHaveLength(96);

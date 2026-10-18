@@ -27,6 +27,7 @@ import { QuoteForm } from '@/components/forms/quote-form';
 import { CTABanner } from '@/components/sections/cta-banner';
 import { SectionWrapper } from '@/components/sections/section-wrapper';
 import { ScrollReveal } from '@/components/sections/scroll-reveal';
+import { servicePillarPath } from "@/lib/paths";
 
 // ---------------------------------------------------------------------------
 // Static params and metadata
@@ -188,7 +189,7 @@ export default async function CostGuidePage({
           <SiloPillarLink
             label="RELATED SERVICE"
             linkText={`Learn About Our ${serviceName} Service`}
-            href={`/services/${guide.serviceCategory}/${guide.serviceSlug}`}
+            href={servicePillarPath(guide.serviceSlug)}
           />
         </ScrollReveal>
       </SectionWrapper>

@@ -19,6 +19,7 @@ import { GuideHero } from '@/components/sections/guide-hero';
 import { SectionWrapper } from '@/components/sections/section-wrapper';
 import { ScrollReveal } from '@/components/sections/scroll-reveal';
 import { CTABanner } from '@/components/sections/cta-banner';
+import { servicePillarPath } from "@/lib/paths";
 
 const SERVICE_ICONS: Record<string, LucideIcon> = {
   'flat-roof-systems': Layers,
@@ -84,7 +85,7 @@ export default function CommercialServicesPage() {
               return (
                 <Link
                   key={service.slug}
-                  href={`/services/commercial/${service.slug}`}
+                  href={servicePillarPath(service.slug)}
                   className="group bg-dominant rounded-lg p-6 flex flex-col gap-3 hover:bg-[#4a5040] transition-colors duration-[150ms]"
                 >
                   <ServiceIcon

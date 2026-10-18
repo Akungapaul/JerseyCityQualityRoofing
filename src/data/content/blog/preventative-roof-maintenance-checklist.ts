@@ -8,7 +8,7 @@ export const PREVENTATIVE_ROOF_MAINTENANCE: BlogArticle = {
     'A seasonal guide to keeping your roof in peak condition through every Hudson County weather cycle.',
   siloService: 'roof-maintenance',
   siloCategory: 'commercial',
-  parentPillarLink: '/services/commercial/roof-maintenance',
+  parentPillarLink: '/roof-maintenance-jersey-city-nj',
   author: 'Jersey City Quality Roofing Team',
   publishDate: '2026-02-12',
   updatedDate: null,

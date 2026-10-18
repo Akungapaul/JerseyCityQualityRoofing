@@ -7,6 +7,7 @@ import { getServicesByCategory } from "@/data/services";
 import { getAllMunicipalities } from "@/data/municipalities";
 import { PHONE_NUMBER, PHONE_HREF, SITE_NAME } from "@/lib/constants";
 import { cn } from "@/lib/utils";
+import { servicePillarPath, cityHubPath } from "@/lib/paths";
 
 export function Footer() {
   const residentialServices = getServicesByCategory("residential");
@@ -62,7 +63,7 @@ export function Footer() {
               {residentialServices.map((service) => (
                 <li key={service.slug}>
                   <Link
-                    href={`/services/residential/${service.slug}`}
+                    href={servicePillarPath(service.slug)}
                     className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast]"
                   >
                     {service.name}
@@ -81,7 +82,7 @@ export function Footer() {
               {commercialServices.map((service) => (
                 <li key={service.slug}>
                   <Link
-                    href={`/services/commercial/${service.slug}`}
+                    href={servicePillarPath(service.slug)}
                     className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast]"
                   >
                     {service.name}
@@ -100,7 +101,7 @@ export function Footer() {
               {municipalities.map((muni) => (
                 <li key={muni.slug}>
                   <Link
-                    href={`/service-areas/${muni.slug}`}
+                    href={cityHubPath(muni.slug)}
                     className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast]"
                   >
                     {muni.name}

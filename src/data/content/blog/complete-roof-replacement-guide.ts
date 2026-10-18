@@ -8,7 +8,7 @@ export const COMPLETE_ROOF_REPLACEMENT_GUIDE: BlogArticle = {
     'Everything you need to know about planning, budgeting, and executing a roof replacement in Jersey City and the surrounding municipalities.',
   siloService: 'roof-replacement',
   siloCategory: 'residential',
-  parentPillarLink: '/services/residential/roof-replacement',
+  parentPillarLink: '/roof-replacement-jersey-city-nj',
   author: 'Jersey City Quality Roofing Team',
   publishDate: '2026-01-22',
   updatedDate: null,

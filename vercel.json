@@ -1,0 +1,584 @@
+{
+  "redirects": [
+    {
+      "source": "/services/residential/roof-repair",
+      "destination": "/roof-repair-jersey-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-replacement",
+      "destination": "/roof-replacement-jersey-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-inspection",
+      "destination": "/roof-inspection-jersey-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/emergency-roofing",
+      "destination": "/emergency-roof-repair-jersey-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/flat-roof-systems",
+      "destination": "/flat-roof-systems-jersey-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/roof-maintenance",
+      "destination": "/roof-maintenance-jersey-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-repair",
+      "destination": "/commercial-roof-repair-jersey-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-replacement",
+      "destination": "/commercial-roof-replacement-jersey-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/service-areas/jersey-city",
+      "destination": "/roofing-contractor-jersey-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/service-areas/hoboken",
+      "destination": "/roofing-contractor-hoboken-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/service-areas/bayonne",
+      "destination": "/roofing-contractor-bayonne-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/service-areas/north-bergen",
+      "destination": "/roofing-contractor-north-bergen-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/service-areas/union-city",
+      "destination": "/roofing-contractor-union-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/service-areas/west-new-york",
+      "destination": "/roofing-contractor-west-new-york-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/service-areas/secaucus",
+      "destination": "/roofing-contractor-secaucus-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/service-areas/kearny",
+      "destination": "/roofing-contractor-kearny-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/service-areas/harrison",
+      "destination": "/roofing-contractor-harrison-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/service-areas/east-newark",
+      "destination": "/roofing-contractor-east-newark-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/service-areas/guttenberg",
+      "destination": "/roofing-contractor-guttenberg-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/service-areas/weehawken",
+      "destination": "/roofing-contractor-weehawken-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-repair/jersey-city",
+      "destination": "/roof-repair-jersey-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-repair/hoboken",
+      "destination": "/roof-repair-hoboken-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-repair/bayonne",
+      "destination": "/roof-repair-bayonne-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-repair/north-bergen",
+      "destination": "/roof-repair-north-bergen-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-repair/union-city",
+      "destination": "/roof-repair-union-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-repair/west-new-york",
+      "destination": "/roof-repair-west-new-york-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-repair/secaucus",
+      "destination": "/roof-repair-secaucus-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-repair/kearny",
+      "destination": "/roof-repair-kearny-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-repair/harrison",
+      "destination": "/roof-repair-harrison-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-repair/east-newark",
+      "destination": "/roof-repair-east-newark-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-repair/guttenberg",
+      "destination": "/roof-repair-guttenberg-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-repair/weehawken",
+      "destination": "/roof-repair-weehawken-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-replacement/jersey-city",
+      "destination": "/roof-replacement-jersey-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-replacement/hoboken",
+      "destination": "/roof-replacement-hoboken-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-replacement/bayonne",
+      "destination": "/roof-replacement-bayonne-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-replacement/north-bergen",
+      "destination": "/roof-replacement-north-bergen-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-replacement/union-city",
+      "destination": "/roof-replacement-union-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-replacement/west-new-york",
+      "destination": "/roof-replacement-west-new-york-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-replacement/secaucus",
+      "destination": "/roof-replacement-secaucus-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-replacement/kearny",
+      "destination": "/roof-replacement-kearny-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-replacement/harrison",
+      "destination": "/roof-replacement-harrison-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-replacement/east-newark",
+      "destination": "/roof-replacement-east-newark-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-replacement/guttenberg",
+      "destination": "/roof-replacement-guttenberg-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-replacement/weehawken",
+      "destination": "/roof-replacement-weehawken-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-inspection/jersey-city",
+      "destination": "/roof-inspection-jersey-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-inspection/hoboken",
+      "destination": "/roof-inspection-hoboken-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-inspection/bayonne",
+      "destination": "/roof-inspection-bayonne-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-inspection/north-bergen",
+      "destination": "/roof-inspection-north-bergen-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-inspection/union-city",
+      "destination": "/roof-inspection-union-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-inspection/west-new-york",
+      "destination": "/roof-inspection-west-new-york-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-inspection/secaucus",
+      "destination": "/roof-inspection-secaucus-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-inspection/kearny",
+      "destination": "/roof-inspection-kearny-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-inspection/harrison",
+      "destination": "/roof-inspection-harrison-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-inspection/east-newark",
+      "destination": "/roof-inspection-east-newark-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-inspection/guttenberg",
+      "destination": "/roof-inspection-guttenberg-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/roof-inspection/weehawken",
+      "destination": "/roof-inspection-weehawken-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/emergency-roofing/jersey-city",
+      "destination": "/emergency-roof-repair-jersey-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/emergency-roofing/hoboken",
+      "destination": "/emergency-roof-repair-hoboken-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/emergency-roofing/bayonne",
+      "destination": "/emergency-roof-repair-bayonne-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/emergency-roofing/north-bergen",
+      "destination": "/emergency-roof-repair-north-bergen-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/emergency-roofing/union-city",
+      "destination": "/emergency-roof-repair-union-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/emergency-roofing/west-new-york",
+      "destination": "/emergency-roof-repair-west-new-york-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/emergency-roofing/secaucus",
+      "destination": "/emergency-roof-repair-secaucus-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/emergency-roofing/kearny",
+      "destination": "/emergency-roof-repair-kearny-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/emergency-roofing/harrison",
+      "destination": "/emergency-roof-repair-harrison-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/emergency-roofing/east-newark",
+      "destination": "/emergency-roof-repair-east-newark-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/emergency-roofing/guttenberg",
+      "destination": "/emergency-roof-repair-guttenberg-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/residential/emergency-roofing/weehawken",
+      "destination": "/emergency-roof-repair-weehawken-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/flat-roof-systems/jersey-city",
+      "destination": "/flat-roof-systems-jersey-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/flat-roof-systems/hoboken",
+      "destination": "/flat-roof-systems-hoboken-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/flat-roof-systems/bayonne",
+      "destination": "/flat-roof-systems-bayonne-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/flat-roof-systems/north-bergen",
+      "destination": "/flat-roof-systems-north-bergen-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/flat-roof-systems/union-city",
+      "destination": "/flat-roof-systems-union-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/flat-roof-systems/west-new-york",
+      "destination": "/flat-roof-systems-west-new-york-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/flat-roof-systems/secaucus",
+      "destination": "/flat-roof-systems-secaucus-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/flat-roof-systems/kearny",
+      "destination": "/flat-roof-systems-kearny-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/flat-roof-systems/harrison",
+      "destination": "/flat-roof-systems-harrison-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/flat-roof-systems/east-newark",
+      "destination": "/flat-roof-systems-east-newark-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/flat-roof-systems/guttenberg",
+      "destination": "/flat-roof-systems-guttenberg-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/flat-roof-systems/weehawken",
+      "destination": "/flat-roof-systems-weehawken-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/roof-maintenance/jersey-city",
+      "destination": "/roof-maintenance-jersey-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/roof-maintenance/hoboken",
+      "destination": "/roof-maintenance-hoboken-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/roof-maintenance/bayonne",
+      "destination": "/roof-maintenance-bayonne-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/roof-maintenance/north-bergen",
+      "destination": "/roof-maintenance-north-bergen-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/roof-maintenance/union-city",
+      "destination": "/roof-maintenance-union-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/roof-maintenance/west-new-york",
+      "destination": "/roof-maintenance-west-new-york-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/roof-maintenance/secaucus",
+      "destination": "/roof-maintenance-secaucus-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/roof-maintenance/kearny",
+      "destination": "/roof-maintenance-kearny-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/roof-maintenance/harrison",
+      "destination": "/roof-maintenance-harrison-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/roof-maintenance/east-newark",
+      "destination": "/roof-maintenance-east-newark-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/roof-maintenance/guttenberg",
+      "destination": "/roof-maintenance-guttenberg-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/roof-maintenance/weehawken",
+      "destination": "/roof-maintenance-weehawken-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-repair/jersey-city",
+      "destination": "/commercial-roof-repair-jersey-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-repair/hoboken",
+      "destination": "/commercial-roof-repair-hoboken-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-repair/bayonne",
+      "destination": "/commercial-roof-repair-bayonne-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-repair/north-bergen",
+      "destination": "/commercial-roof-repair-north-bergen-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-repair/union-city",
+      "destination": "/commercial-roof-repair-union-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-repair/west-new-york",
+      "destination": "/commercial-roof-repair-west-new-york-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-repair/secaucus",
+      "destination": "/commercial-roof-repair-secaucus-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-repair/kearny",
+      "destination": "/commercial-roof-repair-kearny-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-repair/harrison",
+      "destination": "/commercial-roof-repair-harrison-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-repair/east-newark",
+      "destination": "/commercial-roof-repair-east-newark-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-repair/guttenberg",
+      "destination": "/commercial-roof-repair-guttenberg-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-repair/weehawken",
+      "destination": "/commercial-roof-repair-weehawken-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-replacement/jersey-city",
+      "destination": "/commercial-roof-replacement-jersey-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-replacement/hoboken",
+      "destination": "/commercial-roof-replacement-hoboken-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-replacement/bayonne",
+      "destination": "/commercial-roof-replacement-bayonne-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-replacement/north-bergen",
+      "destination": "/commercial-roof-replacement-north-bergen-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-replacement/union-city",
+      "destination": "/commercial-roof-replacement-union-city-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-replacement/west-new-york",
+      "destination": "/commercial-roof-replacement-west-new-york-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-replacement/secaucus",
+      "destination": "/commercial-roof-replacement-secaucus-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-replacement/kearny",
+      "destination": "/commercial-roof-replacement-kearny-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-replacement/harrison",
+      "destination": "/commercial-roof-replacement-harrison-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-replacement/east-newark",
+      "destination": "/commercial-roof-replacement-east-newark-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-replacement/guttenberg",
+      "destination": "/commercial-roof-replacement-guttenberg-nj",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/commercial/commercial-replacement/weehawken",
+      "destination": "/commercial-roof-replacement-weehawken-nj",
+      "statusCode": 301
+    }
+  ]
+}

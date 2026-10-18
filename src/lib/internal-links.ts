@@ -4,6 +4,7 @@ import { ALL_COST_GUIDES } from '@/data/content/cost-guides';
 import { ALL_MATERIAL_GUIDES } from '@/data/content/material-guides';
 import { ALL_PROBLEMS } from '@/data/content/problems';
 import { SERVICES } from '@/data/services';
+import { servicePillarPath, cityHubPath } from '@/lib/paths';
 import { MUNICIPALITIES } from '@/data/municipalities';
 
 export interface ContentNode {
@@ -189,7 +190,7 @@ export function getCrossSiloLinks(currentSilo: string, limit = 3): InternalLink[
 export function getServicePillarLink(serviceSlug: string, category: ServiceCategory): InternalLink {
   return {
     title: serviceSlug.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
-    path: `/services/${category}/${serviceSlug}`,
+    path: servicePillarPath(serviceSlug),
     type: 'service',
   };
 }
@@ -340,7 +341,7 @@ export function initializeContentRegistry(): void {
       slug: service.slug,
       type: 'service',
       title: service.name,
-      path: `/services/${service.category}/${service.slug}`,
+      path: servicePillarPath(service.slug),
       siloService: service.slug,
       siloCategory: service.category,
       tags: [],
@@ -357,7 +358,7 @@ export function initializeContentRegistry(): void {
       slug: city.slug,
       type: 'city',
       title: city.name,
-      path: `/service-areas/${city.slug}`,
+      path: cityHubPath(city.slug),
       siloService: null,
       siloCategory: null,
       tags: [],

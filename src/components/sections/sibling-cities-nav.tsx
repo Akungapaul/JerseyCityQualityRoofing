@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getAllMunicipalities } from "@/data/municipalities";
+import { serviceCityPath } from "@/lib/paths";
 
 interface SiblingCitiesNavProps {
   serviceName: string;
@@ -34,7 +35,7 @@ export function SiblingCitiesNav({
           ) : (
             <Link
               key={city.slug}
-              href={`/services/${serviceCategory}/${serviceSlug}/${city.slug}`}
+              href={serviceCityPath(serviceSlug, city.slug)}
               prefetch={false}
               className="inline-flex items-center bg-secondary rounded-lg px-4 py-2 text-lg text-text-primary border border-[#4a5040] hover:border-accent transition-colors duration-[150ms] min-h-[44px]"
             >

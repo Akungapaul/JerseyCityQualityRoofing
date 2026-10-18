@@ -20,37 +20,38 @@ import {
 import { TESTIMONIALS } from "@/data/testimonials";
 import { HOMEPAGE_FAQS } from "@/data/homepage-faq";
 import { BASE_URL } from "@/lib/constants";
+import { serviceCityPath, servicePillarPath, cityHubPath } from "@/lib/paths";
 
 const homeDescription =
   "Roofer in Jersey City, NJ for roof repair, roof replacement, inspections, emergency leaks, and commercial roofing across Hudson County.";
 
 const PRIORITY_SERVICE_LINKS = [
   {
-    href: "/services/residential/roof-replacement/jersey-city",
+    href: serviceCityPath("roof-replacement", "jersey-city"),
     label: "Roof Replacement in Jersey City, NJ",
     description:
       "Full tear-offs, flat-roof membranes, and shingle replacements for Jersey City homes.",
   },
   {
-    href: "/services/residential/roof-repair/jersey-city",
+    href: serviceCityPath("roof-repair", "jersey-city"),
     label: "Roof Repair in Jersey City, NJ",
     description:
       "Leak tracing, storm damage repair, flashing fixes, and brownstone parapet repairs.",
   },
   {
-    href: "/services/commercial/commercial-replacement/jersey-city",
+    href: serviceCityPath("commercial-replacement", "jersey-city"),
     label: "Commercial Roof Replacement",
     description:
       "Commercial membrane replacement for Jersey City apartments, storefronts, and mixed-use buildings.",
   },
   {
-    href: "/services/commercial/flat-roof-systems",
+    href: servicePillarPath("flat-roof-systems"),
     label: "Commercial Flat Roof Systems",
     description:
       "TPO, EPDM, modified bitumen, drainage, and maintenance options for flat roofs.",
   },
   {
-    href: "/service-areas/jersey-city",
+    href: cityHubPath("jersey-city"),
     label: "Jersey City Service Area",
     description:
       "Neighborhood-specific roofing guidance for Downtown, The Heights, Journal Square, and more.",

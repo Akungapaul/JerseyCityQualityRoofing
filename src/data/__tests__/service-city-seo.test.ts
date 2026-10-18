@@ -39,7 +39,7 @@ describe('service-in-city SEO', () => {
       const area = jsonLd.areaServed as Record<string, string>;
       expect(area['@type']).toBe('City');
       expect(area.name).toBe('Jersey City');
-      expect(area['@id']).toBe(`${BASE_URL}/service-areas/jersey-city#city`);
+      expect(area['@id']).toBe(`${BASE_URL}/roofing-contractor-jersey-city-nj#city`);
     });
 
     it('provider references organization @id', () => {

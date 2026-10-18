@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { ChevronDown } from "lucide-react";
 import { getServicesByCategory } from "@/data/services";
 import { getAllMunicipalities } from "@/data/municipalities";
+import { servicePillarPath, cityHubPath } from "@/lib/paths";
 
 type PanelId = "residential" | "commercial" | "locations" | "resources" | null;
 
@@ -156,7 +157,7 @@ export function MegaMenu() {
                     {residentialServices.map((service) => (
                       <Link
                         key={service.slug}
-                        href={`/services/residential/${service.slug}`}
+                        href={servicePillarPath(service.slug)}
                         className="group block rounded-md p-2 -mx-2 transition-colors duration-[--duration-fast] hover:bg-dominant-lighter"
                         onClick={closePanel}
                         role="menuitem"
@@ -182,7 +183,7 @@ export function MegaMenu() {
                     {commercialServices.map((service) => (
                       <Link
                         key={service.slug}
-                        href={`/services/commercial/${service.slug}`}
+                        href={servicePillarPath(service.slug)}
                         className="group block rounded-md p-2 -mx-2 transition-colors duration-[--duration-fast] hover:bg-dominant-lighter"
                         onClick={closePanel}
                         role="menuitem"
@@ -209,7 +210,7 @@ export function MegaMenu() {
                       {municipalities.map((muni) => (
                         <Link
                           key={muni.slug}
-                          href={`/service-areas/${muni.slug}`}
+                          href={cityHubPath(muni.slug)}
                           className="block rounded-md px-2 py-1.5 font-body text-lg text-text-secondary hover:text-accent hover:bg-dominant-lighter transition-colors duration-[--duration-fast]"
                           onClick={closePanel}
                           role="menuitem"
