@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const UNION_CITY_COMMERCIAL_REPAIR_CONTENT: ServiceInCityContent = {
   serviceSlug: 'commercial-repair',
   citySlug: 'union-city',
-  heroHeadline: 'Commercial Roof Repair in Union City, NJ',
-  heroSubtitle: 'Specialized repair for Union City\'s Bergenline Avenue retail buildings, mixed-use properties, and multi-family apartment complexes where commercial-grade roofing protects both businesses and residents.',
+  heroHeadline: 'Commercial Roof Repair Union City, NJ',
+  seoTitle: 'Commercial Roof Repair Union City, NJ',
+  heroSubtitle: 'Commercial Roof Repair Union City, NJ — specialized repair for Union City\'s Bergenline Avenue retail buildings, mixed-use properties, and multi-family apartment complexes where commercial-grade roofing protects both businesses and residents.',
 
   cityServiceNarrative: `Commercial roof repair in Union City addresses a building stock that is unlike the standalone commercial properties found in suburban business parks. The commercial roofing landscape here is dominated by mixed-use buildings along Bergenline Avenue, one of the busiest retail streets in New Jersey, where ground-floor storefronts, restaurants, and professional offices sit beneath two to four floors of residential apartments, all under a single flat roof. The larger standalone commercial buildings in the Transfer Station area near Route 495 present their own challenges, but the Bergenline Avenue mixed-use format is what defines commercial roofing in this city. When a commercial roof fails in Union City, it does not just affect inventory or equipment in a warehouse; it damages a restaurant kitchen, floods a retail store during business hours, and sends water cascading through the residential units above and below.
 

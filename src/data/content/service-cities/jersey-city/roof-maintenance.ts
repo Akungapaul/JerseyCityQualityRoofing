@@ -4,9 +4,9 @@ export const JERSEY_CITY_ROOF_MAINTENANCE_CONTENT = {
   serviceSlug: 'roof-maintenance',
   citySlug: 'jersey-city',
 
-  heroHeadline: 'Commercial Roof Maintenance Programs in Jersey City, NJ',
-  heroSubtitle:
-    'Preventive maintenance that extends roof life and reduces emergency costs for Jersey City building owners and property managers.',
+  heroHeadline: 'Roof Maintenance Jersey City, NJ',
+  seoTitle: 'Roof Maintenance Jersey City, NJ',
+  heroSubtitle: 'Roof Maintenance Jersey City, NJ — preventive maintenance that extends roof life and reduces emergency costs for Jersey City building owners and property managers.',
 
   cityServiceNarrative: `The difference between a commercial roof that reaches its full warranty life and one that fails prematurely almost always comes down to maintenance. In Jersey City, where the combination of salt air from the Hudson River, intense thermal cycling between summer and winter, and two to three nor'easters per year accelerates every form of roofing deterioration, a structured maintenance program is not an optional expense, it is a fundamental part of protecting your building investment. Building owners in Downtown, Journal Square, Bergen-Lafayette, Greenville, and the West Side who invest in preventive maintenance consistently spend thirty to fifty percent less on roofing over a ten-year period than those who operate on a repair-when-it-fails basis.
 

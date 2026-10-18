@@ -4,9 +4,9 @@ export const JERSEY_CITY_COMMERCIAL_REPLACEMENT_CONTENT = {
   serviceSlug: 'commercial-replacement',
   citySlug: 'jersey-city',
 
-  heroHeadline: 'Commercial Roof Replacement in Jersey City, NJ',
-  heroSubtitle:
-    'Full membrane system replacement for Jersey City office buildings, warehouses, and mixed-use properties with engineered solutions for coastal urban conditions.',
+  heroHeadline: 'Commercial Roof Replacement Jersey City, NJ',
+  seoTitle: 'Commercial Roof Replacement Jersey City, NJ',
+  heroSubtitle: 'Commercial Roof Replacement Jersey City, NJ — full membrane system replacement for Jersey City office buildings, warehouses, and mixed-use properties with engineered solutions for coastal urban conditions.',
 
   cityServiceNarrative: `Commercial roof replacement in Jersey City is a capital investment that defines the building's performance envelope for the next twenty-five to thirty years. Unlike residential replacement where the primary concern is keeping water out, commercial replacement addresses an integrated set of performance requirements: waterproofing, thermal insulation for energy code compliance, wind uplift resistance for the specific building height and exposure, drainage engineering to eliminate ponding, fire resistance classification, and coordination with rooftop mechanical systems that serve the building's HVAC, electrical, and communication infrastructure. Getting any one of these components wrong compromises the entire system.
 

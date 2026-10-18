@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const EAST_NEWARK_COMMERCIAL_REPAIR_CONTENT: ServiceInCityContent = {
   serviceSlug: 'commercial-repair',
   citySlug: 'east-newark',
-  heroHeadline: 'Commercial Roof Repair in East Newark, NJ',
-  heroSubtitle: 'For a borough with a handful of storefronts and mixed-use buildings, every commercial roof protects both a business and the families living above it.',
+  heroHeadline: 'Commercial Roof Repair East Newark, NJ',
+  seoTitle: 'Commercial Roof Repair East Newark, NJ',
+  heroSubtitle: 'Commercial Roof Repair East Newark, NJ — For a borough with a handful of storefronts and mixed-use buildings, every commercial roof protects both a business and the families living above it.',
 
   cityServiceNarrative: `Commercial roof repair in East Newark operates at a scale that is fundamentally different from any other municipality we serve. This is not a town with industrial parks, office campuses, or large retail centers. East Newark's commercial inventory is contained almost entirely along Grant Avenue, the borough's main street, where a short corridor of mixed-use buildings houses ground-floor businesses with residential apartments above. Add in the borough's municipal buildings, East Newark Elementary School, and a handful of small professional offices, and you have captured the entire commercial roofing market in a municipality of 0.11 square miles. What these buildings lack in quantity, they make up in importance: every commercial roof in East Newark protects both a business operation and the families who depend on it.
 

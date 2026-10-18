@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const HOBOKEN_FLAT_ROOF_SYSTEMS_CONTENT: ServiceInCityContent = {
   serviceSlug: 'flat-roof-systems',
   citySlug: 'hoboken',
-  heroHeadline: 'Commercial Flat Roof Systems in Hoboken, NJ',
-  heroSubtitle: 'Engineered membrane solutions for Hoboken\'s Washington Street retail buildings, waterfront offices, and mixed-use properties.',
+  heroHeadline: 'Flat Roof Systems Hoboken, NJ',
+  seoTitle: 'Flat Roof Systems Hoboken, NJ',
+  heroSubtitle: 'Flat Roof Systems Hoboken, NJ — engineered membrane solutions for Hoboken\'s Washington Street retail buildings, waterfront offices, and mixed-use properties.',
 
   cityServiceNarrative: `Commercial flat roof systems in Hoboken operate in an environment that tests every material choice and installation detail more aggressively than any other location in Hudson County. This 1.3 square mile city has no buffer zone between the waterfront and the commercial core. Washington Street, the main commercial corridor running north to south through the center of town, is less than half a mile from the Hudson River at any point. That proximity means every commercial roof in Hoboken faces salt air exposure, wind loads amplified by the narrow street canyon effect, and the temperature extremes that come with a waterfront location where the river moderates summer heat but amplifies winter wind chill.
 

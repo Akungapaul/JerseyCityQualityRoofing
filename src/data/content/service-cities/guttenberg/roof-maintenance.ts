@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const GUTTENBERG_ROOF_MAINTENANCE_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-maintenance',
   citySlug: 'guttenberg',
-  heroHeadline: 'Roof Maintenance Programs in Guttenberg, NJ',
-  heroSubtitle: 'Scheduled maintenance for America\'s densest municipality, where flat roofs on every building, cliff-edge wind stress, and condo board governance make proactive maintenance the most cost-effective investment a building can make.',
+  heroHeadline: 'Roof Maintenance Guttenberg, NJ',
+  seoTitle: 'Roof Maintenance Guttenberg, NJ',
+  heroSubtitle: 'Roof Maintenance Guttenberg, NJ — scheduled maintenance for America\'s densest municipality, where flat roofs on every building, cliff-edge wind stress, and condo board governance make proactive maintenance the most cost-effective investment a building can make.',
 
   cityServiceNarrative: `Roof maintenance in Guttenberg is not optional. It is a fiduciary obligation for the condo boards and property management companies that govern virtually every building in the densest municipality in America. When a town of 57,000 people occupying 0.19 square miles has no single-family homes to speak of, every roofing decision is a collective decision made by boards and management companies on behalf of dozens or hundreds of unit owners. Deferred maintenance on a Guttenberg building roof does not just create a repair bill. It creates a special assessment, an angry ownership group, and a building management crisis that could have been avoided with a maintenance program costing a fraction of the emergency repair.
 

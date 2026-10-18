@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const HARRISON_ROOF_MAINTENANCE_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-maintenance',
   citySlug: 'harrison',
-  heroHeadline: 'Roof Maintenance Programs in Harrison, NJ',
-  heroSubtitle: 'From annual inspections on century-old Harrison Center homes to comprehensive maintenance contracts on waterfront luxury developments, we keep Harrison roofs performing against the Passaic River\'s constant moisture pressure.',
+  heroHeadline: 'Roof Maintenance Harrison, NJ',
+  seoTitle: 'Roof Maintenance Harrison, NJ',
+  heroSubtitle: 'Roof Maintenance Harrison, NJ — from annual inspections on century-old Harrison Center homes to comprehensive maintenance contracts on waterfront luxury developments, we keep Harrison roofs performing against the Passaic River\'s constant moisture pressure.',
 
   cityServiceNarrative: `Roof maintenance in Harrison is not a luxury; it is the minimum investment required to protect roofing systems from the accelerated deterioration that the Passaic River environment imposes on every building in this municipality. We have maintained roofs across Harrison for years, and the data from our maintenance programs tells a consistent story: buildings that receive regular professional maintenance experience half the emergency repair frequency and twenty to thirty percent longer system lifespans compared to properties where maintenance is deferred until problems become visible from inside the building. In a town where property values have climbed dramatically during the redevelopment era, the financial argument for systematic maintenance has never been stronger.
 

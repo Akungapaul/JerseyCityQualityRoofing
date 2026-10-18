@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const HOBOKEN_COMMERCIAL_REPAIR_CONTENT: ServiceInCityContent = {
   serviceSlug: 'commercial-repair',
   citySlug: 'hoboken',
-  heroHeadline: 'Commercial Roof Repair in Hoboken, NJ',
-  heroSubtitle: 'Targeted repair solutions for Hoboken\'s mixed-use buildings, apartment complexes, and waterfront commercial properties.',
+  heroHeadline: 'Commercial Roof Repair Hoboken, NJ',
+  seoTitle: 'Commercial Roof Repair Hoboken, NJ',
+  heroSubtitle: 'Commercial Roof Repair Hoboken, NJ — targeted repair solutions for Hoboken\'s mixed-use buildings, apartment complexes, and waterfront commercial properties.',
 
   cityServiceNarrative: `Commercial roof repair in Hoboken operates under a set of constraints that you will not find documented in any roofing manual because they are entirely specific to this 1.3 square mile city. When a property manager calls about a leak in a mixed-use building on Washington Street, the repair is not just a roofing problem. It is a logistics problem, a regulatory problem, and frequently a neighbor-relations problem, all compressed into the tightest urban footprint in Hudson County.
 

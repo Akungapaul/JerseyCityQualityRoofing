@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const HARRISON_COMMERCIAL_REPLACEMENT_CONTENT: ServiceInCityContent = {
   serviceSlug: 'commercial-replacement',
   citySlug: 'harrison',
-  heroHeadline: 'Commercial Roof Replacement in Harrison, NJ',
-  heroSubtitle: 'From first-cycle membrane replacement on decade-old waterfront developments to full system overhaul on Red Bull Arena district commercial buildings, we deliver replacement roofing engineered for Harrison\'s demanding river-adjacent commercial market.',
+  heroHeadline: 'Commercial Roof Replacement Harrison, NJ',
+  seoTitle: 'Commercial Roof Replacement Harrison, NJ',
+  heroSubtitle: 'Commercial Roof Replacement Harrison, NJ — from first-cycle membrane replacement on decade-old waterfront developments to full system overhaul on Red Bull Arena district commercial buildings, we deliver replacement roofing engineered for Harrison\'s demanding river-adjacent commercial market.',
 
   cityServiceNarrative: `Commercial roof replacement in Harrison represents one of the largest capital expenditure categories for building owners in a municipality that has undergone the most dramatic commercial transformation in Hudson County's recent history. The waterfront redevelopment that began in the mid-2010s created a wave of new commercial and mixed-use construction that is now approaching its first replacement cycle, joining the existing inventory of traditional commercial buildings along Harrison Avenue and in the small commercial clusters around town that have been cycling through replacements for decades. The scale of the impending commercial replacement market in Harrison is unlike anything other Hudson County municipalities face, and the building owners and property managers responsible for these decisions need a contractor who understands both the technical requirements and the financial stakes involved.
 

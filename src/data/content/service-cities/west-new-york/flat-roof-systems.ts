@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const WEST_NEW_YORK_FLAT_ROOF_SYSTEMS_CONTENT: ServiceInCityContent = {
   serviceSlug: 'flat-roof-systems',
   citySlug: 'west-new-york',
-  heroHeadline: 'Flat Roof Systems in West New York, NJ',
-  heroSubtitle: 'Engineered for Palisades cliff-edge uplift and dual-direction wind -- flat roof systems built to withstand what no other Hudson County location demands.',
+  heroHeadline: 'Flat Roof Systems West New York, NJ',
+  seoTitle: 'Flat Roof Systems West New York, NJ',
+  heroSubtitle: 'Flat Roof Systems West New York, NJ — engineered for Palisades cliff-edge uplift and dual-direction wind -- flat roof systems built to withstand what no other Hudson County location demands.',
 
   cityServiceNarrative: `Flat roofs dominate West New York's building stock more than any other roof type. The mid-rise and high-rise residential buildings along Boulevard East, the walk-up apartment buildings along Park Avenue and Palisade Avenue, the mixed-use commercial buildings on Bergenline Avenue, and the institutional buildings scattered throughout the town all share one feature: expansive flat roof surfaces that must perform under the most demanding wind conditions in Hudson County. The Palisades cliff-edge geography subjects every flat roof in West New York to wind uplift forces that are measurably higher than what identical roofs experience in adjacent Union City or the lower-elevation waterfront communities, and the dual-direction wind exposure on Boulevard East creates loading conditions that exceed standard design parameters.
 

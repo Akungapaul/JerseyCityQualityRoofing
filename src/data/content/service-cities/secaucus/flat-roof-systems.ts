@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const SECAUCUS_FLAT_ROOF_SYSTEMS_CONTENT: ServiceInCityContent = {
   serviceSlug: 'flat-roof-systems',
   citySlug: 'secaucus',
-  heroHeadline: 'Flat Roof Systems in Secaucus, NJ',
-  heroSubtitle: 'Engineered membrane solutions for the Meadowlands environment where flat terrain, persistent moisture, and large commercial footprints demand drainage-first flat roof design.',
+  heroHeadline: 'Flat Roof Systems Secaucus, NJ',
+  seoTitle: 'Flat Roof Systems Secaucus, NJ',
+  heroSubtitle: 'Flat Roof Systems Secaucus, NJ — engineered membrane solutions for the Meadowlands environment where flat terrain, persistent moisture, and large commercial footprints demand drainage-first flat roof design.',
 
   cityServiceNarrative: `Flat roof systems in Secaucus face the most challenging operating conditions of any flat roofs in Hudson County, and it is not even close. The combination of flat terrain at near-sea-level elevation, persistent Meadowlands humidity, and the high concentration of large-footprint commercial buildings creates a flat roof environment where ponding water, membrane stress, and drainage failures are chronic rather than occasional. When we design, install, or maintain a flat roof system in Secaucus, we are engineering for an environment where water does not want to leave the roof surface, where the surrounding atmosphere is trying to add moisture to the assembly rather than dry it, and where the flat terrain below the building provides no natural drainage advantage.
 

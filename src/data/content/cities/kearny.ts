@@ -2,8 +2,9 @@ import type { CityHubContent } from '@/data/types';
 
 export const KEARNY_CONTENT: CityHubContent = {
   slug: 'kearny',
-  heroHeadline: 'Experienced Roofing Contractor in Kearny, NJ',
-  heroSubtitle: 'From the Victorian homes near Gunnell Oval to the industrial complexes of South Kearny, we protect every roof in this town of diverse architecture and rich heritage.',
+  heroHeadline: 'Roofing Contractor Kearny, NJ',
+  seoTitle: 'Roofing Contractor Kearny, NJ',
+  heroSubtitle: 'Roofing Contractor Kearny, NJ — from the Victorian homes near Gunnell Oval to the industrial complexes of South Kearny, we protect every roof in this town of diverse architecture and rich heritage.',
 
   localExpertiseNarrative: `Kearny is a town that tells two very different stories depending on which direction you are driving. Head north from West Hudson Park toward the residential neighborhoods around Gunnell Oval, and you are surrounded by tree-lined streets of Colonial Revival homes, Cape Cod cottages, and Victorian-era houses that have sheltered families for a century or more. Drive south toward the Hackensack River and the Meadowlands, and the landscape shifts dramatically to large industrial complexes, warehouses, and the sprawling Kearny Point development where former shipyard buildings are being transformed into creative and commercial spaces. We work on both sides of this divide, and the experience of handling everything from a Victorian slate roof restoration to a 50,000-square-foot industrial membrane installation is exactly what Kearny demands from its roofing contractor.
 

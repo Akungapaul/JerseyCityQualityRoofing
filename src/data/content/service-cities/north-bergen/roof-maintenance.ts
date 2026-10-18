@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const NORTH_BERGEN_ROOF_MAINTENANCE_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-maintenance',
   citySlug: 'north-bergen',
-  heroHeadline: 'Roof Maintenance Programs in North Bergen, NJ',
-  heroSubtitle: 'Systematic maintenance that accounts for the Palisades ridge wear -- protecting your North Bergen roof before the next storm tests it.',
+  heroHeadline: 'Roof Maintenance North Bergen, NJ',
+  seoTitle: 'Roof Maintenance North Bergen, NJ',
+  heroSubtitle: 'Roof Maintenance North Bergen, NJ — systematic maintenance that accounts for the Palisades ridge wear -- protecting your North Bergen roof before the next storm tests it.',
 
   cityServiceNarrative: `Roof maintenance in North Bergen is not a luxury. It is the most cost-effective strategy for managing the accelerated wear that the Palisades escarpment imposes on every roofing system in the township. When we maintain a roof on a colonial in Woodcliff, we are checking for the specific deterioration patterns that ridge-top wind produces: backed-out nails from sustained uplift cycling, cracked sealant at flashing junctions from rapid thermal stress, and granule loss on west-facing slopes that proceeds at roughly twice the rate of east-facing slopes on the same building. These are not issues that appear suddenly. They develop gradually between storms, and systematic maintenance catches them while they are still minor adjustments rather than emergency repairs.
 

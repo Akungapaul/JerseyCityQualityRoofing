@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const NORTH_BERGEN_COMMERCIAL_REPAIR_CONTENT: ServiceInCityContent = {
   serviceSlug: 'commercial-repair',
   citySlug: 'north-bergen',
-  heroHeadline: 'Commercial Roof Repair in North Bergen, NJ',
-  heroSubtitle: 'From Tonnelle Avenue warehouses to Boulevard East hospitality properties, we repair commercial roofs engineered for North Bergen\'s elevation and commercial demands.',
+  heroHeadline: 'Commercial Roof Repair North Bergen, NJ',
+  seoTitle: 'Commercial Roof Repair North Bergen, NJ',
+  heroSubtitle: 'Commercial Roof Repair North Bergen, NJ — from Tonnelle Avenue warehouses to Boulevard East hospitality properties, we repair commercial roofs engineered for North Bergen\'s elevation and commercial demands.',
 
   cityServiceNarrative: `Commercial roof repair in North Bergen serves a building stock that ranges from the massive warehouses and auto dealerships lining the Tonnelle Avenue corridor to the hospitality and retail properties along Boulevard East, the institutional buildings scattered throughout the township, and the smaller commercial structures on Kennedy Boulevard. Each commercial building type has distinct roofing demands, and the Palisades escarpment adds an elevation factor that affects wind uplift, thermal cycling, and drainage patterns on commercial roofs just as significantly as it does on residential ones. When a property manager calls about a leak in a 20,000-square-foot Tonnelle Avenue warehouse, we know that the repair must account for both the immediate membrane failure and the environmental stresses that caused it, because a patch that works at sea level may not hold at North Bergen's elevation where the thermal cycling and wind stress are measurably more intense.
 

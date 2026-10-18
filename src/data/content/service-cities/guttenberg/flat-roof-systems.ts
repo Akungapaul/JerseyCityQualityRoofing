@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const GUTTENBERG_FLAT_ROOF_SYSTEMS_CONTENT: ServiceInCityContent = {
   serviceSlug: 'flat-roof-systems',
   citySlug: 'guttenberg',
-  heroHeadline: 'Flat Roof Systems in Guttenberg, NJ',
-  heroSubtitle: 'Specialized flat roof design, installation, and maintenance for America\'s densest municipality, where virtually every building has a flat roof and the Palisades cliff edge creates wind conditions that test every membrane system to its limits.',
+  heroHeadline: 'Flat Roof Systems Guttenberg, NJ',
+  seoTitle: 'Flat Roof Systems Guttenberg, NJ',
+  heroSubtitle: 'Flat Roof Systems Guttenberg, NJ — specialized flat roof design, installation, and maintenance for America\'s densest municipality, where virtually every building has a flat roof and the Palisades cliff edge creates wind conditions that test every membrane system to its limits.',
 
   cityServiceNarrative: `Flat roof systems are not just common in Guttenberg. They are effectively the only roof type in town. In the densest municipality in the United States, where 57,000 people occupy just 0.19 square miles, the building stock is dominated by high-rise apartment towers, mid-rise apartment buildings, pre-war walk-ups, and mixed-use commercial structures, and virtually all of them have flat roofs. This means that flat roof expertise is not a specialty we offer in Guttenberg. It is the entirety of what Guttenberg roofing requires. Every project here, whether it is a new installation on a renovation, a replacement of a failing system, or ongoing maintenance on an established building, involves flat roof membrane technology operating under conditions that are among the most demanding in the metropolitan area.
 

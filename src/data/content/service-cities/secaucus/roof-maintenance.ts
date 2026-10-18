@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const SECAUCUS_ROOF_MAINTENANCE_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-maintenance',
   citySlug: 'secaucus',
-  heroHeadline: 'Roof Maintenance in Secaucus, NJ',
-  heroSubtitle: 'Proactive maintenance programs designed for the Meadowlands moisture environment where biannual attention prevents the accelerated deterioration that makes Secaucus roofs the most maintenance-intensive in Hudson County.',
+  heroHeadline: 'Roof Maintenance Secaucus, NJ',
+  seoTitle: 'Roof Maintenance Secaucus, NJ',
+  heroSubtitle: 'Roof Maintenance Secaucus, NJ — proactive maintenance programs designed for the Meadowlands moisture environment where biannual attention prevents the accelerated deterioration that makes Secaucus roofs the most maintenance-intensive in Hudson County.',
 
   cityServiceNarrative: `Roof maintenance in Secaucus is not optional or deferrable the way it might be in a drier community. The Meadowlands moisture environment creates conditions where deferred maintenance compounds exponentially, turning minor issues into major repairs within a single season. A moss colony that would be cosmetic in North Bergen becomes a granule-destroying agent on a Secaucus shingle within eighteen months. A minor sealant crack at a flashing transition that could wait a year in West New York allows moisture into the roof assembly within weeks in Secaucus's humidity, starting a concealed deterioration chain that only becomes visible when the damage has already spread to the decking. Maintenance in Secaucus is the primary defense against the Meadowlands moisture that attacks every roofing material from the moment it is installed.
 

@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const UNION_CITY_COMMERCIAL_REPLACEMENT_CONTENT: ServiceInCityContent = {
   serviceSlug: 'commercial-replacement',
   citySlug: 'union-city',
-  heroHeadline: 'Commercial Roof Replacement in Union City, NJ',
-  heroSubtitle: 'Full commercial roof replacement for Union City\'s Bergenline Avenue mixed-use buildings, multi-family apartment complexes, and Transfer Station commercial properties, engineered for extreme density and continuous occupancy.',
+  heroHeadline: 'Commercial Roof Replacement Union City, NJ',
+  seoTitle: 'Commercial Roof Replacement Union City, NJ',
+  heroSubtitle: 'Commercial Roof Replacement Union City, NJ — full commercial roof replacement for Union City\'s Bergenline Avenue mixed-use buildings, multi-family apartment complexes, and Transfer Station commercial properties, engineered for extreme density and continuous occupancy.',
 
   cityServiceNarrative: `Commercial roof replacement in Union City is a large-scale construction project executed under constraints that would stop most commercial roofing contractors before they started. The buildings that need commercial-grade replacement in this city, the mixed-use Bergenline Avenue properties, the large multi-family apartment complexes throughout Union Hill, and the standalone commercial buildings in the Transfer Station area, are all occupied buildings where tenants continue living, working, and operating businesses during the replacement. The work happens above active restaurants, open retail shops, and occupied apartments, on rooftops accessed through building interiors because exterior crane access is impossible on most Union City blocks, in a city where the nearest staging area may be a block away and the dumpster permit requires weeks of advance coordination with DPW.
 

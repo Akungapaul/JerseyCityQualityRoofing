@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const EAST_NEWARK_EMERGENCY_ROOFING_CONTENT: ServiceInCityContent = {
   serviceSlug: 'emergency-roofing',
   citySlug: 'east-newark',
-  heroHeadline: 'Emergency Roofing Services in East Newark, NJ',
-  heroSubtitle: 'When storm damage hits the smallest borough in NJ, our crews reach every address in minutes. 24/7 emergency response for a community that cannot afford to wait.',
+  heroHeadline: 'Emergency Roof Repair East Newark, NJ',
+  seoTitle: 'Emergency Roof Repair East Newark, NJ',
+  heroSubtitle: 'Emergency Roof Repair East Newark, NJ — When storm damage hits the smallest borough in NJ, our crews reach every address in minutes. 24/7 emergency response for a community that cannot afford to wait.',
 
   cityServiceNarrative: `Emergency roofing in East Newark operates on a scale and with a community dynamic that is completely different from any other municipality we serve. At 0.11 square miles with roughly 2,700 residents packed into tightly spaced two-family homes and row houses, a single storm event can affect a significant percentage of the borough's housing stock simultaneously. When a nor'easter rips through East Newark, the damage pattern is not scattered across miles of suburban streets. It is concentrated within a few city blocks where the same building types, the same roof ages, and the same construction methods are all exposed to the same wind, rain, and debris conditions at the same moment. Our emergency response to East Newark is not a single-property dispatch. It is a community-wide triage operation where we assess multiple buildings in a single sweep and prioritize based on the severity of interior water exposure and the occupancy of each structure.
 

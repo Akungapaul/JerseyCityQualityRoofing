@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const SECAUCUS_EMERGENCY_ROOFING_CONTENT: ServiceInCityContent = {
   serviceSlug: 'emergency-roofing',
   citySlug: 'secaucus',
-  heroHeadline: 'Emergency Roofing in Secaucus, NJ',
-  heroSubtitle: 'Rapid response for Meadowlands storm damage, flooding-related roof failures, and moisture emergencies that cannot wait in Secaucus\'s uniquely vulnerable environment.',
+  heroHeadline: 'Emergency Roof Repair Secaucus, NJ',
+  seoTitle: 'Emergency Roof Repair Secaucus, NJ',
+  heroSubtitle: 'Emergency Roof Repair Secaucus, NJ — rapid response for Meadowlands storm damage, flooding-related roof failures, and moisture emergencies that cannot wait in Secaucus\'s uniquely vulnerable environment.',
 
   cityServiceNarrative: `Emergency roofing calls in Secaucus follow a pattern distinct from anywhere else in Hudson County. While most emergency calls across the county are triggered by storm damage to the roof surface, Secaucus emergencies frequently involve moisture-related failures that build over time and reach a crisis point during weather events that would not cause emergencies in other communities. A moderate rainfall that a properly functioning roof handles without difficulty becomes an emergency in Secaucus when the years of Meadowlands humidity have silently degraded the roof assembly to the point where it can no longer manage even routine water loads. We respond to more moisture-cascade emergencies in Secaucus than in any other municipality we serve, situations where the visible leak is the final symptom of a structural moisture problem that has been developing for years inside the roof system.
 

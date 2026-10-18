@@ -2,8 +2,9 @@ import type { CityHubContent } from '@/data/types';
 
 export const HARRISON_CONTENT: CityHubContent = {
   slug: 'harrison',
-  heroHeadline: 'Expert Roofing Contractor in Harrison, NJ',
-  heroSubtitle: 'From new luxury waterfront construction along the Passaic River to traditional two-family homes near West Hudson Park, we protect every roof in this rapidly transforming town.',
+  heroHeadline: 'Roofing Contractor Harrison, NJ',
+  seoTitle: 'Roofing Contractor Harrison, NJ',
+  heroSubtitle: 'Roofing Contractor Harrison, NJ — from new luxury waterfront construction along the Passaic River to traditional two-family homes near West Hudson Park, we protect every roof in this rapidly transforming town.',
 
   localExpertiseNarrative: `Harrison is a town in the middle of a transformation unlike anything else in Hudson County, and that transformation has fundamentally changed what roofing contractors need to know to work here effectively. Ten years ago, the waterfront along the Passaic River was a stretch of dormant industrial sites and vacant lots. Today that same stretch is lined with luxury apartment complexes, mixed-use developments, and public parks, all anchored by Red Bull Arena and the transit-oriented district around the Harrison PATH Station. The roofing systems on these new buildings are nothing like the roofs on the traditional two-family homes a few blocks inland, and a contractor who only understands one side of that divide is going to leave problems unresolved on the other.
 

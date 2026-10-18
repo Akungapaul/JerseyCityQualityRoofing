@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const NORTH_BERGEN_COMMERCIAL_REPLACEMENT_CONTENT: ServiceInCityContent = {
   serviceSlug: 'commercial-replacement',
   citySlug: 'north-bergen',
-  heroHeadline: 'Commercial Roof Replacement in North Bergen, NJ',
-  heroSubtitle: 'Full-system commercial replacements designed for Tonnelle Avenue warehouses, Boulevard East hospitality buildings, and every commercial property across North Bergen\'s diverse terrain.',
+  heroHeadline: 'Commercial Roof Replacement North Bergen, NJ',
+  seoTitle: 'Commercial Roof Replacement North Bergen, NJ',
+  heroSubtitle: 'Commercial Roof Replacement North Bergen, NJ — full-system commercial replacements designed for Tonnelle Avenue warehouses, Boulevard East hospitality buildings, and every commercial property across North Bergen\'s diverse terrain.',
 
   cityServiceNarrative: `Commercial roof replacement in North Bergen is a capital investment that must account for the township's unique combination of geographic elevation, diverse commercial building stock, and the demanding operational requirements of the businesses these roofs protect. When a Tonnelle Avenue warehouse owner decides to replace a 25,000-square-foot flat roof that has reached end of life, the replacement system must solve not only the membrane failure but also the drainage deficiencies, wind-uplift vulnerabilities, and insulation inadequacies that the original construction left unaddressed. Our commercial replacements in North Bergen are engineered solutions that transform an aging, underperforming roof into a modern system designed for the full range of conditions this township's elevation and commercial environment impose.
 

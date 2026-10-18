@@ -202,6 +202,7 @@ export interface EmergencyContent extends ServiceContent {
 // Phase 7: City hub content data types
 export interface CityHubContent {
   slug: string;                          // Municipality slug (e.g., 'jersey-city')
+  seoTitle?: string;                     // Optional exact <title> override (Rule 7): used verbatim, bypasses the layout brand-suffix template
   heroHeadline: string;                  // City-specific H1
   heroSubtitle: string;                  // Supporting tagline
   localExpertiseNarrative: string;       // ~500 words: first-person expert voice about this city
@@ -225,6 +226,7 @@ export interface NeighborhoodServiceInsight {
 export interface ServiceInCityContent {
   serviceSlug: string;
   citySlug: string;
+  seoTitle?: string;                                 // Optional exact <title> override (Rule 7): used verbatim, bypasses the layout brand-suffix template
   heroHeadline: string;                              // City-specific H1, e.g., "Expert Roof Repair in Jersey City, NJ"
   heroSubtitle: string;                              // Unique supporting tagline
   cityServiceNarrative: string;                      // ~600 words: first-person expert narrative about doing THIS service in THIS city

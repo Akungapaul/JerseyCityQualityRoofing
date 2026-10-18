@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const SECAUCUS_ROOF_REPLACEMENT_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-replacement',
   citySlug: 'secaucus',
-  heroHeadline: 'Roof Replacement in Secaucus, NJ',
-  heroSubtitle: 'Replacing Meadowlands-battered roofs with moisture-engineered systems designed for the persistent humidity, flat terrain, and waterfront conditions unique to Secaucus.',
+  heroHeadline: 'Roof Replacement Secaucus, NJ',
+  seoTitle: 'Roof Replacement Secaucus, NJ',
+  heroSubtitle: 'Roof Replacement Secaucus, NJ — replacing Meadowlands-battered roofs with moisture-engineered systems designed for the persistent humidity, flat terrain, and waterfront conditions unique to Secaucus.',
 
   cityServiceNarrative: `Roof replacement in Secaucus is fundamentally different from roof replacement in any other Hudson County municipality because the Meadowlands environment accelerates roof aging in ways that demand a replacement strategy built around moisture management from the decking up. When we strip an aging roof on a Harmon Cove townhouse or a Clarendon colonial, we consistently find moisture damage that would not exist on a comparable building in North Bergen, Hoboken, or even nearby Kearny. The persistent humidity from the surrounding marshland, the morning fog that condenses on every surface, and the flat terrain that keeps ground-level moisture from draining away all combine to create an environment where roofs work harder and fail sooner than in any other town we serve.
 

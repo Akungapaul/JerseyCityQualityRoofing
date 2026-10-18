@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const SECAUCUS_ROOF_INSPECTION_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-inspection',
   citySlug: 'secaucus',
-  heroHeadline: 'Roof Inspection in Secaucus, NJ',
-  heroSubtitle: 'Comprehensive moisture-focused inspections for Meadowlands-area homes and businesses where persistent humidity demands vigilant monitoring no other community requires.',
+  heroHeadline: 'Roof Inspection Secaucus, NJ',
+  seoTitle: 'Roof Inspection Secaucus, NJ',
+  heroSubtitle: 'Roof Inspection Secaucus, NJ — comprehensive moisture-focused inspections for Meadowlands-area homes and businesses where persistent humidity demands vigilant monitoring no other community requires.',
 
   cityServiceNarrative: `Roof inspection in Secaucus carries a different urgency and requires a different methodology than inspections in any other Hudson County municipality. The Meadowlands environment that surrounds Secaucus on nearly every side creates moisture conditions that can cause significant roof damage between annual inspection cycles, damage that would take two to three years to develop in drier communities like North Bergen or West New York. Standard annual inspection schedules that work well elsewhere are insufficient for Secaucus. We recommend biannual inspections for all Secaucus properties, once in late spring after the winter-to-summer moisture transition and again in late fall before the freeze-thaw cycles begin, because the Meadowlands humidity accelerates every degradation process that inspections are designed to catch.
 

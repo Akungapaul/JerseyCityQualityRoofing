@@ -4,9 +4,9 @@ export const JERSEY_CITY_ROOF_REPAIR_CONTENT = {
   serviceSlug: 'roof-repair',
   citySlug: 'jersey-city',
 
-  heroHeadline: 'Expert Roof Repair in Jersey City, NJ',
-  heroSubtitle:
-    'From brownstone parapet leaks in Downtown to wind-damaged shingles in The Heights, we trace every problem to its source and fix it right.',
+  heroHeadline: 'Roof Repair Jersey City, NJ',
+  seoTitle: 'Roof Repair Jersey City, NJ',
+  heroSubtitle: 'Roof Repair Jersey City, NJ — we trace every problem to its source and fix it right, from brownstone parapet leaks in Downtown to wind-damaged shingles in The Heights.',
 
   cityServiceNarrative: `Roof repair in Jersey City is never a generic job. With a population of nearly 292,500 residents spread across neighborhoods as architecturally diverse as Downtown, The Heights, Journal Square, Bergen-Lafayette, Greenville, and the West Side, no two repair calls look the same. A homeowner on a tree-lined block in The Heights calls about shingles ripped off during a nor'easter, and the diagnosis is straightforward wind damage on a steep-pitched colonial. The next call comes from a property owner in Downtown whose tenants are complaining about water stains three floors below a flat roof, and that repair requires tracing moisture through layers of modified bitumen, aging EPDM patches, and parapet wall flashing that has been caulked over so many times it no longer functions as intended.
 

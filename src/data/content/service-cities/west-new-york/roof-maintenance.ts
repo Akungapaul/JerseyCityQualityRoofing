@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const WEST_NEW_YORK_ROOF_MAINTENANCE_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-maintenance',
   citySlug: 'west-new-york',
-  heroHeadline: 'Roof Maintenance in West New York, NJ',
-  heroSubtitle: 'Proactive maintenance programs calibrated for Palisades wind cycling -- extending roof life by catching what the cliff-edge exposure accelerates.',
+  heroHeadline: 'Roof Maintenance West New York, NJ',
+  seoTitle: 'Roof Maintenance West New York, NJ',
+  heroSubtitle: 'Roof Maintenance West New York, NJ — proactive maintenance programs calibrated for Palisades wind cycling -- extending roof life by catching what the cliff-edge exposure accelerates.',
 
   cityServiceNarrative: `Roof maintenance in West New York operates on a fundamentally different timeline than maintenance in lower-elevation Hudson County communities. The Palisades cliff-edge geography subjects every roof in this town to wind cycling that accelerates the wear patterns maintenance programs are designed to catch. A membrane seam that would remain sound for eight to ten years in a sheltered location may begin showing stress indicators at five to six years on a Boulevard East building. A parapet termination that holds its seal for a decade on a ground-level property may need resealing at seven years on a Palisade Avenue walk-up. Flashing joints that last fifteen years in Bayonne may need attention at ten years in West New York. These compressed maintenance timelines are not defects in the materials or the installation. They are the predictable result of the wind cycling that the Palisades elevation imposes on every roof component, and a maintenance program that ignores this acceleration factor will consistently arrive too late to prevent failures that proactive maintenance would have caught.
 

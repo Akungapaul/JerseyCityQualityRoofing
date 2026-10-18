@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const EAST_NEWARK_COMMERCIAL_REPLACEMENT_CONTENT: ServiceInCityContent = {
   serviceSlug: 'commercial-replacement',
   citySlug: 'east-newark',
-  heroHeadline: 'Commercial Roof Replacement in East Newark, NJ',
-  heroSubtitle: 'When Grant Avenue storefronts and the borough\'s institutional buildings need new roof systems, we deliver commercial-grade replacement engineered for the smallest borough\'s unique conditions.',
+  heroHeadline: 'Commercial Roof Replacement East Newark, NJ',
+  seoTitle: 'Commercial Roof Replacement East Newark, NJ',
+  heroSubtitle: 'Commercial Roof Replacement East Newark, NJ — When Grant Avenue storefronts and the borough\'s institutional buildings need new roof systems, we deliver commercial-grade replacement engineered for the smallest borough\'s unique conditions.',
 
   cityServiceNarrative: `Commercial roof replacement in East Newark is a project category that reflects the borough's intimate scale and the outsized importance of each commercial building to the community. The total commercial roofing inventory in East Newark consists of the mixed-use buildings along Grant Avenue, Borough Hall, East Newark Elementary School, and a small number of standalone commercial and institutional structures. These buildings are not interchangeable units in a large commercial portfolio. Each one serves a specific function that the community depends on, and a roof replacement on any of them is a significant event that affects the businesses, tenants, students, or public services housed within.
 

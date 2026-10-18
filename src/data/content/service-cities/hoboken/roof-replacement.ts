@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const HOBOKEN_ROOF_REPLACEMENT_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-replacement',
   citySlug: 'hoboken',
-  heroHeadline: 'Complete Roof Replacement in Hoboken, NJ',
-  heroSubtitle: 'Full tear-off and re-roofing engineered for Hoboken\'s brownstone density, party wall complexity, and Hudson River wind exposure.',
+  heroHeadline: 'Roof Replacement Hoboken, NJ',
+  seoTitle: 'Roof Replacement Hoboken, NJ',
+  heroSubtitle: 'Roof Replacement Hoboken, NJ — full tear-off and re-roofing engineered for Hoboken\'s brownstone density, party wall complexity, and Hudson River wind exposure.',
 
   cityServiceNarrative: `Replacing a roof in Hoboken is a fundamentally different operation than replacing a roof anywhere else in Hudson County, and the differences start before a single shingle or membrane roll is unwrapped. In this 1.3 square mile city with 60,419 residents, the logistics of getting materials to the roof, removing the old system, and installing the new one are constrained by narrow streets, zero-setback row house construction, and some of the strictest parking enforcement in New Jersey. A replacement project that might take three days in a suburban setting can take five in Hoboken simply because of the access, staging, and coordination challenges that density creates.
 

@@ -4,9 +4,9 @@ export const JERSEY_CITY_FLAT_ROOF_SYSTEMS_CONTENT = {
   serviceSlug: 'flat-roof-systems',
   citySlug: 'jersey-city',
 
-  heroHeadline: 'Commercial Flat Roof Systems in Jersey City, NJ',
-  heroSubtitle:
-    'TPO, EPDM, PVC, and modified bitumen membrane installations engineered for Jersey City\'s waterfront wind, salt air, and commercial building demands.',
+  heroHeadline: 'Flat Roof Systems Jersey City, NJ',
+  seoTitle: 'Flat Roof Systems Jersey City, NJ',
+  heroSubtitle: 'Flat Roof Systems Jersey City, NJ — TPO, EPDM, PVC, and modified bitumen membrane installations engineered for Jersey City\'s waterfront wind, salt air, and commercial building demands.',
 
   cityServiceNarrative: `Flat roof systems on commercial buildings in Jersey City operate under conditions that would surprise building owners accustomed to inland markets. The combination of waterfront salt exposure, wind loads amplified by urban canyon effects between high-rises in Downtown, and the thermal stress of summer surface temperatures exceeding 160 degrees creates an operating environment where membrane selection, installation quality, and drainage engineering determine whether a roof system delivers its full twenty-five-year warranty life or starts failing within a decade.
 

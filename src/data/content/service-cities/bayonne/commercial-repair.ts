@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const BAYONNE_COMMERCIAL_REPAIR_CONTENT: ServiceInCityContent = {
   serviceSlug: 'commercial-repair',
   citySlug: 'bayonne',
-  heroHeadline: 'Commercial Roof Repair in Bayonne, NJ',
-  heroSubtitle: 'Targeted membrane repairs, flashing restoration, and leak resolution for Bayonne commercial buildings facing peninsula salt corrosion, wind damage, and industrial waterfront conditions.',
+  heroHeadline: 'Commercial Roof Repair Bayonne, NJ',
+  seoTitle: 'Commercial Roof Repair Bayonne, NJ',
+  heroSubtitle: 'Commercial Roof Repair Bayonne, NJ — targeted membrane repairs, flashing restoration, and leak resolution for Bayonne commercial buildings facing peninsula salt corrosion, wind damage, and industrial waterfront conditions.',
 
   cityServiceNarrative: `Commercial roof repair in Bayonne addresses a fundamentally different set of challenges than commercial repair in inland communities. Every commercial building on this peninsula sits within range of salt spray from Newark Bay, the Kill Van Kull, or New York Bay, and the multi-directional wind exposure creates damage patterns that standard commercial repair protocols are not designed to handle. When a membrane seam opens on a Bayonne commercial roof, it is rarely because the seam was poorly welded — it is because the peninsula wind stress has been pulling at that seam from multiple directions for years, and the salt moisture penetrating the seam accelerated the adhesive degradation that the wind stress exploited. Effective commercial repair in Bayonne means understanding these combined mechanisms and addressing them together.
 

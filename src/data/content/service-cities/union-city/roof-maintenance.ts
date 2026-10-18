@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const UNION_CITY_ROOF_MAINTENANCE_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-maintenance',
   citySlug: 'union-city',
-  heroHeadline: 'Professional Roof Maintenance in Union City, NJ',
-  heroSubtitle: 'Preventive maintenance programs designed for Union City\'s dense row houses and multi-family buildings, where deferred maintenance on one building creates leak risk for every connected neighbor.',
+  heroHeadline: 'Roof Maintenance Union City, NJ',
+  seoTitle: 'Roof Maintenance Union City, NJ',
+  heroSubtitle: 'Roof Maintenance Union City, NJ — preventive maintenance programs designed for Union City\'s dense row houses and multi-family buildings, where deferred maintenance on one building creates leak risk for every connected neighbor.',
 
   cityServiceNarrative: `Roof maintenance in Union City is not optional, and the consequences of deferring it are more severe here than in any other municipality in Hudson County. In a city where 78 percent of housing units are renter-occupied and many buildings are managed by remote landlords, maintenance gets postponed in ways that create compounding problems. A parapet mortar joint that could have been tuckpointed for three hundred dollars in year one becomes a full parapet rebuild costing five thousand dollars by year five, and during those four years of neglect, water entering through the deteriorating joint has been silently damaging the roof deck, the shared party wall structure, and potentially the adjacent building's interior. The math of deferred maintenance is always bad, but in Union City's dense shared-wall environment, the multiplier effect makes it devastating.
 

@@ -4,9 +4,9 @@ export const WEEHAWKEN_ROOF_REPAIR_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-repair',
   citySlug: 'weehawken',
 
-  heroHeadline: 'Expert Roof Repair in Weehawken, NJ',
-  heroSubtitle:
-    'From luxury waterfront towers at Port Imperial to century-old Victorians in The Heights, we diagnose and repair every type of roof damage across both sides of the Palisades.',
+  heroHeadline: 'Roof Repair Weehawken, NJ',
+  seoTitle: 'Roof Repair Weehawken, NJ',
+  heroSubtitle: 'Roof Repair Weehawken, NJ — from luxury waterfront towers at Port Imperial to century-old Victorians in The Heights, we diagnose and repair every type of roof damage across both sides of the Palisades.',
 
   cityServiceNarrative: `Roof repair in Weehawken is unlike repair work in any other Hudson County township because the building stock splits cleanly into two completely different categories based on geography. At the bottom, along the Hudson River waterfront, the luxury condominiums and commercial buildings of Port Imperial and Lincoln Harbor feature modern flat-roof membrane systems that develop different failure modes than the pitched residential roofs found atop the Palisades. At the top, in The Heights neighborhood, century-old Victorians, Colonial Revival homes, and traditional two-family houses have asphalt shingle and slate roofs that have endured decades of cliff-edge wind exposure and freeze-thaw cycling. When a Weehawken property owner calls us about a roof leak, our first question is always which side of the divide they are on, because the answer determines everything about the repair approach, materials, and crew configuration.
 

@@ -4,9 +4,9 @@ export const WEEHAWKEN_EMERGENCY_ROOFING_CONTENT: ServiceInCityContent = {
   serviceSlug: 'emergency-roofing',
   citySlug: 'weehawken',
 
-  heroHeadline: 'Emergency Roof Service in Weehawken, NJ',
-  heroSubtitle:
-    'When a nor\'easter breaches a waterfront membrane or cliff-edge wind tears shingles from a Heights Victorian, our emergency crews respond across both sides of the Palisades -- day or night.',
+  heroHeadline: 'Emergency Roof Repair Weehawken, NJ',
+  seoTitle: 'Emergency Roof Repair Weehawken, NJ',
+  heroSubtitle: 'Emergency Roof Repair Weehawken, NJ — When a nor\'easter breaches a waterfront membrane or cliff-edge wind tears shingles from a Heights Victorian, our emergency crews respond across both sides of the Palisades -- day or night.',
 
   cityServiceNarrative: `Emergency roofing in Weehawken is defined by the township's geography in ways that make every storm response uniquely challenging. The same nor'easter that drives horizontal rain and salt spray against waterfront buildings at Port Imperial simultaneously accelerates over the Palisades cliff to rip shingles from Heights homes a few hundred feet above and less than a mile away. Our emergency response protocol in Weehawken accounts for this dual-zone reality by dispatching crews equipped for both commercial membrane stabilization and residential tarping and repair, because we never know which side of the divide will need help first -- or whether both will need help simultaneously.
 

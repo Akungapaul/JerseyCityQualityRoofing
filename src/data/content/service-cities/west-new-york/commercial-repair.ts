@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const WEST_NEW_YORK_COMMERCIAL_REPAIR_CONTENT: ServiceInCityContent = {
   serviceSlug: 'commercial-repair',
   citySlug: 'west-new-york',
-  heroHeadline: 'Commercial Roof Repair in West New York, NJ',
-  heroSubtitle: 'From Boulevard East hospitality towers to Bergenline Avenue mixed-use buildings, we repair commercial roofs engineered for Palisades cliff-edge wind and the demands of West New York businesses.',
+  heroHeadline: 'Commercial Roof Repair West New York, NJ',
+  seoTitle: 'Commercial Roof Repair West New York, NJ',
+  heroSubtitle: 'Commercial Roof Repair West New York, NJ — from Boulevard East hospitality towers to Bergenline Avenue mixed-use buildings, we repair commercial roofs engineered for Palisades cliff-edge wind and the demands of West New York businesses.',
 
   cityServiceNarrative: `Commercial roof repair in West New York serves a building stock divided between two dramatically different environments: the Boulevard East cliff-edge corridor where hospitality properties, residential towers with commercial amenities, and mixed-use buildings face the most extreme wind exposure in Hudson County, and the Bergenline Avenue commercial corridor where dense retail, restaurant, and service businesses operate beneath flat roofs that face elevated wind stress and chronic drainage deficiencies. The commercial repair demands in each environment are distinct, but both share the defining characteristic of West New York roofing: wind is the dominant performance factor that every repair must address to provide lasting results.
 

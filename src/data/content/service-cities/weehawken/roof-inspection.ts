@@ -4,9 +4,9 @@ export const WEEHAWKEN_ROOF_INSPECTION_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-inspection',
   citySlug: 'weehawken',
 
-  heroHeadline: 'Thorough Roof Inspections in Weehawken, NJ',
-  heroSubtitle:
-    'Our Weehawken inspections evaluate both sides of the Palisades divide -- from salt-exposed waterfront membranes to wind-battered Heights shingles -- with the local knowledge to spot what generic inspectors miss.',
+  heroHeadline: 'Roof Inspection Weehawken, NJ',
+  seoTitle: 'Roof Inspection Weehawken, NJ',
+  heroSubtitle: 'Roof Inspection Weehawken, NJ — Our Weehawken inspections evaluate both sides of the Palisades divide -- from salt-exposed waterfront membranes to wind-battered Heights shingles -- with the local knowledge to spot what generic inspectors miss.',
 
   cityServiceNarrative: `Roof inspection in Weehawken requires a fundamentally different approach depending on which side of the Palisades the building sits on, and a thorough understanding of why the same weather event can produce completely different damage patterns at different elevations within the same township. When we inspect a waterfront building at Port Imperial, we are looking for salt spray corrosion on metal components, membrane adhesion issues caused by thermal cycling in the open river wind, and drainage problems that develop as rooftop equipment and amenity installations age. When we inspect a Heights home, we are looking for wind-driven shingle damage from the cliff-edge exposure, ice dam evidence in the attic space, and the slow deterioration of century-old flashing details that have been fighting the elements for generations.
 

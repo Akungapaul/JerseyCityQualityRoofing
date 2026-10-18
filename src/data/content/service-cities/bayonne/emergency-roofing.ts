@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const BAYONNE_EMERGENCY_ROOFING_CONTENT: ServiceInCityContent = {
   serviceSlug: 'emergency-roofing',
   citySlug: 'bayonne',
-  heroHeadline: 'Emergency Roofing Services in Bayonne, NJ',
-  heroSubtitle: 'Rapid response for peninsula storm damage, wind-driven failures, and urgent leaks — because Bayonne homes face weather emergencies from three directions at once.',
+  heroHeadline: 'Emergency Roof Repair Bayonne, NJ',
+  seoTitle: 'Emergency Roof Repair Bayonne, NJ',
+  heroSubtitle: 'Emergency Roof Repair Bayonne, NJ — rapid response for peninsula storm damage, wind-driven failures, and urgent leaks — because Bayonne homes face weather emergencies from three directions at once.',
 
   cityServiceNarrative: `When a roofing emergency strikes in Bayonne, the peninsula geography that defines this city turns what might be a moderate problem elsewhere into an urgent crisis. Bayonne is surrounded by water on three sides — Newark Bay to the west, the Kill Van Kull to the south, and New York Bay to the east — and storms do not approach from one direction here. A nor'easter drives wind and rain from the northeast across New York Bay directly into the Constable Hook and Bergen Point neighborhoods. A summer thunderstorm crossing from the west picks up moisture over Newark Bay and hits the waterfront blocks with wind-driven rain that standard residential roofs were not designed to resist. The multi-directional exposure means Bayonne homes sustain storm damage that inland communities rarely see, and the damage escalates rapidly when the next weather system arrives before repairs can be completed.
 

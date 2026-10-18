@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const HOBOKEN_ROOF_INSPECTION_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-inspection',
   citySlug: 'hoboken',
-  heroHeadline: 'Professional Roof Inspection in Hoboken, NJ',
-  heroSubtitle: 'Detailed condition assessments for Hoboken\'s aging brownstones, waterfront condos, and historic row houses within one square mile.',
+  heroHeadline: 'Roof Inspection Hoboken, NJ',
+  seoTitle: 'Roof Inspection Hoboken, NJ',
+  heroSubtitle: 'Roof Inspection Hoboken, NJ — detailed condition assessments for Hoboken\'s aging brownstones, waterfront condos, and historic row houses within one square mile.',
 
   cityServiceNarrative: `A roof inspection in Hoboken reveals conditions that would never appear on a suburban inspection report. When we climb onto a flat brownstone roof in Midtown or the Historic District, we are examining a system that is connected to adjacent buildings through shared party walls, exposed to Hudson River salt air that degrades materials at an accelerated rate, and governed by regulatory requirements that determine which repairs are even permissible. The inspection itself must account for all of these factors or it is incomplete.
 

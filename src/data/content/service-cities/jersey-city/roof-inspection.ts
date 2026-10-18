@@ -4,9 +4,9 @@ export const JERSEY_CITY_ROOF_INSPECTION_CONTENT = {
   serviceSlug: 'roof-inspection',
   citySlug: 'jersey-city',
 
-  heroHeadline: 'Professional Roof Inspection in Jersey City, NJ',
-  heroSubtitle:
-    'Detailed roof assessments for Jersey City\'s diverse building stock, from Victorian slate to modern flat membranes, with documentation you can trust.',
+  heroHeadline: 'Roof Inspection Jersey City, NJ',
+  seoTitle: 'Roof Inspection Jersey City, NJ',
+  heroSubtitle: 'Roof Inspection Jersey City, NJ — detailed roof assessments for Jersey City\'s diverse building stock, from Victorian slate to modern flat membranes, with documentation you can trust.',
 
   cityServiceNarrative: `A roof inspection in Jersey City is not a fifteen-minute walkthrough with a clipboard. The building stock in this city is too complex, the environmental conditions too demanding, and the stakes too high for anything less than a thorough, systematic evaluation. With neighborhoods ranging from the landmarked brownstones of Downtown to the elevated colonials of The Heights, from the multi-layer commercial structures in Journal Square to the row houses of Bergen-Lafayette and the diverse residential blocks of Greenville, every inspection we perform in Jersey City requires a contractor who understands the specific failure patterns associated with each building type, neighborhood exposure, and roof system configuration.
 

@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const WEST_NEW_YORK_ROOF_REPAIR_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-repair',
   citySlug: 'west-new-york',
-  heroHeadline: 'Expert Roof Repair in West New York, NJ',
-  heroSubtitle: 'From the wind-battered cliff edge of Boulevard East to the bustling Bergenline Avenue corridor, we trace every leak and fix it to withstand Palisades-grade wind exposure.',
+  heroHeadline: 'Roof Repair West New York, NJ',
+  seoTitle: 'Roof Repair West New York, NJ',
+  heroSubtitle: 'Roof Repair West New York, NJ — from the wind-battered cliff edge of Boulevard East to the bustling Bergenline Avenue corridor, we trace every leak and fix it to withstand Palisades-grade wind exposure.',
 
   cityServiceNarrative: `Roof repair in West New York is defined by one dominant factor that separates this town from every other municipality in Hudson County: wind. West New York sits atop the Palisades cliff, a dramatic geological formation that rises roughly 300 feet above the Hudson River, and the buildings along Boulevard East perch at the very edge of that cliff. The wind does not merely blow across West New York. It accelerates as it rises over the cliff face from the east, creating uplift forces on the leeward side of Boulevard East buildings that can peel shingles, lift membrane edges, and tear flashing loose from wall junctions. From the west, approaching weather systems hit the Palisades wall and funnel upward, concentrating wind energy at the cliff crest in ways that properties even a few blocks inland rarely experience. This dual-direction wind exposure is what makes roof repair in West New York fundamentally different from roof repair in adjacent Union City, where density and access are the primary challenges rather than raw wind force.
 

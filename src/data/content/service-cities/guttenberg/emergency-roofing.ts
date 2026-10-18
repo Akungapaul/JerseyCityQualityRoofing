@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const GUTTENBERG_EMERGENCY_ROOFING_CONTENT: ServiceInCityContent = {
   serviceSlug: 'emergency-roofing',
   citySlug: 'guttenberg',
-  heroHeadline: 'Emergency Roofing Services in Guttenberg, NJ',
-  heroSubtitle: 'Rapid emergency response for America\'s densest municipality, where cliff-edge storms hit harder, high-rise buildings are exposed to extreme wind, and access constraints demand emergency crews who already know every building type in town.',
+  heroHeadline: 'Emergency Roof Repair Guttenberg, NJ',
+  seoTitle: 'Emergency Roof Repair Guttenberg, NJ',
+  heroSubtitle: 'Emergency Roof Repair Guttenberg, NJ — rapid emergency response for America\'s densest municipality, where cliff-edge storms hit harder, high-rise buildings are exposed to extreme wind, and access constraints demand emergency crews who already know every building type in town.',
 
   cityServiceNarrative: `Emergency roofing in Guttenberg operates under pressure that no other Hudson County municipality creates. When a storm damages a roof in this town, the consequences cascade through an environment where 57,000 people live within 0.19 square miles. A membrane blow-off on a 12-story building along Boulevard East does not just expose one family to water damage. It threatens the apartments of dozens of families stacked below the compromised roof, and the wind-borne roofing debris can land on the crowded sidewalks and densely packed streets where pedestrians are always present. Emergency roofing in Guttenberg is not just about stopping a leak. It is about protecting a building and a neighborhood that have no buffer space between the emergency and the people living around it.
 

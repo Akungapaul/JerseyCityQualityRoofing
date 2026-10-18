@@ -2,8 +2,9 @@ import type { CityHubContent } from '@/data/types';
 
 export const WEST_NEW_YORK_CONTENT: CityHubContent = {
   slug: 'west-new-york',
-  heroHeadline: 'Professional Roofing Contractor in West New York, NJ',
-  heroSubtitle: 'From Boulevard East luxury residences perched on the Palisades to the bustling walk-ups along Bergenline Avenue, we protect every roof in West New York.',
+  heroHeadline: 'Roofing Contractor West New York, NJ',
+  seoTitle: 'Roofing Contractor West New York, NJ',
+  heroSubtitle: 'Roofing Contractor West New York, NJ — from Boulevard East luxury residences perched on the Palisades to the bustling walk-ups along Bergenline Avenue, we protect every roof in West New York.',
 
   localExpertiseNarrative: `West New York occupies one of the most dramatic geographic positions in Hudson County, sitting atop the Palisades cliffs that rise sharply above the Hudson River. That cliff-edge location gives residents of Boulevard East some of the most spectacular views of the Manhattan skyline anywhere in New Jersey, but it also exposes their roofs to wind conditions that are fundamentally different from what buildings experience even a few blocks inland. We have been working on roofs in West New York long enough to understand that a project on Boulevard East requires different materials, different fastener specifications, and a different installation approach than a project on a side street off Bergenline Avenue, even though both addresses carry the same West New York zip code.
 

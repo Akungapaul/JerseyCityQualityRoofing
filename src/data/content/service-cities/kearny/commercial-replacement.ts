@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const KEARNY_COMMERCIAL_REPLACEMENT_CONTENT: ServiceInCityContent = {
   serviceSlug: 'commercial-replacement',
   citySlug: 'kearny',
-  heroHeadline: 'Commercial Roof Replacement in Kearny, NJ',
-  heroSubtitle: 'From full-scale industrial membrane installations in South Kearny to commercial reroofing along Passaic Avenue, we engineer replacement systems that match the building and the environment.',
+  heroHeadline: 'Commercial Roof Replacement Kearny, NJ',
+  seoTitle: 'Commercial Roof Replacement Kearny, NJ',
+  heroSubtitle: 'Commercial Roof Replacement Kearny, NJ — from full-scale industrial membrane installations in South Kearny to commercial reroofing along Passaic Avenue, we engineer replacement systems that match the building and the environment.',
 
   cityServiceNarrative: `Commercial roof replacement in Kearny encompasses the widest range of project scopes we encounter in any Hudson County municipality. At one end of the spectrum, Passaic Avenue retail buildings and multi-family apartment complexes need commercially-specified membrane replacements on roofs measured in thousands of square feet, projects that require professional execution but follow well-established commercial roofing practices. At the other end, the South Kearny industrial zone presents replacement projects on warehouses and factory buildings where the roof area is measured in tens of thousands of square feet, the existing assembly may contain hazardous materials, the structural capacity of the building must be verified before specifying the new system, and the installation must be phased to allow continued business operations below. Between these extremes, Kearny has every variation of commercial building type that a roofing contractor might encounter in an entire career, all within a single nine-square-mile municipality.
 

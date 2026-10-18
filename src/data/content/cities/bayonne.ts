@@ -2,8 +2,9 @@ import type { CityHubContent } from '@/data/types';
 
 export const BAYONNE_CONTENT: CityHubContent = {
   slug: 'bayonne',
-  heroHeadline: 'Trusted Roofing Contractor in Bayonne, NJ',
-  heroSubtitle: 'Protecting peninsula homes and businesses from three-sided water exposure across Bergen Point, Constable Hook, and every Bayonne neighborhood.',
+  heroHeadline: 'Roofing Contractor Bayonne, NJ',
+  seoTitle: 'Roofing Contractor Bayonne, NJ',
+  heroSubtitle: 'Roofing Contractor Bayonne, NJ — protecting peninsula homes and businesses from three-sided water exposure across Bergen Point, Constable Hook, and every Bayonne neighborhood.',
 
   localExpertiseNarrative: `Bayonne sits on a peninsula surrounded by water on three sides: Newark Bay to the west, the Kill Van Kull to the south, and New York Bay to the east. That geography makes roofing in Bayonne fundamentally different from roofing in any landlocked community. The wind does not come from one prevailing direction here. It wraps around the peninsula and hits roofs from every angle, which means standard wind-resistance calculations that work perfectly for an inland town can underestimate the actual forces acting on a Bayonne roof. We have been working on Bayonne properties for years, and every project we take on accounts for this three-sided exposure.
 

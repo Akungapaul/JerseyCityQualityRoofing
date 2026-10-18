@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const NORTH_BERGEN_FLAT_ROOF_SYSTEMS_CONTENT: ServiceInCityContent = {
   serviceSlug: 'flat-roof-systems',
   citySlug: 'north-bergen',
-  heroHeadline: 'Flat Roof Systems in North Bergen, NJ',
-  heroSubtitle: 'From the garden apartment complexes in Nungessers to the massive commercial buildings along Tonnelle Avenue, we design flat roof systems engineered for North Bergen\'s elevation and terrain.',
+  heroHeadline: 'Flat Roof Systems North Bergen, NJ',
+  seoTitle: 'Flat Roof Systems North Bergen, NJ',
+  heroSubtitle: 'Flat Roof Systems North Bergen, NJ — from the garden apartment complexes in Nungessers to the massive commercial buildings along Tonnelle Avenue, we design flat roof systems engineered for North Bergen\'s elevation and terrain.',
 
   cityServiceNarrative: `Flat roofs in North Bergen face a combination of challenges that is unique in Hudson County. The township's position on the Palisades escarpment means that even flat roofs at relatively low elevations within North Bergen experience wind uplift forces that are stronger than what typical Hudson County flat roofs encounter. Move up to the garden apartment complexes along the ridge and the wind uplift forces at the roof perimeter can exceed design specifications that were adequate when the building was constructed fifty years ago. Add the chronic drainage problems that affect nearly every mid-century flat roof in the township, and you have a building type that requires specialized expertise to install, maintain, and replace effectively.
 

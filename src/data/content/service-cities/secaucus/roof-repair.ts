@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const SECAUCUS_ROOF_REPAIR_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-repair',
   citySlug: 'secaucus',
-  heroHeadline: 'Expert Roof Repair in Secaucus, NJ',
-  heroSubtitle: 'From Harmon Cove waterfront townhouses to Meadowlands-area commercial buildings, we repair roofs battling the persistent moisture that defines Secaucus roofing.',
+  heroHeadline: 'Roof Repair Secaucus, NJ',
+  seoTitle: 'Roof Repair Secaucus, NJ',
+  heroSubtitle: 'Roof Repair Secaucus, NJ — from Harmon Cove waterfront townhouses to Meadowlands-area commercial buildings, we repair roofs battling the persistent moisture that defines Secaucus roofing.',
 
   cityServiceNarrative: `Roof repair in Secaucus is shaped by one dominant environmental factor that sets this town apart from every other municipality in Hudson County: the Meadowlands. Secaucus sits at the geographic center of the Hackensack Meadowlands, surrounded on nearly all sides by tidal marshland, wetland preserves, and the slow-moving Hackensack River. That geography creates a persistent moisture environment unlike anything in the dense urban waterfront cities along the Hudson River. When we respond to a repair call from a homeowner in Harmon Cove whose ceiling has water stains after a seemingly mild rain, we already know the likely story. The combination of high ambient humidity, morning fog that forms over the marshland and lingers until midday, and the flat terrain that prevents rapid drainage means that roofs in Secaucus are under constant moisture stress. Materials degrade faster here. Sealants fail sooner. Moss, algae, and mildew establish themselves on north-facing slopes within two to three years of installation rather than the five to seven years typical in the Palisades or Heights communities.
 

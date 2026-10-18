@@ -210,7 +210,7 @@ export async function getCommercialComboMetadata(
     path: canonicalPath,
   });
 
-  return {
+  const result: Metadata = {
     ...metadata,
     openGraph: {
       ...metadata.openGraph,
@@ -224,6 +224,23 @@ export async function getCommercialComboMetadata(
       ],
     },
   };
+
+  // Rule 7: a page may carry an exact seoTitle in its content data; when it
+  // does, the <title> is that phrase verbatim (absolute bypasses the layout's
+  // brand-suffix template).
+  const content = CONTENT_MAP[citySlug]?.[serviceSlug];
+  if (content?.seoTitle) {
+    return {
+      ...result,
+      title: { absolute: content.seoTitle },
+      openGraph: {
+        ...result.openGraph,
+        title: `${content.seoTitle} | Jersey City Quality Roofing`,
+      },
+    };
+  }
+
+  return result;
 }
 
 // ---------------------------------------------------------------------------

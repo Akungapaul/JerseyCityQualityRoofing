@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const UNION_CITY_ROOF_REPLACEMENT_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-replacement',
   citySlug: 'union-city',
-  heroHeadline: 'Complete Roof Replacement in Union City, NJ',
-  heroSubtitle: 'Full tear-off and replacement engineered for Union City\'s extreme density, shared party walls, and multi-family buildings where every square foot of roofing protects dozens of residents.',
+  heroHeadline: 'Roof Replacement Union City, NJ',
+  seoTitle: 'Roof Replacement Union City, NJ',
+  heroSubtitle: 'Roof Replacement Union City, NJ — full tear-off and replacement engineered for Union City\'s extreme density, shared party walls, and multi-family buildings where every square foot of roofing protects dozens of residents.',
 
   cityServiceNarrative: `Roof replacement in Union City is a logistical and engineering challenge that separates experienced urban roofers from contractors who learned their trade in open suburban settings. When we replace a roof on a Union City row house, we are working on a building that shares structural walls with neighbors on both sides, sits on a lot with zero side yards, faces a street so narrow that a dumpster blocks the entire travel lane, and has no staging area within sight of the building. Every aspect of the replacement project, from material delivery to debris removal to membrane installation, must be planned around these constraints, and the planning itself is as critical to a successful outcome as the roofing craftsmanship on the deck.
 

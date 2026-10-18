@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const WEST_NEW_YORK_ROOF_INSPECTION_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-inspection',
   citySlug: 'west-new-york',
-  heroHeadline: 'Roof Inspection in West New York, NJ',
-  heroSubtitle: 'Wind-exposure assessments calibrated for Palisades cliff-edge conditions -- we identify what the wind is doing to your roof before the next storm proves it.',
+  heroHeadline: 'Roof Inspection West New York, NJ',
+  seoTitle: 'Roof Inspection West New York, NJ',
+  heroSubtitle: 'Roof Inspection West New York, NJ — Wind-exposure assessments calibrated for Palisades cliff-edge conditions -- we identify what the wind is doing to your roof before the next storm proves it.',
 
   cityServiceNarrative: `Roof inspection in West New York is not a routine checklist exercise. It is a wind-exposure assessment that must account for conditions that exist nowhere else in Hudson County. When we inspect a roof in West New York, we are not simply looking for visible damage and wear. We are evaluating how every component of the roof system is performing under the sustained and peak wind forces that the Palisades cliff-edge geography imposes. A shingle that looks intact to the eye may be a few storms away from failure if its adhesive bond has been progressively weakened by the cyclical wind loading that Boulevard East properties endure during every weather event. A flat roof membrane that appears sound on the surface may have edge securement that is gradually losing pullout resistance as the wind works against the fasteners storm after storm. Our inspections detect these developing vulnerabilities before they become active failures, and that proactive identification is worth far more than the reactive emergency repair that follows when a storm exposes the weakness catastrophically.
 

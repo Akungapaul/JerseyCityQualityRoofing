@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const EAST_NEWARK_FLAT_ROOF_SYSTEMS_CONTENT: ServiceInCityContent = {
   serviceSlug: 'flat-roof-systems',
   citySlug: 'east-newark',
-  heroHeadline: 'Flat Roof Systems in East Newark, NJ',
-  heroSubtitle: 'From rear addition sections on two-family homes to Grant Avenue mixed-use storefronts, we install and maintain flat roof systems built for the smallest borough\'s unique moisture challenges.',
+  heroHeadline: 'Flat Roof Systems East Newark, NJ',
+  seoTitle: 'Flat Roof Systems East Newark, NJ',
+  heroSubtitle: 'Flat Roof Systems East Newark, NJ — from rear addition sections on two-family homes to Grant Avenue mixed-use storefronts, we install and maintain flat roof systems built for the smallest borough\'s unique moisture challenges.',
 
   cityServiceNarrative: `Flat roof systems in East Newark occupy a different niche than in other Hudson County municipalities. This is not a town of large commercial buildings with expansive flat roof surfaces. East Newark's flat roofs are primarily the small-format sections over rear additions, enclosed porches, and kitchen extensions on the borough's two-family homes and row houses, plus the modest commercial flat roofs on the mixed-use buildings along Grant Avenue. The total square footage of flat roofing in East Newark is a fraction of what you would find in Jersey City or Hoboken, but the per-property importance of each flat section is significant because these small surfaces protect living spaces and business operations in a community where every building is essential.
 

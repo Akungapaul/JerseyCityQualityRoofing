@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const NORTH_BERGEN_ROOF_REPLACEMENT_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-replacement',
   citySlug: 'north-bergen',
-  heroHeadline: 'Complete Roof Replacement in North Bergen, NJ',
-  heroSubtitle: 'Engineered for the Palisades ridge -- every replacement accounts for the elevation, wind exposure, and terrain that define North Bergen roofing.',
+  heroHeadline: 'Roof Replacement North Bergen, NJ',
+  seoTitle: 'Roof Replacement North Bergen, NJ',
+  heroSubtitle: 'Roof Replacement North Bergen, NJ — engineered for the Palisades ridge -- every replacement accounts for the elevation, wind exposure, and terrain that define North Bergen roofing.',
 
   cityServiceNarrative: `Replacing a roof in North Bergen means engineering a system that will survive conditions most Hudson County properties never encounter. The Palisades escarpment running along the township's western edge creates a wind environment that punishes roofing materials in ways that only sustained elevation exposure can produce. When we strip a twenty-five-year-old roof on a Woodcliff colonial and see the west-facing slope shingles worn to the mat while the east-facing slope still has visible granule coverage, we are looking at the fingerprint of the Palisades ridge wind. That directional wear pattern tells us that the replacement system must be specified differently for each slope orientation, and that is exactly what we do on every North Bergen project.
 

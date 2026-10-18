@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const UNION_CITY_ROOF_REPAIR_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-repair',
   citySlug: 'union-city',
-  heroHeadline: 'Expert Roof Repair in Union City, NJ',
-  heroSubtitle: 'Precision leak diagnosis and repair for the most densely populated city in New Jersey, where shared party walls and zero-lot-line construction make every repair a puzzle worth solving right.',
+  heroHeadline: 'Roof Repair Union City, NJ',
+  seoTitle: 'Roof Repair Union City, NJ',
+  heroSubtitle: 'Roof Repair Union City, NJ — precision leak diagnosis and repair for the most densely populated city in New Jersey, where shared party walls and zero-lot-line construction make every repair a puzzle worth solving right.',
 
   cityServiceNarrative: `Roof repair in Union City operates under constraints that most roofing contractors have never encountered. With approximately 56,000 people per square mile packed into just 1.27 square miles, this is a city where every building touches its neighbor, where the concept of a side yard is essentially nonexistent, and where a roof leak in one building routinely migrates through shared party walls into the adjacent unit before anyone realizes the problem started next door. We have been diagnosing and repairing roofs across Union City for years, and the patterns we encounter here are fundamentally different from what we see in any other Hudson County municipality.
 

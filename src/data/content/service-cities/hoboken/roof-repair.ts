@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const HOBOKEN_ROOF_REPAIR_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-repair',
   citySlug: 'hoboken',
-  heroHeadline: 'Expert Roof Repair in Hoboken, NJ',
-  heroSubtitle: 'Precision leak diagnosis and repair for Hoboken\'s dense brownstone blocks and waterfront properties across one square mile.',
+  heroHeadline: 'Roof Repair Hoboken, NJ',
+  seoTitle: 'Roof Repair Hoboken, NJ',
+  heroSubtitle: 'Roof Repair Hoboken, NJ — precision leak diagnosis and repair for Hoboken\'s dense brownstone blocks and waterfront properties across one square mile.',
 
   cityServiceNarrative: `Roof repair in Hoboken is not like roof repair anywhere else in Hudson County. Within this compact 1.3 square mile city, you have roughly 28,000 housing units packed together in a density that fundamentally changes how roof problems develop, how they spread, and how they get fixed. When a leak appears on the top floor of a Midtown walk-up, there is a very real possibility that the water entered the building two doors down and traveled along a shared party wall before finding its way into your unit. Diagnosing the actual point of entry requires understanding how these interconnected brownstone and row house rooflines function as a system rather than isolated structures.
 

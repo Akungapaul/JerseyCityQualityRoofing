@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const HARRISON_EMERGENCY_ROOFING_CONTENT: ServiceInCityContent = {
   serviceSlug: 'emergency-roofing',
   citySlug: 'harrison',
-  heroHeadline: 'Emergency Roofing Services in Harrison, NJ',
-  heroSubtitle: 'When a nor\'easter tears membrane off a waterfront condo or storm damage punches through the shingles on a century-old Harrison Center home, our emergency crews respond within two hours with the materials and expertise to stop the damage immediately.',
+  heroHeadline: 'Emergency Roof Repair Harrison, NJ',
+  seoTitle: 'Emergency Roof Repair Harrison, NJ',
+  heroSubtitle: 'Emergency Roof Repair Harrison, NJ — When a nor\'easter tears membrane off a waterfront condo or storm damage punches through the shingles on a century-old Harrison Center home, our emergency crews respond within two hours with the materials and expertise to stop the damage immediately.',
 
   cityServiceNarrative: `Emergency roofing calls in Harrison carry an urgency that reflects the town's unique building diversity and its exposure to the Passaic River's influence on severe weather events. When a major storm hits Harrison, our emergency line starts ringing with calls from two very different worlds: homeowners in the traditional neighborhoods around Harrison Center and Davis Avenue discovering water pouring through aging shingle systems that finally failed under storm stress, and property managers in the waterfront district dealing with membrane blow-off or seam failure on luxury apartment buildings where a roofing emergency means hundreds of residents potentially affected. Both types of emergencies demand immediate response, but the materials, techniques, and communication protocols are fundamentally different.
 

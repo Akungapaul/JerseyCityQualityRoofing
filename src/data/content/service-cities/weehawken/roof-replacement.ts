@@ -4,9 +4,9 @@ export const WEEHAWKEN_ROOF_REPLACEMENT_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-replacement',
   citySlug: 'weehawken',
 
-  heroHeadline: 'Professional Roof Replacement in Weehawken, NJ',
-  heroSubtitle:
-    'Whether your waterfront condo needs a new commercial membrane system or your Heights Victorian needs a full shingle tear-off, we deliver roof replacements built for both sides of the Palisades.',
+  heroHeadline: 'Roof Replacement Weehawken, NJ',
+  seoTitle: 'Roof Replacement Weehawken, NJ',
+  heroSubtitle: 'Roof Replacement Weehawken, NJ — Whether your waterfront condo needs a new commercial membrane system or your Heights Victorian needs a full shingle tear-off, we deliver roof replacements built for both sides of the Palisades.',
 
   cityServiceNarrative: `Roof replacement in Weehawken presents a challenge that no other Hudson County municipality replicates: the necessity of maintaining expertise in two fundamentally different roof replacement markets within a single township. The waterfront buildings at Port Imperial and Lincoln Harbor require commercial-scale membrane replacements with the insurance coverage, manufacturer certifications, and project management sophistication that luxury property management companies demand. The Heights residential neighborhood requires traditional steep-slope tear-offs on homes that range from relatively straightforward Colonial Revival gable roofs to extraordinarily complex Victorian multi-hip configurations with dormers, turrets, and roof intersections that test the skill of even experienced residential crews.
 

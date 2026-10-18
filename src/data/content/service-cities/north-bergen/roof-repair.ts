@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const NORTH_BERGEN_ROOF_REPAIR_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-repair',
   citySlug: 'north-bergen',
-  heroHeadline: 'Expert Roof Repair in North Bergen, NJ',
-  heroSubtitle: 'From the wind-battered Palisades ridge to the commercial corridor along Tonnelle Avenue, we trace every leak to its source and fix it right the first time.',
+  heroHeadline: 'Roof Repair North Bergen, NJ',
+  seoTitle: 'Roof Repair North Bergen, NJ',
+  heroSubtitle: 'Roof Repair North Bergen, NJ — from the wind-battered Palisades ridge to the commercial corridor along Tonnelle Avenue, we trace every leak to its source and fix it right the first time.',
 
   cityServiceNarrative: `Roof repair in North Bergen is not like roof repair anywhere else in Hudson County. The township sits atop the Palisades, a dramatic geological escarpment that rises over 300 feet above the Hackensack River, and that elevation changes everything about how roofs fail and how they need to be repaired. When we get a call from a homeowner in Woodcliff whose shingles blew off during a nor'easter, we already know before we arrive that the west-facing slope took the worst of it. When a property manager in Nungessers reports ponding water on a garden apartment flat roof after every rainstorm, we know the original construction likely lacked adequate slope-to-drain and decades of settling have made it worse. This is the kind of location-specific knowledge that only comes from years of working in this exact geography.
 

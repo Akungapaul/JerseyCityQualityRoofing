@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const HOBOKEN_ROOF_MAINTENANCE_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-maintenance',
   citySlug: 'hoboken',
-  heroHeadline: 'Commercial Roof Maintenance in Hoboken, NJ',
-  heroSubtitle: 'Preventive maintenance programs protecting Hoboken\'s multi-family buildings, mixed-use properties, and waterfront commercial assets.',
+  heroHeadline: 'Roof Maintenance Hoboken, NJ',
+  seoTitle: 'Roof Maintenance Hoboken, NJ',
+  heroSubtitle: 'Roof Maintenance Hoboken, NJ — preventive maintenance programs protecting Hoboken\'s multi-family buildings, mixed-use properties, and waterfront commercial assets.',
 
   cityServiceNarrative: `Roof maintenance in Hoboken is not a suggestion. It is a mathematical certainty that deferred maintenance on a flat roof in this city will cost more, sooner, than it would anywhere else in Hudson County. The combination of salt air from the Hudson River, shared party wall construction that allows water to migrate between buildings, and aging building stock that averages 85 years old creates an environment where small maintenance items escalate into expensive repairs with remarkable speed. A lifted flashing edge that might last a full season without consequence on a sheltered suburban roof becomes an active leak point during the first wind-driven rain event in Hoboken, because the wind here never comes straight down.
 

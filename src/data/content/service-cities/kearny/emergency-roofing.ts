@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const KEARNY_EMERGENCY_ROOFING_CONTENT: ServiceInCityContent = {
   serviceSlug: 'emergency-roofing',
   citySlug: 'kearny',
-  heroHeadline: 'Emergency Roofing Services in Kearny, NJ',
-  heroSubtitle: 'When a nor\'easter rips shingles from your Victorian in Kearny Center or a membrane fails on a South Kearny warehouse at midnight, our 24/7 crews respond within two hours to stop the damage.',
+  heroHeadline: 'Emergency Roof Repair Kearny, NJ',
+  seoTitle: 'Emergency Roof Repair Kearny, NJ',
+  heroSubtitle: 'Emergency Roof Repair Kearny, NJ — When a nor\'easter rips shingles from your Victorian in Kearny Center or a membrane fails on a South Kearny warehouse at midnight, our 24/7 crews respond within two hours to stop the damage.',
 
   cityServiceNarrative: `Emergency roofing calls in Kearny come in two fundamentally different categories, and our response to each draws on different equipment, different crew configurations, and different damage control strategies. The first category is residential emergencies in the northern neighborhoods: storm-damaged shingles on colonials and Cape Cods around Gunnell Oval, fallen tree branches punching through rooflines near West Hudson Park, ice dam backups forcing water into bedrooms during February cold snaps, and Victorian slate tiles cascading off steep pitches during wind events and shattering on sidewalks below. The second category is industrial and commercial emergencies in South Kearny: large-format membrane blow-offs exposing warehouse interiors to the elements, drain failures on massive flat roofs causing water to pool inches deep and threaten structural integrity, and storm damage to rooftop mechanical equipment that leaves HVAC systems compromised on buildings that house temperature-sensitive operations.
 

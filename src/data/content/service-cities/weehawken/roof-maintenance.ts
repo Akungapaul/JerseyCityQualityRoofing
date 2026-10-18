@@ -4,9 +4,9 @@ export const WEEHAWKEN_ROOF_MAINTENANCE_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-maintenance',
   citySlug: 'weehawken',
 
-  heroHeadline: 'Roof Maintenance Programs in Weehawken, NJ',
-  heroSubtitle:
-    'Proactive maintenance that accounts for the salt spray at the waterfront, the cliff-edge wind in The Heights, and the dual-market conditions that make Weehawken roofs age faster than they should.',
+  heroHeadline: 'Roof Maintenance Weehawken, NJ',
+  seoTitle: 'Roof Maintenance Weehawken, NJ',
+  heroSubtitle: 'Roof Maintenance Weehawken, NJ — proactive maintenance that accounts for the salt spray at the waterfront, the cliff-edge wind in The Heights, and the dual-market conditions that make Weehawken roofs age faster than they should.',
 
   cityServiceNarrative: `Roof maintenance in Weehawken is not a luxury; it is the single most cost-effective investment a property owner can make to extend roof life in a township where environmental conditions actively work to shorten it. The waterfront buildings at Port Imperial and Lincoln Harbor face salt spray corrosion that degrades metal components year after year. The Heights homes face cliff-edge wind that strips shingle granules and works flashing loose season after season. The Lincoln Tunnel corridor properties face chronic vibration that loosens fasteners and fatigues sealant joints. Without proactive maintenance tailored to these specific conditions, Weehawken roofs deteriorate faster than identical systems installed in less demanding environments, and the accelerated deterioration translates directly into premature replacement costs.
 

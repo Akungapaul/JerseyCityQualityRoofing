@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const UNION_CITY_FLAT_ROOF_SYSTEMS_CONTENT: ServiceInCityContent = {
   serviceSlug: 'flat-roof-systems',
   citySlug: 'union-city',
-  heroHeadline: 'Flat Roof Systems in Union City, NJ',
-  heroSubtitle: 'Engineered flat roof solutions for Union City\'s thousands of row houses and multi-family buildings, where virtually every rooftop is flat and the extreme density demands membrane systems built for shared-wall construction.',
+  heroHeadline: 'Flat Roof Systems Union City, NJ',
+  seoTitle: 'Flat Roof Systems Union City, NJ',
+  heroSubtitle: 'Flat Roof Systems Union City, NJ — engineered flat roof solutions for Union City\'s thousands of row houses and multi-family buildings, where virtually every rooftop is flat and the extreme density demands membrane systems built for shared-wall construction.',
 
   cityServiceNarrative: `If there is one municipality in New Jersey that defines the flat roof, it is Union City. With approximately 25,000 housing units packed into 1.27 square miles, virtually every residential and commercial building in this city has a flat or low-slope roof. The three-story row houses that form the backbone of Union Hill, the mixed-use buildings lining Bergenline Avenue, the walk-up apartment buildings throughout the Heights, and the commercial properties in the Transfer Station area all rely on flat membrane systems to keep the weather out. Understanding flat roof systems in Union City is not a specialty for us; it is the core of our practice in this city, because there are essentially no pitched roofs to divert our attention.
 

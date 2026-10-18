@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const KEARNY_ROOF_REPAIR_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-repair',
   citySlug: 'kearny',
-  heroHeadline: 'Expert Roof Repair in Kearny, NJ',
-  heroSubtitle: 'From Victorian slate repairs near Gunnell Oval to industrial membrane patches in South Kearny, we diagnose every leak and fix it right the first time.',
+  heroHeadline: 'Roof Repair Kearny, NJ',
+  seoTitle: 'Roof Repair Kearny, NJ',
+  heroSubtitle: 'Roof Repair Kearny, NJ — from Victorian slate repairs near Gunnell Oval to industrial membrane patches in South Kearny, we diagnose every leak and fix it right the first time.',
 
   cityServiceNarrative: `Roof repair in Kearny demands a versatility that few other Hudson County municipalities require from a single contractor. This is a town where a morning call might take us to a Victorian home in Kearny Center with a cracked slate tile channeling water into a plaster ceiling, and the afternoon call sends us to a 40,000-square-foot warehouse in South Kearny where a seam failure on a decades-old built-up roof is allowing water to pool on a concrete floor stacked with inventory. The range of building types in Kearny, from the ornate steep-pitched Victorians near Gunnell Oval to the sprawling industrial complexes along the Hackensack River, means our repair toolkit has to cover residential shingle work, historic slate restoration, flat membrane patching, and large-scale commercial leak diagnosis all within the same zip code.
 

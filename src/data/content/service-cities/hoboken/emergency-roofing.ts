@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const HOBOKEN_EMERGENCY_ROOFING_CONTENT: ServiceInCityContent = {
   serviceSlug: 'emergency-roofing',
   citySlug: 'hoboken',
-  heroHeadline: 'Emergency Roof Repair in Hoboken, NJ',
-  heroSubtitle: '24/7 storm damage response for Hoboken\'s exposed waterfront blocks and densely packed brownstone rows.',
+  heroHeadline: 'Emergency Roof Repair Hoboken, NJ',
+  seoTitle: 'Emergency Roof Repair Hoboken, NJ',
+  heroSubtitle: 'Emergency Roof Repair Hoboken, NJ — 24/7 storm damage response for Hoboken\'s exposed waterfront blocks and densely packed brownstone rows.',
 
   cityServiceNarrative: `When a nor'easter rips a section of membrane off a Hoboken brownstone at two in the morning, the water does not wait for business hours. It pours through the opening, saturates the insulation, and within minutes is dripping through the top-floor ceiling onto the floor below. In a city where 65 percent of residents are renters living beneath someone else's roof, a single emergency leak can affect multiple tenants across multiple floors of a four-story walk-up. The urgency is real, the stakes are high, and the response has to be immediate.
 

@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const BAYONNE_ROOF_MAINTENANCE_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-maintenance',
   citySlug: 'bayonne',
-  heroHeadline: 'Commercial Roof Maintenance in Bayonne, NJ',
-  heroSubtitle: 'Scheduled maintenance programs that protect Bayonne commercial roofs from the accelerated wear of peninsula salt exposure, multi-directional wind stress, and fifty inches of annual rainfall.',
+  heroHeadline: 'Roof Maintenance Bayonne, NJ',
+  seoTitle: 'Roof Maintenance Bayonne, NJ',
+  heroSubtitle: 'Roof Maintenance Bayonne, NJ — scheduled maintenance programs that protect Bayonne commercial roofs from the accelerated wear of peninsula salt exposure, multi-directional wind stress, and fifty inches of annual rainfall.',
 
   cityServiceNarrative: `Commercial roof maintenance in Bayonne is not an optional budget item — it is the difference between a roof system that delivers its full rated lifespan and one that fails years early, disrupting business operations and requiring premature capital expenditure. The peninsula geography that defines Bayonne creates roofing conditions where the standard maintenance intervals recommended by membrane manufacturers are insufficient. When a manufacturer suggests annual inspections for a TPO or EPDM system, that recommendation assumes standard exposure. Bayonne's three-sided waterfront exposure — Newark Bay to the west, the Kill Van Kull to the south, and New York Bay to the east — means the salt spray, wind stress, and moisture conditions acting on your commercial roof are well beyond standard, and the maintenance program must match the actual conditions.
 

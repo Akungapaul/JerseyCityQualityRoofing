@@ -4,9 +4,9 @@ export const WEEHAWKEN_COMMERCIAL_REPLACEMENT_CONTENT: ServiceInCityContent = {
   serviceSlug: 'commercial-replacement',
   citySlug: 'weehawken',
 
-  heroHeadline: 'Commercial Roof Replacement in Weehawken, NJ',
-  heroSubtitle:
-    'Full commercial membrane replacement for Port Imperial towers, Lincoln Harbor mixed-use buildings, and Boulevard East properties -- engineered for the salt spray, wind, and waterfront conditions that define Weehawken.',
+  heroHeadline: 'Commercial Roof Replacement Weehawken, NJ',
+  seoTitle: 'Commercial Roof Replacement Weehawken, NJ',
+  heroSubtitle: 'Commercial Roof Replacement Weehawken, NJ — full commercial membrane replacement for Port Imperial towers, Lincoln Harbor mixed-use buildings, and Boulevard East properties -- engineered for the salt spray, wind, and waterfront conditions that define Weehawken.',
 
   cityServiceNarrative: `Commercial roof replacement in Weehawken is a capital investment that must be engineered for environmental conditions that are among the most demanding in Hudson County. The waterfront buildings at Port Imperial and Lincoln Harbor face a combination of Hudson River salt spray, sustained humidity, direct solar exposure, and the wind-tunnel effects created by rows of high-rise buildings along the waterfront. These conditions shorten the lifespan of commercial roof systems compared to identical installations on inland buildings, and they demand material specifications, installation techniques, and quality control measures that go well beyond standard commercial roofing practice.
 

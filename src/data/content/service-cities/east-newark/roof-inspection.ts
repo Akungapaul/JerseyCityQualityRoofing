@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const EAST_NEWARK_ROOF_INSPECTION_CONTENT: ServiceInCityContent = {
   serviceSlug: 'roof-inspection',
   citySlug: 'east-newark',
-  heroHeadline: 'Professional Roof Inspection in East Newark, NJ',
-  heroSubtitle: 'In the smallest borough in New Jersey, we inspect every roof with the thoroughness that a tight-knit community and aging housing stock demand.',
+  heroHeadline: 'Roof Inspection East Newark, NJ',
+  seoTitle: 'Roof Inspection East Newark, NJ',
+  heroSubtitle: 'Roof Inspection East Newark, NJ — In the smallest borough in New Jersey, we inspect every roof with the thoroughness that a tight-knit community and aging housing stock demand.',
 
   cityServiceNarrative: `Roof inspection in East Newark serves a purpose that goes beyond the standard assessment you might get in a larger municipality. At 0.11 square miles with roughly 1,200 housing units, this is a borough where the condition of one roof affects the buildings on either side, the property values on the block, and the community's overall confidence in its housing stock. When we inspect a roof in East Newark, we are not just evaluating one building in isolation. We are reading the conditions that every surrounding structure shares, because the homogeneous building stock and compact geography mean that a problem developing on one home is almost certainly developing on its neighbors as well.
 

@@ -3,8 +3,9 @@ import type { ServiceInCityContent } from '@/data/types';
 export const HARRISON_FLAT_ROOF_SYSTEMS_CONTENT: ServiceInCityContent = {
   serviceSlug: 'flat-roof-systems',
   citySlug: 'harrison',
-  heroHeadline: 'Flat Roof Systems in Harrison, NJ',
-  heroSubtitle: 'From modern TPO membranes on waterfront luxury condos to aging modified bitumen on traditional two-family home extensions, we design, install, and maintain flat roof systems across Harrison\'s entire building spectrum.',
+  heroHeadline: 'Flat Roof Systems Harrison, NJ',
+  seoTitle: 'Flat Roof Systems Harrison, NJ',
+  heroSubtitle: 'Flat Roof Systems Harrison, NJ — from modern TPO membranes on waterfront luxury condos to aging modified bitumen on traditional two-family home extensions, we design, install, and maintain flat roof systems across Harrison\'s entire building spectrum.',
 
   cityServiceNarrative: `Flat roof systems in Harrison encompass a wider range of applications, building types, and performance demands than in any other municipality we serve in Hudson County. The redevelopment that transformed Harrison's Passaic River waterfront created an entirely new market for commercial-grade flat roofing on luxury apartment complexes, mixed-use developments, and retail buildings in the Red Bull Arena district. Meanwhile, the traditional neighborhoods around Harrison Center and Davis Avenue still rely on flat roof sections over rear extensions, porches, and lower-level additions on homes built during the first half of the twentieth century. These two flat roof markets could not be more different in their materials, maintenance requirements, and performance expectations, yet they share the same geographic exposure to the Passaic River's relentless moisture influence.
 
