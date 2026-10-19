@@ -250,6 +250,7 @@ export interface CoraSupplement {
   images?: { src: string; alt: string }[]; // real published assets only
   jsonLdSnippets?: Record<string, unknown>[]; // extra JSON-LD objects rendered as script tags
   spans?: string[]; // phrases rendered as individual <span> elements (a "common searches" style list)
+  quotes?: string[]; // rendered as <blockquote> elements in the block
   htmlComments?: string[]; // rendered as real HTML comments in the block
   styleCss?: string; // real CSS for this block, rendered in a <style> tag
 }

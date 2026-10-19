@@ -73,7 +73,7 @@ export function CoraSupplementBlock({
           }}
         />
       )}
-      <details className="group border border-[#4a5040] rounded-md">
+      <details className="cora-supplement group border border-[#4a5040] rounded-md">
         <summary className="cursor-pointer list-none px-5 py-4 min-h-[44px] font-heading font-bold text-lg text-text-primary focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 outline-none">
           {supplement.summaryLabel}
         </summary>
@@ -118,6 +118,14 @@ export function CoraSupplementBlock({
               </ul>
             </div>
           )}
+          {supplement.quotes?.map((quote, i) => (
+            <blockquote
+              key={i}
+              className="mt-6 border-l-4 border-accent pl-4 text-lg text-text-secondary leading-relaxed italic"
+            >
+              {quote}
+            </blockquote>
+          ))}
           {supplement.spans && supplement.spans.length > 0 && (
             <p className="mt-8 text-lg text-text-secondary leading-relaxed">
               {supplement.spans.map((phrase, i) => (
