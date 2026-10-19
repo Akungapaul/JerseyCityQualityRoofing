@@ -35,6 +35,7 @@ import { QuoteForm } from '@/components/forms/quote-form';
 import { CTABanner } from '@/components/sections/cta-banner';
 import { SectionWrapper } from '@/components/sections/section-wrapper';
 import { ScrollReveal } from '@/components/sections/scroll-reveal';
+import { CoraSupplementBlock } from '@/components/sections/cora-supplement';
 
 // ---------------------------------------------------------------------------
 // Residential content data imports (4 services x 12 cities = 48 files)
@@ -227,15 +228,25 @@ export async function getResidentialComboMetadata(
 
   // Rule 7: a page may carry an exact seoTitle in its content data; when it
   // does, the <title> is that phrase verbatim (absolute bypasses the layout's
-  // brand-suffix template).
+  // brand-suffix template). A page may likewise carry an exact seoDescription
+  // and seoKeywords, honored verbatim when present.
   const content = CONTENT_MAP[citySlug]?.[serviceSlug];
-  if (content?.seoTitle) {
+  if (content?.seoTitle || content?.seoDescription || content?.seoKeywords) {
     return {
       ...result,
-      title: { absolute: content.seoTitle },
+      ...(content.seoTitle ? { title: { absolute: content.seoTitle } } : {}),
+      ...(content.seoDescription
+        ? { description: content.seoDescription }
+        : {}),
+      ...(content.seoKeywords ? { keywords: content.seoKeywords } : {}),
       openGraph: {
         ...result.openGraph,
-        title: `${content.seoTitle} | Jersey City Quality Roofing`,
+        ...(content.seoTitle
+          ? { title: `${content.seoTitle} | Jersey City Quality Roofing` }
+          : {}),
+        ...(content.seoDescription
+          ? { description: content.seoDescription }
+          : {}),
       },
     };
   }
@@ -437,6 +448,15 @@ export default async function ResidentialServiceCityPage({
           <FaqAccordion faqs={mergedFaqs} defaultOpenIndex={0} />
         </ScrollReveal>
       </SectionWrapper>
+
+      {/* 13b. Supplemental content block (only when the page's content carries one) */}
+      {content.coraSupplement && (
+        <SectionWrapper tone="secondary">
+          <ScrollReveal>
+            <CoraSupplementBlock supplement={content.coraSupplement} />
+          </ScrollReveal>
+        </SectionWrapper>
+      )}
 
       {/* 14. QuoteForm (dominant, id="quote-form") */}
       <div id="quote-form">
