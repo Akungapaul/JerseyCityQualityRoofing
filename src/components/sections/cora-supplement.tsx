@@ -60,6 +60,19 @@ export function CoraSupplementBlock({
       {supplement.jsonLdSnippets?.map((snippet, i) => (
         <JsonLd key={i} data={snippet} />
       ))}
+      {supplement.styleCss && (
+        <style dangerouslySetInnerHTML={{ __html: supplement.styleCss }} />
+      )}
+      {supplement.htmlComments && supplement.htmlComments.length > 0 && (
+        <div
+          aria-hidden="true"
+          dangerouslySetInnerHTML={{
+            __html: supplement.htmlComments
+              .map((comment) => `<!-- ${comment.replace(/--/g, '-')} -->`)
+              .join('\n'),
+          }}
+        />
+      )}
       <details className="group border border-[#4a5040] rounded-md">
         <summary className="cursor-pointer list-none px-5 py-4 min-h-[44px] font-heading font-bold text-lg text-text-primary focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 outline-none">
           {supplement.summaryLabel}
@@ -104,6 +117,15 @@ export function CoraSupplementBlock({
                 ))}
               </ul>
             </div>
+          )}
+          {supplement.spans && supplement.spans.length > 0 && (
+            <p className="mt-8 text-lg text-text-secondary leading-relaxed">
+              {supplement.spans.map((phrase, i) => (
+                <span key={i} className="inline-block mr-3 mb-2">
+                  {phrase}
+                </span>
+              ))}
+            </p>
           )}
           {supplement.images && supplement.images.length > 0 && (
             <div className="mt-8 grid gap-4 sm:grid-cols-2">

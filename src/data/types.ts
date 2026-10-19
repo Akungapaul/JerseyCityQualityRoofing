@@ -249,12 +249,17 @@ export interface CoraSupplement {
   externalLinks?: CoraSupplementLink[]; // outbound links (no rel attribute: dofollow)
   images?: { src: string; alt: string }[]; // real published assets only
   jsonLdSnippets?: Record<string, unknown>[]; // extra JSON-LD objects rendered as script tags
+  spans?: string[]; // phrases rendered as individual <span> elements (a "common searches" style list)
+  htmlComments?: string[]; // rendered as real HTML comments in the block
+  styleCss?: string; // real CSS for this block, rendered in a <style> tag
 }
 
 export interface ServiceInCityContent {
   serviceSlug: string;
   citySlug: string;
   seoTitle?: string;                                 // Optional exact <title> override (Rule 7): used verbatim, bypasses the layout brand-suffix template
+  seoDescription?: string;                           // Optional exact meta description override
+  seoKeywords?: string[];                            // Optional meta keywords list
   coraSupplement?: CoraSupplement;                   // Optional expandable supplemental content block
   heroHeadline: string;                              // City-specific H1, e.g., "Expert Roof Repair in Jersey City, NJ"
   heroSubtitle: string;                              // Unique supporting tagline
