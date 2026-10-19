@@ -35,6 +35,7 @@ import { QuoteForm } from '@/components/forms/quote-form';
 import { CTABanner } from '@/components/sections/cta-banner';
 import { SectionWrapper } from '@/components/sections/section-wrapper';
 import { ScrollReveal } from '@/components/sections/scroll-reveal';
+import { CoraSupplementBlock } from '@/components/sections/cora-supplement';
 
 // ---------------------------------------------------------------------------
 // Residential content data imports (4 services x 12 cities = 48 files)
@@ -437,6 +438,15 @@ export default async function ResidentialServiceCityPage({
           <FaqAccordion faqs={mergedFaqs} defaultOpenIndex={0} />
         </ScrollReveal>
       </SectionWrapper>
+
+      {/* 13b. Supplemental content block (only when the page's content carries one) */}
+      {content.coraSupplement && (
+        <SectionWrapper tone="secondary">
+          <ScrollReveal>
+            <CoraSupplementBlock supplement={content.coraSupplement} />
+          </ScrollReveal>
+        </SectionWrapper>
+      )}
 
       {/* 14. QuoteForm (dominant, id="quote-form") */}
       <div id="quote-form">

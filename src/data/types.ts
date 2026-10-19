@@ -223,10 +223,39 @@ export interface NeighborhoodServiceInsight {
   commonIssue: string;   // The #1 issue seen in this neighborhood
 }
 
+// Supplemental content block: extra expandable (starts-collapsed) content a
+// page can carry below its main sections. Rendered by CoraSupplementBlock in
+// the residential service-city template only when present.
+export interface CoraSupplementLink {
+  label: string;
+  href: string;
+}
+
+export interface CoraSupplementSection {
+  heading: string;
+  headingLevel: 2 | 3;
+  paragraphs?: string[];
+  questions?: FAQ[]; // rendered as H3 question headings, each followed by its answer paragraph
+  listItems?: string[];
+  links?: CoraSupplementLink[];
+}
+
+export interface CoraSupplement {
+  summaryLabel: string; // visible label on the collapsed toggle
+  heading: string; // H2 rendered at the top of the expanded block
+  introParagraphs?: string[];
+  sections: CoraSupplementSection[];
+  navLinks?: CoraSupplementLink[]; // rendered inside a <nav> element in the block
+  externalLinks?: CoraSupplementLink[]; // outbound links (no rel attribute: dofollow)
+  images?: { src: string; alt: string }[]; // real published assets only
+  jsonLdSnippets?: Record<string, unknown>[]; // extra JSON-LD objects rendered as script tags
+}
+
 export interface ServiceInCityContent {
   serviceSlug: string;
   citySlug: string;
   seoTitle?: string;                                 // Optional exact <title> override (Rule 7): used verbatim, bypasses the layout brand-suffix template
+  coraSupplement?: CoraSupplement;                   // Optional expandable supplemental content block
   heroHeadline: string;                              // City-specific H1, e.g., "Expert Roof Repair in Jersey City, NJ"
   heroSubtitle: string;                              // Unique supporting tagline
   cityServiceNarrative: string;                      // ~600 words: first-person expert narrative about doing THIS service in THIS city
