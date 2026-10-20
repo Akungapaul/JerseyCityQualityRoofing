@@ -254,6 +254,23 @@ export function Footer() {
           &copy; {BUSINESS_INFO.foundedYear}&ndash;{currentYear} {SITE_NAME}.
           All rights reserved.
         </p>
+        <p className="text-text-secondary text-lg text-center mt-2">
+          <Link
+            href="/privacy-policy"
+            className="hover:text-accent transition-colors duration-[--duration-fast]"
+          >
+            Privacy Policy
+          </Link>
+          <span aria-hidden="true" className="mx-3">
+            &middot;
+          </span>
+          <Link
+            href="/terms-of-service"
+            className="hover:text-accent transition-colors duration-[--duration-fast]"
+          >
+            Terms of Service
+          </Link>
+        </p>
       </div>
     </footer>
   );

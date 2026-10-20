@@ -9,13 +9,14 @@ describe('sitemap generation', () => {
     expect(entries.length).toBeGreaterThan(0);
   });
 
-  it('generates 148 total URLs', () => {
+  it('generates 150 total URLs', () => {
     const entries = sitemap();
     // Flat URL structure (2026-10-17): 11 static/silo index + 12 city hubs + 96 service-in-city
     // + 8 blog + 8 cost guides + 6 material guides + 5 problems = 146, plus the
-    // /guides/cost and /guides/materials hub index pages added 2026-10-18 = 148.
+    // /guides/cost and /guides/materials hub index pages added 2026-10-18 = 148,
+    // plus /privacy-policy and /terms-of-service added 2026-10-20 = 150.
     // (The 8 old service pillar pages were merged into the Jersey City combo pages.)
-    expect(entries).toHaveLength(148);
+    expect(entries).toHaveLength(150);
   });
 
   it('excludes testimonials stub page from sitemap', () => {

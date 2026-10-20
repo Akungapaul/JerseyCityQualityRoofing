@@ -16,6 +16,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     { url: BASE_URL, changeFrequency: 'weekly', priority: 1.0 },
     { url: `${BASE_URL}/about`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/privacy-policy`, changeFrequency: 'yearly', priority: 0.3 },
+    { url: `${BASE_URL}/terms-of-service`, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${BASE_URL}/contact`, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/gallery`, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/service-areas`, changeFrequency: 'monthly', priority: 0.8 },
