@@ -13,9 +13,13 @@ const STATS = [
     description: "Roofing projects completed",
   },
   {
-    number: "12",
-    label: "Cities",
-    description: "Every Hudson County municipality",
+    // Single-city alignment (2026-11-06): this stat said "12 Cities /
+    // Every Hudson County municipality" from the multi-town era. The
+    // population figure is the one the service pages already use
+    // ("Serving 292,449 residents in Jersey City").
+    number: "292,449",
+    label: "Residents",
+    description: "Jersey City's population",
   },
   {
     number: "4.8",
