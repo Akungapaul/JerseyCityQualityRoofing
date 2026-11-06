@@ -33,7 +33,7 @@ export function BlogHero({
         <span className="inline-flex items-center bg-accent text-dominant rounded-full px-3 py-1 text-[0.875rem] font-bold uppercase tracking-wider">
           {siloBadgeLabel}
         </span>
-        <h1 className="text-[2.5rem] lg:text-[3rem] font-heading font-bold text-text-primary leading-[1.1] mt-4">
+        <h1 className="text-4xl sm:text-[2.5rem] lg:text-[3rem] font-heading font-bold text-text-primary leading-[1.1] mt-4">
           {headline}
         </h1>
         <p className="text-lg text-text-secondary mt-4 leading-relaxed max-w-3xl">

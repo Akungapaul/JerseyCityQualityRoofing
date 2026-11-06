@@ -39,7 +39,7 @@ export function FloatingCTA() {
           <button
             onClick={() => setIsDismissed(true)}
             aria-label="Dismiss quote button"
-            className="bg-[#33382b] text-text-secondary hover:text-text-primary rounded-full w-8 h-8 flex items-center justify-center transition-colors"
+            className="bg-[#33382b] text-text-secondary hover:text-text-primary rounded-full w-11 h-11 flex items-center justify-center transition-colors"
           >
             <X size={16} />
           </button>

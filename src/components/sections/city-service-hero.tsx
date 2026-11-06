@@ -36,7 +36,7 @@ export function CityServiceHero({
                 Hudson County, NJ
               </span>
             )}
-            <h1 className="font-heading font-bold text-[2.5rem] lg:text-[3rem] leading-[1.1] text-text-primary mt-4">
+            <h1 className="font-heading font-bold text-4xl sm:text-[2.5rem] lg:text-[3rem] leading-[1.1] text-text-primary mt-4">
               {heroHeadline}
             </h1>
             <p className="text-lg text-text-secondary mt-4 leading-relaxed">
@@ -75,9 +75,10 @@ export function CityServiceHero({
             </div>
           </div>
 
-          {/* Right column: compact quote form */}
+          {/* Right column: compact quote form. embedded = no nested
+              SectionWrapper padding inside the hero (S2 fix) */}
           <div className="mt-8 lg:mt-0 lg:col-span-2">
-            <CompactQuoteForm defaultServiceType={serviceName} />
+            <CompactQuoteForm embedded defaultServiceType={serviceName} />
           </div>
         </div>
       </div>

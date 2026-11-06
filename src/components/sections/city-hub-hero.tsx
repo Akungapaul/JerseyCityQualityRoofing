@@ -24,7 +24,7 @@ export function CityHubHero({
             <span className="inline-flex items-center bg-secondary rounded-full px-3 py-1 text-text-secondary text-lg">
               Hudson County, NJ
             </span>
-            <h1 className="font-heading font-bold text-[2.5rem] lg:text-[3rem] leading-[1.1] text-text-primary mt-4">
+            <h1 className="font-heading font-bold text-4xl sm:text-[2.5rem] lg:text-[3rem] leading-[1.1] text-text-primary mt-4">
               {heroHeadline}
             </h1>
             <p className="text-lg text-text-secondary mt-4 leading-relaxed">

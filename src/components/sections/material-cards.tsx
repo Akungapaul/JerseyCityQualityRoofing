@@ -41,8 +41,9 @@ export function MaterialCards({ materials }: MaterialCardsProps) {
               {material.description}
             </p>
 
-            {/* Badge row */}
-            <div className="flex gap-2 mt-4">
+            {/* Badge row: pills stack on mobile instead of squeezing
+                side-by-side (2026-11-06, finding C) */}
+            <div className="flex flex-col items-start gap-2 mt-4 sm:flex-row sm:items-center">
               <span className="bg-dominant text-accent text-sm px-3 py-1 rounded-full font-bold">
                 {material.lifespan}
               </span>
@@ -56,7 +57,7 @@ export function MaterialCards({ materials }: MaterialCardsProps) {
               <button
                 type="button"
                 onClick={() => toggleCard(index)}
-                className="text-accent text-sm underline min-h-[44px] inline-flex items-center focus-ring"
+                className="text-accent text-sm underline min-h-[44px] inline-flex items-center px-2 -mx-2 focus-ring"
                 aria-expanded={isExpanded}
               >
                 {isExpanded ? "Hide Pros & Cons" : "Show Pros & Cons"}

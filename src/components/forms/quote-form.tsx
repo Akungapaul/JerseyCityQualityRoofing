@@ -173,6 +173,7 @@ export function QuoteForm({ defaultServiceType }: QuoteFormProps) {
                   label="Your Name"
                   required
                   placeholder="John Smith"
+                  autoComplete="name"
                   error={errors.name?.message}
                   {...register("name")}
                 />
@@ -181,6 +182,8 @@ export function QuoteForm({ defaultServiceType }: QuoteFormProps) {
                   required
                   type="tel"
                   placeholder="(201) 000-0000"
+                  autoComplete="tel"
+                  inputMode="tel"
                   error={errors.phone?.message}
                   {...register("phone")}
                 />
@@ -188,6 +191,8 @@ export function QuoteForm({ defaultServiceType }: QuoteFormProps) {
                   label="Email Address"
                   type="email"
                   placeholder="john@example.com"
+                  autoComplete="email"
+                  inputMode="email"
                   error={errors.email?.message}
                   {...register("email")}
                 />
@@ -203,6 +208,7 @@ export function QuoteForm({ defaultServiceType }: QuoteFormProps) {
                   <FormInput
                     label="Property Address"
                     placeholder="123 Main St, Jersey City, NJ"
+                    autoComplete="street-address"
                     error={errors.address?.message}
                     {...register("address")}
                   />
@@ -238,6 +244,7 @@ export function QuoteForm({ defaultServiceType }: QuoteFormProps) {
                     isSubmitting={isSubmitting}
                     variant="primary"
                     size="default"
+                    className="w-full sm:w-auto"
                   >
                     Request Free Quote
                   </SubmitButton>

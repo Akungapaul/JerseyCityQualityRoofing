@@ -33,7 +33,7 @@ export default function AboutPage() {
       {/* 1. Hero / Intro */}
       <SectionWrapper tone="dominant" className="lg:py-24">
         <ScrollReveal>
-          <h1 className="font-heading font-bold text-[2.5rem] lg:text-[3rem] leading-[1.1] text-text-primary">
+          <h1 className="font-heading font-bold text-4xl sm:text-[2.5rem] lg:text-[3rem] leading-[1.1] text-text-primary">
             About Jersey City Quality Roofing
           </h1>
           <p className="text-text-secondary text-lg mt-4 max-w-3xl">

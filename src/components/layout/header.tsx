@@ -46,14 +46,18 @@ export function Header() {
         animate={{ height: isScrolled ? 56 : 80 }}
         transition={{ duration: 0.3, ease: "easeOut" }}
       >
-        <div className="mx-auto flex h-full max-w-[1280px] items-center justify-between px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto flex h-full max-w-[1280px] items-center justify-between gap-2 px-4 sm:px-6 lg:px-8">
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center gap-2.5 focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-dominant rounded-md"
+            className="flex items-center gap-2 sm:gap-2.5 focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-dominant rounded-md"
             aria-label={`${SITE_NAME} — Home`}
           >
             <motion.div
+              // initial pins the box size in the server-rendered style so
+              // the logo paints at final size on first paint instead of
+              // flashing large until hydration (2026-11-06, finding B)
+              initial={{ width: 34, height: 34 }}
               animate={{
                 width: isScrolled ? 28 : 34,
                 height: isScrolled ? 28 : 34,
@@ -62,15 +66,20 @@ export function Header() {
             >
               <RoofIcon className="size-full" />
             </motion.div>
-            <motion.span
-              className="font-heading font-bold text-text-primary whitespace-nowrap"
-              animate={{
-                fontSize: isScrolled ? "1.125rem" : "1.375rem",
-              }}
-              transition={{ duration: 0.3, ease: "easeOut" }}
+            {/* Wordmark steps down on small phones (2026-11-06 mobile
+                pass): at 1.375rem the nowrap wordmark + phone + CTA +
+                hamburger could not fit a 360px row. The scroll shrink
+                is preserved via the isScrolled class swap. */}
+            <span
+              className={cn(
+                "font-heading font-bold text-text-primary whitespace-nowrap transition-[font-size] duration-300",
+                isScrolled
+                  ? "text-[0.95rem] sm:text-[1.125rem]"
+                  : "text-[1.05rem] sm:text-[1.375rem]",
+              )}
             >
               {SITE_NAME}
-            </motion.span>
+            </span>
           </Link>
 
           {/* Desktop navigation */}
@@ -98,12 +107,17 @@ export function Header() {
               </span>
             </a>
 
-            {/* CTA button -- scrolls to #quote-form or navigates to /contact */}
+            {/* CTA button -- scrolls to #quote-form or navigates to /contact.
+                Hidden below sm (2026-11-06 mobile pass): even with the
+                smaller wordmark, logo + wordmark + phone + CTA + hamburger
+                cannot fit 360px. The hamburger menu carries a full-width
+                quote CTA and the hero/floating CTAs cover the rest. */}
             <button
               type="button"
               onClick={handleQuoteCTA}
               className={cn(
                 buttonVariants({ variant: "primary", size: "compact" }),
+                "hidden px-3 sm:inline-flex sm:px-4",
               )}
             >
               {isScrolled ? "Free Quote" : "Get Free Quote"}

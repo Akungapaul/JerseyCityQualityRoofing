@@ -80,7 +80,7 @@ export function Breadcrumbs() {
                 ) : (
                   <Link
                     href={item.url}
-                    className="hover:text-accent transition-colors duration-[--duration-fast]"
+                    className="hover:text-accent transition-colors duration-[--duration-fast] inline-block py-2 -my-2"
                   >
                     {item.name}
                   </Link>

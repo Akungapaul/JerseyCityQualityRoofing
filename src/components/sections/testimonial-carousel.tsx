@@ -75,14 +75,14 @@ export function TestimonialCarousel({
             <button
               onClick={scrollPrev}
               aria-label="Previous testimonial"
-              className="min-h-[44px] min-w-[44px] bg-dominant rounded-full flex items-center justify-center hover:bg-[#4a5040] transition-colors duration-[150ms] focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-secondary"
+              className="h-11 w-11 min-h-[44px] min-w-[44px] bg-dominant rounded-full flex items-center justify-center hover:bg-[#4a5040] transition-colors duration-[150ms] focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-secondary"
             >
               <ChevronLeft size={24} aria-hidden="true" />
             </button>
             <button
               onClick={scrollNext}
               aria-label="Next testimonial"
-              className="min-h-[44px] min-w-[44px] bg-dominant rounded-full flex items-center justify-center hover:bg-[#4a5040] transition-colors duration-[150ms] focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-secondary"
+              className="h-11 w-11 min-h-[44px] min-w-[44px] bg-dominant rounded-full flex items-center justify-center hover:bg-[#4a5040] transition-colors duration-[150ms] focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-secondary"
             >
               <ChevronRight size={24} aria-hidden="true" />
             </button>

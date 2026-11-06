@@ -18,7 +18,7 @@ export function ServiceHero({
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
         {/* Left column: headline, subtitle, CTAs */}
         <div className="lg:w-3/5">
-          <h1 className="text-[2.5rem] lg:text-[3rem] font-heading font-bold text-text-primary leading-[1.1]">
+          <h1 className="text-4xl sm:text-[2.5rem] lg:text-[3rem] font-heading font-bold text-text-primary leading-[1.1]">
             {headline}
           </h1>
           <p className="text-lg text-text-secondary mt-4 leading-relaxed">
