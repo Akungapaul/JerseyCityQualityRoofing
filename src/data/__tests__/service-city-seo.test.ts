@@ -35,11 +35,11 @@ describe('service-in-city SEO', () => {
       expect(desc).toContain('Jersey City');
     });
 
-    it('areaServed is a City with @id referencing city hub', () => {
+    it('areaServed is a City with @id at the homepage (city hub retired 2026-11-06)', () => {
       const area = jsonLd.areaServed as Record<string, string>;
       expect(area['@type']).toBe('City');
       expect(area.name).toBe('Jersey City');
-      expect(area['@id']).toBe(`${BASE_URL}/roofing-contractor-jersey-city-nj#city`);
+      expect(area['@id']).toBe(`${BASE_URL}/#city`);
     });
 
     it('provider references organization @id', () => {

@@ -1,7 +1,6 @@
 import type { MetadataRoute } from 'next';
-import { getAllMunicipalitySlugs } from '@/data/municipalities';
 import { getAllServiceSlugs } from '@/data/services';
-import { serviceCityPath, cityHubPath } from '@/lib/paths';
+import { serviceCityPath, getPublishedCitySlugs } from '@/lib/paths';
 import { ALL_BLOG_ARTICLES } from '@/data/content/blog';
 import { ALL_COST_GUIDES } from '@/data/content/cost-guides';
 import { ALL_MATERIAL_GUIDES } from '@/data/content/material-guides';
@@ -9,7 +8,10 @@ import { ALL_PROBLEMS } from '@/data/content/problems';
 import { BASE_URL } from '@/lib/constants';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const cities = getAllMunicipalitySlugs();
+  // Single-city restructure (2026-11-06): only Jersey City combo pages
+  // are generated. City hubs, /service-areas, and the /services index
+  // layer are retired (308 via vercel.json) and out of the sitemap.
+  const cities = getPublishedCitySlugs();
   const services = getAllServiceSlugs();
 
   // Static pages
@@ -20,23 +22,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/terms-of-service`, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${BASE_URL}/contact`, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/gallery`, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${BASE_URL}/service-areas`, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/blog`, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${BASE_URL}/guides`, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/guides/cost`, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/guides/materials`, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/problems`, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${BASE_URL}/services`, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE_URL}/services/residential`, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE_URL}/services/commercial`, changeFrequency: 'monthly', priority: 0.8 },
   ];
-
-  // City hub pages (flat: /roofing-contractor-<city>-nj, priority 0.8)
-  const cityPages: MetadataRoute.Sitemap = cities.map((city) => ({
-    url: `${BASE_URL}${cityHubPath(city)}`,
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
-  }));
 
   // Service-in-city pages (flat: /<service>-<city>-nj, priority 0.7)
   const serviceCityPages: MetadataRoute.Sitemap = services.flatMap((service) =>
@@ -77,7 +68,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     ...staticPages,
-    ...cityPages,
     ...serviceCityPages,
     ...blogPages,
     ...costGuidePages,

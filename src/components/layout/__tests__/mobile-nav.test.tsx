@@ -41,11 +41,12 @@ describe('MobileNav', () => {
     expect(html).toContain('Resources');
   });
 
-  it('contains all 4 accordion section titles', () => {
+  it('contains all 3 accordion section titles and no Service Areas section', () => {
+    // "Service Areas" accordion removed 2026-11-06 (single-city restructure).
     const html = renderToStaticMarkup(createElement(MobileNav, defaultProps));
     expect(html).toContain('Residential Services');
     expect(html).toContain('Commercial Services');
-    expect(html).toContain('Service Areas');
+    expect(html).not.toContain('Service Areas');
     expect(html).toContain('Resources');
   });
 });

@@ -8,7 +8,7 @@ import {
 } from '@/lib/seo/json-ld';
 import { getService } from '@/data/services';
 import { getMunicipality } from '@/data/municipalities';
-import { serviceCityPath, servicePillarPath, cityHubPath } from '@/lib/paths';
+import { serviceCityPath, servicePillarPath } from '@/lib/paths';
 import { getCityServiceContent } from '@/data/service-city-content';
 import {
   getTestimonialsByCityAndService,
@@ -326,7 +326,7 @@ export default async function CommercialServiceCityPage({
             heading={`${service.name} in ${city.name}: What Building Owners Need to Know`}
             narrative={content.cityServiceNarrative}
             servicePageLink={servicePillarPath(serviceSlug)}
-            cityPageLink={cityHubPath(citySlug)}
+            cityPageLink="/"
             serviceName={service.name}
             cityName={city.name}
           />

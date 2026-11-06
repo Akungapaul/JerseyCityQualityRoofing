@@ -4,7 +4,7 @@ import { ALL_COST_GUIDES } from '@/data/content/cost-guides';
 import { ALL_MATERIAL_GUIDES } from '@/data/content/material-guides';
 import { ALL_PROBLEMS } from '@/data/content/problems';
 import { SERVICES } from '@/data/services';
-import { servicePillarPath, cityHubPath } from '@/lib/paths';
+import { servicePillarPath } from '@/lib/paths';
 import { MUNICIPALITIES } from '@/data/municipalities';
 
 export interface ContentNode {
@@ -352,13 +352,16 @@ export function initializeContentRegistry(): void {
     });
   }
 
-  // Cities
+  // Cities — single-city restructure (2026-11-06): only Jersey City is
+  // registered, and its hub is the homepage (the old
+  // /roofing-contractor-<city>-nj pages are retired for all 12 towns).
   for (const city of Object.values(MUNICIPALITIES)) {
+    if (city.slug !== 'jersey-city') continue;
     registerContent({
       slug: city.slug,
       type: 'city',
       title: city.name,
-      path: cityHubPath(city.slug),
+      path: '/',
       siloService: null,
       siloCategory: null,
       tags: [],

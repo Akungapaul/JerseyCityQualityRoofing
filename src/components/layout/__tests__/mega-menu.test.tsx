@@ -30,11 +30,12 @@ describe('MegaMenu', () => {
     expect(html).toContain('Resources');
   });
 
-  it('includes 4 navigation trigger buttons', () => {
+  it('includes 3 navigation trigger buttons and no Service Areas trigger', () => {
+    // "Service Areas" panel removed 2026-11-06 (single-city restructure).
     const html = renderToStaticMarkup(createElement(MegaMenu));
     expect(html).toContain('Residential Services');
     expect(html).toContain('Commercial Services');
-    expect(html).toContain('Service Areas');
+    expect(html).not.toContain('Service Areas');
     expect(html).toContain('Resources');
   });
 });
