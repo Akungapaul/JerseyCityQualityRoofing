@@ -11,12 +11,7 @@ import { QuoteForm } from "@/components/forms/quote-form";
 import { CTABanner } from "@/components/sections/cta-banner";
 import { SectionWrapper } from "@/components/sections/section-wrapper";
 import { ScrollReveal } from "@/components/sections/scroll-reveal";
-import {
-  JsonLd,
-  buildAggregateRatingJsonLd,
-  buildFaqPageJsonLd,
-} from "@/lib/seo/json-ld";
-import { TESTIMONIALS } from "@/data/testimonials";
+import { JsonLd, buildFaqPageJsonLd } from "@/lib/seo/json-ld";
 import { HOMEPAGE_FAQS } from "@/data/homepage-faq";
 import { BASE_URL } from "@/lib/constants";
 import { serviceCityPath, servicePillarPath } from "@/lib/paths";
@@ -76,14 +71,10 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
-      <JsonLd
-        data={
-          buildAggregateRatingJsonLd(TESTIMONIALS) as unknown as Record<
-            string,
-            unknown
-          >
-        }
-      />
+      {/* CRO Phase 4 (2026-11-06, audit 4.2): the AggregateRating JSON-LD
+          was removed deliberately -- it was computed from the site's own
+          testimonial file with no verified external review source. It
+          stays out until Paul supplies that source. */}
       <JsonLd
         data={
           buildFaqPageJsonLd([...HOMEPAGE_FAQS]) as unknown as Record<

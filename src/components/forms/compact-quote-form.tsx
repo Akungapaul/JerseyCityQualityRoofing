@@ -4,15 +4,21 @@ import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { AnimatePresence, motion } from "motion/react";
-import { CheckCircle, AlertCircle, ChevronDown } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { compactQuoteSchema } from "@/lib/schemas/quote-form";
 import { submitQuote } from "@/app/actions/submit-quote";
+import { trackGenerateLead } from "@/lib/analytics";
 import { SERVICES } from "@/data/services";
-import { PHONE_NUMBER, PHONE_HREF } from "@/lib/constants";
 import { SectionWrapper } from "@/components/sections/section-wrapper";
 import { FormInput } from "@/components/forms/form-input";
 import { FormSelect } from "@/components/forms/form-select";
 import { SubmitButton } from "@/components/forms/submit-button";
+import {
+  FormErrorBanner,
+  FormPrivacyNote,
+  FormSuccessPanel,
+  FormTurnstileError,
+} from "@/components/forms/form-result-panels";
 import { buttonVariants } from "@/components/ui/button-variants";
 import { cn } from "@/lib/utils";
 import {
@@ -37,6 +43,9 @@ const serviceOptions = Object.values(SERVICES).map((service) => ({
   label: service.name,
 }));
 
+const TURNSTILE_ERROR_MESSAGE =
+  "The security check did not finish. Please wait a moment and try again, or reload the page.";
+
 export function CompactQuoteForm({
   defaultServiceType,
   embedded = false,
@@ -44,6 +53,14 @@ export function CompactQuoteForm({
   const [formStatus, setFormStatus] = useState<"idle" | "success" | "error">(
     "idle",
   );
+  // CRO Phase 2 (2026-11-06): the server's specific error message is
+  // shown to the visitor instead of being discarded for a generic
+  // banner, and Turnstile failures get a visible state.
+  const [serverError, setServerError] = useState<string | null>(null);
+  const [turnstileError, setTurnstileError] = useState<string | null>(null);
+  // CRO Phase 1: the lead ID from the confirmed server success drives
+  // both the reference display and the GA4 generate_lead event.
+  const [leadId, setLeadId] = useState<string | null>(null);
   const turnstileRef = useRef<TurnstileWidgetRef>(null);
   const successRef = useRef<HTMLDivElement>(null);
 
@@ -94,18 +111,44 @@ export function CompactQuoteForm({
 
   const onSubmit = async (data: Record<string, unknown>) => {
     setFormStatus("idle");
+    setServerError(null);
 
-    const result = await submitQuote("compact", data, {
-      sourceUrl: window.location.href,
-      pageTitle: document.title,
-    });
+    try {
+      const result = await submitQuote("compact", data, {
+        sourceUrl: window.location.href,
+        pageTitle: document.title,
+      });
 
-    // Reset Turnstile after every attempt (tokens are single-use)
-    turnstileRef.current?.reset();
+      // Reset Turnstile after every attempt (tokens are single-use)
+      turnstileRef.current?.reset();
 
-    if (result.success) {
-      setFormStatus("success");
-    } else {
+      if (result.success) {
+        setLeadId(result.leadId ?? null);
+        // Fire generate_lead ONLY for a real, server-confirmed lead:
+        // the action returns a leadId only when a lead was actually
+        // processed (honeypot successes carry no leadId).
+        if (result.leadId) {
+          trackGenerateLead({
+            formVariant: "compact",
+            serviceType: String(data.serviceType ?? ""),
+            pagePath: window.location.pathname,
+            leadId: result.leadId,
+          });
+        }
+        setFormStatus("success");
+      } else {
+        setServerError(
+          result.error ?? "Something went wrong. Please try again.",
+        );
+        setFormStatus("error");
+      }
+    } catch {
+      // A thrown Server Action / network error used to leave the
+      // visitor with no feedback at all (audit 1.4). Show the banner.
+      turnstileRef.current?.reset();
+      setServerError(
+        "Something went wrong while sending your request. Please try again.",
+      );
       setFormStatus("error");
     }
   };
@@ -113,39 +156,7 @@ export function CompactQuoteForm({
   const content = (
     <AnimatePresence mode="wait">
       {formStatus === "success" ? (
-        <motion.div
-          key="success"
-          ref={successRef}
-          tabIndex={-1}
-          className="bg-secondary rounded-lg p-6 border-l-4 border-success outline-none"
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.3 }}
-        >
-          <div className="flex flex-col items-center gap-3 text-center">
-            <CheckCircle
-              size={32}
-              className="text-success"
-              aria-hidden="true"
-            />
-            <h2 className="font-heading text-[1.75rem] font-bold text-text-primary">
-              Thank You!
-            </h2>
-            <p className="font-body text-lg text-text-secondary">
-              We&apos;ve received your request and will contact you within 24
-              hours.
-            </p>
-            <p className="font-body text-lg text-text-secondary">
-              Need immediate help? Call us at{" "}
-              <a
-                href={PHONE_HREF}
-                className="text-accent hover:underline underline-offset-4"
-              >
-                {PHONE_NUMBER}
-              </a>
-            </p>
-          </div>
-        </motion.div>
+        <FormSuccessPanel key="success" ref={successRef} leadId={leadId} />
       ) : (
         <motion.div
           key="form"
@@ -159,6 +170,8 @@ export function CompactQuoteForm({
             </h2>
             <p className="text-lg text-text-secondary mt-2">
               Quick response -- we&apos;ll call you back within 24 hours.
+              Every estimate is free and includes a full roof inspection and
+              a written, itemized proposal.
             </p>
 
             {collapsedOnMobile ? (
@@ -182,32 +195,12 @@ export function CompactQuoteForm({
               >
                 <AnimatePresence>
                   {formStatus === "error" && (
-                    <motion.div
-                      role="alert"
-                      className="bg-destructive/10 rounded-md p-4 border-l-4 border-destructive mt-4"
-                      initial={{ opacity: 0, y: -16 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0 }}
-                      transition={{ duration: 0.3 }}
-                    >
-                      <div className="flex items-start gap-2">
-                        <AlertCircle
-                          size={20}
-                          className="text-destructive shrink-0 mt-0.5"
-                          aria-hidden="true"
-                        />
-                        <p className="font-body text-lg text-text-primary">
-                          Something went wrong. Please try again or call us
-                          at{" "}
-                          <a
-                            href={PHONE_HREF}
-                            className="text-accent hover:underline underline-offset-4"
-                          >
-                            {PHONE_NUMBER}
-                          </a>
-                        </p>
-                      </div>
-                    </motion.div>
+                    <FormErrorBanner
+                      message={
+                        serverError ??
+                        "Something went wrong. Please try again."
+                      }
+                    />
                   )}
                 </AnimatePresence>
 
@@ -269,8 +262,18 @@ export function CompactQuoteForm({
 
                   <TurnstileWidget
                     ref={turnstileRef}
-                    onVerify={(token) => setValue("turnstileToken", token)}
+                    onVerify={(token) => {
+                      setTurnstileError(null);
+                      setValue("turnstileToken", token);
+                    }}
                     onExpire={() => setValue("turnstileToken", "")}
+                    onError={() => {
+                      setValue("turnstileToken", "");
+                      setTurnstileError(TURNSTILE_ERROR_MESSAGE);
+                    }}
+                  />
+                  <FormTurnstileError
+                    message={turnstileError ?? errors.turnstileToken?.message}
                   />
 
                   <div className="flex items-end">
@@ -283,6 +286,8 @@ export function CompactQuoteForm({
                       Get Free Quote
                     </SubmitButton>
                   </div>
+
+                  <FormPrivacyNote />
                 </form>
               </motion.div>
             )}

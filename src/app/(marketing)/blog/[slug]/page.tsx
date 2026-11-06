@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Fragment } from 'react';
 import { notFound } from 'next/navigation';
 import { generatePageMetadata } from '@/lib/seo/metadata';
 import {
@@ -25,7 +26,10 @@ import { RelatedGuides } from '@/components/sections/related-guides';
 import { FaqAccordion } from '@/components/sections/faq-accordion';
 import { RelatedArticles } from '@/components/sections/related-articles';
 import { AuthorBio } from '@/components/sections/author-bio';
+import { BlogMidArticleCta } from '@/components/sections/blog-mid-article-cta';
 import { QuoteForm } from '@/components/forms/quote-form';
+import { getService } from '@/data/services';
+import { serviceCityPath } from '@/lib/paths';
 import { CTABanner } from '@/components/sections/cta-banner';
 import { SectionWrapper } from '@/components/sections/section-wrapper';
 import { ScrollReveal } from '@/components/sections/scroll-reveal';
@@ -179,23 +183,49 @@ export default async function BlogArticlePage({
         </ScrollReveal>
       </SectionWrapper>
 
-      {/* 5-N. Article sections (alternating tones, start dominant) */}
-      {article.sections.map((section) => {
+      {/* 5-N. Article sections (alternating tones, start dominant).
+          CRO Phase 5 (2026-11-06, audit finding 11): a mid-article CTA
+          is inserted after the second section (or the last section of
+          a short article) so readers are not asked for the lead only
+          at the very end of the page. */}
+      {article.sections.map((section, sectionIndex) => {
         const tone = articleToneIndex % 2 === 0 ? 'dominant' : 'secondary';
         articleToneIndex++;
         const headingId = slugifyHeading(section.heading);
+        const isCtaInsertionPoint =
+          sectionIndex === Math.min(1, article.sections.length - 1);
 
         return (
-          <SectionWrapper key={headingId} tone={tone as 'dominant' | 'secondary'}>
-            <ScrollReveal>
-              <BlogArticleBody
-                heading={section.heading}
-                headingLevel={section.headingLevel}
-                content={section.content}
-                headingId={headingId}
-              />
-            </ScrollReveal>
-          </SectionWrapper>
+          <Fragment key={headingId}>
+            <SectionWrapper tone={tone as 'dominant' | 'secondary'}>
+              <ScrollReveal>
+                <BlogArticleBody
+                  heading={section.heading}
+                  headingLevel={section.headingLevel}
+                  content={section.content}
+                  headingId={headingId}
+                />
+              </ScrollReveal>
+            </SectionWrapper>
+            {isCtaInsertionPoint && (
+              <SectionWrapper tone="dominant">
+                <ScrollReveal>
+                  <BlogMidArticleCta
+                    serviceName={
+                      article.siloService
+                        ? getService(article.siloService)?.name
+                        : undefined
+                    }
+                    serviceHref={
+                      article.siloService
+                        ? serviceCityPath(article.siloService, 'jersey-city')
+                        : undefined
+                    }
+                  />
+                </ScrollReveal>
+              </SectionWrapper>
+            )}
+          </Fragment>
         );
       })}
 
@@ -247,15 +277,22 @@ export default async function BlogArticlePage({
         </ScrollReveal>
       </SectionWrapper>
 
-      {/* N+6. Quote Form (dominant) */}
+      {/* N+6. Quote Form (dominant) -- CRO Phase 5: prefilled with the
+          article's silo service when it has one. */}
       <div id="quote-form">
-        <QuoteForm />
+        <QuoteForm
+          defaultServiceType={
+            article.siloService
+              ? (getService(article.siloService)?.name ?? '')
+              : ''
+          }
+        />
       </div>
 
       {/* N+7. CTA Banner (secondary) */}
       <CTABanner
         heading="Ready to Protect Your Roof?"
-        subtext="Call now for a free inspection or request your no-obligation quote."
+        subtext="Request a free inspection and your no-obligation quote."
       />
     </article>
   );

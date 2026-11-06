@@ -1,7 +1,5 @@
-import Link from "next/link";
-import { Phone } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button-variants";
-import { PHONE_NUMBER, PHONE_HREF } from "@/lib/constants";
+import { QuoteCtaButton } from "@/components/ui/quote-cta-button";
 import { cn } from "@/lib/utils";
 
 interface CTABannerProps {
@@ -10,9 +8,22 @@ interface CTABannerProps {
   className?: string;
 }
 
+/**
+ * End-of-page CTA banner (CRO Phase 3, 2026-11-06; audit 3.5/14).
+ *
+ * Changes from the audited version:
+ * - The phone-icon "Request a Free Estimate" link is gone: it routed
+ *   to a form while styled as a call (the site has no phone number).
+ * - The single primary button is local-first: on pages that contain a
+ *   quote form it scrolls to the nearest one (the detailed form sits
+ *   right above this banner); it navigates to /contact#quote-form only
+ *   on pages without a form (About, Gallery).
+ * - The default subtext no longer says "Call now".
+ * - The footer no longer repeats this strip underneath it.
+ */
 export function CTABanner({
   heading = "Ready to Protect Your Roof?",
-  subtext = "Call now for a free inspection or request your no-obligation quote.",
+  subtext = "Request a free inspection and your no-obligation quote.",
   className,
 }: CTABannerProps) {
   return (
@@ -27,25 +38,16 @@ export function CTABanner({
             <p className="text-text-secondary text-lg mt-1">{subtext}</p>
           </div>
 
-          {/* Right side: phone and CTA. flex-wrap + justify-center so the
-              phone number and button stack instead of clipping below
-              ~390px (2026-11-06 mobile pass) */}
+          {/* Right side: single local-first CTA */}
           <div className="flex flex-wrap items-center justify-center gap-3 shrink-0 max-w-full">
-            <a
-              href={PHONE_HREF}
-              className="inline-flex items-center gap-2 min-h-[44px] px-4 py-2 rounded-md text-accent font-body font-bold text-lg hover:underline underline-offset-4 transition-colors duration-[--duration-fast] focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-secondary"
-            >
-              <Phone size={20} strokeWidth={1.5} aria-hidden="true" />
-              {PHONE_NUMBER}
-            </a>
-            <Link
-              href="/contact"
+            <QuoteCtaButton
+              preferredFormIds={["full-quote-form", "quote-form"]}
               className={cn(
                 buttonVariants({ variant: "primary", size: "default" }),
               )}
             >
-              Get Free Quote
-            </Link>
+              Get My Free Quote
+            </QuoteCtaButton>
           </div>
         </div>
       </div>

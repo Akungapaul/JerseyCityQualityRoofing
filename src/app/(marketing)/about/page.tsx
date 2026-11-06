@@ -3,12 +3,9 @@ import { generatePageMetadata } from "@/lib/seo/metadata";
 import { SectionWrapper } from "@/components/sections/section-wrapper";
 import { ScrollReveal } from "@/components/sections/scroll-reveal";
 import { AboutCompanyStory } from "@/components/sections/about-company-story";
-import { AboutTeamSection } from "@/components/sections/about-team-section";
 import { AboutCertifications } from "@/components/sections/about-certifications";
 import { TestimonialCarousel } from "@/components/sections/testimonial-carousel";
 import { CTABanner } from "@/components/sections/cta-banner";
-import { JsonLd, buildAggregateRatingJsonLd } from "@/lib/seo/json-ld";
-import { TESTIMONIALS } from "@/data/testimonials";
 import { ABOUT_CONTENT } from "@/data/about-content";
 
 export const metadata: Metadata = generatePageMetadata({
@@ -21,14 +18,9 @@ export const metadata: Metadata = generatePageMetadata({
 export default function AboutPage() {
   return (
     <>
-      <JsonLd
-        data={
-          buildAggregateRatingJsonLd(TESTIMONIALS) as unknown as Record<
-            string,
-            unknown
-          >
-        }
-      />
+      {/* CRO Phase 4 (2026-11-06, audit 4.2): AggregateRating JSON-LD
+          removed site-wide -- no verified external review source backs
+          it. See src/lib/seo/json-ld.tsx. */}
 
       {/* 1. Hero / Intro */}
       <SectionWrapper tone="dominant" className="lg:py-24">
@@ -46,8 +38,10 @@ export default function AboutPage() {
       {/* 2. Company Story (wraps itself in SectionWrapper) */}
       <AboutCompanyStory />
 
-      {/* 3. Team Section (wraps itself in SectionWrapper) */}
-      <AboutTeamSection />
+      {/* 3. Team Section -- REMOVED (CRO Phase 4, 2026-11-06, audit
+          4.5): the section rendered placeholder cards named
+          "[Team Member]" with gray placeholder circles. It stays out
+          until Paul supplies real team names, roles, bios, and photos. */}
 
       {/* 4. Certifications (wraps itself in SectionWrapper) */}
       <AboutCertifications />
@@ -79,14 +73,9 @@ export default function AboutPage() {
                   Municipalities Served
                 </p>
               </div>
-              <div>
-                <p className="font-heading font-bold text-[2rem] text-text-primary">
-                  {ABOUT_CONTENT.stats.averageRating}
-                </p>
-                <p className="text-text-secondary text-lg">
-                  Average Rating
-                </p>
-              </div>
+              {/* CRO Phase 4: the "Average Rating 4.8" stat was removed
+                  with the homepage rating stat -- no verified review
+                  source backs it (audit 4.2/4.4). */}
             </div>
           </div>
         </ScrollReveal>

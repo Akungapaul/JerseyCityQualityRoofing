@@ -4,7 +4,7 @@ import { useCallback, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { motion, useScroll, useMotionValueEvent } from "motion/react";
-import { Phone, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { SITE_NAME, PHONE_NUMBER, PHONE_HREF } from "@/lib/constants";
 import { RoofIcon } from "@/components/layout/logo";
@@ -92,16 +92,14 @@ export function Header() {
 
           {/* Right side: phone, CTA, hamburger */}
           <div className="flex items-center gap-2 sm:gap-3">
-            {/* Phone link */}
+            {/* Estimate link. CRO Phase 3 (2026-11-06, audit finding 3):
+                the Phone icon was removed -- this link routes to the
+                quote form, it does not place a call (the site has no
+                published phone number). */}
             <a
               href={PHONE_HREF}
               className="inline-flex items-center gap-1.5 min-h-[44px] px-2 rounded-md text-accent hover:underline underline-offset-4 transition-colors duration-[--duration-fast] focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-dominant"
             >
-              <Phone
-                size={20}
-                strokeWidth={1.5}
-                aria-hidden="true"
-              />
               <span className="hidden sm:inline font-body font-bold text-lg">
                 {PHONE_NUMBER}
               </span>

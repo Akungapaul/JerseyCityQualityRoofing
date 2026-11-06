@@ -10,8 +10,9 @@ export function GalleryHero({ projectCount }: GalleryHeroProps) {
           Our Roofing Projects
         </h1>
         <p className="text-lg text-text-secondary mt-4 max-w-2xl mx-auto">
-          Browse {projectCount} completed projects across Hudson County. Drag
-          the slider to compare before and after.
+          Browse {projectCount} completed project profiles. Each profile is
+          an illustrated summary of the work, materials, and scope -- not a
+          photograph.
         </p>
       </div>
     </section>

@@ -12,6 +12,7 @@ import {
 import type { LeadNotificationPayload } from "@/types/form";
 
 export function LeadNotification({
+  leadId,
   name,
   phone,
   serviceType,
@@ -217,6 +218,15 @@ export function LeadNotification({
             {/* Footer Metadata */}
             <Hr style={{ borderColor: "#e5e5e5", margin: "0 0 24px" }} />
             <Section>
+              <Text
+                style={{
+                  fontSize: "14px",
+                  color: "#999999",
+                  margin: "0 0 4px",
+                }}
+              >
+                Lead ID: {leadId}
+              </Text>
               <Text
                 style={{
                   fontSize: "14px",

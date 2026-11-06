@@ -24,6 +24,7 @@ import { MidPageCTA } from '@/components/sections/mid-page-cta';
 import { FaqAccordion } from '@/components/sections/faq-accordion';
 import { RelatedGuides } from '@/components/sections/related-guides';
 import { QuoteForm } from '@/components/forms/quote-form';
+import { getService } from '@/data/services';
 import { CTABanner } from '@/components/sections/cta-banner';
 import { SectionWrapper } from '@/components/sections/section-wrapper';
 import { ScrollReveal } from '@/components/sections/scroll-reveal';
@@ -223,13 +224,19 @@ export default async function ProblemPage({
 
       {/* 13. Quote Form */}
       <div id="quote-form">
-        <QuoteForm />
+        {/* CRO Phase 5 (2026-11-06, audit 5.2): prefilled with the
+            problem's primary related service. */}
+        <QuoteForm
+          defaultServiceType={
+            getService(problem.relatedServiceSlugs[0] ?? '')?.name ?? ''
+          }
+        />
       </div>
 
       {/* 14. CTA Banner */}
       <CTABanner
         heading="Do Not Let Roof Problems Get Worse"
-        subtext="Early intervention saves thousands. Call now or request your free inspection."
+        subtext="Early intervention saves thousands. Request your free inspection today."
       />
     </>
   );

@@ -24,6 +24,7 @@ import { MaterialServiceCTA } from '@/components/sections/material-service-cta';
 import { FaqAccordion } from '@/components/sections/faq-accordion';
 import { RelatedGuides } from '@/components/sections/related-guides';
 import { QuoteForm } from '@/components/forms/quote-form';
+import { getService } from '@/data/services';
 import { CTABanner } from '@/components/sections/cta-banner';
 import { SectionWrapper } from '@/components/sections/section-wrapper';
 import { ScrollReveal } from '@/components/sections/scroll-reveal';
@@ -259,7 +260,13 @@ export default async function MaterialsGuidePage({
 
       {/* 15. Quote Form */}
       <div id="quote-form">
-        <QuoteForm />
+        {/* CRO Phase 5 (2026-11-06, audit 5.2): prefilled with the
+            guide's primary related service. */}
+        <QuoteForm
+          defaultServiceType={
+            getService(guide.relatedServiceSlugs[0] ?? '')?.name ?? ''
+          }
+        />
       </div>
 
       {/* 16. CTA Banner */}

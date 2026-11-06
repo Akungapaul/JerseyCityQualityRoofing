@@ -1,13 +1,13 @@
 import { describe, it, expect } from 'vitest';
+import { readFileSync } from 'fs';
+import { resolve } from 'path';
 import {
   buildRoofingContractorJsonLd,
   buildBreadcrumbJsonLd,
-  buildAggregateRatingJsonLd,
   buildFaqPageJsonLd,
   buildContactPageJsonLd,
   buildServicePageJsonLd,
 } from '@/lib/seo/json-ld';
-import { TESTIMONIALS } from '@/data/testimonials';
 import { BUSINESS_INFO } from '@/data/business-info';
 import { BASE_URL } from '@/lib/constants';
 import { getService } from '@/data/services';
@@ -82,45 +82,46 @@ describe('JSON-LD generators', () => {
     });
   });
 
-  describe('buildAggregateRatingJsonLd', () => {
-    it('returns schema with @context and @type RoofingContractor', () => {
-      const schema = buildAggregateRatingJsonLd(TESTIMONIALS) as unknown as Record<string, unknown>;
-      expect(schema['@context']).toBe('https://schema.org');
-      expect(schema['@type']).toBe('RoofingContractor');
+  // CRO Phase 4 (2026-11-06, audit 4.2): buildAggregateRatingJsonLd and
+  // its tests were removed deliberately. The builder published an
+  // AggregateRating computed from the site's own testimonial file with
+  // no verified external review source. These tests now guard the
+  // removal: no page may emit aggregate rating schema until Paul
+  // supplies a verified review source.
+  describe('aggregate rating removal (CRO Phase 4)', () => {
+    it('buildRoofingContractorJsonLd contains no aggregateRating', () => {
+      const schema = buildRoofingContractorJsonLd() as unknown as Record<string, unknown>;
+      expect(schema.aggregateRating).toBeUndefined();
     });
 
-    it('includes aggregateRating with @type AggregateRating', () => {
-      const schema = buildAggregateRatingJsonLd(TESTIMONIALS) as unknown as Record<string, unknown>;
-      const aggregateRating = schema.aggregateRating as Record<string, unknown>;
-      expect(aggregateRating).toBeDefined();
-      expect(aggregateRating['@type']).toBe('AggregateRating');
+    it('homepage source does not reference aggregate rating schema', () => {
+      const source = readFileSync(
+        resolve(__dirname, '../../app/(marketing)/page.tsx'),
+        'utf-8'
+      );
+      expect(source).not.toContain('buildAggregateRatingJsonLd');
+      expect(source).not.toContain('aggregateRating');
     });
 
-    it('computes ratingValue as average of all testimonial ratings', () => {
-      const schema = buildAggregateRatingJsonLd(TESTIMONIALS) as unknown as Record<string, unknown>;
-      const aggregateRating = schema.aggregateRating as Record<string, unknown>;
-      const expectedAvg = (
-        TESTIMONIALS.reduce((sum, t) => sum + t.rating, 0) / TESTIMONIALS.length
-      ).toFixed(1);
-      expect(aggregateRating.ratingValue).toBe(expectedAvg);
+    it('about page source does not reference aggregate rating schema', () => {
+      const source = readFileSync(
+        resolve(__dirname, '../../app/(marketing)/about/page.tsx'),
+        'utf-8'
+      );
+      expect(source).not.toContain('buildAggregateRatingJsonLd');
+      expect(source).not.toContain('aggregateRating');
     });
 
-    it('includes reviewCount equal to testimonials length as string', () => {
-      const schema = buildAggregateRatingJsonLd(TESTIMONIALS) as unknown as Record<string, unknown>;
-      const aggregateRating = schema.aggregateRating as Record<string, unknown>;
-      expect(aggregateRating.reviewCount).toBe(String(TESTIMONIALS.length));
-    });
-
-    it('includes bestRating "5" and worstRating "1"', () => {
-      const schema = buildAggregateRatingJsonLd(TESTIMONIALS) as unknown as Record<string, unknown>;
-      const aggregateRating = schema.aggregateRating as Record<string, unknown>;
-      expect(aggregateRating.bestRating).toBe('5');
-      expect(aggregateRating.worstRating).toBe('1');
-    });
-
-    it('includes name matching BUSINESS_INFO.name', () => {
-      const schema = buildAggregateRatingJsonLd(TESTIMONIALS) as unknown as Record<string, unknown>;
-      expect(schema.name).toBe(BUSINESS_INFO.name);
+    it('json-ld module no longer exports an aggregate rating builder', () => {
+      const source = readFileSync(
+        resolve(__dirname, '../seo/json-ld.tsx'),
+        'utf-8'
+      );
+      // The removal note in the module mentions the old builder in
+      // prose; assert no builder function or schema emission remains.
+      expect(source).not.toContain('export function buildAggregateRatingJsonLd');
+      expect(source).not.toContain("aggregateRating: {");
+      expect(source).not.toContain("'AggregateRating'");
     });
   });
 

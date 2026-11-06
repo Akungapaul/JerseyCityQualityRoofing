@@ -2,11 +2,11 @@
 
 import { useEffect, useRef } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import { X, Phone } from "lucide-react";
-import { PHONE_NUMBER, PHONE_HREF } from "@/lib/constants";
+import { X } from "lucide-react";
+import { PHONE_NUMBER } from "@/lib/constants";
 import { buttonVariants } from "@/components/ui/button-variants";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
+import { scrollToQuoteForm } from "@/lib/quote-form-nav";
 import { useExitIntent } from "@/hooks/use-exit-intent";
 
 export function ExitIntentPopup() {
@@ -116,23 +116,38 @@ export function ExitIntentPopup() {
               property. Most quotes delivered within 24 hours.
             </p>
 
-            <Link
-              href="/contact"
+            {/* CRO Phase 3 (2026-11-06, audit 3.1/3.3): both actions
+                used to exit to /contact (the secondary with a phone
+                icon) even though this popup only appears on service
+                pages that already contain two quote forms. They now
+                dismiss the popup and scroll to the on-page forms. */}
+            <button
+              type="button"
+              onClick={() => {
+                dismiss();
+                setTimeout(() => scrollToQuoteForm(["quote-form"]), 60);
+              }}
               className={cn(
                 buttonVariants({ variant: "primary" }),
                 "w-full mt-6 justify-center text-lg",
               )}
             >
               Get My Free Quote
-            </Link>
+            </button>
 
-            <a
-              href={PHONE_HREF}
-              className="text-accent flex items-center justify-center gap-2 text-lg font-bold mt-3 min-h-[44px]"
+            <button
+              type="button"
+              onClick={() => {
+                dismiss();
+                setTimeout(
+                  () => scrollToQuoteForm(["full-quote-form"]),
+                  60,
+                );
+              }}
+              className="text-accent flex items-center justify-center gap-2 text-lg font-bold mt-3 min-h-[44px] w-full"
             >
-              <Phone size={20} aria-hidden="true" />
               {PHONE_NUMBER}
-            </a>
+            </button>
           </motion.div>
         </motion.div>
       )}

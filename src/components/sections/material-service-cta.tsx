@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { ArrowRight, Phone } from "lucide-react";
-import { BUSINESS_INFO } from "@/data/business-info";
+import { ArrowRight } from "lucide-react";
+import { PHONE_NUMBER } from "@/lib/constants";
 
 interface MaterialServiceCTAProps {
   materialName: string;
@@ -35,12 +35,15 @@ export function MaterialServiceCTA({
           </Link>
         ))}
       </div>
+      {/* CRO Phase 3 (2026-11-06, audit finding 3): this link built a
+          tel: href from the placeholder business "phone" text, which
+          strips to an EMPTY tel: destination. It now routes to the
+          detailed quote form on this page, with the estimate label. */}
       <a
-        href={`tel:${BUSINESS_INFO.phone.replace(/[^+\d]/g, "")}`}
+        href="#full-quote-form"
         className="flex items-center gap-2 mt-4 text-accent text-lg font-bold"
       >
-        <Phone size={20} aria-hidden="true" />
-        {BUSINESS_INFO.phone}
+        {PHONE_NUMBER}
       </a>
     </div>
   );

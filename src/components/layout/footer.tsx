@@ -1,11 +1,9 @@
 import Link from "next/link";
-import { Phone, Mail, MapPin } from "lucide-react";
-import { buttonVariants } from "@/components/ui/button-variants";
+import { ClipboardList, Mail, MapPin } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { BUSINESS_INFO } from "@/data/business-info";
 import { getServicesByCategory } from "@/data/services";
 import { PHONE_NUMBER, PHONE_HREF, SITE_NAME } from "@/lib/constants";
-import { cn } from "@/lib/utils";
 import { servicePillarPath } from "@/lib/paths";
 
 export function Footer() {
@@ -15,41 +13,14 @@ export function Footer() {
 
   return (
     <footer className="bg-dominant border-t border-secondary/30">
-      {/* Section 1: CTA Banner Strip */}
-      <div className="bg-secondary py-8 lg:py-10">
-        <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-center sm:justify-between">
-            <div className="text-center sm:text-left">
-              <h2 className="font-heading font-bold text-[1.75rem] text-text-primary">
-                Ready to Protect Your Roof?
-              </h2>
-              <p className="mt-2 text-text-secondary text-lg">
-                Call now for a free inspection or request your no-obligation
-                quote.
-              </p>
-            </div>
-            <div className="flex flex-col items-center gap-3 sm:flex-row sm:items-center">
-              <a
-                href={PHONE_HREF}
-                className="inline-flex items-center gap-2 min-h-[44px] px-4 py-2 rounded-md text-accent font-body font-bold text-lg hover:underline underline-offset-4 transition-colors duration-[--duration-fast] focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-secondary"
-              >
-                <Phone size={20} strokeWidth={1.5} aria-hidden="true" />
-                {PHONE_NUMBER}
-              </a>
-              <Link
-                href="/contact"
-                className={cn(
-                  buttonVariants({ variant: "primary", size: "default" }),
-                )}
-              >
-                Get Free Quote
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* CRO Phase 3 (2026-11-06, audit 3.5/finding 14): the footer's
+          own CTA strip was removed. Every page already ends with the
+          page-level CTABanner using the same heading, subtext, and
+          offer, so the two strips ran back to back and diluted the
+          close. The page banner remains; the footer goes straight to
+          the sitemap columns. */}
 
-      {/* Section 2: Multi-column sitemap */}
+      {/* Section 1: Multi-column sitemap */}
       <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-12">
           {/* Column 1: Residential Services */}
@@ -156,7 +127,9 @@ export function Footer() {
                 </span>
               </div>
               <div className="flex items-center gap-2">
-                <Phone
+                {/* CRO Phase 3: form icon, not a phone icon -- this row
+                    routes to the quote form (no phone number exists). */}
+                <ClipboardList
                   size={20}
                   strokeWidth={1.5}
                   className="shrink-0 text-accent"
@@ -219,7 +192,12 @@ export function Footer() {
           <Badge variant="status">
             Licensed: {BUSINESS_INFO.licenseNumber}
           </Badge>
-          <Badge variant="status">Insured</Badge>
+          {/* CRO Phase 4 (audit 4.4): aligned with the data -- the
+              insurance claim states what can be shown on request,
+              matching BUSINESS_INFO.insuranceProvider. */}
+          <Badge variant="status">
+            Insured: {BUSINESS_INFO.insuranceProvider}
+          </Badge>
         </div>
       </div>
 

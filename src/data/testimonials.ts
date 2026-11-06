@@ -522,3 +522,24 @@ export function getTestimonialsByCityAndService(
     (t) => t.citySlug === citySlug && t.serviceSlug === serviceSlug,
   );
 }
+
+/**
+ * Testimonials for a service page (CRO Phase 4, 2026-11-06; audit 4.3).
+ *
+ * The old fallback showed ALL 48 testimonials from all 12 towns when a
+ * page had fewer than 3 city+service matches -- on a Jersey City page
+ * that meant 44 testimonials from towns the site no longer serves.
+ * Service pages now stay inside the page's own city: city+service when
+ * there are at least 3, otherwise every testimonial from that city.
+ * There is deliberately NO global fallback.
+ */
+export function getServicePageTestimonials(
+  citySlug: string,
+  serviceSlug: string,
+): Testimonial[] {
+  const cityService = getTestimonialsByCityAndService(citySlug, serviceSlug);
+  if (cityService.length >= 3) {
+    return cityService;
+  }
+  return getTestimonialsByCity(citySlug);
+}

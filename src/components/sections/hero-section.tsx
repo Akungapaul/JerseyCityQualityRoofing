@@ -1,6 +1,4 @@
-import { Phone } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button-variants";
-import { PHONE_NUMBER, PHONE_HREF } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
 export function HeroSection() {
@@ -27,15 +25,18 @@ export function HeroSection() {
               >
                 Get Your Free Quote
               </a>
+              {/* CRO Phase 3 (2026-11-06, audit 3.2): this button used to
+                  read "Call Request a Free Estimate" and exit to
+                  /contact even though both quote forms are on this page.
+                  It now scrolls to the detailed form on the homepage. */}
               <a
-                href={PHONE_HREF}
+                href="#full-quote-form"
                 className={cn(
-                  buttonVariants({ variant: "phone", size: "default" }),
+                  buttonVariants({ variant: "secondary", size: "default" }),
                   "gap-2",
                 )}
               >
-                <Phone size={20} strokeWidth={1.5} aria-hidden="true" />
-                {`Call ${PHONE_NUMBER}`}
+                Request a Detailed Quote
               </a>
             </div>
           </div>

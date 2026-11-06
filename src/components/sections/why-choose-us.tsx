@@ -21,11 +21,12 @@ const STATS = [
     label: "Residents",
     description: "Jersey City's population",
   },
-  {
-    number: "4.8",
-    label: "Stars",
-    description: "Average customer rating",
-  },
+  // CRO Phase 4 (2026-11-06, audit 4.2/4.4): the "4.8 Stars / Average
+  // customer rating" stat was removed deliberately. The site has no
+  // verified external review source backing the number, so the claim
+  // stays down until Paul supplies one (a Google Business Profile link
+  // or a dated review export). Do not re-add a rating display without
+  // that source.
 ] as const;
 
 export function WhyChooseUs() {
@@ -35,7 +36,7 @@ export function WhyChooseUs() {
         <h2 className="font-heading font-bold text-[1.75rem] text-text-primary mb-8">
           Why Choose Jersey City Quality Roofing
         </h2>
-        <div className="grid grid-cols-1 min-[480px]:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 min-[480px]:grid-cols-2 lg:grid-cols-3 gap-4">
           {STATS.map((stat) => (
             <div
               key={stat.label}

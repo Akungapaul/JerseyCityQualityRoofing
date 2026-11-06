@@ -8,10 +8,15 @@ import { CTABanner } from "@/components/sections/cta-banner";
 import { BadgeStrip } from "@/components/sections/badge-strip";
 import { GALLERY_PROJECTS } from "@/data/gallery-projects";
 
+// CRO Phase 4 (2026-11-06, audit 6.1): the title/description used to
+// promise "Before & After Roofing Photos", but the project data
+// contains no photographs -- only SVG placeholder panels. The page is
+// now honestly labeled as illustrated project profiles. Restore photo
+// language only when real before/after photo sets are supplied.
 export const metadata: Metadata = generatePageMetadata({
-  title: "Project Gallery | Before & After Roofing Photos",
+  title: "Project Gallery | Roofing Project Profiles",
   description:
-    "Browse before-and-after photos of our roofing projects across Hudson County. See our craftsmanship on residential and commercial roofs in Jersey City, Hoboken, Bayonne, and beyond.",
+    "Browse illustrated profiles of roofing projects completed by Jersey City Quality Roofing -- the scope, materials, and results for residential and commercial roofs across Hudson County.",
   path: "/gallery",
 });
 
@@ -26,7 +31,7 @@ export default function GalleryPage() {
       </SectionWrapper>
       <CTABanner
         heading="Ready to Start Your Roofing Project?"
-        subtext="Get a free estimate and see your home in our next gallery update."
+        subtext="Get a free estimate for your roofing project."
       />
     </>
   );

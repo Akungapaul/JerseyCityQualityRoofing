@@ -1,6 +1,5 @@
-import { Phone } from "lucide-react";
 import { CompactQuoteForm } from "@/components/forms/compact-quote-form";
-import { PHONE_NUMBER, PHONE_HREF } from "@/lib/constants";
+import { PHONE_NUMBER } from "@/lib/constants";
 
 interface CityServiceHeroProps {
   heroHeadline: string;
@@ -46,12 +45,19 @@ export function CityServiceHero({
               Serving {population.toLocaleString()} residents in {cityName}
             </p>
             <div className="flex flex-wrap items-center gap-4 mt-8">
+              {/* CRO Phase 3 (2026-11-06, audit finding 3): the emergency
+                  hero's primary button said "Call Now" but routed to the
+                  contact form -- false call language, and it left a page
+                  whose hero already contains the quote form. Both
+                  variants now scroll to the on-page form with honest
+                  labels, and the secondary link (previously a phone icon
+                  + exit to /contact) goes to the detailed form below. */}
               {isEmergency ? (
                 <a
-                  href={PHONE_HREF}
+                  href="#quote-form"
                   className="bg-[#d4782f] hover:bg-[#e08a3f] text-dominant font-bold px-6 py-3 rounded-lg min-h-[44px] transition-colors duration-[150ms] focus-ring inline-flex items-center"
                 >
-                  Call Now
+                  Request Emergency Service
                 </a>
               ) : (
                 <a
@@ -62,14 +68,9 @@ export function CityServiceHero({
                 </a>
               )}
               <a
-                href={PHONE_HREF}
+                href="#full-quote-form"
                 className={`flex items-center gap-2 font-bold min-h-[44px] hover:opacity-80 transition-opacity${isEmergency ? " text-[#d4782f] text-2xl" : " text-accent text-lg"}`}
               >
-                <Phone
-                  size={20}
-                  strokeWidth={1.5}
-                  aria-hidden="true"
-                />
                 {PHONE_NUMBER}
               </a>
             </div>
