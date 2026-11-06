@@ -418,12 +418,13 @@ describe('internal-links', () => {
       resetRegistry();
     });
 
-    it('registers 8 service nodes and 12 city nodes in addition to content nodes', () => {
+    it('registers 8 service nodes and 1 city node in addition to content nodes', () => {
       initializeContentRegistry();
       const size = getRegistrySize();
-      // 8 blog + N cost guides + 6 material guides + 5 problems + 8 services + 12 cities
-      // Must be at least 39 (8+6+5+8+12)
-      expect(size).toBeGreaterThanOrEqual(8 + 6 + 5 + 8 + 12);
+      // 8 blog + N cost guides + 6 material guides + 5 problems + 8 services
+      // + 1 city (Jersey City only since the 2026-11-06 single-city cut)
+      // Must be at least 36 (8+6+5+8+1, before cost guides)
+      expect(size).toBeGreaterThanOrEqual(8 + 6 + 5 + 8 + 1);
     });
 
     it('getProblemRelatedServices returns service links after initialization', () => {

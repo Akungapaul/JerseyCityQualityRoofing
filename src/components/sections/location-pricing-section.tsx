@@ -1,11 +1,18 @@
 import Link from "next/link";
 import type { LocationPricing } from "@/data/types";
-import { cityHubPath } from "@/lib/paths";
 
 interface LocationPricingSectionProps {
   locations: LocationPricing[];
 }
 
+/**
+ * Per-city pricing context on cost guides.
+ *
+ * Single-city restructure (2026-11-06): city names used to link to the
+ * /roofing-contractor-<city>-nj hub pages, which are retired. Only
+ * Jersey City still has a hub — the homepage — so only its name links
+ * (to /); the other towns render as plain headings.
+ */
 export function LocationPricingSection({
   locations,
 }: LocationPricingSectionProps) {
@@ -20,13 +27,17 @@ export function LocationPricingSection({
             key={location.citySlug}
             className="bg-secondary rounded-lg p-6 border border-[#4a5040]"
           >
-            <h3>
-              <Link
-                href={cityHubPath(location.citySlug)}
-                className="text-lg font-heading font-bold text-accent hover:underline"
-              >
-                {location.cityName}
-              </Link>
+            <h3 className="text-lg font-heading font-bold">
+              {location.citySlug === "jersey-city" ? (
+                <Link
+                  href="/"
+                  className="text-accent hover:underline"
+                >
+                  {location.cityName}
+                </Link>
+              ) : (
+                <span className="text-text-primary">{location.cityName}</span>
+              )}
             </h3>
             <p className="text-lg text-text-secondary mt-2 leading-relaxed">
               {location.priceContext}

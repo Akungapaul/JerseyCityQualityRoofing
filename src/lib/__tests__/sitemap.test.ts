@@ -9,14 +9,15 @@ describe('sitemap generation', () => {
     expect(entries.length).toBeGreaterThan(0);
   });
 
-  it('generates 150 total URLs', () => {
+  it('generates 46 total URLs', () => {
     const entries = sitemap();
-    // Flat URL structure (2026-10-17): 11 static/silo index + 12 city hubs + 96 service-in-city
-    // + 8 blog + 8 cost guides + 6 material guides + 5 problems = 146, plus the
-    // /guides/cost and /guides/materials hub index pages added 2026-10-18 = 148,
-    // plus /privacy-policy and /terms-of-service added 2026-10-20 = 150.
-    // (The 8 old service pillar pages were merged into the Jersey City combo pages.)
-    expect(entries).toHaveLength(150);
+    // Single-city restructure (2026-11-06): 11 static (homepage, about,
+    // privacy-policy, terms-of-service, contact, gallery, blog, guides,
+    // guides/cost, guides/materials, problems) + 8 Jersey City
+    // service-in-city + 8 blog + 8 cost guides + 6 material guides
+    // + 5 problems = 46. The 12 city hubs, the other 88 combos,
+    // /service-areas, and the /services index layer were retired.
+    expect(entries).toHaveLength(46);
   });
 
   it('excludes testimonials stub page from sitemap', () => {
@@ -31,12 +32,12 @@ describe('sitemap generation', () => {
     expect(home?.priority).toBe(1.0);
   });
 
-  it('includes all 12 city hub pages', () => {
+  it('includes no city hub pages (retired 2026-11-06)', () => {
     const entries = sitemap();
     const cityPages = entries.filter((e) =>
       e.url.includes('/roofing-contractor-')
     );
-    expect(cityPages).toHaveLength(12);
+    expect(cityPages).toHaveLength(0);
   });
 
   it('includes all service-in-city pages', () => {
@@ -44,16 +45,17 @@ describe('sitemap generation', () => {
     const serviceCityPages = entries.filter((e) =>
       e.url.match(/\/[a-z0-9-]+-nj$/) && !e.url.includes('/roofing-contractor-')
     );
-    // 4 residential x 12 cities + 4 commercial x 12 cities = 96
-    expect(serviceCityPages).toHaveLength(96);
+    // Single-city site: 8 services x Jersey City only = 8
+    expect(serviceCityPages).toHaveLength(8);
   });
 
-  it('includes silo index pages for /services, /services/residential, /services/commercial', () => {
+  it('excludes the retired /services index layer and /service-areas', () => {
     const entries = sitemap();
     const urls = entries.map((e) => e.url);
-    expect(urls).toContain(`${BASE_URL}/services`);
-    expect(urls).toContain(`${BASE_URL}/services/residential`);
-    expect(urls).toContain(`${BASE_URL}/services/commercial`);
+    expect(urls).not.toContain(`${BASE_URL}/services`);
+    expect(urls).not.toContain(`${BASE_URL}/services/residential`);
+    expect(urls).not.toContain(`${BASE_URL}/services/commercial`);
+    expect(urls).not.toContain(`${BASE_URL}/service-areas`);
   });
 
   it('all URLs start with https://', () => {

@@ -228,7 +228,9 @@ export function buildServiceInCityJsonLd(
     areaServed: {
       '@type': 'City',
       name: city.name,
-      '@id': `${BASE_URL}${cityHubPath(city.slug)}#city`,
+      // Single-city restructure (2026-11-06): the city hub pages are
+      // retired, so the city entity is identified at the homepage.
+      '@id': `${BASE_URL}/#city`,
     },
     provider: {
       '@type': 'RoofingContractor',

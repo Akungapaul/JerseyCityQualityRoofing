@@ -220,42 +220,46 @@ describe('SiblingCitiesNav', () => {
     const html = renderToStaticMarkup(
       createElement(SiblingCitiesNav, baseProps)
     );
-    expect(html).toContain('aria-label="Same service in other cities"');
+    expect(html).toContain('aria-label="Cities served"');
   });
 
-  it('renders aria-current="page" on current city', () => {
+  it('renders a single Jersey City entry pointing at the homepage', () => {
+    // Single-city restructure (2026-11-06): the other towns' pages are
+    // retired, so the cities-served list is one entry — Jersey City —
+    // linking to /, which is the Jersey City hub now.
     const html = renderToStaticMarkup(
       createElement(SiblingCitiesNav, baseProps)
     );
-    expect(html).toContain('aria-current="page"');
-    // Current city should be a span, not a link
-    expect(html).toMatch(/aria-current="page"[^>]*>Jersey City<\/span>/);
-  });
-
-  it('renders correct href pattern for non-current cities', () => {
-    const html = renderToStaticMarkup(
-      createElement(SiblingCitiesNav, baseProps)
-    );
-    expect(html).toContain('/roof-repair-hoboken-nj');
-  });
-
-  it('renders all 12 municipalities', () => {
-    const html = renderToStaticMarkup(
-      createElement(SiblingCitiesNav, baseProps)
-    );
+    expect(html).toContain('href="/"');
     expect(html).toContain('Jersey City');
-    expect(html).toContain('Hoboken');
-    expect(html).toContain('Bayonne');
-    expect(html).toContain('North Bergen');
   });
 
-  it('uses commercial category in hrefs when specified', () => {
+  it('renders no links to retired city pages', () => {
+    const html = renderToStaticMarkup(
+      createElement(SiblingCitiesNav, baseProps)
+    );
+    expect(html).not.toContain('roofing-contractor-');
+    expect(html).not.toContain('-hoboken-nj');
+    expect(html).not.toContain('Hoboken');
+    expect(html).not.toContain('Bayonne');
+    expect(html).not.toContain('North Bergen');
+  });
+
+  it('renders the heading with the service and city name', () => {
+    const html = renderToStaticMarkup(
+      createElement(SiblingCitiesNav, baseProps)
+    );
+    expect(html).toContain('Roof Repair in Jersey City');
+  });
+
+  it('renders the same single entry for commercial services', () => {
     const html = renderToStaticMarkup(
       createElement(SiblingCitiesNav, {
         ...baseProps,
         serviceCategory: 'commercial',
       })
     );
-    expect(html).toContain('/roof-repair-hoboken-nj');
+    expect(html).toContain('href="/"');
+    expect(html).not.toContain('roofing-contractor-');
   });
 });

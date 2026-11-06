@@ -6,7 +6,6 @@ import { BadgeStrip } from "@/components/sections/badge-strip";
 import { ServicesGrid } from "@/components/sections/services-grid";
 import { WhyChooseUs } from "@/components/sections/why-choose-us";
 import { TestimonialCarousel } from "@/components/sections/testimonial-carousel";
-import { ServiceAreasOverview } from "@/components/sections/service-areas-overview";
 import { FaqAccordion } from "@/components/sections/faq-accordion";
 import { QuoteForm } from "@/components/forms/quote-form";
 import { CTABanner } from "@/components/sections/cta-banner";
@@ -20,7 +19,7 @@ import {
 import { TESTIMONIALS } from "@/data/testimonials";
 import { HOMEPAGE_FAQS } from "@/data/homepage-faq";
 import { BASE_URL } from "@/lib/constants";
-import { serviceCityPath, servicePillarPath, cityHubPath } from "@/lib/paths";
+import { serviceCityPath, servicePillarPath } from "@/lib/paths";
 
 const homeDescription =
   "Roofer in Jersey City, NJ for roof repair, roof replacement, inspections, emergency leaks, and commercial roofing across Hudson County.";
@@ -51,7 +50,10 @@ const PRIORITY_SERVICE_LINKS = [
       "TPO, EPDM, modified bitumen, drainage, and maintenance options for flat roofs.",
   },
   {
-    href: cityHubPath("jersey-city"),
+    // The homepage IS the Jersey City hub since the 2026-11-06
+    // single-city restructure (the old /roofing-contractor-jersey-city-nj
+    // page 308s here), so this card links home.
+    href: "/",
     label: "Jersey City Service Area",
     description:
       "Neighborhood-specific roofing guidance for Downtown, The Heights, Journal Square, and more.",
@@ -141,8 +143,9 @@ export default function HomePage() {
       {/* 6. Testimonials (wraps itself in SectionWrapper) */}
       <TestimonialCarousel />
 
-      {/* 7. Service Areas Overview */}
-      <ServiceAreasOverview />
+      {/* 7. Service Areas Overview — removed 2026-11-06 (single-city
+          restructure): the section linked to the 12 retired city hub
+          pages; the homepage itself is the Jersey City hub now. */}
 
       {/* 8. FAQ Section */}
       <SectionWrapper tone="secondary">

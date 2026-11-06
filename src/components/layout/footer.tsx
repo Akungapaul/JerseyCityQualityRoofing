@@ -4,15 +4,13 @@ import { buttonVariants } from "@/components/ui/button-variants";
 import { Badge } from "@/components/ui/badge";
 import { BUSINESS_INFO } from "@/data/business-info";
 import { getServicesByCategory } from "@/data/services";
-import { getAllMunicipalities } from "@/data/municipalities";
 import { PHONE_NUMBER, PHONE_HREF, SITE_NAME } from "@/lib/constants";
 import { cn } from "@/lib/utils";
-import { servicePillarPath, cityHubPath } from "@/lib/paths";
+import { servicePillarPath } from "@/lib/paths";
 
 export function Footer() {
   const residentialServices = getServicesByCategory("residential");
   const commercialServices = getServicesByCategory("commercial");
-  const municipalities = getAllMunicipalities();
   const currentYear = new Date().getFullYear();
 
   return (
@@ -53,7 +51,7 @@ export function Footer() {
 
       {/* Section 2: Multi-column sitemap */}
       <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-12">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-12">
           {/* Column 1: Residential Services */}
           <div>
             <h3 className="font-heading font-bold text-lg text-text-primary mb-4">
@@ -92,26 +90,11 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: Service Areas */}
-          <div>
-            <h3 className="font-heading font-bold text-lg text-text-primary mb-4">
-              Service Areas
-            </h3>
-            <ul className="space-y-2">
-              {municipalities.map((muni) => (
-                <li key={muni.slug}>
-                  <Link
-                    href={cityHubPath(muni.slug)}
-                    className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast]"
-                  >
-                    {muni.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {/* Service Areas column removed 2026-11-06 (single-city
+              restructure): the city hub pages it linked to are retired
+              and the site serves Jersey City only. */}
 
-          {/* Column 4: Resources */}
+          {/* Column 3: Resources */}
           <div>
             <h3 className="font-heading font-bold text-lg text-text-primary mb-4">
               Resources
@@ -152,7 +135,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 5: Contact Us */}
+          {/* Column 4: Contact Us */}
           <div>
             <h3 className="font-heading font-bold text-lg text-text-primary mb-4">
               Contact Us
@@ -218,14 +201,6 @@ export function Footer() {
                   className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast]"
                 >
                   Contact
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/service-areas"
-                  className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast]"
-                >
-                  All Service Areas
                 </Link>
               </li>
             </ul>

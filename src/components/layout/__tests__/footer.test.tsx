@@ -35,16 +35,17 @@ describe('Footer', () => {
     expect(html).toContain('href="/gallery"');
   });
 
-  it('uses 5-column grid layout on large screens', () => {
+  it('uses 4-column grid layout on large screens', () => {
+    // Service Areas column removed 2026-11-06 (single-city restructure).
     const html = renderToStaticMarkup(createElement(Footer));
-    expect(html).toContain('lg:grid-cols-5');
+    expect(html).toContain('lg:grid-cols-4');
   });
 
-  it('contains all 5 column headings', () => {
+  it('contains all 4 column headings and no Service Areas column', () => {
     const html = renderToStaticMarkup(createElement(Footer));
     expect(html).toContain('Residential Services');
     expect(html).toContain('Commercial Services');
-    expect(html).toContain('Service Areas');
+    expect(html).not.toContain('Service Areas');
     expect(html).toContain('Resources');
     expect(html).toContain('Contact Us');
   });

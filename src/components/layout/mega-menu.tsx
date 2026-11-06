@@ -5,10 +5,12 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
 import { ChevronDown } from "lucide-react";
 import { getServicesByCategory } from "@/data/services";
-import { getAllMunicipalities } from "@/data/municipalities";
-import { servicePillarPath, cityHubPath } from "@/lib/paths";
+import { servicePillarPath } from "@/lib/paths";
 
-type PanelId = "residential" | "commercial" | "locations" | "resources" | null;
+// Single-city restructure (2026-11-06): the "Service Areas" panel was
+// removed — the site serves Jersey City only and the city hub pages it
+// linked to are retired.
+type PanelId = "residential" | "commercial" | "resources" | null;
 
 export function MegaMenu() {
   const [activePanel, setActivePanel] = useState<PanelId>(null);
@@ -18,7 +20,6 @@ export function MegaMenu() {
 
   const residentialServices = getServicesByCategory("residential");
   const commercialServices = getServicesByCategory("commercial");
-  const municipalities = getAllMunicipalities();
 
   const clearCloseTimer = useCallback(() => {
     if (closeTimerRef.current) {
@@ -105,7 +106,6 @@ export function MegaMenu() {
   const navItems: Array<{ id: PanelId; label: string }> = [
     { id: "residential", label: "Residential Services" },
     { id: "commercial", label: "Commercial Services" },
-    { id: "locations", label: "Service Areas" },
     { id: "resources", label: "Resources" },
   ];
 
@@ -198,27 +198,6 @@ export function MegaMenu() {
                         </span>
                       </Link>
                     ))}
-                  </div>
-                )}
-
-                {item.id === "locations" && (
-                  <div>
-                    <p className="font-heading font-bold text-lg text-accent mb-3">
-                      Service Areas
-                    </p>
-                    <div className="grid grid-cols-3 gap-2">
-                      {municipalities.map((muni) => (
-                        <Link
-                          key={muni.slug}
-                          href={cityHubPath(muni.slug)}
-                          className="block rounded-md px-2 py-1.5 font-body text-lg text-text-secondary hover:text-accent hover:bg-dominant-lighter transition-colors duration-[--duration-fast]"
-                          onClick={closePanel}
-                          role="menuitem"
-                        >
-                          {muni.name}
-                        </Link>
-                      ))}
-                    </div>
                   </div>
                 )}
 

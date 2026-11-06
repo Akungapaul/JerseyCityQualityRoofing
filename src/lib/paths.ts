@@ -6,13 +6,31 @@ import { getAllMunicipalitySlugs } from '@/data/municipalities';
  *
  * Public URLs are flat:
  *   service x city combo: /<public-service-slug>-<city>-nj
- *   city hub:             /roofing-contractor-<city>-nj
+ *
+ * Single-city restructure (2026-11-06): the site publishes Jersey City
+ * pages only. City hub pages (/roofing-contractor-<city>-nj) are retired
+ * for every city including Jersey City — the homepage is the Jersey City
+ * hub now — and the other 11 towns' combo pages are retired. All retired
+ * URLs 308 to the same service's Jersey City page or to / (see
+ * vercel.json). The full municipality dataset stays in
+ * src/data/municipalities.ts as reference data; it no longer drives
+ * page generation.
  *
  * Internal data slugs stay unchanged; two services publish under a
  * different public slug (emergency-roofing, commercial-repair/replacement).
  * The old service pillar (hub) pages were merged into each service's
  * Jersey City combo page, so "pillar" links resolve there.
  */
+
+/** Cities that get generated pages (single-city site since 2026-11-06). */
+export const PUBLISHED_CITY_SLUGS: readonly string[] = ['jersey-city'];
+
+/** Municipality slugs that get generated pages, in dataset order. */
+export function getPublishedCitySlugs(): string[] {
+  return getAllMunicipalitySlugs().filter((slug) =>
+    PUBLISHED_CITY_SLUGS.includes(slug),
+  );
+}
 export const PUBLIC_SERVICE_SLUGS: Record<string, string> = {
   'roof-repair': 'roof-repair',
   'roof-replacement': 'roof-replacement',
@@ -50,21 +68,17 @@ export function cityHubPath(citySlug: string): string {
   return `/roofing-contractor-${citySlug}-nj`;
 }
 
-export type FlatRoute =
-  | { type: 'combo'; serviceSlug: string; citySlug: string }
-  | { type: 'city'; citySlug: string };
+export type FlatRoute = { type: 'combo'; serviceSlug: string; citySlug: string };
 
 /**
  * Parse a flat root-level slug back into its route target.
  * Returns null for anything that is not a generated flat page.
+ * Since 2026-11-06 only Jersey City combos are generated, and the
+ * retired /roofing-contractor-<city>-nj hub slugs parse to null (they
+ * are redirect sources in vercel.json, not pages).
  */
 export function parseFlatSlug(slug: string): FlatRoute | null {
-  const cities = getAllMunicipalitySlugs();
-
-  if (slug.startsWith('roofing-contractor-') && slug.endsWith('-nj')) {
-    const citySlug = slug.slice('roofing-contractor-'.length, slug.length - '-nj'.length);
-    return cities.includes(citySlug) ? { type: 'city', citySlug } : null;
-  }
+  const cities = getPublishedCitySlugs();
 
   if (!slug.endsWith('-nj')) return null;
   const rest = slug.slice(0, slug.length - '-nj'.length);
@@ -80,16 +94,16 @@ export function parseFlatSlug(slug: string): FlatRoute | null {
   return null;
 }
 
-/** All flat page slugs (without leading slash): 96 combos + 12 city hubs. */
+/**
+ * All flat page slugs (without leading slash): the 8 Jersey City combos.
+ * (Was 96 combos + 12 city hubs before the 2026-11-06 single-city cut.)
+ */
 export function getAllFlatSlugs(): string[] {
   const slugs: string[] = [];
   for (const serviceSlug of getAllServiceSlugs()) {
-    for (const citySlug of getAllMunicipalitySlugs()) {
+    for (const citySlug of getPublishedCitySlugs()) {
       slugs.push(serviceCityPath(serviceSlug, citySlug).slice(1));
     }
-  }
-  for (const citySlug of getAllMunicipalitySlugs()) {
-    slugs.push(cityHubPath(citySlug).slice(1));
   }
   return slugs;
 }

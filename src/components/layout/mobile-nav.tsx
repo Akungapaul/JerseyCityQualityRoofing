@@ -7,8 +7,11 @@ import { X, ChevronDown, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PHONE_NUMBER, PHONE_HREF } from "@/lib/constants";
 import { getServicesByCategory } from "@/data/services";
-import { getAllMunicipalities } from "@/data/municipalities";
-import { servicePillarPath, cityHubPath } from "@/lib/paths";
+import { servicePillarPath } from "@/lib/paths";
+
+// Single-city restructure (2026-11-06): the "Service Areas" accordion
+// was removed — the site serves Jersey City only and the city hub pages
+// it linked to are retired.
 
 interface MobileNavProps {
   isOpen: boolean;
@@ -70,7 +73,6 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
 
   const residentialServices = getServicesByCategory("residential");
   const commercialServices = getServicesByCategory("commercial");
-  const municipalities = getAllMunicipalities();
 
   const toggleSection = useCallback(
     (section: string) => {
@@ -214,25 +216,6 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
                     onClick={onClose}
                   >
                     {service.name}
-                  </Link>
-                ))}
-              </div>
-            </AccordionSection>
-
-            <AccordionSection
-              title="Service Areas"
-              isExpanded={expandedSection === "locations"}
-              onToggle={() => toggleSection("locations")}
-            >
-              <div className="grid grid-cols-2 gap-1">
-                {municipalities.map((muni) => (
-                  <Link
-                    key={muni.slug}
-                    href={cityHubPath(muni.slug)}
-                    className="block rounded-md px-3 py-2 font-body text-lg text-text-secondary hover:text-accent hover:bg-secondary transition-colors duration-[--duration-fast] min-h-[44px] flex items-center"
-                    onClick={onClose}
-                  >
-                    {muni.name}
                   </Link>
                 ))}
               </div>
