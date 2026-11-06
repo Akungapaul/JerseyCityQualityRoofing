@@ -62,7 +62,7 @@ export function Footer() {
                 <li key={service.slug}>
                   <Link
                     href={servicePillarPath(service.slug)}
-                    className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast]"
+                    className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast] inline-block py-2 -my-2"
                   >
                     {service.name}
                   </Link>
@@ -81,7 +81,7 @@ export function Footer() {
                 <li key={service.slug}>
                   <Link
                     href={servicePillarPath(service.slug)}
-                    className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast]"
+                    className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast] inline-block py-2 -my-2"
                   >
                     {service.name}
                   </Link>
@@ -103,7 +103,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/blog"
-                  className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast]"
+                  className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast] inline-block py-2 -my-2"
                 >
                   Blog
                 </Link>
@@ -111,7 +111,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/guides"
-                  className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast]"
+                  className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast] inline-block py-2 -my-2"
                 >
                   Roofing Guides
                 </Link>
@@ -119,7 +119,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/problems"
-                  className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast]"
+                  className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast] inline-block py-2 -my-2"
                 >
                   Common Problems
                 </Link>
@@ -127,7 +127,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/gallery"
-                  className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast]"
+                  className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast] inline-block py-2 -my-2"
                 >
                   Project Gallery
                 </Link>
@@ -164,7 +164,7 @@ export function Footer() {
                 />
                 <a
                   href={PHONE_HREF}
-                  className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast]"
+                  className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast] inline-block py-2 -my-2"
                 >
                   {PHONE_NUMBER}
                 </a>
@@ -178,7 +178,7 @@ export function Footer() {
                 />
                 <a
                   href={`mailto:${BUSINESS_INFO.email}`}
-                  className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast]"
+                  className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast] inline-block py-2 -my-2"
                 >
                   {BUSINESS_INFO.email}
                 </a>
@@ -190,7 +190,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/about"
-                  className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast]"
+                  className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast] inline-block py-2 -my-2"
                 >
                   About Us
                 </Link>
@@ -198,7 +198,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/contact"
-                  className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast]"
+                  className="text-text-secondary hover:text-accent text-lg transition-colors duration-[--duration-fast] inline-block py-2 -my-2"
                 >
                   Contact
                 </Link>

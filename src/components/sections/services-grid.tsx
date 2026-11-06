@@ -42,14 +42,14 @@ export function ServicesGrid() {
         <h3 className="font-heading font-bold text-lg text-text-primary mb-4">
           Residential Services
         </h3>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <div className="grid grid-cols-1 min-[480px]:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
           {residential.map((service) => {
             const ServiceIcon = SERVICE_ICONS[service.slug] ?? Hammer;
             return (
               <Link
                 key={service.slug}
                 href={servicePillarPath(service.slug)}
-                className="group bg-dominant rounded-lg p-5 flex flex-col gap-3 hover:bg-[#4a5040] transition-colors duration-[150ms]"
+                className="group bg-dominant rounded-lg p-4 sm:p-5 flex flex-col gap-3 hover:bg-[#4a5040] transition-colors duration-[150ms]"
               >
                 <ServiceIcon
                   size={24}
@@ -76,14 +76,14 @@ export function ServicesGrid() {
         <h3 className="font-heading font-bold text-lg text-text-primary mb-4">
           Commercial Services
         </h3>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 min-[480px]:grid-cols-2 lg:grid-cols-4 gap-4">
           {commercial.map((service) => {
             const ServiceIcon = SERVICE_ICONS[service.slug] ?? Building2;
             return (
               <Link
                 key={service.slug}
                 href={servicePillarPath(service.slug)}
-                className="group bg-dominant rounded-lg p-5 flex flex-col gap-3 hover:bg-[#4a5040] transition-colors duration-[150ms]"
+                className="group bg-dominant rounded-lg p-4 sm:p-5 flex flex-col gap-3 hover:bg-[#4a5040] transition-colors duration-[150ms]"
               >
                 <ServiceIcon
                   size={24}

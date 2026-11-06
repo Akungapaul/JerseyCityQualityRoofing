@@ -16,10 +16,10 @@ export function BadgeStrip() {
           {BADGES.map(({ icon: Icon, label }) => (
             <div
               key={label}
-              className="flex items-center gap-2 text-text-primary border-r border-[#4a5040] last:border-r-0 pr-6 last:pr-0 lg:pr-8 lg:last:pr-0"
+              className="flex items-center gap-2 text-text-primary pr-4 last:pr-0 sm:border-r sm:border-[#4a5040] sm:last:border-r-0 sm:pr-6 lg:pr-8 lg:last:pr-0"
             >
               <Icon size={20} className="text-accent shrink-0" aria-hidden="true" />
-              <span className="text-lg font-body whitespace-nowrap">{label}</span>
+              <span className="text-base sm:text-lg font-body whitespace-nowrap">{label}</span>
             </div>
           ))}
         </div>

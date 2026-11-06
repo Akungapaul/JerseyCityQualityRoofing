@@ -27,8 +27,10 @@ export function CTABanner({
             <p className="text-text-secondary text-lg mt-1">{subtext}</p>
           </div>
 
-          {/* Right side: phone and CTA */}
-          <div className="flex items-center gap-3 shrink-0">
+          {/* Right side: phone and CTA. flex-wrap + justify-center so the
+              phone number and button stack instead of clipping below
+              ~390px (2026-11-06 mobile pass) */}
+          <div className="flex flex-wrap items-center justify-center gap-3 shrink-0 max-w-full">
             <a
               href={PHONE_HREF}
               className="inline-flex items-center gap-2 min-h-[44px] px-4 py-2 rounded-md text-accent font-body font-bold text-lg hover:underline underline-offset-4 transition-colors duration-[--duration-fast] focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-secondary"

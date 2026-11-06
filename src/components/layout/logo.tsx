@@ -6,6 +6,14 @@ function RoofIcon({ className }: { className?: string }) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 32 32"
+      // Explicit intrinsic dimensions (2026-11-06, finding B): without
+      // width/height attributes the SVG has no fixed size until Tailwind
+      // and the motion inline styles apply, so on first paint it rendered
+      // at the browser's default replaced-element size (~6x too large)
+      // and then shrank once styles landed. The attributes pin the
+      // intrinsic size; CSS classes still override when they load.
+      width={32}
+      height={32}
       className={cn("shrink-0", className)}
       aria-hidden="true"
     >

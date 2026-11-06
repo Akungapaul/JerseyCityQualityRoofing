@@ -31,11 +31,11 @@ export function WhyChooseUs() {
         <h2 className="font-heading font-bold text-[1.75rem] text-text-primary mb-8">
           Why Choose Jersey City Quality Roofing
         </h2>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 min-[480px]:grid-cols-2 lg:grid-cols-4 gap-4">
           {STATS.map((stat) => (
             <div
               key={stat.label}
-              className="bg-secondary rounded-lg p-6 text-center"
+              className="bg-secondary rounded-lg p-4 sm:p-6 text-center"
             >
               <p className="font-heading font-bold text-[2rem] text-accent">
                 {stat.number}

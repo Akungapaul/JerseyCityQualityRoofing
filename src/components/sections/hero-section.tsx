@@ -10,7 +10,7 @@ export function HeroSection() {
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Left side: headline, subtext, CTAs */}
           <div className="lg:w-[60%] text-center lg:text-left">
-            <h1 className="font-heading font-bold text-[2.5rem] lg:text-[3rem] leading-[1.1] text-text-primary">
+            <h1 className="font-heading font-bold text-4xl sm:text-[2.5rem] lg:text-[3rem] leading-[1.1] text-text-primary">
               Roofer in Jersey City, NJ for Roof Repair, Replacement &amp; Commercial Roofing
             </h1>
             <p className="text-text-secondary text-lg mt-4 max-w-xl lg:max-w-none">

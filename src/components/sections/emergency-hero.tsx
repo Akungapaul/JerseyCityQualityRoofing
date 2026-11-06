@@ -15,7 +15,7 @@ export function EmergencyHero({ phoneNumber, phoneHref }: EmergencyHeroProps) {
         </span>
 
         {/* Headline */}
-        <h1 className="text-[2.5rem] sm:text-[3rem] lg:text-[4rem] font-heading font-bold text-text-primary mt-6 leading-[1.1]">
+        <h1 className="text-4xl sm:text-[3rem] lg:text-[4rem] font-heading font-bold text-text-primary mt-6 leading-[1.1]">
           24/7 Emergency Roof Repair
         </h1>
 
