@@ -96,7 +96,7 @@ export default function BlogPage() {
       {/* 5. CTABanner */}
       <CTABanner
         heading="Have a Roofing Question?"
-        subtext="Our team is ready to help. Call now or request your free estimate."
+        subtext="Our team is ready to help. Request your free estimate."
       />
     </>
   );

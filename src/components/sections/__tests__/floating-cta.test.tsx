@@ -23,14 +23,10 @@ vi.mock("motion/react", () => ({
 }));
 
 vi.mock("lucide-react", () => ({
-  Phone: ({ size, ...props }: { size: number; [key: string]: unknown }) =>
-    createElement("svg", { "data-testid": "phone-icon", width: size, ...props }),
+  ClipboardList: ({ size, ...props }: { size: number; [key: string]: unknown }) =>
+    createElement("svg", { "data-testid": "clipboard-icon", width: size, ...props }),
   X: ({ size, ...props }: { size: number; [key: string]: unknown }) =>
     createElement("svg", { "data-testid": "x-icon", width: size, ...props }),
-}));
-
-vi.mock("@/lib/constants", () => ({
-  PHONE_HREF: "tel:+12015550123",
 }));
 
 // Mock useState and useEffect for server rendering
@@ -90,11 +86,23 @@ describe("FloatingCTA", () => {
     expect(html).toContain("Get a free roofing quote");
   });
 
-  it("renders Phone icon with aria-hidden", async () => {
+  // CRO Phase 3 (2026-11-06, audit finding 3): the floating CTA's
+  // Phone icon was removed deliberately -- the button routes to a
+  // quote form, it does not place a call. It now uses a form icon.
+  it("renders the quote form icon with aria-hidden, not a phone icon", async () => {
     mockIsPastFold = true;
     const { FloatingCTA } = await import("../floating-cta");
     const html = renderToStaticMarkup(createElement(FloatingCTA));
+    expect(html).toContain('data-testid="clipboard-icon"');
     expect(html).toContain('aria-hidden="true"');
+    expect(html).not.toContain("phone-icon");
+  });
+
+  it("CTA link targets the on-page quote form anchor by default", async () => {
+    mockIsPastFold = true;
+    const { FloatingCTA } = await import("../floating-cta");
+    const html = renderToStaticMarkup(createElement(FloatingCTA));
+    expect(html).toContain('href="#quote-form"');
   });
 
   it("contains fixed bottom-6 right-6 z-40 positioning classes", async () => {

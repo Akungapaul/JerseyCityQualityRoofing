@@ -10,10 +10,7 @@ import { getService } from '@/data/services';
 import { getMunicipality } from '@/data/municipalities';
 import { serviceCityPath, servicePillarPath } from '@/lib/paths';
 import { getCityServiceContent } from '@/data/service-city-content';
-import {
-  getTestimonialsByCityAndService,
-  TESTIMONIALS,
-} from '@/data/testimonials';
+import { getServicePageTestimonials } from '@/data/testimonials';
 import { BASE_URL } from '@/lib/constants';
 import type { ServiceInCityContent, FAQ, Testimonial } from '@/data/types';
 
@@ -287,15 +284,10 @@ export default async function ResidentialServiceCityPage({
     ...content.extendedFaqs,
   ];
 
-  // Testimonials: city+service specific if 3+, else global fallback
-  const cityServiceTestimonials = getTestimonialsByCityAndService(
-    citySlug,
-    serviceSlug,
-  );
+  // Testimonials (CRO Phase 4, 2026-11-06): city+service if 3+, else
+  // all testimonials from this city. Never the global all-towns list.
   const displayTestimonials: readonly Testimonial[] =
-    cityServiceTestimonials.length >= 3
-      ? cityServiceTestimonials
-      : TESTIMONIALS;
+    getServicePageTestimonials(citySlug, serviceSlug);
 
   return (
     <>
@@ -458,15 +450,16 @@ export default async function ResidentialServiceCityPage({
         </SectionWrapper>
       )}
 
-      {/* 14. QuoteForm (dominant, id="quote-form") */}
-      <div id="quote-form">
-        <QuoteForm defaultServiceType={service.name} />
-      </div>
+      {/* 14. QuoteForm (own wrapper, id="full-quote-form"). CRO Phase 3
+          (2026-11-06): the extra <div id="quote-form"> wrapper that used
+          to sit here duplicated the hero compact form's id -- removed,
+          so exactly one element on the page carries id="quote-form". */}
+      <QuoteForm defaultServiceType={service.name} />
 
       {/* 15. CTABanner (secondary, own wrapper) */}
       <CTABanner
         heading={`Your Trusted ${city.name} ${service.name} Experts`}
-        subtext="Call now for a free inspection or request your no-obligation quote."
+        subtext="Request a free inspection and your no-obligation quote."
       />
     </>
   );

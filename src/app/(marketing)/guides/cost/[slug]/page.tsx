@@ -8,6 +8,7 @@ import {
   buildRoofingContractorJsonLd,
 } from '@/lib/seo/json-ld';
 import { ALL_COST_GUIDES, getCostGuide } from '@/data/content/cost-guides';
+import { getService } from '@/data/services';
 import {
   initializeContentRegistry,
   getRelatedGuides,
@@ -226,15 +227,18 @@ export default async function CostGuidePage({
         </SectionWrapper>
       )}
 
-      {/* 12. Quote Form */}
+      {/* 12. Quote Form -- CRO Phase 5 (2026-11-06, audit 5.2):
+          prefilled with the guide's service. */}
       <div id="quote-form">
-        <QuoteForm />
+        <QuoteForm
+          defaultServiceType={getService(guide.serviceSlug)?.name ?? ''}
+        />
       </div>
 
       {/* 13. CTA Banner */}
       <CTABanner
         heading="Get Your Accurate Estimate"
-        subtext="Every roofing project is different. Call us for a personalized estimate based on your specific needs."
+        subtext="Every roofing project is different. Request a personalized estimate based on your specific needs."
       />
     </>
   );

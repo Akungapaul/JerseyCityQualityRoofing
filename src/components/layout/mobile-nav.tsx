@@ -3,9 +3,10 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
-import { X, ChevronDown, Phone } from "lucide-react";
+import { X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PHONE_NUMBER, PHONE_HREF } from "@/lib/constants";
+import { scrollToQuoteForm } from "@/lib/quote-form-nav";
 import { getServicesByCategory } from "@/data/services";
 import { servicePillarPath } from "@/lib/paths";
 
@@ -165,16 +166,37 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
             </button>
           </div>
 
-          {/* Phone + CTA section */}
+          {/* Estimate + CTA section. CRO Phase 3 (2026-11-06, audit
+              3.1): the first row said "Call Now" with a phone icon but
+              routes to a form -- the false call language and icon are
+              gone. The quote button is local-first: when this page has
+              a quote form it closes the menu and scrolls to it instead
+              of navigating to /contact. */}
           <div className="px-4 py-6 border-b border-secondary-lighter/30 space-y-3">
             <a
               href={PHONE_HREF}
               className="flex items-center justify-center gap-2 min-h-[44px] rounded-md bg-secondary px-4 py-3 font-body font-bold text-lg text-accent hover:bg-secondary-lighter transition-colors duration-[--duration-fast] focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-dominant"
             >
-              <Phone size={20} strokeWidth={1.5} aria-hidden="true" />
-              Call Now: {PHONE_NUMBER}
+              {PHONE_NUMBER}
             </a>
-            <Link href="/contact" onClick={onClose} className="block">
+            <Link
+              href="/contact#quote-form"
+              onClick={(event) => {
+                // Local-first: if this page has a quote form, close the
+                // menu and scroll to it (after the menu's scroll lock
+                // releases) instead of navigating away.
+                const formEl = document.getElementById("quote-form")
+                  ?? document.getElementById("full-quote-form");
+                if (formEl) {
+                  event.preventDefault();
+                  onClose();
+                  setTimeout(() => scrollToQuoteForm(), 60);
+                } else {
+                  onClose();
+                }
+              }}
+              className="block"
+            >
               <Button variant="primary" className="w-full">
                 Get Free Quote
               </Button>

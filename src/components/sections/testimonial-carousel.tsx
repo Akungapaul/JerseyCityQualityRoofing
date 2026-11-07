@@ -20,6 +20,15 @@ function getCityName(citySlug: string): string {
   return municipality?.name ?? citySlug;
 }
 
+function formatTestimonialDate(isoDate: string): string {
+  const parsed = new Date(`${isoDate}T00:00:00`);
+  if (Number.isNaN(parsed.getTime())) return isoDate;
+  return parsed.toLocaleDateString("en-US", {
+    month: "long",
+    year: "numeric",
+  });
+}
+
 export function TestimonialCarousel({
   testimonials = TESTIMONIALS,
 }: TestimonialCarouselProps) {
@@ -63,6 +72,13 @@ export function TestimonialCarousel({
                       </p>
                       <p className="text-text-secondary text-lg">
                         {getCityName(testimonial.citySlug)}
+                      </p>
+                      {/* CRO Phase 4 (audit 4.3): show the project type
+                          and date already stored in the data so the proof
+                          is specific instead of a bare quote. */}
+                      <p className="text-text-secondary text-base mt-1">
+                        {testimonial.projectType} &middot;{" "}
+                        {formatTestimonialDate(testimonial.date)}
                       </p>
                     </div>
                   </div>

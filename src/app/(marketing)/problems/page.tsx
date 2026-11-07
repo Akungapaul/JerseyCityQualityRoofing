@@ -77,7 +77,7 @@ export default function ProblemsPage() {
       {/* 4. CTABanner */}
       <CTABanner
         heading="Dealing With a Roof Problem?"
-        subtext="Do not wait for the next storm. Call us now or request your free inspection."
+        subtext="Do not wait for the next storm. Request your free inspection."
       />
     </>
   );

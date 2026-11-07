@@ -41,11 +41,15 @@ export default function ContactPage() {
       {/* 2. Two-column layout: form + info (D-10) */}
       <SectionWrapper id="quote-form" tone="secondary">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* On mobile: info above form (order-1). On desktop: form left (order-1), info right (order-2) */}
-          <div className="order-2 lg:order-1 [&>section]:py-0 [&>section]:bg-transparent">
+          {/* CRO Phase 5 (2026-11-06, audit 3.4/finding 12): the form
+              now comes FIRST on mobile too (order classes only) -- the
+              audited layout put the contact info column above the form
+              on the highest-intent page. Desktop order is unchanged:
+              form left (order-1), info right (order-2). */}
+          <div className="order-1 [&>section]:py-0 [&>section]:bg-transparent">
             <QuoteForm />
           </div>
-          <div className="order-1 lg:order-2">
+          <div className="order-2">
             <ContactInfoColumn />
           </div>
         </div>

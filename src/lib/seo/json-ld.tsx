@@ -2,7 +2,7 @@ import type { RoofingContractor, WithContext, BreadcrumbList, FAQPage, Service a
 import { BUSINESS_INFO } from '@/data/business-info';
 import { BASE_URL } from '@/lib/constants';
 import { servicePillarPath, cityHubPath } from '@/lib/paths';
-import type { Testimonial, Service as ServiceData, Municipality } from '@/data/types';
+import type { Service as ServiceData, Municipality } from '@/data/types';
 
 function hasVerifiedPhone(): boolean {
   return /^\+?[\d(]/.test(BUSINESS_INFO.phone);
@@ -63,27 +63,12 @@ export function buildBreadcrumbJsonLd(
   };
 }
 
-// Note: Google does not display review stars for self-hosted LocalBusiness reviews.
-// Schema still valuable for Bing, AI search, and semantic web.
-export function buildAggregateRatingJsonLd(
-  testimonials: readonly Testimonial[]
-): WithContext<RoofingContractor> {
-  const ratingSum = testimonials.reduce((sum, t) => sum + t.rating, 0);
-  const ratingValue = (ratingSum / testimonials.length).toFixed(1);
-
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'RoofingContractor',
-    name: BUSINESS_INFO.name,
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue,
-      reviewCount: String(testimonials.length) as unknown as number,
-      bestRating: '5',
-      worstRating: '1',
-    },
-  };
-}
+// CRO Phase 4 (2026-11-06, audit 4.2): buildAggregateRatingJsonLd was
+// deleted deliberately. It published an AggregateRating computed from
+// the site's own testimonial file with no verified external review
+// source, no individual review objects, and no profile link. Do not
+// rebuild rating schema until Paul supplies a verified review source
+// (Google Business Profile link or dated review export) to tie it to.
 
 export function buildFaqPageJsonLd(
   faqs: Array<{ question: string; answer: string }>

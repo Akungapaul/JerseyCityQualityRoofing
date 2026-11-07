@@ -40,8 +40,15 @@ export function AboutCertifications() {
             </div>
           ))}
         </div>
+        <p className="text-text-secondary text-lg mb-8 -mt-4">
+          Certification documentation available upon request.
+        </p>
 
-        {/* Insurance & License */}
+        {/* Insurance & License. CRO Phase 4 (2026-11-06, audit 4.4):
+            the heading no longer asserts "Fully Licensed & Insured" as
+            an unqualified claim -- the rows below show what the site
+            can document, which is that license and insurance
+            documentation is available upon request. */}
         <div className="bg-dominant rounded-lg p-6">
           <div className="flex items-start gap-3">
             <Shield
@@ -51,7 +58,7 @@ export function AboutCertifications() {
             />
             <div>
               <p className="font-heading font-bold text-lg text-text-primary">
-                Fully Licensed & Insured
+                License & Insurance Documentation
               </p>
               <p className="text-text-secondary text-lg mt-2">
                 <span className="font-bold text-text-primary">

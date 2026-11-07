@@ -1,8 +1,13 @@
-import { Award, Shield, Star, Clock, CheckCircle } from "lucide-react";
+import { Shield, Star, Clock, CheckCircle } from "lucide-react";
 
+// CRO Phase 4 (2026-11-06, audit 4.4): the strip used to assert
+// "Manufacturer-Trained" and "Licensed & Insured" as unqualified proof
+// badges, but the business data behind them says the license is
+// "Verification available upon request" and the insurance is "Proof of
+// insurance available upon request". The badges now say what the site
+// can actually show: documentation is available upon request.
 const BADGES = [
-  { icon: Award, label: "Manufacturer-Trained" },
-  { icon: Shield, label: "Licensed & Insured" },
+  { icon: Shield, label: "Documentation Available on Request" },
   { icon: Star, label: "Local Roofing Pros" },
   { icon: Clock, label: "20+ Years Experience" },
   { icon: CheckCircle, label: "Quality Materials" },

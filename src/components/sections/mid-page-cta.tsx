@@ -1,21 +1,19 @@
-import { Phone } from "lucide-react";
-import { PHONE_NUMBER, PHONE_HREF } from "@/lib/constants";
-
 interface MidPageCTAProps {
   heading?: string;
-  phoneNumber?: string;
-  phoneHref?: string;
   accentColor?: string;
 }
 
-export function MidPageCTA({
-  heading,
-  phoneNumber,
-  phoneHref,
-  accentColor,
-}: MidPageCTAProps) {
-  const displayPhone = phoneNumber ?? PHONE_NUMBER;
-  const displayHref = phoneHref ?? PHONE_HREF;
+/**
+ * Mid-page CTA (CRO Phase 3, 2026-11-06; audit 3.3/3.5).
+ *
+ * This strip used to pair a phone-icon "Request a Free Estimate" link
+ * that exited to /contact with a button targeting the hero form at the
+ * top of the page. Every page that renders MidPageCTA also renders the
+ * detailed QuoteForm below it, so the strip now has one honest action:
+ * scroll to that nearest form (#full-quote-form). The unused
+ * phoneNumber/phoneHref props were removed with the phone link.
+ */
+export function MidPageCTA({ heading, accentColor }: MidPageCTAProps) {
   const buttonClasses =
     accentColor ?? "bg-accent hover:bg-accent-hover";
 
@@ -33,23 +31,13 @@ export function MidPageCTA({
             </p>
           </div>
 
-          {/* Right: actions */}
+          {/* Right: action */}
           <div className="flex items-center gap-3 shrink-0">
-            {/* Phone link */}
             <a
-              href={displayHref}
-              className="text-accent flex items-center gap-2 text-lg font-bold min-h-[44px] hover:opacity-80 transition-opacity"
-            >
-              <Phone size={20} strokeWidth={1.5} aria-hidden="true" />
-              {displayPhone}
-            </a>
-
-            {/* CTA button */}
-            <a
-              href="#quote-form"
+              href="#full-quote-form"
               className={`${buttonClasses} text-dominant font-bold px-6 py-3 rounded-lg min-h-[44px] transition-colors duration-[150ms] focus-ring inline-flex items-center`}
             >
-              Get Your Free Estimate
+              Get My Free Quote
             </a>
           </div>
         </div>

@@ -3,7 +3,7 @@
 import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import type { GalleryProject } from "@/data/types";
-import { GalleryComparisonCard } from "@/components/sections/gallery-comparison-card";
+import { GalleryProjectCard } from "@/components/sections/gallery-project-card";
 
 interface GalleryGridProps {
   projects: GalleryProject[];
@@ -39,7 +39,7 @@ function GalleryGridInner({ projects }: GalleryGridProps) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       {filtered.map((project) => (
-        <GalleryComparisonCard key={project.id} project={project} />
+        <GalleryProjectCard key={project.id} project={project} />
       ))}
     </div>
   );
