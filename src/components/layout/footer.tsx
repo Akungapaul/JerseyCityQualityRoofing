@@ -4,7 +4,11 @@ import { Badge } from "@/components/ui/badge";
 import { BUSINESS_INFO } from "@/data/business-info";
 import { getServicesByCategory } from "@/data/services";
 import { PHONE_NUMBER, PHONE_HREF, SITE_NAME } from "@/lib/constants";
-import { servicePillarPath } from "@/lib/paths";
+import {
+  servicePillarPath,
+  RESIDENTIAL_HUB_PATH,
+  COMMERCIAL_HUB_PATH,
+} from "@/lib/paths";
 
 export function Footer() {
   const residentialServices = getServicesByCategory("residential");
@@ -39,6 +43,16 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+              {/* Toms River treatment (2026-11-10): hub link closes the
+                  residential services column. */}
+              <li>
+                <Link
+                  href={RESIDENTIAL_HUB_PATH}
+                  className="text-text-secondary hover:text-accent text-lg font-bold transition-colors duration-[--duration-fast] inline-block py-2 -my-2"
+                >
+                  View All Residential Roofing
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -58,6 +72,16 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+              {/* Toms River treatment (2026-11-10): hub link closes the
+                  commercial services column. */}
+              <li>
+                <Link
+                  href={COMMERCIAL_HUB_PATH}
+                  className="text-text-secondary hover:text-accent text-lg font-bold transition-colors duration-[--duration-fast] inline-block py-2 -my-2"
+                >
+                  View All Commercial Roofing
+                </Link>
+              </li>
             </ul>
           </div>
 

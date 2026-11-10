@@ -8,7 +8,11 @@ import { Button } from "@/components/ui/button";
 import { PHONE_NUMBER, PHONE_HREF } from "@/lib/constants";
 import { scrollToQuoteForm } from "@/lib/quote-form-nav";
 import { getServicesByCategory } from "@/data/services";
-import { servicePillarPath } from "@/lib/paths";
+import {
+  servicePillarPath,
+  RESIDENTIAL_HUB_PATH,
+  COMMERCIAL_HUB_PATH,
+} from "@/lib/paths";
 
 // Single-city restructure (2026-11-06): the "Service Areas" accordion
 // was removed — the site serves Jersey City only and the city hub pages
@@ -221,6 +225,15 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
                     {service.name}
                   </Link>
                 ))}
+                {/* Toms River treatment (2026-11-10): see-all entry for
+                    the flat residential hub, last in the group. */}
+                <Link
+                  href={RESIDENTIAL_HUB_PATH}
+                  className="block rounded-md px-3 py-2 font-body font-bold text-lg text-accent hover:bg-secondary transition-colors duration-[--duration-fast] min-h-[44px] flex items-center"
+                  onClick={onClose}
+                >
+                  View All Residential Roofing
+                </Link>
               </div>
             </AccordionSection>
 
@@ -240,6 +253,15 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
                     {service.name}
                   </Link>
                 ))}
+                {/* Toms River treatment (2026-11-10): see-all entry for
+                    the flat commercial hub, last in the group. */}
+                <Link
+                  href={COMMERCIAL_HUB_PATH}
+                  className="block rounded-md px-3 py-2 font-body font-bold text-lg text-accent hover:bg-secondary transition-colors duration-[--duration-fast] min-h-[44px] flex items-center"
+                  onClick={onClose}
+                >
+                  View All Commercial Roofing
+                </Link>
               </div>
             </AccordionSection>
 

@@ -8,14 +8,38 @@ export function HeroSection() {
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Left side: headline, subtext, CTAs */}
           <div className="lg:w-[60%] text-center lg:text-left">
+            {/* Toms River treatment (2026-11-10): the coded H1 carries
+                the full phrase; the second half sits in an sr-only span
+                so visitors see only "Roofing Contractor Jersey City,
+                NJ". Title tag unchanged; H1 weight unchanged. */}
             <h1 className="font-heading font-bold text-4xl sm:text-[2.5rem] lg:text-[3rem] leading-[1.1] text-text-primary">
-              Roofer in Jersey City, NJ for Roof Repair, Replacement &amp; Commercial Roofing
+              Roofing Contractor Jersey City, NJ
+              <span className="sr-only">
+                : Residential and Commercial Roof Repair and Roof Replacement
+              </span>
             </h1>
-            <p className="text-text-secondary text-lg mt-4 max-w-xl lg:max-w-none">
-              Local Jersey City roofing contractors for roof replacement, roof
-              repair, roof inspections, flat roofs, emergency leaks, and
-              commercial roofing across Hudson County.
-            </p>
+            {/* Hero intro is now four labeled bullets (Toms River
+                treatment, 2026-11-10). The CTAs below are unchanged. */}
+            <ul className="text-text-secondary text-lg mt-4 max-w-xl lg:max-w-none space-y-2">
+              <li>
+                <strong className="text-text-primary">Who we are:</strong>{" "}
+                Jersey City Quality Roofing, a local roofing company serving
+                homes and businesses.
+              </li>
+              <li>
+                <strong className="text-text-primary">What we do:</strong>{" "}
+                Residential and commercial roof repair and roof replacement.
+              </li>
+              <li>
+                <strong className="text-text-primary">Where we work:</strong>{" "}
+                Jersey City and communities across Hudson County, NJ.
+              </li>
+              <li>
+                <strong className="text-text-primary">Why choose us:</strong>{" "}
+                inspection + written scope, workmanship coverage and warranty
+                terms explained before work begins.
+              </li>
+            </ul>
             <div className="flex flex-col sm:flex-row items-center gap-3 mt-8">
               <a
                 href="#quote-form"

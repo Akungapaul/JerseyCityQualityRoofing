@@ -5,7 +5,11 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
 import { ChevronDown } from "lucide-react";
 import { getServicesByCategory } from "@/data/services";
-import { servicePillarPath } from "@/lib/paths";
+import {
+  servicePillarPath,
+  RESIDENTIAL_HUB_PATH,
+  COMMERCIAL_HUB_PATH,
+} from "@/lib/paths";
 
 // Single-city restructure (2026-11-06): the "Service Areas" panel was
 // removed — the site serves Jersey City only and the city hub pages it
@@ -172,6 +176,21 @@ export function MegaMenu() {
                         </span>
                       </Link>
                     ))}
+                    {/* Toms River treatment (2026-11-10): see-all entry
+                        for the flat residential hub, last in the group. */}
+                    <Link
+                      href={RESIDENTIAL_HUB_PATH}
+                      className="group block rounded-md p-2 -mx-2 border-t border-text-secondary/20 pt-4 transition-colors duration-[--duration-fast] hover:bg-dominant-lighter"
+                      onClick={closePanel}
+                      role="menuitem"
+                    >
+                      <span className="block font-body font-bold text-lg text-accent">
+                        View All Residential Roofing
+                      </span>
+                      <span className="block text-text-secondary text-lg leading-snug mt-0.5">
+                        Every residential roofing service in Jersey City, NJ
+                      </span>
+                    </Link>
                   </div>
                 )}
 
@@ -198,6 +217,21 @@ export function MegaMenu() {
                         </span>
                       </Link>
                     ))}
+                    {/* Toms River treatment (2026-11-10): see-all entry
+                        for the flat commercial hub, last in the group. */}
+                    <Link
+                      href={COMMERCIAL_HUB_PATH}
+                      className="group block rounded-md p-2 -mx-2 border-t border-text-secondary/20 pt-4 transition-colors duration-[--duration-fast] hover:bg-dominant-lighter"
+                      onClick={closePanel}
+                      role="menuitem"
+                    >
+                      <span className="block font-body font-bold text-lg text-accent">
+                        View All Commercial Roofing
+                      </span>
+                      <span className="block text-text-secondary text-lg leading-snug mt-0.5">
+                        Every commercial roofing service in Jersey City, NJ
+                      </span>
+                    </Link>
                   </div>
                 )}
 
