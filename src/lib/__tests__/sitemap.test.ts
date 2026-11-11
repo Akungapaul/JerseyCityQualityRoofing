@@ -9,7 +9,7 @@ describe('sitemap generation', () => {
     expect(entries.length).toBeGreaterThan(0);
   });
 
-  it('generates 46 total URLs', () => {
+  it('generates 48 total URLs', () => {
     const entries = sitemap();
     // Single-city restructure (2026-11-06): 11 static (homepage, about,
     // privacy-policy, terms-of-service, contact, gallery, blog, guides,
@@ -17,7 +17,17 @@ describe('sitemap generation', () => {
     // service-in-city + 8 blog + 8 cost guides + 6 material guides
     // + 5 problems = 46. The 12 city hubs, the other 88 combos,
     // /service-areas, and the /services index layer were retired.
-    expect(entries).toHaveLength(46);
+    // Toms River treatment (2026-11-10): +2 flat Rule 7 service hubs
+    // (/residential-roofing-jersey-city-nj and
+    // /commercial-roofing-jersey-city-nj) = 48.
+    expect(entries).toHaveLength(48);
+  });
+
+  it('includes both flat service hubs (2026-11-10)', () => {
+    const entries = sitemap();
+    const urls = entries.map((e) => e.url);
+    expect(urls).toContain(`${BASE_URL}/residential-roofing-jersey-city-nj`);
+    expect(urls).toContain(`${BASE_URL}/commercial-roofing-jersey-city-nj`);
   });
 
   it('excludes testimonials stub page from sitemap', () => {
@@ -45,8 +55,16 @@ describe('sitemap generation', () => {
     const serviceCityPages = entries.filter((e) =>
       e.url.match(/\/[a-z0-9-]+-nj$/) && !e.url.includes('/roofing-contractor-')
     );
-    // Single-city site: 8 services x Jersey City only = 8
-    expect(serviceCityPages).toHaveLength(8);
+    // Single-city site: 8 services x Jersey City only = 8, plus the 2
+    // flat service hubs added 2026-11-10, whose slugs also match the
+    // flat -nj pattern but are hubs, not service-in-city combos.
+    const hubPages = serviceCityPages.filter(
+      (e) =>
+        e.url.endsWith('/residential-roofing-jersey-city-nj') ||
+        e.url.endsWith('/commercial-roofing-jersey-city-nj')
+    );
+    expect(hubPages).toHaveLength(2);
+    expect(serviceCityPages.length - hubPages.length).toBe(8);
   });
 
   it('excludes the retired /services index layer and /service-areas', () => {

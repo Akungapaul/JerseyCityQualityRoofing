@@ -68,6 +68,16 @@ export function cityHubPath(citySlug: string): string {
   return `/roofing-contractor-${citySlug}-nj`;
 }
 
+/**
+ * Flat Rule 7 service hub paths (Toms River treatment, 2026-11-10).
+ * Static routes under src/app/(marketing)/ that list the Jersey City
+ * services by side. They are NOT service x city combos: parseFlatSlug
+ * returns null for them ("residential-roofing"/"commercial-roofing" are
+ * not internal service slugs), so the [slug] route never claims them.
+ */
+export const RESIDENTIAL_HUB_PATH = '/residential-roofing-jersey-city-nj';
+export const COMMERCIAL_HUB_PATH = '/commercial-roofing-jersey-city-nj';
+
 export type FlatRoute = { type: 'combo'; serviceSlug: string; citySlug: string };
 
 /**

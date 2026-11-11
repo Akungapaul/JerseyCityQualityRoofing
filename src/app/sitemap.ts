@@ -1,6 +1,11 @@
 import type { MetadataRoute } from 'next';
 import { getAllServiceSlugs } from '@/data/services';
-import { serviceCityPath, getPublishedCitySlugs } from '@/lib/paths';
+import {
+  serviceCityPath,
+  getPublishedCitySlugs,
+  RESIDENTIAL_HUB_PATH,
+  COMMERCIAL_HUB_PATH,
+} from '@/lib/paths';
 import { ALL_BLOG_ARTICLES } from '@/data/content/blog';
 import { ALL_COST_GUIDES } from '@/data/content/cost-guides';
 import { ALL_MATERIAL_GUIDES } from '@/data/content/material-guides';
@@ -27,6 +32,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/guides/cost`, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/guides/materials`, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE_URL}/problems`, changeFrequency: 'monthly', priority: 0.6 },
+    // Flat Rule 7 service hubs (Toms River treatment, 2026-11-10)
+    { url: `${BASE_URL}${RESIDENTIAL_HUB_PATH}`, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}${COMMERCIAL_HUB_PATH}`, changeFrequency: 'monthly', priority: 0.8 },
   ];
 
   // Service-in-city pages (flat: /<service>-<city>-nj, priority 0.7)
